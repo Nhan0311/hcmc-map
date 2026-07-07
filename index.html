@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Bản đồ tương tác so sánh giá bất động sản và mức độ ngập lụt TP.HCM mới (sáp nhập Bình Dương, Bà Rịa – Vũng Tàu) với 168 phường/xã theo mùa, triều cường và ngân sách. Hai KTS Dưới Hiên Nhà.">
+<meta property="og:title" content="Bản đồ Giá BĐS & Ngập lụt TP.HCM – So sánh quận/huyện">
+<meta property="og:description" content="So sánh 2–3 khu vực theo giá nhà phố, căn hộ và rủi ro ngập theo tháng.">
+<meta property="og:type" content="website">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Compare Quận TP.HCM – Giá BĐS & Ngập lụt</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="ban_do_data.js"></script>
+<style>
+:root{
+  --bg:#eef0f3;--surface:#fff;--ink:#0f1419;--muted:#6b7280;--line:#e2e5ea;
+  --accent:#2563eb;--accent-2:#1e40af;--danger:#dc2626;--warn:#ea580c;--green:#059669;
+  --r0:#10b981;--r1:#fbbf24;--r2:#f97316;--r3:#ef4444;--r4:#7c2d12;--r5:#581c87;
+  --slot-A:#3b82f6;--slot-B:#f59e0b;--slot-C:#a855f7;
+  --font:'Plus Jakarta Sans',system-ui,sans-serif;--mono:'JetBrains Mono',monospace;
+  --shadow:0 1px 2px rgba(15,20,25,.04),0 8px 24px rgba(15,20,25,.08);
+  --shadow-lg:0 12px 40px rgba(15,20,25,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:var(--font);background:var(--bg);color:var(--ink);overflow:hidden;-webkit-font-smoothing:antialiased}
+#app{display:grid;grid-template-rows:auto 1fr;height:100vh}
+header{background:var(--surface);border-bottom:1px solid var(--line);padding:12px 24px;display:flex;align-items:center;gap:16px;z-index:1000;position:relative}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-icon{width:32px;height:32px;background:linear-gradient(135deg,var(--accent),#0ea5e9);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;box-shadow:0 4px 10px rgba(37,99,235,.3)}
+.brand-text h1{font-size:14px;font-weight:800;letter-spacing:-.3px}
+.brand-text p{font-size:10px;color:var(--muted);margin-top:1px}
+.spacer{flex:1}
+.mode-switch{display:flex;gap:3px;background:var(--bg);padding:3px;border-radius:9px}
+.ms-btn{padding:7px 14px;border:none;background:transparent;border-radius:6px;font-family:inherit;font-size:11px;font-weight:700;color:var(--muted);cursor:pointer}
+.ms-btn.active{background:var(--ink);color:#fff}
+.cta-btn{padding:7px 14px;border:none;background:var(--green);color:#fff;border-radius:8px;font-family:inherit;font-size:11px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+.cta-btn:hover{background:#047857}
+main{display:grid;grid-template-columns:1fr 380px;height:100%;min-height:0}
+.map-area{position:relative;background:var(--bg);overflow:hidden}
+#map{position:absolute;inset:0;background:#dbe1e8}
+.map-overlay-top{position:absolute;top:18px;left:18px;z-index:500;display:flex;flex-direction:column;gap:6px;pointer-events:none;max-width:440px}
+.eyebrow{font-size:10px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted)}
+.title-big{font-size:26px;font-weight:800;line-height:1;letter-spacing:-.8px}
+.title-big span{color:var(--accent)}
+.subtitle{font-size:11px;color:var(--muted);margin-top:4px}
+.scenario-bar{position:absolute;top:18px;left:50%;transform:translateX(-50%);z-index:500;background:var(--surface);border-radius:10px;padding:4px;box-shadow:var(--shadow);display:flex;gap:2px}
+.sc-btn{padding:6px 12px;border:none;background:transparent;border-radius:7px;font-family:inherit;font-size:11px;font-weight:700;color:var(--muted);cursor:pointer}
+.sc-btn.active{background:var(--ink);color:#fff}
+.map-stats{position:absolute;top:18px;right:18px;z-index:500;display:flex;gap:8px}
+.stat{background:var(--surface);border-radius:9px;padding:8px 12px;box-shadow:var(--shadow);min-width:78px;text-align:right}
+.stat .sv{font-size:18px;font-weight:800;font-family:var(--mono);color:var(--accent);line-height:1}
+.stat .sl{font-size:9px;color:var(--muted);font-weight:600;letter-spacing:.4px;text-transform:uppercase;margin-top:4px}
+.month-bar{position:absolute;bottom:18px;right:18px;z-index:500;background:var(--surface);border-radius:11px;padding:10px 14px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px}
+.mb-label{font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--muted)}
+.mb-cells{display:flex;gap:3px}
+.mb-cell{width:20px;height:28px;border-radius:4px;background:var(--bg);cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:2px;transition:transform .15s}
+.mb-cell:hover{transform:translateY(-2px)}
+.mb-cell.active{box-shadow:0 0 0 2px var(--ink);transform:translateY(-2px)}
+.mb-cell .mbf{border-radius:2px}
+.mb-cell .mbn{position:absolute;top:-13px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--muted);font-weight:600;font-family:var(--mono)}
+.compare-bar{position:absolute;bottom:18px;left:18px;z-index:500;background:var(--surface);border-radius:11px;padding:10px 14px;box-shadow:var(--shadow);display:flex;align-items:center;gap:10px;max-width:60%}
+.cb-label{font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--muted)}
+.cb-slots{display:flex;gap:7px}
+.cb-slot{display:flex;align-items:center;gap:6px;padding:5px 9px;border-radius:7px;background:var(--bg);font-size:11px;font-weight:600}
+.cb-slot.empty{color:var(--muted);font-style:italic}
+.cb-slot .cb-dot{width:9px;height:9px;border-radius:50%}
+.cb-slot .cb-close{cursor:pointer;color:var(--muted);font-weight:700;margin-left:2px}
+.cb-slot .cb-close:hover{color:var(--danger)}
+aside{background:var(--surface);border-left:1px solid var(--line);display:flex;flex-direction:column;min-height:0;overflow:hidden}
+.adslot-top{padding:10px 18px;background:linear-gradient(90deg,#fef9c3,#fef3c7);border-bottom:1px solid var(--line);font-size:11px;color:#854d0e;display:flex;align-items:center;gap:8px;cursor:pointer}
+.adslot-top:hover{filter:brightness(.97)}
+.adslot-top .badge{background:#854d0e;color:#fef9c3;padding:1px 6px;border-radius:4px;font-size:9px;font-weight:700;letter-spacing:.4px;text-transform:uppercase}
+.search-block{padding:14px 18px 12px;border-bottom:1px solid var(--line)}
+.search-block label{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
+.search-input{display:flex;gap:6px}
+.search-input input{flex:1;padding:8px 11px;border:1px solid var(--line);border-radius:7px;font-family:inherit;font-size:12px;color:var(--ink);background:var(--bg)}
+.search-input input:focus{outline:none;border-color:var(--accent);background:#fff}
+.search-input button{padding:8px 13px;border:none;background:var(--accent);color:#fff;border-radius:7px;font-family:inherit;font-size:11px;font-weight:700;cursor:pointer}
+.budget-bar{padding:11px 18px;border-bottom:1px solid var(--line)}
+.bb-title{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;display:flex;justify-content:space-between}
+.bb-input-row{display:flex;align-items:center;gap:9px}
+.bb-input-row input[type=range]{flex:1;accent-color:var(--accent)}
+.bb-val{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--accent);min-width:80px;text-align:right}
+.list-block{flex:1;overflow-y:auto;padding:12px 18px}
+.lb-title{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:10px;display:flex;justify-content:space-between}
+.item{display:grid;grid-template-columns:auto 1fr auto auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);cursor:pointer;transition:all .12s}
+.item:hover{transform:translateX(2px)}
+.item.in-compare{background:linear-gradient(90deg,#eff6ff,transparent);padding-left:8px;margin-left:-8px;padding-right:8px;margin-right:-8px;border-radius:7px}
+.item.out-budget{opacity:.4}
+.item-marker{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.item-info .name{font-size:12px;font-weight:700;letter-spacing:-.2px;line-height:1.2}
+.item-info .meta{font-size:10px;color:var(--muted);margin-top:2px}
+.item-pct{font-size:12px;font-weight:800;font-family:var(--mono);color:var(--accent);text-align:right;line-height:1}
+.item-pct .pl{display:block;font-size:9px;color:var(--muted);font-weight:600;font-family:var(--font);margin-top:2px}
+.add-btn{width:24px;height:24px;border-radius:6px;background:var(--bg);border:1px solid var(--line);font-size:14px;font-weight:700;color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.add-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.add-btn.added{background:var(--green);color:#fff;border-color:var(--green)}
+.compare-modal{position:fixed;inset:0;background:rgba(15,20,25,.6);z-index:2000;display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(4px)}
+.compare-modal.show{display:flex}
+.cm-content{background:var(--surface);border-radius:16px;max-width:1100px;width:100%;max-height:90vh;overflow-y:auto;padding:28px;box-shadow:var(--shadow-lg)}
+.cm-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px}
+.cm-head h2{font-size:22px;font-weight:800;letter-spacing:-.5px}
+.cm-head p{font-size:11px;color:var(--muted);margin-top:3px}
+.cm-close{width:30px;height:30px;border:none;background:var(--bg);border-radius:8px;font-size:18px;cursor:pointer;color:var(--muted)}
+.cm-close:hover{background:var(--danger);color:#fff}
+.cm-grid{display:grid;gap:14px}
+.cm-grid.cols-2{grid-template-columns:1fr 1fr}
+.cm-grid.cols-3{grid-template-columns:1fr 1fr 1fr}
+.cm-col{background:var(--bg);border-radius:12px;padding:16px;border-top:4px solid var(--accent)}
+.cm-col.slot-A{border-top-color:var(--slot-A)}
+.cm-col.slot-B{border-top-color:var(--slot-B)}
+.cm-col.slot-C{border-top-color:var(--slot-C)}
+.cm-col h3{font-size:16px;font-weight:800;margin-bottom:2px}
+.cm-col .sub{font-size:10px;color:var(--muted);margin-bottom:14px}
+.cm-stat{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid #e5e7eb;font-size:12px}
+.cm-stat:last-child{border:none}
+.cm-stat .k{color:var(--muted);font-weight:500}
+.cm-stat .v{font-weight:700;font-family:var(--mono)}
+.cm-stat .v.best{color:var(--green)}
+.cm-stat .v.worst{color:var(--danger)}
+.cm-verdict{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:10px;padding:14px;margin-top:16px;border-left:4px solid var(--accent)}
+.cm-verdict h4{font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:var(--accent);margin-bottom:7px}
+.cm-verdict p{font-size:12px;line-height:1.55;color:var(--ink)}
+.cm-verdict strong{color:var(--accent-2)}
+.cm-affiliates{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+.cm-affiliates h4{font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.aff-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.aff-card{background:linear-gradient(135deg,#fff,#f8fafc);border:1px solid var(--line);border-radius:10px;padding:13px;display:flex;flex-direction:column;gap:6px;transition:all .15s;cursor:pointer;text-decoration:none;color:inherit}
+.aff-card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--accent)}
+.aff-card .head{display:flex;justify-content:space-between;align-items:center}
+.aff-card .head .nm{font-size:13px;font-weight:800;letter-spacing:-.3px}
+.aff-card .head .lg{font-size:9px;font-weight:700;padding:2px 6px;background:#fee2e2;color:#991b1b;border-radius:4px}
+.aff-card .desc{font-size:11px;color:var(--muted);line-height:1.4}
+.aff-card .price{font-family:var(--mono);font-weight:800;color:var(--green);font-size:13px}
+.aff-card .link{font-size:10px;color:var(--accent);font-weight:700;margin-top:auto}
+.email-capture{margin-top:18px;padding:14px;background:linear-gradient(135deg,#dbeafe,#bfdbfe);border-radius:10px}
+.email-capture h4{font-size:12px;font-weight:800;margin-bottom:4px;color:var(--accent-2)}
+.email-capture p{font-size:10px;color:var(--accent-2);margin-bottom:8px;line-height:1.4}
+.email-capture .row{display:flex;gap:6px}
+.email-capture input{flex:1;padding:7px 10px;border:1px solid #93c5fd;border-radius:6px;font-size:12px;background:#fff}
+.email-capture button{padding:7px 13px;background:var(--accent);color:#fff;border:none;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer}
+.legend{padding:11px 18px;border-top:1px solid var(--line)}
+.lg-title{font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.lg-items{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.lg-item{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--ink)}
+.lg-sq{width:9px;height:9px;border-radius:2px}
+.compare-cta{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:1500;background:var(--ink);color:#fff;padding:13px 22px;border-radius:99px;font-size:12px;font-weight:800;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.25);display:none;align-items:center;gap:10px}
+.compare-cta.show{display:flex;animation:slideUp .3s ease}
+@keyframes slideUp{from{transform:translate(-50%,20px);opacity:0}to{transform:translate(-50%,0);opacity:1}}
+.compare-cta:hover{background:var(--accent)}
+.compare-cta .badge{background:var(--accent);padding:2px 8px;border-radius:99px;font-size:10px}
+.dist-label{color:var(--ink);font-size:10px;font-weight:700;text-shadow:0 1px 3px rgba(255,255,255,.95);text-align:center;white-space:nowrap;letter-spacing:-.1px}
+.dist-label.in-A{color:#fff;background:var(--slot-A);padding:2px 6px;border-radius:5px;text-shadow:none}
+.dist-label.in-B{color:#fff;background:var(--slot-B);padding:2px 6px;border-radius:5px;text-shadow:none}
+.dist-label.in-C{color:#fff;background:var(--slot-C);padding:2px 6px;border-radius:5px;text-shadow:none}
+.leaflet-container{font-family:inherit;background:#dbe1e8 !important}
+.lang-toggle{display:flex;background:var(--bg);padding:3px;border-radius:8px;gap:2px}
+.lang-btn{padding:5px 11px;border:none;background:transparent;border-radius:5px;font-family:inherit;font-size:10px;font-weight:800;color:var(--muted);cursor:pointer;letter-spacing:.3px}
+.lang-btn.active{background:var(--ink);color:#fff}
+
+.segment-filter{position:absolute;top:60px;left:50%;transform:translateX(-50%);z-index:500;background:var(--surface);border-radius:10px;padding:5px;box-shadow:var(--shadow);display:none;gap:2px}
+.segment-filter.show{display:flex}
+.seg-btn{padding:6px 11px;border:none;background:transparent;border-radius:6px;font-family:inherit;font-size:10px;font-weight:700;color:var(--muted);cursor:pointer;letter-spacing:.2px;display:flex;align-items:center;gap:5px}
+.seg-btn:hover{color:var(--ink)}
+.seg-btn.active{background:var(--ink);color:#fff}
+.seg-btn .dot{width:7px;height:7px;border-radius:50%}
+.seg-luxury{background:#7c3aed}.seg-midhigh{background:#3b82f6}.seg-mid{background:#10b981}.seg-midlow{background:#f59e0b}.seg-budget{background:#84cc16}
+
+.road-popup{font-family:var(--font);min-width:240px}
+.rp-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+.rp-name{font-size:14px;font-weight:800;color:var(--ink);letter-spacing:-.3px}
+.rp-tag{font-size:9px;font-weight:700;padding:2px 7px;border-radius:5px;letter-spacing:.4px;text-transform:uppercase;color:#fff}
+.tag-luxury{background:#7c3aed}.tag-midhigh{background:#3b82f6}.tag-mid{background:#10b981}.tag-midlow{background:#f59e0b}.tag-budget{background:#84cc16}
+.rp-row{display:flex;justify-content:space-between;font-size:11px;padding:3px 0}
+.rp-row .k{color:var(--muted);font-weight:500}
+.rp-row .v{font-weight:700;font-family:var(--mono);color:var(--ink)}
+.rp-hl{margin-top:7px;padding:7px 9px;background:#eff6ff;border-radius:6px;font-size:11px;line-height:1.4;color:#1e3a8a}
+.rp-target{font-size:10px;color:var(--green);font-weight:700;margin-top:5px;padding:3px 7px;background:#d1fae5;border-radius:4px;display:inline-block}
+.rp-cta{display:block;margin-top:8px;padding:8px 12px;background:var(--accent);color:#fff;text-align:center;border-radius:6px;font-size:11px;font-weight:700;text-decoration:none}
+.rp-cta:hover{background:var(--accent-2)}
+
+.ward-label{font-size:8.5px;font-weight:600;color:#334155;text-shadow:0 1px 2px rgba(255,255,255,.9);text-align:center;white-space:nowrap;pointer-events:none}
+.ward-ctl{background:var(--surface);border-radius:8px;box-shadow:var(--shadow);padding:6px 10px;font:700 10px var(--font);display:flex;gap:6px;align-items:center;cursor:pointer;color:var(--ink);user-select:none}
+.ward-ctl .wc-dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
+.ward-ctl.off{color:var(--muted)}.ward-ctl.off .wc-dot{background:#cbd5e1}
+.wd-pop b{font:800 13px var(--font);display:block;margin-bottom:2px}
+.wd-pop span{font:500 10px var(--font);color:var(--muted);line-height:1.4;display:block}
+@media(max-width:768px){
+main{grid-template-columns:1fr;grid-template-rows:56vh 1fr}
+aside{border-left:none;border-top:1px solid var(--line)}
+header{padding:8px 12px;gap:8px}
+.brand-text p{display:none}
+.map-overlay-top{max-width:55%;top:10px;left:10px}
+.title-big{font-size:17px;letter-spacing:-.4px}
+.subtitle{display:none}
+.map-stats{display:none}
+.scenario-bar{top:10px;right:10px;left:auto;transform:none}
+.sc-btn{padding:5px 9px;font-size:10px}
+.segment-filter{top:52px;left:10px;right:10px;transform:none;overflow-x:auto}
+.month-bar{left:10px;right:10px;bottom:10px;padding:7px 9px;justify-content:space-between}
+.mb-cells{overflow-x:auto}
+.mb-cell{width:13px;height:22px}
+.compare-bar{left:10px;right:10px;bottom:58px;max-width:none;padding:7px 9px}
+.compare-cta{bottom:calc(44% + 12px)}
+.cm-grid.cols-2,.cm-grid.cols-3{grid-template-columns:1fr}
+.cm-content{padding:16px;max-height:94vh}
+.search-block,.budget-bar{padding:10px 12px}
+.list-block{padding:10px 12px}
+}
+</style>
+</head>
+<body>
+<div id="app">
+<header>
+  <div class="brand">
+    <div class="brand-icon">🌊</div>
+    <div class="brand-text">
+      <h1 data-i18n="appTitle">HCMC Compare</h1>
+      <p data-i18n="appSub">So sánh 2–3 quận theo giá BĐS và rủi ro ngập</p>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="mode-switch">
+    <button class="ms-btn active" data-mode="flood" onclick="setMode('flood')" data-i18n="tab_flood">Ngập</button>
+    <button class="ms-btn" data-mode="price" onclick="setMode('price')" data-i18n="tab_price">Giá</button>
+    <button class="ms-btn" data-mode="value" onclick="setMode('value')" data-i18n="tab_value">Giá÷Ngập</button>
+    <button class="ms-btn" data-mode="roads" onclick="setMode('roads')" data-i18n="tab_roads">Đường BĐS</button>
+  </div>
+  <div class="lang-toggle">
+    <button class="lang-btn active" data-lang="vi" onclick="setLang('vi')">VI</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+  </div>
+  <a class="cta-btn" href="https://www.haiktsduoihiennha.com/t%C3%A0i-ch%C3%ADnh-mua-nh%C3%A0" target="_blank" rel="noopener" data-i18n="cta_finance">💰 Công cụ tài chính mua nhà</a>
+</header>
+<main>
+  <div class="map-area">
+    <div id="map"></div>
+    <div class="map-overlay-top">
+      <div class="eyebrow" id="mh-eyebrow">Tháng 10 · Mưa lớn + triều</div>
+      <h2 class="title-big" data-i18n="map_title">Compare <span>Quận</span></h2>
+      <p class="subtitle" data-i18n="map_sub">Click + để thêm quận vào so sánh (tối đa 3). Nút "So sánh chi tiết" sẽ xuất hiện khi chọn ≥ 2 quận.</p>
+    </div>
+    <div class="scenario-bar">
+      <button class="sc-btn" data-sc="1" onclick="setScenario('1')" data-i18n="sc_normal">Mưa thường</button>
+      <button class="sc-btn active" data-sc="1.5" onclick="setScenario('1.5')" data-i18n="sc_heavy">Mưa + triều</button>
+      <button class="sc-btn" data-sc="2" onclick="setScenario('2')" data-i18n="sc_extreme">Cực đoan</button>
+    </div>
+    <div class="segment-filter" id="seg-filter">
+      <button class="seg-btn active" data-seg="all" onclick="setSegment('all')" data-i18n="seg_all">Tất cả</button>
+      <button class="seg-btn" data-seg="luxury" onclick="setSegment('luxury')"><span class="dot seg-luxury"></span><span data-i18n="seg_luxury">Cao cấp</span></button>
+      <button class="seg-btn" data-seg="mid-high" onclick="setSegment('mid-high')"><span class="dot seg-midhigh"></span><span data-i18n="seg_midhigh">Trung cao</span></button>
+      <button class="seg-btn" data-seg="mid" onclick="setSegment('mid')"><span class="dot seg-mid"></span><span data-i18n="seg_mid">Trung bình</span></button>
+      <button class="seg-btn" data-seg="mid-low" onclick="setSegment('mid-low')"><span class="dot seg-midlow"></span><span data-i18n="seg_midlow">Trung thấp</span></button>
+      <button class="seg-btn" data-seg="budget" onclick="setSegment('budget')"><span class="dot seg-budget"></span><span data-i18n="seg_budget">Bình dân</span></button>
+    </div>
+    <div class="map-stats">
+      <div class="stat"><div class="sv" id="st-pct">—</div><div class="sl" data-i18n="stat_flood">Ngập TB</div></div>
+      <div class="stat"><div class="sv" id="st-price">—</div><div class="sl" data-i18n="stat_price">Giá TB</div></div>
+      <div class="stat"><div class="sv" id="st-comp">0/3</div><div class="sl" data-i18n="stat_selected">Đã chọn</div></div>
+    </div>
+    <div class="compare-bar">
+      <span class="cb-label" data-i18n="compare_label">So sánh</span>
+      <div class="cb-slots" id="cb-slots"></div>
+    </div>
+    <div class="month-bar">
+      <span class="mb-label" data-i18n="month_label">Tháng</span>
+      <div class="mb-cells" id="mb-cells"></div>
+    </div>
+  </div>
+  <aside>
+<div class="search-block">
+      <label data-i18n="search_label">Tìm địa chỉ / quận</label>
+      <div class="search-input">
+        <input id="srch" type="text" placeholder="vd: Phú Mỹ Hưng..." data-i18n-placeholder="search_placeholder"/>
+        <button onclick="geocode()" data-i18n="search_btn">Tìm</button>
+      </div>
+    </div>
+    <div class="budget-bar">
+      <div class="bb-title"><span data-i18n="budget_label">Ngân sách (nhà phố)</span></div>
+      <div class="bb-input-row">
+        <input type="range" id="budget" min="30" max="400" step="10" value="200" oninput="setBudget(this.value)"/>
+        <span class="bb-val" id="budget-val">≤ 200 tr/m²</span>
+      </div>
+    </div>
+    <div class="list-block">
+      <div class="lb-title"><span data-i18n="list_title">24 Khu vực · TP.HCM mới (từ 1/7/2025)</span><span id="list-count" style="font-family:var(--mono);color:var(--ink)">—</span></div>
+      <div id="zone-list"></div>
+    </div>
+    <div class="legend">
+      <div class="lg-title" data-i18n="legend_title">Mức ngập</div>
+      <div class="lg-items">
+        <div class="lg-item"><div class="lg-sq" style="background:var(--r0)"></div><span data-i18n="risk_0">Rất ít</span></div>
+        <div class="lg-item"><div class="lg-sq" style="background:var(--r1)"></div><span data-i18n="risk_1">Nhẹ</span></div>
+        <div class="lg-item"><div class="lg-sq" style="background:var(--r2)"></div><span data-i18n="risk_2">Vừa</span></div>
+        <div class="lg-item"><div class="lg-sq" style="background:var(--r3)"></div><span data-i18n="risk_3">Cao</span></div>
+        <div class="lg-item"><div class="lg-sq" style="background:var(--r4)"></div><span data-i18n="risk_4">Rất cao</span></div>
+        <div class="lg-item"><div class="lg-sq" style="background:var(--r5)"></div><span data-i18n="risk_5">Cực cao</span></div>
+      </div>
+    </div>
+  </aside>
+</main>
+</div>
+<div class="compare-cta" id="cmpCta" onclick="openCompareModal()">
+  📊 <span data-cta-text>So sánh chi tiết</span> <span class="badge" id="cta-count">2 quận</span>
+</div>
+<div class="compare-modal" id="compareModal">
+  <div class="cm-content">
+    <div class="cm-head">
+      <div>
+        <h2 data-i18n="modal_title">So sánh chi tiết</h2>
+        <p><span data-i18n="month_short">Tháng</span> <span id="cm-month-display"></span> · <span id="cm-scenario-display"></span></p>
+      </div>
+      <button class="cm-close" onclick="closeCompareModal()">✕</button>
+    </div>
+    <div id="cm-body"></div>
+  </div>
+</div>
+<script>
+const DISTRICTS = window.MAP_DATA.DISTRICTS;
+const BDS_ROADS = window.MAP_DATA.BDS_ROADS;
+const C_FLOOD = ['#10b981','#fbbf24','#f97316','#ef4444','#7c2d12','#581c87'];
+const C_PRICE = ['#f1f5f9','#dbeafe','#93c5fd','#3b82f6','#1d4ed8','#1e3a8a'];
+const C_VALUE = ['#dc2626','#f59e0b','#eab308','#84cc16','#22c55e','#059669'];
+const SLOT_COLORS = {0:'#3b82f6',1:'#f59e0b',2:'#a855f7'};
+const SLOT_LETTERS = ['A','B','C'];
+const RISK_LABELS = ['Rất ít','Nhẹ','Vừa','Cao','Rất cao','Cực cao'];
+const TIDE = [1.45,1.42,1.40,1.48,1.52,1.58,1.61,1.65,1.70,1.73,1.68,1.55];
+const RAIN_FACTOR = [.1,.1,.1,.15,.4,.7,.8,.9,1.0,1.15,.95,.4];
+const MONTHS = ['1','2','3','4','5','6','7','8','9','10','11','12'];
+const SCLAB = {'1':'Mưa thường','1.5':'Mưa lớn + triều','2':'Cực đoan'};
+
+const I18N = {
+  vi: {
+    appTitle: 'HCMC Compare',
+    appSub: 'So sánh 2–3 quận theo giá BĐS và rủi ro ngập',
+    tab_flood: 'Ngập', tab_price: 'Giá', tab_value: 'Giá÷Ngập', tab_roads: 'Đường BĐS',
+    cta_finance: '💰 Công cụ tài chính mua nhà',
+    map_title: 'Compare Quận', map_sub: 'Click + để thêm quận vào so sánh (tối đa 3). Nút "So sánh chi tiết" sẽ xuất hiện khi chọn ≥ 2 quận.',
+    sc_normal: 'Mưa thường', sc_heavy: 'Mưa + triều', sc_extreme: 'Cực đoan',
+    seg_all: 'Tất cả', seg_luxury: 'Cao cấp', seg_midhigh: 'Trung cao', seg_mid: 'Trung bình', seg_midlow: 'Trung thấp', seg_budget: 'Bình dân',
+    stat_flood: 'Ngập TB', stat_price: 'Giá TB', stat_selected: 'Đã chọn',
+    compare_label: 'So sánh', month_label: 'Tháng',
+    search_label: 'Tìm địa chỉ / quận', search_placeholder: 'vd: Phú Mỹ Hưng...', search_btn: 'Tìm',
+    budget_label: 'Ngân sách (nhà phố)', list_title: '24 Khu vực · TP.HCM mới',
+    legend_title: 'Mức ngập',
+    risk_0:'Rất ít', risk_1:'Nhẹ', risk_2:'Vừa', risk_3:'Cao', risk_4:'Rất cao', risk_5:'Cực cao',
+    modal_title: 'So sánh chi tiết',
+    slot_empty: 'trống', month_short: 'Tháng',
+    sc_label: {'1':'Mưa thường','1.5':'Mưa lớn + triều','2':'Cực đoan'},
+    cta_compare: 'So sánh chi tiết', ward_toggle: 'Ranh phường mới 2025', ward_since: 'ĐVHC mới từ 1/7/2025 · thuộc', districts_word: 'quận',
+    // List item meta
+    flooded: 'ngập',
+    // Modal stats
+    pct_flooded: '% ngập', depth: 'Độ sâu', elevation: 'Cao độ nền', townhouse: 'Nhà phố', apartment: 'Chung cư', trend: 'Xu hướng', grade: 'Grade',
+    // Auto analysis
+    auto_analysis: '💡 Phân tích tự động',
+    analysis_winner: '<strong>{name}</strong> đạt điểm tổng cao nhất (Grade {g})',
+    analysis_cheaper: ', nhưng <strong>{name}</strong> rẻ hơn ({price}tr/m²)',
+    analysis_safer: ' và <strong>{name}</strong> an toàn nhất khỏi ngập',
+    analysis_end: '. Quyết định dựa vào ưu tiên cá nhân: an toàn, giá hay tiềm năng tăng giá.',
+    // Finance section
+    finance_title: '💰 Tham khảo công cụ tài chính',
+    finance_card_desc: 'Tham khảo công cụ tính tài chính cho nhà',
+    finance_card_link: '→ Tính ngay',
+    finance_card_badge: 'TÀI CHÍNH',
+    // Finance CTA block
+    finance_block_title: '💰 Công cụ tài chính mua nhà',
+    finance_block_desc: 'Truy cập trang của chúng tôi để dùng công cụ tính khả năng vay, dòng tiền, ROI – có sẵn Excel template.',
+    finance_block_btn: 'Truy cập công cụ →',
+    // Disclaimer
+    disclaimer: '${t("disclaimer")}',
+    // Road popup
+    rp_area: 'Khu vực', rp_price: 'Giá nhà phố', rp_flood: 'Rủi ro ngập',
+    rp_cta: '💰 Xem công cụ tài chính →'
+  },
+  en: {
+    appTitle: 'HCMC Compare',
+    appSub: 'Compare 2–3 districts by real estate price & flood risk',
+    tab_flood: 'Flood', tab_price: 'Price', tab_value: 'Price÷Flood', tab_roads: 'RE Roads',
+    cta_finance: '💰 Home buying finance tool',
+    map_title: 'Compare Districts', map_sub: 'Click + to add districts to compare (max 3). The "Compare details" button appears when ≥ 2 are selected.',
+    sc_normal: 'Normal rain', sc_heavy: 'Heavy rain + tide', sc_extreme: 'Extreme',
+    seg_all: 'All', seg_luxury: 'Luxury', seg_midhigh: 'Mid-high', seg_mid: 'Mid', seg_midlow: 'Mid-low', seg_budget: 'Budget',
+    stat_flood: 'Avg flood', stat_price: 'Avg price', stat_selected: 'Selected',
+    compare_label: 'Compare', month_label: 'Month',
+    search_label: 'Search address / district', search_placeholder: 'eg. Phu My Hung...', search_btn: 'Search',
+    budget_label: 'Budget (townhouse)', list_title: '24 Areas · New HCMC',
+    legend_title: 'Flood level',
+    risk_0:'Very low', risk_1:'Light', risk_2:'Moderate', risk_3:'High', risk_4:'Very high', risk_5:'Extreme',
+    modal_title: 'Detailed comparison',
+    slot_empty: 'empty', month_short: 'Month',
+    sc_label: {'1':'Normal rain','1.5':'Heavy rain + tide','2':'Extreme'},
+    cta_compare: 'Compare details', ward_toggle: 'New wards 2025', ward_since: 'New unit since 1 Jul 2025 · formerly in', districts_word: 'districts',
+    flooded: 'flooded',
+    pct_flooded: '% flooded', depth: 'Depth', elevation: 'Ground level', townhouse: 'Townhouse', apartment: 'Apartment', trend: 'Trend', grade: 'Grade',
+    auto_analysis: '💡 Auto analysis',
+    analysis_winner: '<strong>{name}</strong> has the highest overall score (Grade {g})',
+    analysis_cheaper: ', but <strong>{name}</strong> is cheaper ({price}M/m²)',
+    analysis_safer: ' and <strong>{name}</strong> is the safest from flooding',
+    analysis_end: '. The final decision depends on personal priority: safety, affordability, or growth potential.',
+    finance_title: '💰 Finance tool reference',
+    finance_card_desc: 'Reference finance tool for a home at',
+    finance_card_link: '→ Calculate',
+    finance_card_badge: 'FINANCE',
+    finance_block_title: '💰 Home buying finance tool',
+    finance_block_desc: 'Visit our site to use the finance calculator for loan capacity, cashflow, ROI – with Excel templates included.',
+    finance_block_btn: 'Open the tool →',
+    disclaimer: 'Price data: CBRE · Savills · JLL · Q4/2025 · For reference only',
+    rp_area: 'Area', rp_price: 'Townhouse price', rp_flood: 'Flood risk',
+    rp_cta: '💰 View finance tool →'
+  }
+};
+
+let lang = (typeof localStorage !== 'undefined' && localStorage.getItem('floodmap_lang')) || 'vi';
+
+function t(key) {
+  return (I18N[lang] && I18N[lang][key]) || key;
+}
+
+function applyLang() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.dataset.i18n;
+    if (I18N[lang] && I18N[lang][k] !== undefined) el.textContent = I18N[lang][k];
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const k = el.dataset.i18nPlaceholder;
+    if (I18N[lang] && I18N[lang][k] !== undefined) el.placeholder = I18N[lang][k];
+  });
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang===lang));
+  const ctaTxt = document.querySelector('[data-cta-text]');
+  if (ctaTxt) ctaTxt.textContent = t('cta_compare');
+  // Re-render dynamic parts
+  if (typeof updateStats==='function') updateStats();
+  if (typeof renderSlots==='function') renderSlots();
+  if (typeof renderList==='function') {
+    if (state.mode==='roads') renderRoads();
+    else renderList();
+  }
+}
+
+function setLang(l) {
+  lang = l;
+  try { localStorage.setItem('floodmap_lang', l); } catch(e){}
+  applyLang();
+}
+
+let state = {mode:'flood',scenario:'1.5',month:10,budget:200,compare:[],layers:{},geoMarker:null};
+
+const SEG_COLORS = {'luxury':'#7c3aed','mid-high':'#3b82f6','mid':'#10b981','mid-low':'#f59e0b','budget':'#84cc16'};
+const SEG_LABELS = {'luxury':'CAO CẤP','mid-high':'TRUNG CAO','mid':'TRUNG BÌNH','mid-low':'TRUNG THẤP','budget':'BÌNH DÂN'};
+const SEG_TAG_CLS = {'luxury':'tag-luxury','mid-high':'tag-midhigh','mid':'tag-mid','mid-low':'tag-midlow','budget':'tag-budget'};
+const SEG_BTN_DOTS = {'luxury':'seg-luxury','mid-high':'seg-midhigh','mid':'seg-mid','mid-low':'seg-midlow','budget':'seg-budget'};
+state.roadLayers = [];
+state.segmentFilter = 'all';
+
+function slugify(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
+
+function renderRoads(){
+  // Clear district fills
+  Object.values(state.layers).forEach(l => l.layer.setStyle({fillOpacity:.25, color:'#cfd5dc', weight:1}));
+  // Clear existing road layers
+  state.roadLayers.forEach(l => map.removeLayer(l));
+  state.roadLayers = [];
+  
+  const filtered = state.segmentFilter==='all' ? BDS_ROADS : BDS_ROADS.filter(r => r.seg===state.segmentFilter);
+  
+  // Filter by budget too
+  const inBudget = filtered.filter(r => r.price_min <= state.budget);
+  
+  inBudget.forEach(road => {
+    const col = SEG_COLORS[road.seg];
+    const line = L.polyline(road.coords.map(c=>[c[1],c[0]]), {
+      color: col, weight: 6, opacity: .9, lineCap: 'round', lineJoin: 'round'
+    }).addTo(map);
+    
+    const tagCls = SEG_TAG_CLS[road.seg];
+    const segLabel = SEG_LABELS[road.seg];
+    const slug = slugify(road.name);
+    const affiliateUrl = `https://www.haiktsduoihiennha.com/t%C3%A0i-ch%C3%ADnh-mua-nh%C3%A0`;
+    
+    line.bindPopup(`<div class="road-popup">
+      <div class="rp-head"><span class="rp-name">${road.name}</span><span class="rp-tag ${tagCls}">${segLabel}</span></div>
+      <div class="rp-row"><span class="k">${t("rp_area")}</span><span class="v">${road.district}</span></div>
+      <div class="rp-row"><span class="k">${t("rp_price")}</span><span class="v" style="color:var(--green)">${road.price_min}–${road.price_max} tr/m²</span></div>
+      <div class="rp-row"><span class="k">${t("rp_flood")}</span><span class="v" style="color:${C_FLOOD[road.flood]}">${t("risk_"+road.flood)}</span></div>
+      <div class="rp-target">👥 ${road.target}</div>
+      <div class="rp-hl">💡 ${road.highlight}</div>
+      <a class="rp-cta" href="${affiliateUrl}" target="_blank" rel="noopener">${t("rp_cta")}</a>
+    </div>`);
+    
+    line.on('mouseover', () => line.setStyle({weight:9, opacity:1}));
+    line.on('mouseout', () => line.setStyle({weight:6, opacity:.9}));
+    
+    state.roadLayers.push(line);
+  });
+  
+  // Update list
+  renderRoadList();
+}
+
+function renderRoadList(){
+  const cont = document.getElementById('zone-list');
+  cont.innerHTML = '';
+  const filtered = state.segmentFilter==='all' ? BDS_ROADS : BDS_ROADS.filter(r => r.seg===state.segmentFilter);
+  const sorted = [...filtered].sort((a,b)=>a.price_min-b.price_min);
+  document.getElementById('list-count').textContent = sorted.length;
+  
+  sorted.forEach((road,i) => {
+    const inBudget = road.price_min <= state.budget;
+    const el = document.createElement('div');
+    el.className = 'item' + (!inBudget?' out-budget':'');
+    const tagCls = SEG_TAG_CLS[road.seg];
+    el.innerHTML = `<div class="item-marker" style="background:${SEG_COLORS[road.seg]}"></div>
+      <div class="item-info">
+        <div class="name">${road.name}</div>
+        <div class="meta">${road.district} · <span class="rp-tag ${tagCls}" style="font-size:8px;padding:1px 5px">${SEG_LABELS[road.seg]}</span></div>
+      </div>
+      <div class="item-pct">${road.price_min}-${road.price_max}<span class="pl">tr/m²</span></div>
+      <button class="add-btn" style="border:none;background:transparent;font-size:14px">→</button>`;
+    el.onclick = () => {
+      const center = road.coords[Math.floor(road.coords.length/2)];
+      map.flyTo([center[1],center[0]], 15, {duration:.6});
+      if(state.roadLayers[i]) setTimeout(()=>state.roadLayers[i]?.openPopup([center[1],center[0]]), 700);
+    };
+    cont.appendChild(el);
+  });
+}
+
+function setSegment(seg){
+  state.segmentFilter = seg;
+  document.querySelectorAll('.seg-btn').forEach(b => b.classList.toggle('active', b.dataset.seg===seg));
+  if(state.mode==='roads') renderRoads();
+}
+
+let map;
+
+function adjustedRisk(b,sc,mi){return Math.max(0,Math.min(5,Math.round(b*parseFloat(sc)*RAIN_FACTOR[mi])));}
+function priceLevel(a){if(a<50)return 0;if(a<100)return 1;if(a<150)return 2;if(a<220)return 3;if(a<300)return 4;return 5;}
+function valueScore(p,l){const a=((p.house_min||0)+(p.house_max||0))/2;if(a<1)return 3;return Math.round(Math.max(0,5-priceLevel(a))*.45+(5-l)*.55);}
+function getColor(f){const p=f.properties;const l=adjustedRisk(p.risk||1,state.scenario,state.month-1);if(state.mode==='flood')return C_FLOOD[l];if(state.mode==='price')return C_PRICE[priceLevel(((p.house_min||0)+(p.house_max||0))/2)];return C_VALUE[valueScore(p,l)];}
+
+function initMap(){
+  map = L.map('map',{zoomControl:true}).setView([10.785,106.700],11);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png',{attribution:'© OSM © CartoDB',subdomains:'abcd',maxZoom:19}).addTo(map);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:19,pane:'shadowPane'}).addTo(map);
+  renderDistricts();
+}
+
+function renderDistricts(){
+  Object.values(state.layers).forEach(l=>{try{map.removeLayer(l.layer);if(l.label)map.removeLayer(l.label);}catch(e){}});
+  state.layers={};
+  DISTRICTS.features.forEach(feat=>{
+    const p=feat.properties;
+    const si=state.compare.indexOf(p.name);
+    const inC=si>=0;
+    const layer=L.geoJSON(feat,{style:{color:inC?SLOT_COLORS[si]:'#fff',weight:inC?4:2,fillColor:getColor(feat),fillOpacity:inC?.85:.7}}).addTo(map);
+    layer.on('click',()=>toggleCompare(p.name));
+    layer.on('mouseover',e=>e.target.setStyle({fillOpacity:.9}));
+    layer.on('mouseout',e=>{const ic=state.compare.indexOf(p.name)>=0;e.target.setStyle({fillOpacity:ic?.85:.7});});
+    const center=layer.getBounds().getCenter();
+    const cls=inC?`dist-label in-${SLOT_LETTERS[si]}`:'dist-label';
+    const dispNm = lang==='en' ? p.name : (p.vn||p.name);
+    const txt=inC?`${SLOT_LETTERS[si]} · ${dispNm}`:dispNm;
+    const label=L.marker(center,{icon:L.divIcon({className:'',html:`<div class="${cls}">${txt}</div>`,iconAnchor:[40,6],iconSize:[80,12]}),interactive:false}).addTo(map);
+    state.layers[p.name]={layer,label,feat};
+  });
+  if(!state.geoMarker){const g=L.featureGroup(Object.values(state.layers).map(l=>l.layer));if(g.getLayers().length)map.fitBounds(g.getBounds(),{padding:[20,20]});}
+}
+
+function toggleCompare(name){
+  const idx=state.compare.indexOf(name);
+  if(idx>=0){state.compare.splice(idx,1);}else{if(state.compare.length>=3)state.compare.shift();state.compare.push(name);}
+  renderDistricts();renderSlots();renderList();updateStats();
+}
+
+function renderSlots(){
+  const c=document.getElementById('cb-slots');c.innerHTML='';
+  for(let i=0;i<3;i++){
+    const nm=state.compare[i];
+    const s=document.createElement('div');
+    s.className='cb-slot'+(nm?'':' empty');
+    if(nm){const f=DISTRICTS.features.find(x=>x.properties.name===nm);const vn=lang==='en'?nm:(f?.properties.vn||nm);
+      s.innerHTML=`<div class="cb-dot" style="background:${SLOT_COLORS[i]}"></div><span>${SLOT_LETTERS[i]} · ${vn}</span><span class="cb-close" onclick="event.stopPropagation();toggleCompare('${nm}')">✕</span>`;
+    }else{s.innerHTML=`<div class="cb-dot" style="background:#cbd5e1"></div><span>Slot ${SLOT_LETTERS[i]} ${t('slot_empty')}</span>`;}
+    c.appendChild(s);
+  }
+  const cta=document.getElementById('cmpCta');
+  if(state.compare.length>=2){cta.classList.add('show');document.getElementById('cta-count').textContent=`${state.compare.length} ${t('districts_word')}`;}
+  else cta.classList.remove('show');
+}
+
+function setMode(m){
+  state.mode=m;
+  document.querySelectorAll('.ms-btn').forEach(b=>b.classList.toggle('active',b.dataset.mode===m));
+  const segFilter = document.getElementById('seg-filter');
+  if(m==='roads'){
+    segFilter.classList.add('show');
+    renderRoads();
+  } else {
+    segFilter.classList.remove('show');
+    // Clear road layers
+    state.roadLayers.forEach(l => map.removeLayer(l));
+    state.roadLayers = [];
+    Object.values(state.layers).forEach(l=>l.layer.setStyle({fillColor:getColor(l.feat),fillOpacity:.7,color:'#fff',weight:2}));
+    renderList();
+  }
+}
+function setScenario(sc){state.scenario=sc;document.querySelectorAll('.sc-btn').forEach(b=>b.classList.toggle('active',b.dataset.sc===sc));Object.values(state.layers).forEach(l=>l.layer.setStyle({fillColor:getColor(l.feat)}));updateStats();renderList();}
+function setMonth(m){state.month=m;Object.values(state.layers).forEach(l=>l.layer.setStyle({fillColor:getColor(l.feat)}));updateStats();renderMonthBar();renderList();}
+function setBudget(v){state.budget=parseInt(v);document.getElementById('budget-val').textContent='≤ '+v+' tr/m²';if(state.mode==='roads')renderRoads();else renderList();}
+
+function updateStats(){
+  let tp=0,tpr=0,c=0;
+  DISTRICTS.features.forEach(f=>{const p=f.properties;tp+=(p.pct||0)*parseFloat(state.scenario)*RAIN_FACTOR[state.month-1]*1.8;tpr+=((p.house_min||0)+(p.house_max||0))/2;c++;});
+  document.getElementById('st-pct').textContent=Math.min(95,Math.round(tp/c))+'%';
+  document.getElementById('st-price').textContent=Math.round(tpr/c)+'tr';
+  document.getElementById('st-comp').textContent=`${state.compare.length}/3`;
+  const baseLab = `${t('month_short')} ${state.month} · ${(I18N[lang].sc_label||{})[state.scenario]||SCLAB[state.scenario]}`;
+  const segLabels = {'all':t('seg_all'),'luxury':t('seg_luxury'),'mid-high':t('seg_midhigh'),'mid':t('seg_mid'),'mid-low':t('seg_midlow'),'budget':t('seg_budget')};
+  document.getElementById('mh-eyebrow').textContent = state.mode==='roads' ? `${t('tab_roads')} · ${segLabels[state.segmentFilter]||segLabels['all']}` : baseLab;
+}
+
+function renderMonthBar(){
+  const sc=parseFloat(state.scenario);const c=document.getElementById('mb-cells');c.innerHTML='';
+  MONTHS.forEach((m,i)=>{const v=Math.min(1,RAIN_FACTOR[i]*sc);const h=Math.max(6,Math.round(v*20));const col=v<.3?C_FLOOD[1]:v<.55?C_FLOOD[2]:v<.85?C_FLOOD[3]:C_FLOOD[4];const d=document.createElement('div');d.className='mb-cell'+(i+1===state.month?' active':'');d.innerHTML=`<span class="mbn">${m}</span><div class="mbf" style="height:${h}px;background:${col}"></div>`;d.onclick=()=>setMonth(i+1);c.appendChild(d);});
+}
+
+function renderList(){
+  const c=document.getElementById('zone-list');c.innerHTML='';
+  let items=DISTRICTS.features.map(f=>{const p=f.properties;const l=adjustedRisk(p.risk||1,state.scenario,state.month-1);const a=Math.round(((p.house_min||0)+(p.house_max||0))/2);return {name:p.name,dn:lang==='en'?p.name:(p.vn||p.name),l,a,vs:valueScore(p,l),p,ob:a>state.budget};});
+  if(state.mode==='flood')items.sort((a,b)=>b.l-a.l);else if(state.mode==='price')items.sort((a,b)=>b.a-a.a);else items.sort((a,b)=>b.vs-a.vs);
+  document.getElementById('list-count').textContent=items.length;
+  items.forEach(it=>{
+    const inC=state.compare.indexOf(it.name)>=0;const si=state.compare.indexOf(it.name);
+    let mv,ml,mc;
+    if(state.mode==='price'){mv=it.a;ml='tr/m²';mc=C_PRICE[priceLevel(it.a)];}
+    else if(state.mode==='value'){mv=['D','C-','C','B','A-','A+'][it.vs];ml='grade';mc=C_VALUE[it.vs];}
+    else{mv=it.p.pct||0;ml='%'+t('flooded');mc=C_FLOOD[it.l];}
+    const el=document.createElement('div');
+    el.className='item'+(inC?' in-compare':'')+(it.ob&&it.a>0?' out-budget':'');
+    el.innerHTML=`<div class="item-marker" style="background:${mc}"></div><div class="item-info"><div class="name">${it.dn}</div><div class="meta">${it.a}tr/m² · ${t("flooded")} ${it.p.pct||0}% · ${it.p.trend||''}</div></div><div class="item-pct">${mv}<span class="pl">${ml}</span></div><button class="add-btn ${inC?'added':''}" onclick="event.stopPropagation();toggleCompare('${it.name}')">${inC?SLOT_LETTERS[si]:'+'}</button>`;
+    el.onclick=()=>{if(state.layers[it.name])map.flyToBounds(state.layers[it.name].layer.getBounds(),{padding:[40,40],duration:.6});};
+    c.appendChild(el);
+  });
+}
+
+function openCompareModal(){
+  if(state.compare.length<2)return;
+  document.getElementById('compareModal').classList.add('show');
+  document.getElementById('cm-month-display').textContent=state.month;
+  document.getElementById('cm-scenario-display').textContent=(I18N[lang].sc_label||{})[state.scenario]||SCLAB[state.scenario];
+  const body=document.getElementById('cm-body');
+  const data=state.compare.map(nm=>{const f=DISTRICTS.features.find(x=>x.properties.name===nm);const p=f.properties;const l=adjustedRisk(p.risk||1,state.scenario,state.month-1);const pct=Math.min(95,Math.round((p.pct||0)*parseFloat(state.scenario)*RAIN_FACTOR[state.month-1]*1.8));const dp=Math.round((p.depth||0)*parseFloat(state.scenario)*RAIN_FACTOR[state.month-1]);const a=Math.round(((p.house_min||0)+(p.house_max||0))/2);const aa=Math.round(((p.apt_min||0)+(p.apt_max||0))/2);return {nm,p,l,pct,dp,a,aa,vs:valueScore(p,l)};});
+  const minPct=Math.min(...data.map(d=>d.pct));const maxPct=Math.max(...data.map(d=>d.pct));
+  const minA=Math.min(...data.filter(d=>d.a>0).map(d=>d.a));const maxA=Math.max(...data.map(d=>d.a));
+  const maxVS=Math.max(...data.map(d=>d.vs));
+  const cls=(v,b,w)=>v===b?'best':v===w?'worst':'';
+  const cols=data.map((d,i)=>`<div class="cm-col slot-${SLOT_LETTERS[i]}"><h3>${SLOT_LETTERS[i]} · ${lang==="en"?d.nm:(d.p.vn||d.nm)}</h3><div class="sub">${RISK_LABELS[d.l]} · ${(d.p.note||'').substring(0,50)}</div>
+    <div class="cm-stat"><span class="k">${t("pct_flooded")}</span><span class="v ${cls(d.pct,minPct,maxPct)}">${d.pct}%</span></div>
+    <div class="cm-stat"><span class="k">${t("depth")}</span><span class="v">${d.dp}cm</span></div>
+    <div class="cm-stat"><span class="k">${t("elevation")}</span><span class="v">${d.p.elev||'?'}m</span></div>
+    <div class="cm-stat"><span class="k">${t("townhouse")}</span><span class="v ${d.a===minA?'best':d.a===maxA?'worst':''}">${d.p.house_min}–${d.p.house_max}tr</span></div>
+    <div class="cm-stat"><span class="k">${t("apartment")}</span><span class="v">${d.aa>0?d.p.apt_min+'–'+d.p.apt_max+'tr':'—'}</span></div>
+    <div class="cm-stat"><span class="k">${t("trend")}</span><span class="v">${d.p.trend||'—'}</span></div>
+    <div class="cm-stat"><span class="k">${t("grade")}</span><span class="v ${d.vs===maxVS?'best':''}">${['D','C-','C','B','A-','A+'][d.vs]}</span></div>
+    </div>`).join('');
+  const gc=data.length===2?'cols-2':'cols-3';
+  const win=data.reduce((a,b)=>a.vs>b.vs?a:(a.vs===b.vs?(a.pct<b.pct?a:b):b));
+  const cheap=data.reduce((a,b)=>a.a>0&&(b.a===0||a.a<b.a)?a:b);
+  const safe=data.reduce((a,b)=>a.pct<b.pct?a:b);
+  let verdict = t('analysis_winner').replace('{name}', lang==='en'?win.nm:(win.p.vn||win.nm)).replace('{g}', ['D','C-','C','B','A-','A+'][win.vs]);
+  if(cheap.nm!==win.nm) verdict += t('analysis_cheaper').replace('{name}', lang==='en'?cheap.nm:(cheap.p.vn||cheap.nm)).replace('{price}', cheap.a);
+  if(safe.nm!==win.nm&&safe.nm!==cheap.nm) verdict += t('analysis_safer').replace('{name}', lang==='en'?safe.nm:(safe.p.vn||safe.nm));
+  verdict += t('analysis_end');
+  const slugify=(s)=>s.toLowerCase().replace(/[ốồộôơờớợỡỗơ]/g,'o').replace(/[ậạảáàã]/g,'a').replace(/[ếệểễềéè]/g,'e').replace(/[ịíỉĩì]/g,'i').replace(/[ưừứựửữúùủũụ]/g,'u').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-');
+  const aff=data.map(d=>`<a class="aff-card" href="https://www.haiktsduoihiennha.com/t%C3%A0i-ch%C3%ADnh-mua-nh%C3%A0" target="_blank" rel="noopener"><div class="head"><span class="nm">${lang==="en"?d.nm:(d.p.vn||d.nm)}</span><span class="lg" style="background:#dbeafe;color:#1e40af">${t("finance_card_badge")}</span></div><div class="desc">${t("finance_card_desc")} ${d.a}tr/m²</div><div class="price">~${d.a}tr/m²</div><div class="link">${t("finance_card_link")}</div></a>`).join('');
+  body.innerHTML=`<div class="cm-grid ${gc}">${cols}</div>
+    <div class="cm-verdict"><h4>${t("auto_analysis")}</h4><p>${verdict}</p></div>
+    <div class="cm-affiliates"><h4>${t("finance_title")}</h4><div class="aff-grid">${aff}</div></div>
+    <a class="email-capture" href="https://www.haiktsduoihiennha.com/t%C3%A0i-ch%C3%ADnh-mua-nh%C3%A0" target="_blank" rel="noopener" style="display:block;text-decoration:none;cursor:pointer"><h4 style="color:#1e40af">💰 Công cụ tài chính mua nhà chi tiết</h4><p style="color:#1e40af">Truy cập trang của chúng tôi để dùng công cụ tính khả năng vay, dòng tiền, ROI – có sẵn Excel template.</p><div style="margin-top:8px;padding:8px 14px;background:var(--accent);color:#fff;border-radius:6px;font-size:12px;font-weight:700;text-align:center">Truy cập công cụ →</div></a>
+    <div style="margin-top:14px;padding:10px;background:#f8fafc;border-radius:8px;font-size:10px;color:#6b7280;text-align:center">${t("disclaimer")}</div>`;
+}
+
+function closeCompareModal(){document.getElementById('compareModal').classList.remove('show');}
+
+
+
+async function geocode(){
+  const q=document.getElementById('srch').value.trim();if(!q)return;
+  try{const r=await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q+', Ho Chi Minh City, Vietnam')}&format=json&limit=1`);const d=await r.json();
+    if(!d.length){alert('Không tìm thấy');return;}
+    const lat=parseFloat(d[0].lat),lon=parseFloat(d[0].lon);
+    if(state.geoMarker)map.removeLayer(state.geoMarker);
+    state.geoMarker=L.marker([lat,lon],{icon:L.divIcon({className:'',html:'<div style="font-size:28px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.4))">📍</div>',iconAnchor:[14,28],iconSize:[28,28]})}).addTo(map);
+    state.geoMarker.bindPopup(`<b>${d[0].display_name.substring(0,80)}</b>`).openPopup();
+    map.flyTo([lat,lon],15,{duration:.7});
+  }catch(e){alert('Lỗi');}
+}
+
+document.getElementById('srch').addEventListener('keydown',e=>{if(e.key==='Enter')geocode();});
+document.getElementById('compareModal').addEventListener('click',e=>{if(e.target.id==='compareModal')closeCompareModal();});
+
+// ===== Lớp 102 phường/xã mới (hiệu lực 1/7/2025) — lazy load =====
+let wardLayer=null,wardLabels=null,wardOn=true,wardLoaded=false,wardCtlEl=null;
+function loadWards(cb){if(wardLoaded){cb&&cb();return;}const s=document.createElement('script');s.src='ban_do_phuong.js';s.onload=()=>{wardLoaded=true;cb&&cb();};s.onerror=()=>{wardOn=false;};document.head.appendChild(s);}
+function buildWards(){if(wardLayer||!window.WARD_DATA)return;
+ wardLayer=L.geoJSON(window.WARD_DATA,{style:()=>({color:'#0f1419',weight:1,opacity:.55,fillOpacity:0,dashArray:'4 3'}),
+  onEachFeature:(f,l)=>{const p=f.properties;
+   l.bindPopup(`<div class="wd-pop"><b>${p.t} ${p.n}</b><span>${t('ward_since')} ${p.od} (cũ)</span></div>`);
+   l.on('mouseover',e=>e.target.setStyle({weight:2.5,opacity:1,dashArray:null}));
+   l.on('mouseout',e=>e.target.setStyle({weight:1,opacity:.55,dashArray:'4 3'}));}});
+ wardLabels=L.layerGroup(window.WARD_DATA.features.map(f=>{
+  const c=L.geoJSON(f).getBounds().getCenter();
+  return L.marker(c,{interactive:false,icon:L.divIcon({className:'',html:`<div class="ward-label">${f.properties.n}</div>`,iconSize:[90,12],iconAnchor:[45,6]})});}));}
+function refreshWards(){const z=map.getZoom(),show=wardOn&&z>=13;
+ if(show&&!wardLoaded){loadWards(()=>{buildWards();refreshWards();});return;}
+ if(!wardLayer)return;
+ if(show){if(!map.hasLayer(wardLayer))map.addLayer(wardLayer);}else if(map.hasLayer(wardLayer))map.removeLayer(wardLayer);
+ const sl=show&&z>=14;
+ if(sl){if(!map.hasLayer(wardLabels))map.addLayer(wardLabels);}else if(map.hasLayer(wardLabels))map.removeLayer(wardLabels);}
+const WardCtl=L.Control.extend({options:{position:'topleft'},onAdd(){const d=L.DomUtil.create('div','ward-ctl');wardCtlEl=d;
+ d.innerHTML='<span class="wc-dot"></span><span>'+t('ward_toggle')+'</span>';
+ d.onclick=()=>{wardOn=!wardOn;d.classList.toggle('off',!wardOn);if(wardOn&&map.getZoom()<13)map.setView(map.getCenter(),13);refreshWards();};
+ L.DomEvent.disableClickPropagation(d);return d;}});
+
+initMap();map.addControl(new WardCtl());map.on('zoomend',refreshWards);refreshWards();renderSlots();renderMonthBar();renderList();updateStats();applyLang();
+</script>
+</body>
+</html>
