@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-08-31T07:30:07.018Z",
+ "capNhat": "2026-08-31T17:58:02.571Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -514,6 +514,17 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
+   "t": "Hà Nội mưa lớn giờ tan tầm, nhiều nơi ngập nặng",
+   "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQkRCVTNhRHY4WmwwMkFYd1A1ZXhPX2xEZnhORVFycDJueEpTVmlmMUFUYmJqRHZMRzVtN0RNV2VPNEJnWkFrM2hzRFBGODVwTGdTT1hOYldXTHNpXzZwdUVGXy0xUVptaVdCa0dfM3RIazNZOHV0VmJnWTZmQktTV1pZaXBNaUVTMXpiMlZWMA?oc=5",
+   "s": "sggp.org.vn",
+   "d": "2026-08-27",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
    "t": "Triều cường TPHCM tăng nhanh, cảnh báo ngập khi mưa lớn trùng đỉnh triều",
    "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTGZFWXBoQllRVVVDYVdfOGVMLXJZV2NqNXdjUnF1OWY1RHZBRl9JeHBmemtxWmFPeXlMVUJlY3BmeFdDTkpnOEVwNUhhaXp1bkRtbTlIZ1JBN21lcWZrMmdkQXpRZExoelNQTldOaEVCMXoyNmJkUVBpOWRhX1FZVS1NYXhjVWRZLU16ZVIwVUFWeU0wTDR5R3AteF9DY3JEWEFzTTVqYmRodnljeXc?oc=5",
    "s": "Laodong.vn",
@@ -659,6 +670,17 @@ window.TIN_NGAP = {
   {
    "t": "Hà Nội phân luồng tổ chức giao thông tại các vị trí bị ngập úng trên địa bàn 4 xã",
    "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWjR4dEVSVmFOMjVhRVNDZUstenQwNmxnRXM1MHdRMjI5UjRfQkhkcmlDMDJsTkVialRwSC04U2RSYkJBUks0d1djdFBRUWpoNkpIVmhfcnNxd0pJelYxVU5Ic3l0cDFqMkNNMTI1QmxSZGQ1MmEtWTNmeUxnZUtweUx2R3Z2Qy1KZmRPYXprbHhoSnN4NmN0VGg4SkpkdUdVUEtuUDZhbkV3N0JmYlhHckVNclFUeEhNVkVuSVZRV0x2SkQ3c0Fxb0stOA?oc=5",
+   "s": "baotintuc.vn",
+   "d": "2026-08-25",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nước sông dâng cao gây ngập một số khu vực ngoại thành Hà Nội",
+   "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPV1RRVlp4aHhtSDVJNE1KN2dBSHRsME5MU1R5YmdEalBKRTVTekJBUjVqV0pNa1FEZExNdXk3Vm5Fb2VpbkZaX2RSeGxZblMwMFc2SW9XNFZ0b2J4QWp0QnFzV003ejVQWWlGTFk2cTN1YlpvcnRrRFhURS12R3hZcndmSXB1bndYLVVyYjhkLTlXTE0zSUxHUE8wUzB5VmlIQ1RwZWpLU3FvNEplbzBwRg?oc=5",
    "s": "baotintuc.vn",
    "d": "2026-08-25",
    "img": "",
@@ -1038,28 +1060,6 @@ window.TIN_NGAP = {
    "t": "Hà Nội mưa lớn diện rộng, nhiều tuyến phố không xảy ra úng ngập",
    "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTzlqMGtmMnFxc0FtNjZsWklTTDI3REZmQUF2Q2FlZjh6bkwxTDRtNkNVV3ZnNy1OM2toU09CT2lTenltQ2k0bnkzalNIV3A4OGd5S0lld29DblJHNUl1TkpyUEpJcHNtQ1JoM2hVUGZXQmtfMFZNUmF6ZXhBQkxISjNjODlnTFpUckNrQ19GVUl0ZTFlcDJMNlBLU3A?oc=5",
    "s": "Tạp chí Người Hà Nội",
-   "d": "2026-08-21",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội: Nhiều tuyến phố không phát sinh điểm úng ngập dù mưa lớn",
-   "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaHlCVFJqbjdEWWlNVE1FTzRNQkk1aDdGMGE3TmZtc2F3aUdOUkdrODFPamNCY19XT2pPOEViM3lTUG53dGVsMjBuTTBFaTRUd1FiRDRDWE9EUkRJcUJsUURKMTNzVVFCLXh2TWZCZ1RNQVpBaHg2OWN5S2dqZzlZZFZWelNJRXIxT0N4RFZvaWMzZ1QtUUpnSlJTTG5zYWFiNVJBT3hSSlE4UzJmandhTnljTDk2THdpTWtIdFBETQ?oc=5",
-   "s": "baotintuc.vn",
-   "d": "2026-08-21",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội mưa tới 136mm, nhiều điểm từng úng ngập không tái diễn",
-   "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaERNRWNoTmwydHVFMWxRa1FpZWVycmdpQzlDNjlyaW5wWXhnYlZlLVRISDhzejgxWmlFM0dDNUV3N3ppS3F6Yll0ZlEtSFRFekdKMGpyTW9TZTFaLUJHUEMzMTdtTEJ0ZzZfaXpIb1lpQkpWbVkxNWtsX0pWejVuRnMxVmxQV2tUcjRIeWFtd251VGhNY0QzWmlIanpxbm1RbkNzempBTXc?oc=5",
-   "s": "Báo Xây dựng",
    "d": "2026-08-21",
    "img": "",
    "c": "hanoi",
