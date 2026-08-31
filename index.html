@@ -2604,16 +2604,31 @@ function circleRing(lat,lng,r,n){
 /* khối nhà từ OpenStreetMap — chiều cao thật nếu có, không thì suy từ số tầng.
    Overpass là dịch vụ cộng đồng, có lúc quá tải → thử lần lượt vài máy chủ,
    và nếu không máy nào trả lời thì cảnh 3D vẫn xem được, chỉ thiếu khối nhà. */
+/* Máy chủ Overpass phải gửi được CORS thì trình duyệt mới đọc nổi.
+   Đã đo thử từ chính trang đã xuất bản:
+     overpass.private.coffee  — KHÔNG có CORS, gọi từ trình duyệt là hỏng chắc
+     overpass.osm.ch          — có CORS nhưng chỉ chứa dữ liệu Thuỵ Sĩ:
+                                trả 200 kèm 0 khối nhà cho Việt Nam
+   Nên danh sách chỉ giữ những máy chủ vừa có CORS vừa có dữ liệu toàn cầu. */
 const OVERPASS=['https://overpass-api.de/api/interpreter',
-                'https://overpass.kumi.systems/api/interpreter',
-                'https://overpass.private.coffee/api/interpreter'];
+                'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
+                'https://overpass.kumi.systems/api/interpreter'];
 function overpassGet(q,i){
   i=i||0;
   if(i>=OVERPASS.length)return Promise.reject(new Error('busy'));
   const ctl=new AbortController();
-  const to=setTimeout(()=>ctl.abort(),12000);
+  /* 8 giây mỗi máy chủ: máy chủ chính hay bận, đợi lâu hơn thì người dùng ngồi
+     nhìn cảnh 3D trống trong khi máy khác trả lời sau một giây. */
+  const to=setTimeout(()=>ctl.abort(),8000);
   return fetch(OVERPASS[i]+'?data='+encodeURIComponent(q),{signal:ctl.signal})
     .then(r=>{clearTimeout(to);if(!r.ok)throw new Error('HTTP '+r.status);return r.json();})
+    .then(j=>{
+      /* Giữa lòng thành phố mà không có khối nhà nào thì gần như chắc chắn là
+         máy chủ sai (bản sao theo vùng, hoặc bị chặn tải), không phải thực địa.
+         Coi như hỏng và thử máy kế tiếp, thay vì dựng cảnh 3D trống trơn. */
+      if(!j||!(j.elements||[]).length)throw new Error('rỗng');
+      return j;
+    })
     .catch(()=>{clearTimeout(to);return overpassGet(q,i+1);});
 }
 function loadBuildings(m,lat,lng,done){

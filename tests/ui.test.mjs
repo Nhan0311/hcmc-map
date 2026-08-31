@@ -455,6 +455,60 @@ test('bảng "các cách nhìn tận nơi" liệt kê đủ các lối xem ngoà
   await ctx.close();
 });
 
+/* ------------------------------------------------------- khối nhà 3D */
+
+test('mọi máy chủ Overpass trong danh sách đều gửi được CORS', async () => {
+  // overpass.private.coffee từng nằm trong danh sách nhưng không gửi CORS —
+  // gọi từ trình duyệt là hỏng chắc, chỉ tổ in lỗi ra console.
+  const { page, ctx } = await open();
+  const xau = await page.evaluate(() => OVERPASS.filter((u) => /private\.coffee|osm\.ch|osm\.jp/.test(u)));
+  assert.deepEqual(xau, [], 'còn máy chủ đã biết là không dùng được');
+  assert.ok(await page.evaluate(() => OVERPASS.length >= 2), 'phải có máy chủ dự phòng');
+  await ctx.close();
+});
+
+test('máy chủ trả về rỗng thì chuyển sang máy kế tiếp, không dựng cảnh trống', async () => {
+  // overpass.osm.ch trả HTTP 200 nhưng chỉ có dữ liệu Thuỵ Sĩ: với toạ độ Việt
+  // Nam nó cho 0 khối nhà. Nhận bừa kết quả đó là mất sạch khối nhà mà không
+  // báo lỗi gì.
+  const { page, ctx } = await open();
+  const daGoi = [];
+  await ctx.route('**/*interpreter*', (route) => {
+    const u = route.request().url();
+    daGoi.push(u.split('/api/')[0]);
+    // máy đầu tiên: 200 nhưng rỗng; máy sau: có dữ liệu
+    const rong = daGoi.length === 1;
+    route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ elements: rong ? [] : [{
+        type: 'way', tags: { 'building:levels': '4' },
+        geometry: [{ lat: 10.78, lon: 106.70 }, { lat: 10.781, lon: 106.70 },
+                   { lat: 10.781, lon: 106.701 }, { lat: 10.78, lon: 106.701 }],
+      }] }),
+    });
+  });
+
+  const n = await page.evaluate(() => new Promise((ok) => {
+    overpassGet('[out:json];test;').then((j) => ok((j.elements || []).length)).catch(() => ok(-1));
+  }));
+  assert.equal(n, 1, 'phải lấy kết quả của máy chủ thứ hai');
+  assert.equal(daGoi.length, 2, 'phải thử đúng hai máy chủ');
+  assert.notEqual(daGoi[0], daGoi[1], 'lần thử thứ hai phải sang máy chủ khác');
+  await ctx.close();
+});
+
+test('mọi máy chủ Overpass đều hỏng thì cảnh 3D vẫn dựng, chỉ thiếu khối nhà', async () => {
+  const { page, ctx, errors } = await open();
+  await ctx.route('**/*interpreter*', (route) => route.abort());
+  const n = await page.evaluate(() => new Promise((ok) => {
+    loadBuildings(null, 10.78, 106.70, (soKhoi) => ok(soKhoi));
+  }));
+  assert.equal(n, 0, 'phải báo 0 khối nhà thay vì treo hoặc ném lỗi');
+  assert.deepEqual(errors, []);
+  await ctx.close();
+});
+
 /* -------------------------------------------------- ảnh ngập chụp thật */
 
 /** Trả lời giả cho Openverse để bài kiểm tra không phụ thuộc mạng ngoài. */
