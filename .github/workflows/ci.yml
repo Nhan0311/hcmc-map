@@ -8,14 +8,20 @@ on:
 
 jobs:
   test:
-    name: Kiểm tra dữ liệu và giao diện
+    name: Kiểm tra trên Node ${{ matrix.node }}
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 20 là mức thấp nhất package.json hứa hỗ trợ; 22 là bản LTS hiện hành.
+        # Chạy cả hai vì đã một lần trượt do dùng tính năng chỉ có ở bản mới.
+        node: [20, 22]
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: ${{ matrix.node }}
           cache: npm
 
       - name: Cài phụ thuộc

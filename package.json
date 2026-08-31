@@ -12,7 +12,7 @@
   "type": "module",
   "scripts": {
     "start": "node tests/serve.mjs",
-    "test": "node --test \"tests/*.test.mjs\"",
+    "test": "node --test tests/data.test.mjs tests/tin.test.mjs tests/ui.test.mjs",
     "test:data": "node --test tests/data.test.mjs tests/tin.test.mjs",
     "test:ui": "node --test tests/ui.test.mjs",
     "tin": "node tools/thu_thap_tin.mjs"
