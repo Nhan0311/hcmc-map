@@ -1,0 +1,47 @@
+name: Thu thập tin & ảnh ngập
+
+# Không một RSS báo Việt Nam nào gửi CORS, nên trang tĩnh không tự đọc được.
+# Việc thu thập chạy ở đây, kết quả commit vào data/tin_ngap.js.
+on:
+  schedule:
+    # 06:00 và 18:00 giờ Việt Nam — sau hai khung giờ ngập nặng nhất
+    # (rạng sáng và chiều tối, trùng hai đỉnh triều).
+    - cron: '0 23,11 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tin-ngap
+  cancel-in-progress: false
+
+jobs:
+  thu-thap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Đọc RSS và dựng lại data/tin_ngap.js
+        run: node tools/thu_thap_tin.mjs
+
+      - name: Kiểm tra tệp vừa sinh
+        run: |
+          npm ci
+          npm run test:data
+
+      - name: Commit nếu có tin mới
+        run: |
+          if [ -z "$(git status --porcelain data/tin_ngap.js)" ]; then
+            echo "Không có tin mới — không commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/tin_ngap.js
+          git commit -m "Cập nhật tin & ảnh ngập ($(date -u '+%d/%m/%Y %H:%M UTC'))"
+          git push

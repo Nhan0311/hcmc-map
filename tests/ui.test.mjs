@@ -10,6 +10,10 @@ import { serve } from './serve.mjs';
 import { ROOT } from './helpers.mjs';
 
 let server, browser;
+/* Bài nào trượt thì `await ctx.close()` ở cuối bài không chạy, ngữ cảnh trình
+   duyệt bị bỏ lại và các bài sau chậm dần rồi trượt theo. Giữ danh sách để dọn
+   sạch ở after(), nhờ vậy một lỗi thật không kéo theo cả loạt lỗi giả. */
+const dangMo = new Set();
 
 /* Leaflet đến từ CDN. Bài kiểm tra chặn mạng ngoài, nên phục vụ đúng phiên bản
    ấy từ node_modules — mạng CI hay cdnjs trục trặc cũng không làm hỏng kết quả. */
@@ -25,6 +29,7 @@ before(async () => {
 });
 
 after(async () => {
+  for (const c of dangMo) { try { await c.close(); } catch { /* đã đóng */ } }
   await browser?.close();
   await server?.close();
 });
@@ -32,6 +37,8 @@ after(async () => {
 /** Mở trang với mạng ngoài đã bị chặn; trả về trang đã vẽ xong lần đầu. */
 async function open({ viewport = { width: 1400, height: 900 }, lang, persona } = {}) {
   const ctx = await browser.newContext({ viewport });
+  dangMo.add(ctx);
+  ctx.on('close', () => dangMo.delete(ctx));
   const errors = [];
 
   // Chặn mọi thứ không phải của chính dự án.
@@ -445,6 +452,165 @@ test('bảng "các cách nhìn tận nơi" liệt kê đủ các lối xem ngoà
   for (const a of await page.locator('#eye-panel a[target="_blank"]').all()) {
     assert.match(await a.getAttribute('rel'), /noopener/, 'liên kết mở tab mới phải có rel=noopener');
   }
+  await ctx.close();
+});
+
+/* -------------------------------------------------- ảnh ngập chụp thật */
+
+/** Trả lời giả cho Openverse để bài kiểm tra không phụ thuộc mạng ngoài. */
+async function gaOpenverse(ctx, results) {
+  await ctx.route('**/api.openverse.org/**', (route) => route.fulfill({
+    status: 200,
+    contentType: 'application/json',
+    body: JSON.stringify({ result_count: results.length, results }),
+  }));
+}
+
+/** Đợi bảng ảnh vẽ xong lượt cuối (đã có cả kho tin lẫn kết quả Openverse).
+ *  Bảng vẽ lại ba lượt, đọc DOM giữa chừng là hụt phần tử. */
+async function xongBangAnh(page) {
+  await page.waitForFunction(() => {
+    const el = document.getElementById('eye-panel');
+    return el && !/Đang tìm ảnh/.test(el.textContent)
+      && el.querySelectorAll('.ph-sec').length >= 3;
+  }, null, { timeout: 20000 });
+}
+
+const ANH_MO = [{
+  title: 'Flooding in Ho Chi Minh City',
+  license: 'by-nc', creator: 'bbcworldservice', source: 'flickr',
+  thumbnail: 'https://example.test/a.jpg',
+  foreign_landing_url: 'https://flickr.com/photos/x/1',
+}];
+
+test('chuyển sang chế độ ảnh ngập thì dựng đủ các mục', async () => {
+  const { page, ctx, errors } = await open();
+  await gaOpenverse(ctx, ANH_MO);
+  await page.evaluate(() => openEye(10.7280, 106.7350, 'Huỳnh Tấn Phát'));
+  await page.locator('#eye-modes .eye-mode[data-mode="photo"]').click();
+  await xongBangAnh(page);
+
+  const muc = await page.locator('#eye-panel .ph-sec h5').allTextContents();
+  assert.ok(muc.some((h) => /báo chí/i.test(h)), 'thiếu mục ảnh báo chí');
+  assert.ok(muc.some((h) => /giấy phép mở/i.test(h)), 'thiếu mục ảnh giấy phép mở');
+  assert.ok(muc.some((h) => /Tự tìm thêm/i.test(h)), 'thiếu mục tự tìm thêm');
+  assert.equal(await page.evaluate(() => eye.mode), 'photo');
+  assert.deepEqual(errors, []);
+  await ctx.close();
+});
+
+test('ảnh giấy phép mở hiện kèm tên giấy phép và tác giả, dẫn về nguồn', async () => {
+  const { page, ctx } = await open();
+  await gaOpenverse(ctx, ANH_MO);
+  await page.evaluate(() => { openEye(10.7869, 106.7018, 'Bến Thành'); eyeSetMode('photo'); });
+  await xongBangAnh(page);
+  const the = page.locator('#eye-panel .ph-card', { hasText: 'Flooding in Ho Chi Minh City' });
+  await the.waitFor({ timeout: 20000 });
+  assert.match(await the.locator('.ph-lic').textContent(), /by-nc/);
+  assert.match(await the.textContent(), /bbcworldservice/);
+  assert.equal(await the.getAttribute('href'), 'https://flickr.com/photos/x/1');
+  assert.match(await the.getAttribute('rel'), /noopener/);
+  await ctx.close();
+});
+
+test('tin có ảnh vào lưới, tin không ảnh xuống danh sách gọn', async () => {
+  const { page, ctx } = await open();
+  await gaOpenverse(ctx, []);
+  await page.evaluate(() => { openEye(10.7869, 106.7018, 'Bến Thành'); eyeSetMode('photo'); });
+  await xongBangAnh(page);
+  const r = await page.evaluate(() => {
+    const luoi = [...document.querySelectorAll('#eye-panel .ph-grid .ph-card')];
+    const ds = [...document.querySelectorAll('#eye-panel .ph-list a')];
+    return { luoiCoAnh: luoi.every((c) => !!c.querySelector('img')), soDs: ds.length, soLuoi: luoi.length };
+  });
+  assert.ok(r.soLuoi > 0, 'phải có ít nhất một thẻ ảnh');
+  assert.ok(r.luoiCoAnh, 'lưới ảnh không được chứa thẻ thiếu ảnh');
+  assert.ok(r.soDs > 0, 'phải có danh sách bài không kèm ảnh');
+  await ctx.close();
+});
+
+test('mọi liên kết trong bảng ảnh đều mở tab mới an toàn', async () => {
+  const { page, ctx } = await open();
+  await gaOpenverse(ctx, ANH_MO);
+  await page.evaluate(() => { openEye(10.7869, 106.7018, 'Bến Thành'); eyeSetMode('photo'); });
+  await xongBangAnh(page);
+  const xau = await page.evaluate(() => [...document.querySelectorAll('#eye-panel a[href^="http"]')]
+    .filter((a) => a.target !== '_blank' || !/noopener/.test(a.rel || ''))
+    .map((a) => a.href));
+  assert.deepEqual(xau, []);
+  await ctx.close();
+});
+
+test('tin được xếp theo mức đúng chỗ: tuyến ngập gần đây lên trước', async () => {
+  const { page, ctx } = await open();
+  await gaOpenverse(ctx, []);
+  const hang = await page.evaluate(() => new Promise((ok) => loadNews(() => {
+    // thêm một bài gắn đúng tuyến ngập Huỳnh Tấn Phát để kiểm tra thứ tự
+    window.TIN_NGAP.items.push({
+      t: 'Bài gắn đúng tuyến', u: 'https://x.test/1', s: 'X', d: '2020-01-01',
+      img: '', c: 'hcmc', fp: ['Huỳnh Tấn Phát'], z: [], canh: 1,
+    });
+    const r = newsNear([10.7280, 106.7350]);
+    ok({ dau: r[0].i.t, hang: r[0].hang, trung: r[0].trung });
+  })));
+  assert.equal(hang.dau, 'Bài gắn đúng tuyến', 'bài nhắc đích danh tuyến ngập phải lên đầu');
+  assert.equal(hang.hang, 2);
+  assert.deepEqual(hang.trung, ['Huỳnh Tấn Phát']);
+  await ctx.close();
+});
+
+test('Openverse hỏng thì bảng ảnh vẫn dựng được và báo rõ', async () => {
+  const { page, ctx, errors } = await open();
+  await ctx.route('**/api.openverse.org/**', (route) => route.abort());
+  await page.evaluate(() => { openEye(10.7869, 106.7018, 'Bến Thành'); eyeSetMode('photo'); });
+  await page.waitForFunction(
+    () => /Không hỏi được Openverse/.test(document.getElementById('eye-panel').textContent),
+    null, { timeout: 20000 });
+  assert.ok(await page.locator('#eye-panel .ph-more a').count(), 'phần tự tìm thêm phải còn');
+  assert.deepEqual(errors, []);
+  await ctx.close();
+});
+
+test('đường dẫn tự tìm thêm dùng đúng tên tuyến ngập gần nhất', async () => {
+  const { page, ctx } = await open();
+  await gaOpenverse(ctx, []);
+  await page.evaluate(() => { openEye(10.7280, 106.7350, 'x'); eyeSetMode('photo'); });
+  await xongBangAnh(page);
+  const href = await page.locator('#eye-panel .ph-more a').first().getAttribute('href');
+  assert.match(decodeURIComponent(href), /Huỳnh Tấn Phát ngập/);
+  await ctx.close();
+});
+
+test('đổi chế độ khi thư viện 3D chưa tải xong thì không dựng cảnh 3D đè lên', async () => {
+  const { page, ctx } = await open();
+  await gaOpenverse(ctx, []);
+  await page.evaluate(() => { openEye(10.7869, 106.7018, 'Bến Thành'); eyeSetMode('photo'); });
+  await xongBangAnh(page);
+  await page.waitForTimeout(1200);
+  assert.equal(await page.evaluate(() => eye.gl), null, 'cảnh 3D không được dựng sau khi đã chuyển chế độ');
+  assert.equal(await page.locator('#eye-status').count(), 0, 'không được còn dòng trạng thái của chế độ 3D');
+  assert.equal(await page.locator('#eye-legend').count(), 0, 'không được còn chú giải của chế độ 3D');
+  await ctx.close();
+});
+
+test('quay lại chế độ 3D thì bảng ảnh biến mất', async () => {
+  const { page, ctx } = await open();
+  await gaOpenverse(ctx, []);
+  await page.evaluate(() => { openEye(10.7869, 106.7018, 'Bến Thành'); eyeSetMode('photo'); });
+  await xongBangAnh(page);
+  await page.locator('#eye-modes .eye-mode[data-mode="3d"]').click();
+  assert.equal(await page.locator('#eye-panel .ph-sec').count(), 0);
+  assert.ok(await page.locator('#eye-modes .eye-mode[data-mode="3d"].active').count());
+  await ctx.close();
+});
+
+test('mở ô nhìn tận nơi lần nào cũng bắt đầu ở chế độ 3D', async () => {
+  const { page, ctx } = await open();
+  await gaOpenverse(ctx, []);
+  await page.evaluate(() => { openEye(10.7869, 106.7018, 'a'); eyeSetMode('photo'); });
+  await xongBangAnh(page);
+  await page.evaluate(() => { closeEye(); openEye(10.75, 106.70, 'b'); });
+  assert.ok(await page.locator('#eye-modes .eye-mode[data-mode="3d"].active').count());
   await ctx.close();
 });
 

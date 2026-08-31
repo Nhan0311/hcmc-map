@@ -94,11 +94,57 @@ main{display:grid;grid-template-columns:1fr var(--side);height:100%;min-height:0
 .eye-head{display:flex;justify-content:space-between;align-items:center;gap:8px;
   padding:7px 9px;background:#111b2e;color:#e8eef7;flex-shrink:0}
 .eye.max .eye-head{padding:10px 14px;padding-top:calc(10px + env(safe-area-inset-top))}
-.eye-head h3{font-size:11.5px;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+/* Bộ chuyển chế độ nằm cùng hàng: tiêu đề phải chịu cắt bớt, kẻo trên điện
+   thoại nó đẩy các nút chế độ đè lên chính mình. */
+.eye-head h3{font-size:11.5px;font-weight:800;letter-spacing:-.2px;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
 .eye.max .eye-head h3{font-size:15px}
 .eye-head p{font-size:9.5px;color:#93a3bb;margin-top:1px;max-width:52vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .eye.max .eye-head p{font-size:10.5px;max-width:70vw}
 .eye-head .eye-acts{display:flex;gap:5px;flex-shrink:0}
+/* Bộ chuyển chế độ: cảnh 3D ↔ ảnh ngập chụp thật ↔ các cách xem khác.
+   Lúc thu nhỏ chỉ còn biểu tượng cho vừa ô 360 px. */
+.eye-modes{display:flex;gap:2px;background:rgba(255,255,255,.1);padding:2px;border-radius:8px;flex-shrink:0}
+.eye-mode{border:none;background:transparent;color:#93a3bb;font:inherit;font-size:10.5px;font-weight:700;
+  padding:4px 7px;border-radius:6px;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:4px}
+.eye-mode:hover{color:#e8eef7}
+.eye-mode.active{background:rgba(255,255,255,.9);color:#0b1220}
+.eye-mode span{display:none}
+.eye.max .eye-mode{font-size:12px;padding:6px 11px}
+.eye.max .eye-mode span{display:inline}
+/* Màn hình hẹp: kể cả khi phóng to vẫn chỉ để biểu tượng, nhường chỗ cho địa chỉ */
+@media (max-width:560px){.eye.max .eye-mode span{display:none}
+  .eye.max .eye-mode{padding:6px 9px}}
+
+/* --- Ảnh ngập chụp thật --- */
+.ph-sec{margin-bottom:16px}
+.ph-sec h5{font-size:11.5px;font-weight:800;letter-spacing:.2px;margin-bottom:3px;display:flex;align-items:center;gap:6px}
+.ph-sec .ph-note{font-size:10px;color:var(--muted);line-height:1.55;margin-bottom:9px}
+.ph-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:9px;align-items:start}
+.ph-list{display:flex;flex-direction:column;gap:1px}
+.ph-list a{display:flex;gap:8px;align-items:baseline;text-decoration:none;color:inherit;
+  padding:6px 7px;border-radius:7px;font-size:11px;line-height:1.45}
+.ph-list a:hover{background:var(--soft)}
+.ph-list a .ph-t2{font-weight:600;flex:1;min-width:0}
+.ph-list a .ph-s{font-size:9px;color:var(--muted);font-weight:700;white-space:nowrap;flex-shrink:0}
+.eye:not(.max) .ph-grid{grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:6px}
+.ph-card{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:9px;
+  overflow:hidden;background:var(--surface);transition:.12s}
+.ph-card:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+.ph-card .ph-img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#e2e8f0}
+.ph-card .ph-txt{padding:7px 8px}
+.ph-card .ph-t{font-size:10.5px;font-weight:700;line-height:1.4;display:-webkit-box;-webkit-line-clamp:3;
+  -webkit-box-orient:vertical;overflow:hidden}
+.ph-card .ph-m{font-size:9px;color:var(--muted);margin-top:4px;display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.ph-card.no-img .ph-img{display:none}
+.ph-here{background:#eff6ff;color:var(--accent-2);border-radius:20px;padding:1px 6px;font-size:8.5px;font-weight:800}
+.ph-lic{background:#f0fdf4;color:#14532d;border-radius:20px;padding:1px 6px;font-size:8.5px;font-weight:800;
+  text-transform:uppercase;letter-spacing:.3px}
+.ph-empty{font-size:10.5px;color:var(--muted);line-height:1.6;background:var(--soft);border-radius:9px;padding:10px 11px}
+.ph-more{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.ph-more a{font-size:10px;font-weight:700;background:#fff;border:1px solid #bfdbfe;color:var(--accent-2);
+  padding:5px 9px;border-radius:20px;text-decoration:none}
+.ph-more a:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
 .eye-ico{width:24px;height:24px;border:none;border-radius:7px;background:rgba(255,255,255,.12);
   color:#e8eef7;font-size:12px;cursor:pointer;line-height:1;display:grid;place-items:center}
 .eye-ico:hover{background:rgba(255,255,255,.26)}
@@ -136,6 +182,13 @@ main{display:grid;grid-template-columns:1fr var(--side);height:100%;min-height:0
 .eye:not(.max) .maplibregl-ctrl-top-right,.eye:not(.max) .cesium-viewer-toolbar{display:none}
 .eye:not(.max) .eye-panel{padding:10px;font-size:10px}
 .eye:not(.max) .eye-card{padding:11px;border-radius:9px}
+.eye:not(.max) .eye-card h4{font-size:11px}
+.eye:not(.max) .eye-card p{font-size:9.5px;line-height:1.5;margin-bottom:8px}
+.eye:not(.max) .ph-sec{margin-bottom:11px}
+.eye:not(.max) .ph-sec h5{font-size:10px}
+.eye:not(.max) .ph-sec .ph-note{font-size:9px;margin-bottom:6px}
+.eye:not(.max) .ph-card .ph-t{font-size:9.5px;-webkit-line-clamp:2}
+.eye:not(.max) .ph-list a{font-size:9.5px;padding:4px 5px}
 .eye:not(.max) .eye-btns{grid-template-columns:1fr;gap:5px;margin-bottom:8px}
 .eye:not(.max) .eye-note{display:none}
 @media (max-width:860px){
@@ -746,6 +799,14 @@ input,select,textarea,button{-webkit-tap-highlight-color:transparent}
     <div style="min-width:0">
       <h3 id="eye-title">👁 Nhìn tận nơi</h3>
       <p id="eye-sub">—</p>
+    </div>
+    <div class="eye-modes" id="eye-modes">
+      <button class="eye-mode active" type="button" data-mode="3d" onclick="eyeSetMode('3d')"
+        title="Cảnh 3D dựng từ ảnh vệ tinh">🧊<span>Cảnh 3D</span></button>
+      <button class="eye-mode" type="button" data-mode="photo" onclick="eyeSetMode('photo')"
+        title="Ảnh chụp thật cảnh ngập">📷<span>Ảnh ngập thật</span></button>
+      <button class="eye-mode" type="button" data-mode="more" onclick="eyeSetMode('more')"
+        title="Các cách nhìn khác">⋯<span>Cách khác</span></button>
     </div>
     <div class="eye-acts">
       <button class="eye-ico" id="eye-max" onclick="eyeToggleMax()" title="Phóng to / thu nhỏ">⤢</button>
@@ -2351,6 +2412,15 @@ function eyeInteractive(on){
   }
 }
 
+/* Ba chế độ xem: cảnh 3D dựng sẵn, ảnh chụp thật, và danh sách cách xem khác. */
+function eyeSetMode(m){
+  document.querySelectorAll('#eye-modes .eye-mode')
+    .forEach(b=>b.classList.toggle('active',b.dataset.mode===m));
+  if(m==='photo'){eyeStartPhotos();return;}
+  if(m==='more'){eyeDestroy();eyeStatus('');eyeLegend('');renderEyePanel();return;}
+  if(gKey())eyeStart3D(); else eyeStartFree();
+}
+
 function openEye(lat,lng,label){
   eye.ll=[lat,lng];eye.label=label||'';
   const el=document.getElementById('eye');
@@ -2358,7 +2428,7 @@ function openEye(lat,lng,label){
   document.getElementById('eye-max').textContent='⤢';
   document.getElementById('eye-sub').textContent=label||`${lat.toFixed(5)}, ${lng.toFixed(5)}`;
   /* có khoá Google thì dùng ảnh chụp thật, không thì dùng bản miễn phí — cả hai đều mở ngay */
-  if(gKey())eyeStart3D(); else eyeStartFree();
+  eyeSetMode('3d');
 }
 function closeEye(){
   const el=document.getElementById('eye');
@@ -2370,9 +2440,13 @@ function eyeDestroy(){
   if(eye.viewer){try{eye.viewer.destroy();}catch(e){}eye.viewer=null;}
   if(eye.gl){try{eye.gl.remove();}catch(e){}eye.gl=null;}
   document.getElementById('eye-3d').innerHTML='';
-  document.getElementById('eye-panel').style.display='none';
+  const pn=document.getElementById('eye-panel');
+  /* Dọn luôn nội dung: bảng ảnh có hàng chục thẻ <img>, để lại trong DOM chỉ
+     tổ giữ ảnh trong bộ nhớ dù người dùng đã chuyển sang chế độ khác. */
+  pn.innerHTML='';pn.style.display='none';
 }
 function eyeStatus(msg){
+  if(msg&&eye.mode==='photo')return;      /* bảng ảnh không có trạng thái 3D */
   let el=document.getElementById('eye-status');
   if(!msg){if(el)el.remove();return;}
   if(!el){el=document.createElement('div');el.id='eye-status';el.className='eye-status';
@@ -2380,6 +2454,7 @@ function eyeStatus(msg){
   el.innerHTML=msg;
 }
 function eyeLegend(html){
+  if(html&&eye.mode==='photo')return;
   let el=document.getElementById('eye-legend');
   if(!html){if(el)el.remove();return;}
   if(!el){el=document.createElement('div');el.id='eye-legend';el.className='eye-legend';
@@ -2410,6 +2485,9 @@ function loadMapLibre(cb){
   const base=`https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/${MAPLIBRE_V}/`;
   loadCss(base+'maplibre-gl.css');
   loadScript(base+'maplibre-gl.js',cb,()=>{
+    /* Mạng chậm: lỗi có thể về sau khi người dùng đã bấm sang "Ảnh ngập thật".
+       Không kiểm lại thì renderEyePanel() xoá mất bảng ảnh đang xem. */
+    if(eye.mode!=='free')return;
     eyeStatus('Không tải được thư viện bản đồ 3D (cần kết nối mạng).');
     renderEyePanel();
   });
@@ -2420,6 +2498,9 @@ function eyeStartFree(){
   eyeDestroy();
   eyeStatus('Đang dựng cảnh 3D…');
   loadMapLibre(()=>{
+    /* Tải thư viện mất vài giây; trong lúc đó người dùng có thể đã bấm sang
+       "Ảnh ngập thật". Không kiểm lại thì cảnh 3D dựng đè lên bảng ảnh. */
+    if(eye.mode!=='free'||!eye.ll)return;
     const [lat,lng]=eye.ll;
     let m;
     try{
@@ -2441,6 +2522,7 @@ function eyeStartFree(){
         maxPitch:85,attributionControl:{compact:true}
       });
     }catch(err){
+      if(eye.mode!=='free')return;
       eyeStatus('Trình duyệt này không bật được WebGL nên chưa dựng được cảnh 3D.');
       renderEyePanel();
       return;
@@ -2651,6 +2733,7 @@ function loadCesium(cb){
   window.CESIUM_BASE_URL=base;
   loadCss(base+'Widgets/widgets.css');
   loadScript(base+'Cesium.js',cb,()=>{
+    if(eye.mode!=='google')return;      /* xem chú thích ở loadMapLibre */
     eyeStatus('Không tải được thư viện 3D. '+
       '<a href="#" onclick="eyeStartFree();return false" style="color:#7dd3fc">Dùng bản miễn phí</a>');
   });
@@ -2663,6 +2746,7 @@ async function eyeStart3D(){
   eyeDestroy();
   eyeStatus('Đang tải ảnh 3D chụp thật…');
   loadCesium(async()=>{
+    if(eye.mode!=='google'||!eye.ll)return;   /* xem chú thích ở eyeStartFree */
     try{
       const v=new Cesium.Viewer('eye-3d',{
         globe:false,baseLayer:false,baseLayerPicker:false,geocoder:false,homeButton:false,
@@ -2726,6 +2810,200 @@ async function eyeStart3D(){
         '<br>Thường do khoá chưa bật <b>Map Tiles API</b> hoặc bị giới hạn tên miền. '+
         '<a href="#" onclick="eyeStartFree();return false" style="color:#7dd3fc">Dùng bản miễn phí</a>');
     }
+  });
+}
+
+
+/* ---------------------------------------------------------------
+   D. ẢNH NGẬP CHỤP THẬT
+   Hai nguồn, khác hẳn nhau về bản chất — nên để riêng và nói rõ:
+
+   1. Tin & ảnh báo chí. Không RSS báo Việt Nam nào gửi CORS, nên trang tĩnh
+      không tự đọc được; một tác vụ GitHub Actions chạy theo lịch thu thập sẵn
+      vào data/tin_ngap.js (xem tools/thu_thap_tin.mjs). Ảnh là đường dẫn do
+      chính toà soạn đặt trong feed của họ — bản quyền của họ, luôn dẫn nguồn
+      và liên kết về bài gốc, không tải về không lưu lại.
+
+   2. Ảnh giấy phép mở, tìm trực tiếp qua Openverse (Flickr CC, Wikimedia…).
+      Hỏi thẳng từ trình duyệt được vì Openverse có CORS. Đây là ảnh dùng lại
+      hợp pháp, kèm tên tác giả và tên giấy phép.
+
+   Cả hai đều là ảnh của KHU VỰC, không phải của đúng căn nhà đang xem — chỗ
+   nào cũng phải nói rõ điều đó, kẻo người dùng tưởng đã thấy tận nơi rồi.
+   --------------------------------------------------------------- */
+const OPENVERSE='https://api.openverse.org/v1/images/';
+const TIN_FILE='data/tin_ngap.js';
+let _ovCache={};
+
+/* Nạp kho tin đã thu thập sẵn (một lần cho cả phiên). */
+function loadNews(cb){
+  if(window.TIN_NGAP||window.__tinFailed){cb();return;}
+  if(window.__tinLoading){window.__tinQueue.push(cb);return;}
+  window.__tinLoading=true;window.__tinQueue=[cb];
+  const s=document.createElement('script');
+  s.src=TIN_FILE;
+  const xong=()=>{window.__tinLoading=false;
+    const q=window.__tinQueue;window.__tinQueue=[];q.forEach(f=>f&&f());};
+  s.onload=xong;
+  s.onerror=()=>{window.__tinFailed=true;xong();};
+  document.head.appendChild(s);
+}
+
+/* Tin ngập quanh một toạ độ, xếp theo mức độ "đúng chỗ này".
+     2 = nêu đích danh một tuyến ngập trong bán kính KM_TIN
+     1 = nêu tên vùng đang đứng
+     0 = tin của thành phố này  */
+const KM_TIN=4;
+function newsNear(ll){
+  const kho=window.TIN_NGAP&&window.TIN_NGAP.items;
+  if(!kho)return [];
+  const vung=pointInZone(ll), tenVung=vung?vung.properties.name:null;
+  const gan=new Set(FLOOD_POINTS.filter(f=>f.c===state.city&&distKm(ll,f.ll)<=KM_TIN).map(f=>f.n));
+  return kho.filter(i=>i.c===state.city).map(i=>{
+    const trung=i.fp.filter(n=>gan.has(n));
+    const hang=trung.length?2:(tenVung&&i.z.includes(tenVung)?1:0);
+    return {i,hang,trung};
+  }).sort((a,b)=>b.hang-a.hang
+    ||(b.i.img?1:0)-(a.i.img?1:0)
+    /* ảnh "đường thành sông" trước ảnh họp báo / phối cảnh dự án */
+    ||(b.i.canh||0)-(a.i.canh||0)
+    ||(b.i.d||'').localeCompare(a.i.d||''));
+}
+
+function ngayGon(d){
+  if(!d)return '';
+  const p=d.split('-');return p.length===3?`${p[2]}/${p[1]}/${p[0]}`:d;
+}
+
+function nhanCho(hang,trung){
+  return hang===2?`<span class="ph-here">📍 ${esc(trung[0])}</span>`
+        :hang===1?`<span class="ph-here">quanh khu vực</span>`:'';
+}
+/* Thẻ có ảnh. Toà soạn chặn dẫn ảnh thì onerror hạ nó xuống thành thẻ chữ —
+   tiêu đề và liên kết vẫn còn nguyên giá trị. */
+function newsCard({i,hang,trung}){
+  return `<a class="ph-card" href="${esc(i.u)}" target="_blank" rel="noopener noreferrer">
+    <img class="ph-img" src="${esc(i.img)}" alt="" loading="lazy" decoding="async"
+      onerror="this.closest('.ph-card').classList.add('no-img')">
+    <div class="ph-txt"><div class="ph-t">${esc(i.t)}</div>
+      <div class="ph-m">${nhanCho(hang,trung)}<b>${esc(i.s)}</b>${i.d?'· '+ngayGon(i.d):''}</div></div>
+  </a>`;
+}
+/* Bài không kèm ảnh (phần lớn đến từ Google News) — vẫn đáng đọc, nhưng để
+   thành danh sách gọn cho khỏi chiếm chỗ của ảnh. */
+function newsRow({i,hang,trung}){
+  return `<a href="${esc(i.u)}" target="_blank" rel="noopener noreferrer">
+    <span class="ph-t2">${nhanCho(hang,trung)} ${esc(i.t)}</span>
+    <span class="ph-s">${esc(i.s)}${i.d?' · '+ngayGon(i.d):''}</span></a>`;
+}
+
+/* Ảnh giấy phép mở — Openverse trả lời thẳng cho trình duyệt (có CORS). */
+function ovQuery(){
+  return state.city==='hanoi'?'Hanoi flood':'Ho Chi Minh City flood';
+}
+function loadOpenverse(cb){
+  const q=ovQuery();
+  if(_ovCache[q]){cb(_ovCache[q]);return;}
+  const ctl=new AbortController();
+  const to=setTimeout(()=>ctl.abort(),12000);
+  fetch(`${OPENVERSE}?q=${encodeURIComponent(q)}&page_size=12&mature=false`,{signal:ctl.signal})
+    .then(r=>{clearTimeout(to);if(!r.ok)throw new Error('HTTP '+r.status);return r.json();})
+    .then(d=>{_ovCache[q]=d.results||[];cb(_ovCache[q]);})
+    .catch(()=>cb(null));
+}
+function ovCard(r){
+  const thumb=r.thumbnail||r.url;
+  const ai=[r.creator,r.source].filter(Boolean).join(' · ');
+  return `<a class="ph-card" href="${esc(r.foreign_landing_url||r.url)}" target="_blank" rel="noopener noreferrer">
+    <img class="ph-img" src="${esc(thumb)}" alt="" loading="lazy" decoding="async"
+      onerror="this.closest('.ph-card').remove()">
+    <div class="ph-txt"><div class="ph-t">${esc(r.title||'(không đặt tên)')}</div>
+      <div class="ph-m"><span class="ph-lic">${esc(r.license||'cc')}</span>${esc(ai.substring(0,42))}</div></div>
+  </a>`;
+}
+
+/* Tự tìm thêm: mở tab mới sang công cụ tìm kiếm, đã điền sẵn tên đường. */
+function searchLinks(){
+  const near=eyeNearby(3)[0];
+  const cho=near?near.f.n.replace(/\([^)]*\)/g,'').trim()
+    :(state.city==='hanoi'?'Hà Nội':'TP.HCM');
+  const q=encodeURIComponent(cho+' ngập');
+  return `<div class="ph-more">
+    <a href="https://www.google.com/search?tbm=isch&q=${q}" target="_blank" rel="noopener noreferrer">🔍 Ảnh “${esc(cho)} ngập”</a>
+    <a href="https://news.google.com/search?q=${q}&hl=vi&gl=VN&ceid=VN:vi" target="_blank" rel="noopener noreferrer">📰 Tin mới nhất</a>
+    <a href="https://www.youtube.com/results?search_query=${q}" target="_blank" rel="noopener noreferrer">▶ Video</a>
+  </div>`;
+}
+
+function eyeStartPhotos(){
+  eye.mode='photo';
+  eyeDestroy();                       /* trả GPU lại: cảnh 3D không cần nữa */
+  eyeStatus('');eyeLegend('');
+  const p=document.getElementById('eye-panel');
+  p.style.display='';
+  const tp=CITIES[state.city].name;
+
+  const ve=(tin,ov)=>{
+    if(eye.mode!=='photo')return;     /* người dùng đã chuyển chế độ khác */
+    const dung=tin||[];
+    const coAnh=dung.filter(x=>x.i.img).slice(0,12);
+    const khongAnh=dung.filter(x=>!x.i.img).slice(0,14);
+    const soDung=dung.filter(x=>x.hang>0).length;
+
+    p.innerHTML=`<div class="eye-card">
+      <h4>📷 Ảnh ngập chụp thật</h4>
+      <p>Ảnh dưới đây là của <b>khu vực</b> quanh đây, <b>không phải của đúng căn nhà bạn đang xem</b> —
+         dùng để biết nước dâng tới đâu và trông ra sao khi ngập, rồi vẫn phải đến tận nơi.</p>
+
+      <div class="ph-sec">
+        <h5>📰 Ảnh báo chí chụp cảnh ngập ${coAnh.length?`<span class="ph-here">${coAnh.length} ảnh</span>`:''}</h5>
+        <div class="ph-note">${
+          window.__tinFailed
+            ? 'Chưa nạp được kho tin (<code>data/tin_ngap.js</code>).'
+            : coAnh.length
+            ? `Ảnh do chính toà soạn đăng kèm bài. Bản quyền thuộc họ — bấm để đọc bài gốc.${
+                soDung?' Thẻ có 📍 là bài nhắc đích danh tuyến ngập quanh đây.':''}`
+            : `Kho tin chưa có ảnh ngập nào của ${esc(tp)} trong ${window.TIN_NGAP?'gần đây':'lúc này'}. Kho được cập nhật hằng ngày, dày lên trong mùa mưa.`
+        }</div>
+        ${coAnh.length?`<div class="ph-grid">${coAnh.map(newsCard).join('')}</div>`
+                      :`<div class="ph-empty">Chưa có ảnh báo chí. Bảng ảnh giấy phép mở bên dưới và phần tự tìm vẫn dùng được.</div>`}
+      </div>
+
+      ${khongAnh.length?`<div class="ph-sec">
+        <h5>📄 Bài viết về ngập ở ${esc(tp)}</h5>
+        <div class="ph-note">Không kèm ảnh, nhưng cho biết chỗ nào vừa ngập và thành phố đang làm gì.</div>
+        <div class="ph-list">${khongAnh.map(newsRow).join('')}</div>
+      </div>`:''}
+
+      <div class="ph-sec">
+        <h5>📷 Ảnh giấy phép mở</h5>
+        <div class="ph-note">${
+          ov===null?'Không hỏi được Openverse (cần kết nối mạng).'
+          :ov===undefined?'Đang tìm ảnh…'
+          :ov.length?`Ảnh Creative Commons về ngập ở ${esc(tp)} — dùng lại được, có ghi tác giả và giấy phép. Nguồn: Openverse (Flickr, Wikimedia…).`
+          :`Openverse chưa có ảnh ngập nào của ${esc(tp)}.`
+        }</div>
+        ${ov&&ov.length?`<div class="ph-grid">${ov.map(ovCard).join('')}</div>`:''}
+      </div>
+
+      <div class="ph-sec" style="margin-bottom:0">
+        <h5>🔎 Tự tìm thêm</h5>
+        <div class="ph-note">Tìm theo đúng tên tuyến đường — cách nhanh nhất để thấy ảnh ngập thật của chính con đường đó.</div>
+        ${searchLinks()}
+      </div>
+
+      <div class="eye-note">
+        Ảnh chỉ cho biết <b>đã từng ngập tới đâu</b>. Thứ quyết định nhà bạn có ngập hay không vẫn là
+        <b>cao độ nền nhà so với mặt đường</b> — hãy tự đo khi đến xem.
+      </div>
+    </div>`;
+  };
+
+  ve(undefined,undefined);
+  loadNews(()=>{
+    const tin=newsNear(eye.ll);
+    ve(tin,undefined);
+    loadOpenverse(ov=>ve(tin,ov));
   });
 }
 

@@ -59,6 +59,8 @@ Một trang HTML tĩnh, không cần máy chủ, không cần đăng ký, không
   bán lẻ tầng trệt Hà Nội 51,8 USD/m²/tháng.
 - **Hình học tuyến đường, metro và ranh 126 phường/xã Hà Nội**: OpenStreetMap qua Overpass API (8/2026).
 - **Nền bản đồ**: Esri World Light Gray Canvas; **ảnh vệ tinh**: Esri World Imagery (Maxar, Earthstar Geographics).
+- **Ảnh ngập chụp thật**: RSS công khai của các toà soạn Việt Nam (ảnh và bản quyền thuộc toà soạn,
+  luôn dẫn nguồn và liên kết về bài gốc) + ảnh Creative Commons qua Openverse.
 - **Ảnh 3D chụp thật**: Google Photorealistic 3D Tiles hiển thị bằng CesiumJS — tuỳ chọn, cần khoá API của người dùng.
 
 ## Cấu trúc thư mục
@@ -70,11 +72,16 @@ data/
   ban_do_phuong.js      window.WARD_DATA  — ranh 168 phường/xã TP.HCM (nạp khi cần)
   ban_do_hanoi.js       window.HANOI_DATA — ranh 126 phường/xã Hà Nội + ước tính ngập/giá (nạp khi cần)
   hinh_hoc_osm.js       window.ROAD_GEOM, window.METRO_GEOM — hình học thật từ OpenStreetMap
+  tin_ngap.js           window.TIN_NGAP   — tin & ảnh ngập mới nhất (MÁY SINH, cập nhật hằng ngày)
+tools/
+  doc_du_lieu.mjs       đọc dữ liệu dự án từ phía Node (dùng chung cho công cụ và bài kiểm tra)
+  thu_thap_tin.mjs      đọc RSS báo chí → dựng lại data/tin_ngap.js
 tests/
   data.test.mjs         kiểm tra toàn vẹn dữ liệu (Node, không cần trình duyệt)
+  tin.test.mjs          kiểm tra bộ thu thập tin (ngoại tuyến, dùng XML mẫu)
   ui.test.mjs           kiểm tra giao diện bằng Chromium thật (Playwright)
   serve.mjs             máy chủ tĩnh cho phát triển và kiểm tra
-  helpers.mjs           tiện ích dùng chung
+  helpers.mjs           tiện ích riêng của bài kiểm tra
 ```
 
 `data/*.js` nạp theo kiểu `window.X = …` chứ không phải module, để trang mở được
@@ -101,9 +108,10 @@ npm run test:data                 # chỉ phần dữ liệu, chạy trong ~0,2 
 npm run test:ui                   # chỉ phần giao diện
 ```
 
-Bài kiểm tra giao diện **chặn toàn bộ mạng ngoài** (Esri, Overpass, Photon, CDN) và trả lời giả,
-nên chạy được ngoại tuyến và không phụ thuộc dịch vụ bên thứ ba. Leaflet được phục vụ từ
-`node_modules` đúng phiên bản mà `index.html` gọi từ CDN.
+Bài kiểm tra giao diện **chặn toàn bộ mạng ngoài** (Esri, Overpass, Photon, Openverse, CDN) và
+trả lời giả, nên chạy được ngoại tuyến và không phụ thuộc dịch vụ bên thứ ba. Leaflet được phục vụ
+từ `node_modules` đúng phiên bản mà `index.html` gọi từ CDN. Bộ thu thập tin cũng được kiểm tra
+ngoại tuyến: phần đọc RSS và lọc là hàm thuần trên chuỗi, nên bài kiểm tra đưa thẳng XML mẫu vào.
 
 Bài kiểm tra dữ liệu đọc thẳng các hằng số nằm trong `index.html` (`FLOOD_POINTS`, `LEZ`,
 `INFRA`, `I18N`, `CITIES`…), nên số liệu trong bài kiểm tra và số liệu trang chạy thật
@@ -123,13 +131,18 @@ GitHub Actions chạy `npm test` cho mỗi lần đẩy mã và mỗi pull reque
 | Ước tính theo phường/xã Hà Nội | `EXTRA` trong `data/ban_do_hanoi.js` |
 | Vùng phát thải thấp / CBD / hạ tầng | `LEZ`, `CBD`, `INFRA` trong `index.html` |
 | Chữ trên giao diện | `I18N` trong `index.html` (phải có đủ cả `vi` và `en`) |
+| Nguồn RSS, từ khoá lọc tin ngập | `NGUON`, `TU_NGAP`, `TU_CANH` trong `tools/thu_thap_tin.mjs` |
+
+`data/tin_ngap.js` **do máy sinh ra — đừng sửa tay**, lần chạy sau sẽ ghi đè.
 
 Sửa xong chạy `npm run test:data` — mất chưa tới một giây và bắt được hầu hết lỗi gõ nhầm.
 
 ## Nhìn tận nơi trước khi ký
 
-Sau khi kiểm tra một địa chỉ, bấm **👁 Nhìn tận nơi** để thấy chính mảnh đất / căn nhà đó —
-hẻm rộng bao nhiêu, có sát kênh mương ao hồ không, mặt đường cao hơn hay thấp hơn nền nhà:
+Sau khi kiểm tra một địa chỉ, bấm **👁 Nhìn tận nơi**. Ô xem có ba chế độ, đổi qua lại
+bằng thanh trên đầu:
+
+### 🧊 Cảnh 3D — nước dâng tới đâu so với nhà
 
 | Cách | Cần khoá API | Được gì |
 |---|---|---|
@@ -141,6 +154,36 @@ hẻm rộng bao nhiêu, có sát kênh mương ao hồ không, mặt đường 
 Khoá Google Maps API (nếu dùng) chỉ lưu trong trình duyệt của bạn (`localStorage`) và gửi thẳng
 tới Google — công cụ này không có máy chủ nào để nhận nó. Google tính phí theo lượt tải ảnh 3D,
 nên hãy giới hạn khoá theo tên miền trong Cloud Console.
+
+### 📷 Ảnh ngập thật — ngập rồi thì trông ra sao
+
+Cảnh 3D cho biết nước *có thể* dâng tới đâu; chế độ này cho xem **ảnh chụp thật lúc ngập**.
+Ba nguồn, tách bạch vì bản chất khác nhau:
+
+| Mục | Nguồn | Ghi chú |
+|---|---|---|
+| 📰 **Ảnh báo chí chụp cảnh ngập** | RSS của VietnamNet, Dân Trí, Tiền Phong, SGGP, VnExpress, Tuổi Trẻ, Thanh Niên… + Google News | Ảnh do **chính toà soạn** đặt trong feed của họ. Bản quyền của họ — luôn kèm tên báo, ngày, và liên kết về bài gốc. Bài nhắc đích danh tuyến ngập trong bán kính 4 km được gắn nhãn 📍 và xếp lên đầu. |
+| 📷 **Ảnh giấy phép mở** | [Openverse](https://openverse.org) (Flickr CC, Wikimedia…) | Ảnh Creative Commons, dùng lại được, có tên tác giả và tên giấy phép. Hỏi trực tiếp từ trình duyệt. |
+| 🔎 **Tự tìm thêm** | Google Ảnh / Google Tin / YouTube | Điền sẵn tên tuyến ngập gần nhất — cách nhanh nhất để thấy ảnh của đúng con đường đó. |
+
+Ảnh là ảnh **của khu vực**, không phải của đúng căn nhà bạn đang xem — giao diện nói rõ điều này.
+
+**Vì sao tin tức phải thu thập sẵn thay vì lấy thẳng trong trình duyệt:** không một RSS báo Việt Nam
+nào gửi kèm `Access-Control-Allow-Origin`, nên trang tĩnh không thể tự đọc. Một tác vụ GitHub Actions
+(`.github/workflows/tin-ngap.yml`) chạy hai lần mỗi ngày, gọi `tools/thu_thap_tin.mjs`, lọc tin ngập,
+gắn nhãn tuyến ngập/vùng lấy thẳng từ dữ liệu của trang, rồi commit `data/tin_ngap.js`.
+Kho tin **tích luỹ dần** (giữ 120 ngày, tối đa 90 bài mỗi thành phố): mỗi feed chỉ chứa tin rất mới,
+nên nếu lần nào cũng ghi đè thì ngoài mùa mưa tệp sẽ trống trơn.
+
+Chạy tay:
+
+```bash
+npm run tin                          # đọc RSS, dựng lại data/tin_ngap.js
+node tools/thu_thap_tin.mjs --kho    # chỉ in ra, không ghi tệp
+```
+
+Muốn tắt hẳn phần tin tức: xoá `.github/workflows/tin-ngap.yml`. Trang vẫn chạy —
+mục ảnh báo chí sẽ nói là chưa có, còn ảnh giấy phép mở và phần tự tìm vẫn hoạt động.
 
 ## Giới hạn cần biết
 
@@ -172,6 +215,11 @@ Mã nguồn: [MIT](LICENSE). Dữ liệu bản đồ giữ giấy phép của ng
 ranh giới và hình học tuyến đường từ OpenStreetMap theo ODbL, nền bản đồ và ảnh vệ tinh
 theo điều khoản của Esri. Xem phần cuối tệp `LICENSE`.
 
+Ảnh báo chí **không thuộc giấy phép này**: bản quyền của từng toà soạn. Công cụ chỉ hiển thị
+đường dẫn ảnh do chính họ đặt trong RSS của mình, luôn kèm tên báo và liên kết về bài gốc,
+không tải về và không lưu lại. Ảnh trong mục "giấy phép mở" theo giấy phép Creative Commons
+ghi ngay trên từng ảnh.
+
 ---
 
 <details>
@@ -191,6 +239,14 @@ Three data labels are kept strictly apart: `chính thức` (official), `báo ch�
 `ước tính` (this tool's model — **not** a measurement). Flood points, ward boundaries and road
 geometry are real data; flood percentages, flood days per year, depths and rents per zone are
 estimates for relative comparison only.
+
+The **👁 look at it** panel has three modes: a 3D scene (satellite imagery over real terrain,
+OpenStreetMap building volumes, and water blocks extruded to the published flood depth), **real
+flood photos**, and a list of other ways to look. The photo mode combines press photos (collected
+twice daily by a GitHub Action from Vietnamese news RSS, because none of those feeds send CORS
+headers — images are the publishers' own feed images, always credited and linked back, never
+copied), Creative-Commons photos from Openverse fetched live, and prefilled image/news searches
+for the nearest named flood-prone street.
 
 A single static HTML page — no server, no sign-up, no tracking. Open `index.html`, or run
 `npm start`. Tests: `npm install && npx playwright install chromium && npm test`.
