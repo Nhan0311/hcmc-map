@@ -1,0 +1,26 @@
+{
+  "name": "hcmc-map",
+  "version": "3.2.0",
+  "private": true,
+  "description": "Bản đồ tra cứu rủi ro ngập, giá thuê/mua, quy hoạch hạ tầng và vùng phát thải thấp cho TP.HCM và Hà Nội",
+  "homepage": "https://nhan0311.github.io/hcmc-map/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nhan0311/hcmc-map.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node tests/serve.mjs",
+    "test": "node --test \"tests/*.test.mjs\"",
+    "test:data": "node --test tests/data.test.mjs",
+    "test:ui": "node --test tests/ui.test.mjs"
+  },
+  "devDependencies": {
+    "leaflet": "^1.9.4",
+    "playwright": "^1.49.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

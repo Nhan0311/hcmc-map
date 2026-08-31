@@ -1,0 +1,10 @@
+node_modules/
+
+# tệp tạm khi thử nghiệm / chụp màn hình
+__*
+*.log
+test-results/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

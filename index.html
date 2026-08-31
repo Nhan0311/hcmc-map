@@ -2,7 +2,16 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Bản đồ tra cứu rủi ro ngập, giá thuê/mua, quy hoạch hạ tầng và vùng phát thải thấp cho TP.HCM và Hà Nội — kiểm tra một địa chỉ trước khi thuê hoặc mua nhà.">
+<meta name="theme-color" content="#2563eb">
+<meta name="color-scheme" content="light">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ngập &amp; Bất động sản Việt Nam">
+<meta property="og:description" content="Dán một địa chỉ, nhận điểm rủi ro ngập 0–100, điểm ngập công bố gần nhất, tên phường mới, vùng phát thải thấp và việc cần làm trước khi ký.">
+<meta property="og:locale" content="vi_VN">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext y='72' x='50' text-anchor='middle' font-size='58'%3E%F0%9F%8C%8A%3C/text%3E%3C/svg%3E">
 <title>Ngập & Bất động sản VN — Thuê / Mua an toàn mùa mưa</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -54,7 +63,7 @@ main{display:grid;grid-template-columns:1fr var(--side);height:100%;min-height:0
 .season-strip.peak{background:linear-gradient(90deg,#b91c1c,#dc2626)}
 .season-strip.dry{background:linear-gradient(90deg,#047857,#059669)}
 .season-strip .ss-txt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.season-strip .ss-more{margin-left:auto;background:rgba(255,255,255,.2);padding:2px 9px;border-radius:20px;cursor:pointer;font-size:10px;flex-shrink:0}
+.season-strip .ss-more{margin-left:auto;background:rgba(255,255,255,.2);padding:2px 9px;border-radius:20px;cursor:pointer;font-size:10px;flex-shrink:0;border:none;color:inherit;font-weight:700;font-family:inherit}
 .season-strip .ss-more:hover{background:rgba(255,255,255,.33)}
 
 .map-overlay-top{position:absolute;top:42px;left:16px;z-index:500;display:flex;flex-direction:column;gap:4px;pointer-events:none;max-width:420px}
@@ -74,11 +83,76 @@ main{display:grid;grid-template-columns:1fr var(--side);height:100%;min-height:0
 .stat .sv.bad{color:var(--danger)}
 .stat .sl{font-size:8.5px;color:var(--muted);font-weight:700;letter-spacing:.4px;text-transform:uppercase;margin-top:4px}
 
+/* Mặc định là một ô nhỏ ở góc màn hình (như cửa sổ xem trước).
+   Bấm vào ô đó mới phóng to toàn màn hình — người dùng vẫn thấy bản đồ chính. */
+.eye{position:fixed;right:calc(var(--side) + 16px);bottom:82px;width:360px;height:250px;z-index:3000;
+  background:#0b1220;display:none;flex-direction:column;border-radius:12px;overflow:hidden;
+  box-shadow:0 10px 34px rgba(8,15,30,.45);border:1px solid rgba(255,255,255,.14);
+  transition:width .22s ease,height .22s ease,right .22s ease,bottom .22s ease,border-radius .22s ease}
+.eye.show{display:flex}
+.eye.max{right:0;bottom:0;width:100vw;height:100dvh;border-radius:0;border:none;transition:none}
+.eye-head{display:flex;justify-content:space-between;align-items:center;gap:8px;
+  padding:7px 9px;background:#111b2e;color:#e8eef7;flex-shrink:0}
+.eye.max .eye-head{padding:10px 14px;padding-top:calc(10px + env(safe-area-inset-top))}
+.eye-head h3{font-size:11.5px;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+.eye.max .eye-head h3{font-size:15px}
+.eye-head p{font-size:9.5px;color:#93a3bb;margin-top:1px;max-width:52vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.eye.max .eye-head p{font-size:10.5px;max-width:70vw}
+.eye-head .eye-acts{display:flex;gap:5px;flex-shrink:0}
+.eye-ico{width:24px;height:24px;border:none;border-radius:7px;background:rgba(255,255,255,.12);
+  color:#e8eef7;font-size:12px;cursor:pointer;line-height:1;display:grid;place-items:center}
+.eye-ico:hover{background:rgba(255,255,255,.26)}
+.eye.max .eye-ico{width:32px;height:32px;font-size:15px}
+.eye-body{flex:1;position:relative;min-height:0}
+/* Khi thu nhỏ: chặn tương tác với cảnh 3D, cả ô trở thành nút phóng to */
+.eye-tap{position:absolute;inset:0;z-index:6;cursor:zoom-in;display:block}
+.eye.max .eye-tap{display:none}
+.eye-tap span{position:absolute;left:50%;bottom:9px;transform:translateX(-50%);
+  background:rgba(17,27,46,.9);color:#e8eef7;font-size:10px;font-weight:700;
+  padding:5px 10px;border-radius:20px;white-space:nowrap}
+#eye-3d{position:absolute;inset:0;background:#0b1220}
+#eye-3d canvas{display:block}
+.eye-panel{position:absolute;inset:0;overflow-y:auto;padding:18px;display:flex;align-items:flex-start;justify-content:center}
+.eye-card{background:var(--surface);border-radius:14px;padding:18px;max-width:560px;width:100%;box-shadow:var(--shadow-lg)}
+.eye-card h4{font-size:13.5px;font-weight:800;margin-bottom:4px}
+.eye-card p{font-size:11.5px;line-height:1.65;color:var(--muted);margin-bottom:12px}
+.eye-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+.eye-btn{display:block;width:100%;padding:11px 12px;border-radius:9px;border:1px solid var(--line);background:var(--bg);
+  font:inherit;font-size:11.5px;font-weight:700;color:var(--ink);text-decoration:none;text-align:left;cursor:pointer;line-height:1.4}
+.eye-btn:hover{border-color:var(--accent);color:var(--accent)}
+.eye-btn b{display:block;font-size:12px;margin-bottom:2px}
+.eye-btn span{font-weight:600;color:var(--muted);font-size:10px}
+.eye-btn.primary{background:var(--accent);color:#fff;border-color:var(--accent);grid-column:1/-1}
+.eye-btn.primary span{color:rgba(255,255,255,.82)}
+.eye-key{display:flex;gap:6px;margin-top:6px}
+.eye-key input{flex:1;padding:9px 10px;border:1px solid var(--line);border-radius:8px;font-size:11px;font-family:var(--mono,monospace)}
+.eye-key button{padding:9px 14px;border:none;border-radius:8px;background:var(--ink);color:#fff;font-size:11px;font-weight:700;cursor:pointer}
+.eye-note{font-size:10px;color:var(--muted);line-height:1.6;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.eye-status{position:absolute;left:14px;bottom:14px;z-index:5;background:rgba(17,27,46,.92);color:#e8eef7;
+  border-radius:9px;padding:9px 12px;font-size:11px;font-weight:600;max-width:min(420px,86vw);line-height:1.5}
+.eye-legend{position:absolute;right:14px;bottom:14px;z-index:5;background:rgba(17,27,46,.92);color:#e8eef7;
+  border-radius:9px;padding:9px 12px;font-size:10.5px;line-height:1.7;max-width:min(300px,80vw)}
+.eye:not(.max) .eye-status,.eye:not(.max) .eye-legend,
+.eye:not(.max) .maplibregl-ctrl-top-right,.eye:not(.max) .cesium-viewer-toolbar{display:none}
+.eye:not(.max) .eye-panel{padding:10px;font-size:10px}
+.eye:not(.max) .eye-card{padding:11px;border-radius:9px}
+.eye:not(.max) .eye-btns{grid-template-columns:1fr;gap:5px;margin-bottom:8px}
+.eye:not(.max) .eye-note{display:none}
+@media (max-width:860px){
+  .eye{right:10px;bottom:calc(64px + env(safe-area-inset-bottom));
+    width:min(300px,calc(100vw - 20px));height:190px}
+  .eye-btns{grid-template-columns:1fr}
+}
+.eye-legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
 .map-layers{position:absolute;top:116px;right:16px;z-index:500;background:var(--surface);border-radius:10px;padding:8px 10px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:6px;min-width:158px}
 .ml-title{font-size:8.5px;font-weight:800;letter-spacing:.9px;text-transform:uppercase;color:var(--muted)}
 .ml-row{display:flex;align-items:center;gap:7px;font-size:10.5px;font-weight:600;cursor:pointer;user-select:none}
 .ml-row input{accent-color:var(--accent);cursor:pointer}
 .ml-row .swatch{width:11px;height:11px;border-radius:3px;flex-shrink:0}
+.base-sw{display:flex;gap:4px;background:var(--bg);padding:3px;border-radius:8px}
+.base-btn{flex:1;padding:6px 4px;border:none;background:transparent;border-radius:6px;font-size:10px;
+  font-weight:700;color:var(--muted);cursor:pointer;white-space:nowrap}
+.base-btn.active{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
 
 .month-bar{position:absolute;bottom:14px;right:16px;z-index:500;background:var(--surface);border-radius:11px;padding:9px 13px 8px;box-shadow:var(--shadow);display:flex;align-items:center;gap:11px}
 .mb-label{font-size:9.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase;color:var(--muted);line-height:1.3}
@@ -119,8 +193,9 @@ aside{background:var(--surface);border-left:1px solid var(--line);display:flex;f
 .addr-row button:hover{background:var(--accent-2)}
 .addr-row button:disabled{opacity:.55;cursor:wait}
 .addr-eg{margin-top:7px;display:flex;gap:5px;flex-wrap:wrap}
-.addr-eg span{font-size:9.5px;background:#fff;border:1px solid #bfdbfe;color:var(--accent-2);padding:3px 7px;border-radius:20px;cursor:pointer;font-weight:600}
-.addr-eg span:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.addr-eg button{font:inherit;font-size:9.5px;background:#fff;border:1px solid #bfdbfe;color:var(--accent-2);padding:3px 7px;border-radius:20px;cursor:pointer;font-weight:600}
+.addr-eg button:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.addr-eg button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 .verdict{margin-top:10px;border-radius:11px;overflow:hidden;border:1px solid var(--line);background:#fff;display:none}
 .verdict.show{display:block;animation:fadeUp .25s ease}
@@ -263,7 +338,7 @@ aside{background:var(--surface);border-left:1px solid var(--line);display:flex;f
 .disclaimer{margin-top:16px;padding:12px;background:var(--soft);border-radius:9px;font-size:10.5px;color:var(--muted);line-height:1.6}
 .disclaimer b{color:var(--ink)}
 
-.fab{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:1500;background:var(--ink);color:#fff;padding:12px 20px;border-radius:99px;font-size:12px;font-weight:800;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.28);display:none;align-items:center;gap:9px}
+.fab{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:1500;background:var(--ink);color:#fff;padding:12px 20px;border:none;border-radius:99px;font:inherit;font-size:12px;font-weight:800;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.28);display:none;align-items:center;gap:9px}
 .fab.show{display:flex;animation:slideUp .3s ease}
 @keyframes slideUp{from{transform:translate(-50%,20px);opacity:0}to{transform:translate(-50%,0);opacity:1}}
 .fab:hover{background:var(--accent)}
@@ -323,7 +398,7 @@ input,select,textarea,button{-webkit-tap-highlight-color:transparent}
   .help-btn{width:36px;height:36px}
   .ml-row{min-height:38px}
   .ml-row input{width:18px;height:18px}
-  .addr-eg span{padding:6px 10px}
+  .addr-eg button{padding:6px 10px}
   .item{padding:11px 0}
   .vd-btns button{min-height:42px}
 }
@@ -365,14 +440,19 @@ input,select,textarea,button{-webkit-tap-highlight-color:transparent}
   .pill-group{padding:2px;gap:2px}
   .pill{padding:0 10px;height:38px;font-size:11.5px}
   #persona-group{flex:1;min-width:0}
-  #persona-group .pill{flex:1;justify-content:center;padding:0 6px}
+  #persona-group .pill{flex:1;min-width:0;justify-content:center;padding:0 6px}
   #persona-group .pill span{display:none}
-  #persona-group .pill.active span{display:inline;font-size:11px}
+  /* min-width:0 + ellipsis: nhãn dài thì tự cắt bớt, thay vì đẩy nút "Mua
+     nhà/đất" văng ra ngoài thanh tiêu đề */
+  #persona-group .pill.active span{display:inline;font-size:11px;
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
   #city-group .pill{padding:0 9px}
   .help-btn{width:38px;height:38px;flex-shrink:0}
 
   .map-area{min-height:0}
   .map-overlay-top{display:none}
+  /* nút +/− của Leaflet đè lên dải mùa và thanh tháng; cảm ứng đã có chụm ngón */
+  .leaflet-control-zoom{display:none}
   .compare-bar{display:none}
   .season-strip{padding:7px 12px;font-size:10.5px}
   .season-strip .ss-more{padding:4px 10px}
@@ -419,7 +499,7 @@ input,select,textarea,button{-webkit-tap-highlight-color:transparent}
   .sec{padding:14px}
   .addr-row input{font-size:16px;padding:12px}
   .addr-row button{min-height:46px;padding:0 16px;font-size:13px}
-  .addr-eg span{padding:7px 11px;font-size:11.5px}
+  .addr-eg button{padding:7px 11px;font-size:11.5px}
   .item{padding:12px 0}
   .item-info .name{font-size:13.5px}
   .item-info .meta{font-size:11px}
@@ -538,7 +618,7 @@ input,select,textarea,button{-webkit-tap-highlight-color:transparent}
     <div class="season-strip" id="season-strip">
       <span class="ss-dot"></span>
       <span class="ss-txt" id="season-txt">—</span>
-      <span class="ss-more" onclick="openModal('guide')" data-i18n="ss_more">Xem lịch mùa ngập →</span>
+      <button class="ss-more" type="button" onclick="openModal('guide')" data-i18n="ss_more">Xem lịch mùa ngập →</button>
     </div>
 
     <div class="map-overlay-top">
@@ -566,16 +646,21 @@ input,select,textarea,button{-webkit-tap-highlight-color:transparent}
     </div>
 
     <div class="map-layers">
-      <div class="ml-title" data-i18n="layers">Lớp bản đồ</div>
+      <div class="ml-title">Nền bản đồ</div>
+      <div class="base-sw">
+        <button class="base-btn active" id="base-map" onclick="setBase('map')">Sơ đồ</button>
+        <button class="base-btn" id="base-sat" onclick="setBase('sat')">🛰 Ảnh vệ tinh</button>
+      </div>
+      <div class="ml-title" data-i18n="layers" style="margin-top:4px">Lớp bản đồ</div>
       <label class="ml-row"><input type="checkbox" id="ly-fp" checked onchange="toggleLayer('fp',this.checked)"><span class="swatch" style="background:var(--rain)"></span><span data-i18n="ly_fp">Điểm ngập công bố</span></label>
-      <label class="ml-row"><input type="checkbox" id="ly-dist" checked onchange="toggleLayer('dist',this.checked)"><span class="swatch" style="background:#94a3b8"></span><span data-i18n="ly_dist">Vùng (quận cũ)</span></label>
+      <label class="ml-row"><input type="checkbox" id="ly-dist" checked onchange="toggleLayer('dist',this.checked)"><span class="swatch" style="background:#94a3b8"></span><span data-i18n="ly_dist" id="ly-dist-lab">Vùng (quận cũ)</span></label>
       <label class="ml-row"><input type="checkbox" id="ly-road" onchange="toggleLayer('road',this.checked)"><span class="swatch" style="background:#7c3aed"></span><span data-i18n="ly_road">Trục đường BĐS</span></label>
     </div>
 
     <button class="layers-fab" id="layers-fab" onclick="toggleLayersPanel()" aria-label="Lớp bản đồ">◰</button>
 
     <div class="month-bar">
-      <span class="mb-label" data-i18n="month_label">Tháng<small id="mb-sub">mưa + triều</small></span>
+      <span class="mb-label"><span data-i18n="month_label">Tháng</span><small id="mb-sub">mưa + triều</small></span>
       <div class="mb-cells" id="mb-cells"></div>
     </div>
 
@@ -586,7 +671,7 @@ input,select,textarea,button{-webkit-tap-highlight-color:transparent}
   </div>
 
   <aside id="sidebar">
-    <div class="sheet-handle" onclick="toggleSheet()"><span id="sheet-lab">▲ Kiểm tra địa chỉ &amp; danh sách khu vực</span></div>
+    <div class="sheet-handle" role="button" tabindex="0" aria-controls="sidebar" onclick="toggleSheet()"><span id="sheet-lab">▲ Kiểm tra địa chỉ &amp; danh sách khu vực</span></div>
     <div class="side-scroll">
 
       <div class="sec">
@@ -594,7 +679,7 @@ input,select,textarea,button{-webkit-tap-highlight-color:transparent}
           <h3 id="addr-title">📍 Kiểm tra 1 địa chỉ cụ thể</h3>
           <p class="hint" id="addr-hint">Dán địa chỉ trong tin đăng vào đây. Bạn sẽ biết ngay: gần điểm ngập nào, sâu bao nhiêu, bao lâu rút, và cần hỏi chủ nhà điều gì.</p>
           <div class="addr-row">
-            <input id="srch" type="text" placeholder="VD: 123 Huỳnh Tấn Phát, Phú Thuận" autocomplete="off"/>
+            <input id="srch" type="text" placeholder="VD: 123 Huỳnh Tấn Phát, Phú Thuận" autocomplete="off" aria-label="Địa chỉ cần kiểm tra"/>
             <button id="srch-btn" onclick="checkAddress()" data-i18n="check_btn">Kiểm tra</button>
           </div>
           <div class="addr-eg" id="addr-eg"></div>
@@ -605,7 +690,7 @@ input,select,textarea,button{-webkit-tap-highlight-color:transparent}
       <div class="sec" id="filter-sec">
         <div class="sec-title"><span id="filter-label">Ngân sách</span><span class="filter-val" id="filter-val">—</span></div>
         <div class="filter-row">
-          <input type="range" id="budget" min="5" max="500" step="5" value="200" oninput="setBudget(this.value)"/>
+          <input type="range" id="budget" min="5" max="500" step="5" value="200" aria-labelledby="filter-label" oninput="setBudget(this.value)"/>
         </div>
         <div class="sec-title" style="margin-top:12px" data-i18n="sortby">Sắp xếp theo</div>
         <div class="chip-row" id="sort-chips"></div>
@@ -638,9 +723,9 @@ input,select,textarea,button{-webkit-tap-highlight-color:transparent}
 </main>
 </div>
 
-<div class="fab" id="fab" onclick="openModal('compare')">
+<button class="fab" id="fab" type="button" onclick="openModal('compare')">
   📊 <span id="fab-text">So sánh chi tiết</span> <span class="badge" id="fab-count">2</span>
-</div>
+</button>
 
 <div class="modal" id="modal">
   <div class="mo-content">
@@ -656,14 +741,60 @@ input,select,textarea,button{-webkit-tap-highlight-color:transparent}
   </div>
 </div>
 
+<div class="eye" id="eye">
+  <div class="eye-head">
+    <div style="min-width:0">
+      <h3 id="eye-title">👁 Nhìn tận nơi</h3>
+      <p id="eye-sub">—</p>
+    </div>
+    <div class="eye-acts">
+      <button class="eye-ico" id="eye-max" onclick="eyeToggleMax()" title="Phóng to / thu nhỏ">⤢</button>
+      <button class="eye-ico" onclick="closeEye()" title="Đóng">✕</button>
+    </div>
+  </div>
+  <div class="eye-body">
+    <div id="eye-3d"></div>
+    <div class="eye-panel" id="eye-panel"></div>
+    <a class="eye-tap" id="eye-tap" onclick="eyeToggleMax();return false" href="#"><span>Bấm để phóng to</span></a>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
 
-<script src="ban_do_data.js"></script>
-<script src="hinh_hoc_osm.js"></script>
+<script src="data/ban_do_data.js"></script>
+<script src="data/hinh_hoc_osm.js"></script>
 
 <script>
 const DISTRICTS=window.MAP_DATA.DISTRICTS;
 const BDS_ROADS=window.MAP_DATA.BDS_ROADS;
+/* phường/xã mới -> vùng (dựng từ chính ranh giới phường, không suy đoán) */
+const WARD2ZONE=window.MAP_DATA.WARD2ZONE||{};
+
+/* Vùng của TP.HCM = ranh quận cũ (ban_do_data.js).
+   Vùng của Hà Nội = 126 phường/xã mới sau sáp nhập (ban_do_hanoi.js, nạp khi cần). */
+function zoneFeats(){
+  if(typeof state!=='undefined'&&state.city==='hanoi')return window.HANOI_DATA?window.HANOI_DATA.ZONES.features:[];
+  return DISTRICTS.features;
+}
+function zoneExtra(name){
+  if(window.HANOI_DATA&&window.HANOI_DATA.EXTRA[name])return window.HANOI_DATA.EXTRA[name];
+  return null;
+}
+/* nạp ban_do_hanoi.js lần đầu chuyển sang Hà Nội, xong thì vẽ lại */
+function ensureCityData(cb){
+  if(typeof state==='undefined'||state.city!=='hanoi'||window.HANOI_DATA){cb&&cb();return;}
+  if(window.__hnLoading){window.__hnQueue.push(cb);return;}
+  window.__hnLoading=true;window.__hnQueue=[cb];
+  const el=document.createElement('script');
+  el.src='data/ban_do_hanoi.js';
+  el.onload=()=>{window.__hnLoading=false;window.__hnQueue.forEach(f=>f&&f());window.__hnQueue=[];};
+  el.onerror=()=>{
+    window.__hnLoading=false;
+    /* vẫn gọi callback: nếu không, danh sách và bản đồ kẹt mãi ở trạng thái "đang nạp" */
+    const q=window.__hnQueue;window.__hnQueue=[];q.forEach(f=>f&&f());
+    if(typeof toast==='function')toast('Không nạp được dữ liệu Hà Nội (data/ban_do_hanoi.js).');};
+  document.head.appendChild(el);
+}
 </script>
 
 <script>
@@ -674,12 +805,12 @@ const BDS_ROADS=window.MAP_DATA.BDS_ROADS;
      src:'est'      = ước tính của công cụ (mô hình), KHÔNG phải số đo
    ===================================================================== */
 
-const DATA_VERSION = '3.0 — cập nhật 30/08/2026';
+const DATA_VERSION = '3.2 — cập nhật 30/08/2026 (Hà Nội 126 phường/xã; TP.HCM phủ kín 41 vùng gồm Bình Dương và BR-VT cũ)';
 
 /* --- Bối cảnh hành chính: từ 01/07/2025 bỏ cấp quận/huyện --- */
 const ADMIN_NOTE = {
-  vi: 'Từ 01/07/2025 Việt Nam bỏ cấp quận/huyện. TP.HCM nay có <b>168 phường/xã + 1 đặc khu</b> (đã sáp nhập Bình Dương và Bà Rịa–Vũng Tàu). Bản đồ vẫn vẽ theo ranh quận cũ vì người mua/thuê và tin đăng vẫn nói theo quận — nhưng <b>hợp đồng, sổ đỏ và giấy phép kinh doanh phải ghi tên phường mới</b>. Mỗi khu vực bên dưới đều có kèm tên phường mới.',
-  en: 'Since 01/07/2025 Vietnam abolished the district tier. HCMC now has <b>168 wards/communes + 1 special zone</b> (after merging Binh Duong and Ba Ria–Vung Tau). The map still uses old district borders because listings still do — but <b>contracts, land titles and business licences must use the new ward names</b>. New ward names are shown for every area.'
+  vi: 'Từ 01/07/2025 Việt Nam bỏ cấp quận/huyện. TP.HCM nay có <b>168 phường/xã + 1 đặc khu</b> (đã sáp nhập Bình Dương và Bà Rịa–Vũng Tàu). Bản đồ vẽ theo <b>41 vùng phủ kín toàn thành phố</b> (quận/huyện cũ, và các khu của Bình Dương cũ, Bà Rịa – Vũng Tàu cũ) vì người mua/thuê và tin đăng vẫn nói theo tên cũ — nhưng <b>hợp đồng, sổ đỏ và giấy phép kinh doanh phải ghi tên phường mới</b>. Mỗi khu vực bên dưới đều có kèm tên phường mới. <b>Hà Nội</b> còn <b>126 phường/xã</b> (51 phường, 75 xã) theo Nghị quyết 1656/NQ-UBTVQH15 — bản đồ Hà Nội vẽ thẳng theo ranh phường/xã mới, mỗi phường có ghi kèm quận/huyện cũ để đối chiếu với tin đăng.',
+  en: 'Since 01/07/2025 Vietnam abolished the district tier. HCMC now has <b>168 wards/communes + 1 special zone</b> (after merging Binh Duong and Ba Ria–Vung Tau). The map still uses old district borders because listings still do — but <b>contracts, land titles and business licences must use the new ward names</b>. New ward names are shown for every area. <b>Hanoi</b> now has <b>126 wards/communes</b> (51 wards, 75 communes) under Resolution 1656/NQ-UBTVQH15 — the Hanoi map is drawn directly on the new ward boundaries, each labelled with its former district.'
 };
 
 /* =====================================================================
@@ -724,18 +855,44 @@ const FLOOD_POINTS = [
   {c:'hcmc',n:'Võ Nguyên Giáp',w:'P. Phước Long',cause:'tide',ll:[10.8100,106.7620],d:30,drain:150,src:'official'},
   {c:'hcmc',n:'Khu Decoimex mở rộng',w:'P. Tam Thắng (BR-VT cũ)',cause:'tide',ll:[10.3700,107.0700],d:30,drain:150,src:'official'},
   // ---------- HÀ NỘI ----------
-  {c:'hanoi',n:'Nguyễn Khuyến',w:'P. Văn Miếu – Quốc Tử Giám',cause:'rain',ll:[21.0270,105.8365],d:40,drain:120,src:'press'},
-  {c:'hanoi',n:'Phan Bội Châu × Lý Thường Kiệt',w:'P. Cửa Nam',cause:'rain',ll:[21.0245,105.8455],d:35,drain:120,src:'press'},
-  {c:'hanoi',n:'Thụy Khuê',w:'P. Tây Hồ',cause:'rain',ll:[21.0400,105.8180],d:35,drain:90,src:'press'},
-  {c:'hanoi',n:'Minh Khai',w:'P. Vĩnh Tuy',cause:'rain',ll:[21.0000,105.8620],d:35,drain:120,src:'press'},
-  {c:'hanoi',n:'Trường Chinh',w:'P. Khương Mai',cause:'rain',ll:[20.9950,105.8330],d:35,drain:120,src:'press'},
-  {c:'hanoi',n:'Nguyễn Xiển',w:'P. Thanh Xuân',cause:'rain',ll:[20.9860,105.8020],d:50,drain:180,src:'press'},
+  /* 11 điểm ngập cố hữu — Hà Nội công bố (ngập khi mưa 50–100 mm trong 2 giờ) */
+  {c:'hanoi',n:'Nguyễn Khuyến (trước cổng trường Lý Thường Kiệt)',w:'P. Văn Miếu – Quốc Tử Giám',cause:'rain',ll:[21.0270,105.8365],d:40,drain:120,src:'official'},
+  {c:'hanoi',n:'Hoa Bằng (số 91–97 và 54–56)',w:'P. Yên Hòa',cause:'rain',ll:[21.0245,105.7948],d:40,drain:150,src:'official'},
+  {c:'hanoi',n:'Ngã năm Đường Thành – Bát Đàn – Nhà Hỏa',w:'P. Hoàn Kiếm',cause:'rain',ll:[21.0340,105.8478],d:30,drain:90,src:'official'},
+  {c:'hanoi',n:'Cao Bá Quát (trước Cty Môi trường đô thị)',w:'P. Ba Đình',cause:'rain',ll:[21.0308,105.8382],d:35,drain:120,src:'official'},
+  {c:'hanoi',n:'Nguyễn Chính (ngõ 74 → mương Tân Mai)',w:'P. Tương Mai',cause:'rain',ll:[20.9868,105.8462],d:40,drain:150,src:'official'},
+  {c:'hanoi',n:'Ngọc Lâm (ngã ba Long Biên 1 → Cty MTĐT Gia Lâm)',w:'P. Bồ Đề',cause:'rain',ll:[21.0442,105.8718],d:35,drain:120,src:'official'},
+  {c:'hanoi',n:'Hoàng Như Tiếp (TH Ngọc Lâm → ngã tư Ái Mộ)',w:'P. Bồ Đề',cause:'rain',ll:[21.0468,105.8762],d:35,drain:120,src:'official'},
+  {c:'hanoi',n:'Đại lộ Thăng Long — hầm chui số 3, 5, 6',w:'P. Tây Mỗ',cause:'rain',ll:[21.0105,105.7452],d:50,drain:180,src:'official'},
+  {c:'hanoi',n:'Đại lộ Thăng Long — nút giao An Khánh, km 9+656',w:'X. An Khánh',cause:'rain',ll:[21.0090,105.7238],d:50,drain:180,src:'official'},
+  {c:'hanoi',n:'Đại lộ Thăng Long × Lê Trọng Tấn',w:'P. Đại Mỗ',cause:'rain',ll:[21.0068,105.7605],d:45,drain:150,src:'official'},
+  /* các điểm ngập khác — báo chí ghi nhận 2025–2026 */
+  {c:'hanoi',n:'Phan Bội Châu × Lý Thường Kiệt',w:'P. Cửa Nam',cause:'rain',ll:[21.0245,105.8455],d:35,drain:120,src:'official'},
+  {c:'hanoi',n:'Thụy Khuê (dốc La Pho)',w:'P. Tây Hồ',cause:'rain',ll:[21.0400,105.8180],d:35,drain:90,src:'official'},
+  {c:'hanoi',n:'Minh Khai (chân cầu Vĩnh Tuy)',w:'P. Vĩnh Tuy',cause:'rain',ll:[21.0000,105.8620],d:35,drain:120,src:'official'},
+  {c:'hanoi',n:'Trường Chinh',w:'P. Phương Liệt',cause:'rain',ll:[20.9950,105.8330],d:35,drain:120,src:'press'},
+  {c:'hanoi',n:'Nguyễn Xiển',w:'P. Khương Đình',cause:'rain',ll:[20.9860,105.8020],d:50,drain:180,src:'press'},
   {c:'hanoi',n:'Nguyễn Trãi',w:'P. Thanh Xuân',cause:'rain',ll:[20.9950,105.8080],d:30,drain:90,src:'press'},
   {c:'hanoi',n:'Phạm Văn Đồng',w:'P. Nghĩa Đô',cause:'rain',ll:[21.0530,105.7830],d:30,drain:90,src:'press'},
   {c:'hanoi',n:'Huỳnh Thúc Kháng',w:'P. Láng',cause:'rain',ll:[21.0180,105.8110],d:30,drain:90,src:'press'},
   {c:'hanoi',n:'Mạc Thị Bưởi',w:'P. Vĩnh Tuy',cause:'rain',ll:[21.0000,105.8700],d:35,drain:120,src:'press'},
   {c:'hanoi',n:'Trần Duy Hưng × ĐL Thăng Long',w:'P. Yên Hòa',cause:'rain',ll:[21.0100,105.7900],d:35,drain:120,src:'press'},
-  {c:'hanoi',n:'Hầm chui Đại lộ Thăng Long',w:'P. Đại Mỗ',cause:'rain',ll:[21.0080,105.7600],d:45,drain:150,src:'press'},
+  {c:'hanoi',n:'Vũ Trọng Phụng – Quan Nhân – Cự Lộc',w:'P. Thanh Xuân',cause:'rain',ll:[20.9985,105.8060],d:40,drain:150,src:'press'},
+  {c:'hanoi',n:'Phố Vĩnh Hưng',w:'P. Vĩnh Hưng',cause:'rain',ll:[20.9930,105.8720],d:45,drain:180,src:'press'},
+  {c:'hanoi',n:'Triều Khúc',w:'P. Thanh Liệt',cause:'rain',ll:[20.9805,105.7980],d:40,drain:180,src:'press'},
+  {c:'hanoi',n:'Phùng Hưng (Hà Đông)',w:'P. Hà Đông',cause:'rain',ll:[20.9690,105.7760],d:40,drain:180,src:'press'},
+  {c:'hanoi',n:'Tố Hữu – Lê Trọng Tấn',w:'P. Dương Nội',cause:'rain',ll:[20.9880,105.7680],d:35,drain:150,src:'press'},
+  {c:'hanoi',n:'Quốc lộ 6 – trạm bơm Yên Nghĩa',w:'P. Yên Nghĩa',cause:'rain',ll:[20.9575,105.7415],d:40,drain:180,src:'press'},
+  {c:'hanoi',n:'Ngoại giao đoàn – Tây Hồ Tây',w:'P. Xuân Đỉnh',cause:'rain',ll:[21.0655,105.7930],d:35,drain:240,src:'press'},
+  {c:'hanoi',n:'Kẻ Vẽ – Đông Thắng – Ecohome',w:'P. Đông Ngạc',cause:'rain',ll:[21.0715,105.7830],d:35,drain:240,src:'press'},
+  {c:'hanoi',n:'Dương Đình Nghệ – Phạm Hùng',w:'P. Cầu Giấy',cause:'rain',ll:[21.0210,105.7845],d:35,drain:240,src:'press'},
+  {c:'hanoi',n:'Linh Đàm – Nguyễn Hữu Thọ',w:'P. Hoàng Liệt',cause:'rain',ll:[20.9660,105.8300],d:35,drain:150,src:'press'},
+  {c:'hanoi',n:'Định Công – Trần Điền',w:'P. Định Công',cause:'rain',ll:[20.9835,105.8305],d:35,drain:150,src:'press'},
+  {c:'hanoi',n:'Chúc Sơn – hữu sông Bùi',w:'P. Chương Mỹ',cause:'river',ll:[20.9110,105.7020],d:120,drain:10080,src:'press'},
+  {c:'hanoi',n:'Nam Phương Tiến – Tân Tiến (rốn lũ Chương Mỹ)',w:'X. Trần Phú',cause:'river',ll:[20.8880,105.6420],d:150,drain:10080,src:'press'},
+  {c:'hanoi',n:'Thị trấn Quốc Oai – ven sông Tích',w:'X. Quốc Oai',cause:'river',ll:[20.9820,105.6420],d:100,drain:4320,src:'press'},
+  {c:'hanoi',n:'Bãi giữa sông Hồng (xã đảo Minh Châu)',w:'X. Minh Châu',cause:'river',ll:[21.1560,105.4130],d:150,drain:10080,src:'press'},
+  {c:'hanoi',n:'Suối Yến – chùa Hương',w:'X. Hương Sơn',cause:'river',ll:[20.6180,105.7480],d:100,drain:4320,src:'press'},
   {c:'hanoi',n:'Tứ Liên',w:'P. Tây Hồ',cause:'rain',ll:[21.0640,105.8360],d:30,drain:90,src:'press'},
   {c:'hanoi',n:'KĐT Khai Sơn',w:'P. Long Biên',cause:'rain',ll:[21.0560,105.8830],d:30,drain:90,src:'press'}
 ];
@@ -772,13 +929,16 @@ const DISTRICT_EXTRA = {
   'Cu Chi District':{wards:'Củ Chi, Tân An Hội, An Nhơn Tây, Nhuận Đức, Phú Hòa Đông, Bình Mỹ, Thái Mỹ, Tân Phú Trung',rent_home:[3,10],rent_shop:[5,25],fdays:6,drain:40,cause:'rain',q2note:'giảm'},
   'Hoc Mon District':{wards:'Hóc Môn, Bà Điểm, Xuân Thới Sơn, Đông Thạnh, Thới Tam Thôn',rent_home:[4,12],rent_shop:[7,30],fdays:15,drain:60,cause:'rain',q2note:'giảm'},
   'Nha Be District':{wards:'Nhà Bè, Hiệp Phước, Long Thới, Phước Kiển',rent_home:[5,15],rent_shop:[8,35],fdays:40,drain:200,cause:'tide',q2note:'giảm'},
-  'District 2':{wards:'An Khánh, Thủ Đức, Bình Trưng, Cát Lái, An Phú',rent_home:[12,40],rent_shop:[20,100],fdays:25,drain:120,cause:'tide',q2note:'đi ngang'}
+  'District 2':{wards:'An Khánh, Bình Trưng, Cát Lái',rent_home:[12,40],rent_shop:[20,100],fdays:22,drain:120,cause:'tide',q2note:'đi ngang'}
 };
+/* Bổ sung cho các vùng mới: Quận 9 cũ, Thủ Đức cũ, 9 khu Bình Dương cũ, 8 khu BR-VT cũ.
+   Danh sách phường/xã trong mỗi vùng lấy thẳng từ dữ liệu ranh giới. */
+Object.assign(DISTRICT_EXTRA, window.MAP_DATA.NEW_EXTRA||{});
 
 /* Khu vực CHƯA CÓ ranh giới trên bản đồ — nêu rõ để người dùng không hiểu nhầm */
 const COVERAGE_GAPS = {
-  vi:['Quận 9 cũ và Thủ Đức cũ (nay thuộc khu Đông TP.HCM) chưa có ranh vùng — nhưng các điểm ngập quanh chợ Thủ Đức, Tam Bình, Phước Long vẫn hiển thị trên bản đồ.','Khu vực Bình Dương cũ và Bà Rịa–Vũng Tàu cũ (sáp nhập vào TP.HCM từ 01/07/2025) mới chỉ có điểm ngập, chưa có dữ liệu giá theo vùng.','Hà Nội: mới có điểm ngập theo báo chí, chưa có ranh vùng và chưa có dữ liệu giá.'],
-  en:['Old District 9 and old Thu Duc are not yet drawn as zones — but flood points around Thu Duc market, Tam Binh and Phuoc Long are shown.','Former Binh Duong and Ba Ria–Vung Tau (merged into HCMC on 01/07/2025) currently have flood points only, no zone price data.','Hanoi: press-sourced flood points only, no zones and no price data yet.']
+  vi:['TP.HCM sau sáp nhập đã được phủ kín: 41 vùng gồm 21 quận/huyện cũ, Quận 2 / Quận 9 / Thủ Đức cũ tách riêng, 9 khu Bình Dương cũ và 8 khu Bà Rịa – Vũng Tàu cũ (có đặc khu Côn Đảo). Ranh giới hợp nhất từ 168 phường/xã thật, không vẽ tay.','Số liệu ngập và giá của khu Bình Dương cũ và Bà Rịa – Vũng Tàu cũ mới là <b>ước tính theo khu vực</b>, thưa hơn nội thành vì ít nguồn công bố hơn.','Hà Nội: đã có ranh giới 126 phường/xã mới và ước tính ngập/giá theo từng phường — nhưng mức ngập và giá là <b>mô hình theo lưu vực thoát nước và mặt bằng giá khu vực</b>, không phải số đo từng phường.','Hà Nội chưa có lớp trục đường bất động sản như TP.HCM.'],
+  en:['Post-merger HCMC is fully covered: 41 zones — 21 former districts, old District 2 / 9 / Thu Duc split out, 9 former Binh Duong areas and 8 former Ba Ria–Vung Tau areas (including Con Dao special zone). Boundaries are dissolved from the 168 real ward polygons.','Flood and price figures for the former Binh Duong and Ba Ria–Vung Tau areas are <b>area-level estimates</b>, thinner than inner-city data because fewer figures are published there.','Hanoi: all 126 new wards/communes are mapped with per-ward flood and price estimates — but those are <b>modelled from drainage basins and area price levels</b>, not per-ward measurements.','Hanoi has no property-street layer yet, unlike HCMC.']
 };
 
 /* Triều cường — số đo trạm, 2025 (nguồn: Đài KTTV Nam Bộ qua báo chí) */
@@ -802,9 +962,16 @@ const SEG_COLORS={'luxury':'#7c3aed','mid-high':'#3b82f6','mid':'#10b981','mid-l
 const SEG_TAG={'luxury':'tag-luxury','mid-high':'tag-midhigh','mid':'tag-mid','mid-low':'tag-midlow','budget':'tag-budget'};
 
 const CITIES={
-  hcmc:{name:'TP.HCM',center:[10.785,106.700],zoom:11,rain:RAIN_HCM,hasZones:true,hasPrice:true,
+  /* bounds = khung nhìn mở đầu. Cố ý hẹp hơn ranh giới hành chính đầy đủ:
+     lấy trọn phần đô thị liền mạch, bỏ rìa xa (Xuyên Mộc, mũi Dầu Tiếng) và
+     đặc khu Côn Đảo cách bờ ~200 km — gộp hết vào thì cả thành phố co lại
+     thành một chấm trên màn hình điện thoại. Các vùng đó vẫn nằm trong danh
+     sách bên phải và vẫn hiện ra khi kéo bản đồ. */
+  hcmc:{name:'TP.HCM',center:[10.870,106.860],zoom:10,bounds:[[10.35,106.40],[11.20,107.20]],
+        rain:RAIN_HCM,hasZones:true,hasPrice:true,
         season:{start:5,end:11,peak:[9,10,11]}},
-  hanoi:{name:'Hà Nội',center:[21.020,105.830],zoom:12,rain:RAIN_HN,hasZones:false,hasPrice:false,
+  hanoi:{name:'Hà Nội',center:[21.020,105.830],zoom:12,bounds:[[20.56,105.29],[21.39,106.02]],
+        rain:RAIN_HN,hasZones:true,hasPrice:true,
         season:{start:5,end:9,peak:[7,8]}}
 };
 
@@ -939,7 +1106,7 @@ vi:{
   ss_more:'Xem lịch mùa ngập →',
   risk:['Rất ít','Nhẹ','Vừa','Cao','Rất cao','Cực cao'],
   grade:['D','C−','C','B','A−','A+'],
-  rain:'mưa', tide:'triều cường', both:'mưa + triều',
+  rain:'mưa', tide:'triều cường', both:'mưa + triều', river:'lũ sông',
   m_flood:'Ngập', m_rentshop:'Thuê MB', m_renthome:'Thuê nhà', m_price:'Giá bán', m_value:'Đáng tiền',
   sort_safe:'An toàn nhất', sort_cheap:'Rẻ nhất', sort_value:'Đáng tiền nhất', sort_az:'A → Z',
   title:{rentshop:'Thuê <span>mặt bằng</span> không lo ngập',renthome:'Thuê <span>nhà</span> không lo ngập',buy:'<span>Mua</span> đúng chỗ, tránh vùng ngập'},
@@ -960,6 +1127,10 @@ vi:{
   vd_ask:'Việc cần làm trước khi ký',
   vd_none:'Không có điểm ngập công bố nào trong bán kính 3 km. Vẫn nên kiểm tra thực địa — danh sách công bố chỉ gồm các tuyến đường lớn, không gồm hẻm.',
   vd_add:'+ Thêm vào so sánh',vd_calc:'💸 Tính thiệt hại',
+  addr_title:{rentshop:'📍 Kiểm tra mặt bằng bạn định thuê',renthome:'📍 Kiểm tra căn nhà bạn định thuê',buy:'📍 Kiểm tra nhà/đất bạn định mua'},
+  addr_hint:{rentshop:'Dán địa chỉ mặt bằng trong tin đăng. Bạn sẽ biết: cách điểm ngập công bố bao xa, ngập sâu và lâu bao nhiêu, có nằm trong vùng phát thải thấp không, và cần đưa điều khoản gì vào hợp đồng.',
+       renthome:'Dán địa chỉ căn nhà trong tin đăng. Bạn sẽ biết nó gần điểm ngập nào, ngập bao lâu, gần metro nào, và cần hỏi chủ nhà điều gì trước khi đặt cọc.',
+       buy:'Dán địa chỉ nhà/đất. Bạn sẽ có điểm rủi ro ngập, tên phường mới cần đối chiếu trên sổ, hạ tầng quanh khu vực và mức giá thị trường để thương lượng.'},
   notfound:'Không tìm thấy địa chỉ. Thử thêm tên phường/quận, ví dụ "Huỳnh Tấn Phát, Phú Thuận".',
   neterr:'Không kết nối được dịch vụ tìm địa chỉ. Kiểm tra mạng rồi thử lại.',
   searching:'Đang tìm…',
@@ -980,7 +1151,7 @@ en:{
   ss_more:'See flood calendar →',
   risk:['Very low','Low','Moderate','High','Very high','Extreme'],
   grade:['D','C−','C','B','A−','A+'],
-  rain:'rain', tide:'tidal surge', both:'rain + tide',
+  rain:'rain', tide:'tidal surge', both:'rain + tide', river:'river flood',
   m_flood:'Flood', m_rentshop:'Shop rent', m_renthome:'Home rent', m_price:'Sale price', m_value:'Value',
   sort_safe:'Safest', sort_cheap:'Cheapest', sort_value:'Best value', sort_az:'A → Z',
   title:{rentshop:'Rent a <span>shop</span> that stays dry',renthome:'Rent a <span>home</span> that stays dry',buy:'<span>Buy</span> outside the flood zones'},
@@ -1000,6 +1171,10 @@ en:{
   vd_ask:'Do this before signing',
   vd_none:'No published flood point within 3 km. Still check on site — the official list only covers main roads, not alleys.',
   vd_add:'+ Add to compare',vd_calc:'💸 Estimate the loss',
+  addr_title:{rentshop:'📍 Check the shop you plan to rent',renthome:'📍 Check the home you plan to rent',buy:'📍 Check the property you plan to buy'},
+  addr_hint:{rentshop:'Paste the shop address from the listing. You will see how far it sits from a published flood point, how deep and how long it floods, whether it falls inside a low-emission zone, and which clauses to put in the lease.',
+       renthome:'Paste the home address from the listing. You will see the nearest flood point, how long water stays, the nearest metro, and what to ask the landlord before paying a deposit.',
+       buy:'Paste the address. You get a flood risk score, the new ward name to check against the land title, nearby infrastructure and market prices to negotiate with.'},
   notfound:'Address not found. Add the ward or district, e.g. "Huynh Tan Phat, Phu Thuan".',
   neterr:'Could not reach the geocoding service. Check your connection and retry.',
   searching:'Searching…',
@@ -1138,20 +1313,32 @@ let map;
 
 function T(k){const o=I18N[lang];return (o&&o[k]!==undefined)?o[k]:(I18N.vi[k]!==undefined?I18N.vi[k]:k);}
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+/* Chuỗi an toàn để nhét vào thuộc tính onclick="…": JSON.stringify lo phần
+   JavaScript (nháy, gạch chéo ngược), esc lo phần HTML. Tên phường có dấu nháy
+   hoặc địa chỉ do dịch vụ tìm kiếm trả về không còn làm vỡ trang. */
+function jsStr(v){return esc(JSON.stringify(String(v)));}
 function fmtM(n){return n>=1000?(n/1000).toFixed(1).replace('.',',')+' tỷ':Math.round(n)+' tr';}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),2600);}
 function distKm(a,b){const R=6371,dLat=(b[0]-a[0])*Math.PI/180,dLon=(b[1]-a[1])*Math.PI/180;
   const x=Math.sin(dLat/2)**2+Math.cos(a[0]*Math.PI/180)*Math.cos(b[0]*Math.PI/180)*Math.sin(dLon/2)**2;
   return 2*R*Math.asin(Math.sqrt(x));}
 function cityRain(){return CITIES[state.city].rain;}
-function extra(name){return DISTRICT_EXTRA[name]||{wards:'—',rent_home:[0,0],rent_shop:[0,0],fdays:0,drain:60,cause:'rain',q2note:'—'};}
+function extra(name){return DISTRICT_EXTRA[name]||zoneExtra(name)||{wards:'—',rent_home:[0,0],rent_shop:[0,0],fdays:0,drain:60,cause:'rain',q2note:'—'};}
 function isRent(){return state.persona!=='buy';}
+/* Thời gian rút: phút → giờ → ngày (vùng lũ sông Bùi, sông Đáy rút hàng tuần) */
+function fmtDrain(m){
+  if(m<60)return m+' phút';
+  if(m<48*60)return Math.round(m/60)+' giờ';
+  return Math.round(m/1440)+' ngày';
+}
 function rentKey(){return state.persona==='rentshop'?'rent_shop':'rent_home';}
 
-/* Mức ngập 0..5 theo kịch bản + tháng */
+/* Mức ngập 0..5 theo kịch bản + tháng.
+   Cộng/trừ theo mùa thay vì nhân: nhân làm mọi vùng dồn hết về mức 5 trong tháng mưa
+   đỉnh, mất hẳn sự khác nhau giữa các vùng — đúng thứ mà bảng màu cần thể hiện. */
 function adjustedRisk(base){
-  const f=cityRain()[state.month-1]*parseFloat(state.scenario);
-  return Math.max(0,Math.min(5,Math.round(base*f)));
+  const f=Math.min(2,cityRain()[state.month-1]*parseFloat(state.scenario));
+  return Math.max(0,Math.min(5,Math.round(base+2*(f-1))));
 }
 /* % diện tích ngập ước tính */
 function adjustedPct(p){
@@ -1183,13 +1370,25 @@ function getColor(feat){
 /* =====================================================================
    5. BẢN ĐỒ
    ===================================================================== */
+/* Đưa bản đồ về đúng phạm vi thành phố đang chọn, vừa khít khung nhìn hiện có. */
+function fitCity(){
+  const c=CITIES[state.city];
+  if(c.bounds)map.fitBounds(c.bounds,{padding:[16,16],animate:false});
+  else map.setView(c.center,c.zoom);
+}
+
 function initMap(){
   const c=CITIES[state.city];
   map=L.map('map',{zoomControl:true,tap:true}).setView(c.center,c.zoom);
+  fitCity();
   /* Nền bản đồ: Esri World Light Gray Canvas — dùng được tự do, KHÔNG cần API key.
      (CARTO basemaps đã chuyển sang bắt buộc API key và in chữ "API KEY REQUIRED" lên tile.) */
-  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+  state.baseMap=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
     {attribution:'Nền bản đồ: Esri, HERE, Garmin, © OpenStreetMap contributors | Dữ liệu tuyến đường & metro: © OpenStreetMap',maxZoom:16,maxNativeZoom:16}).addTo(map);
+  /* Ảnh vệ tinh: cùng nhà cung cấp, cũng không cần khoá API — để người xem nhìn tận nơi
+     mảnh đất / căn nhà mình định thuê hoặc mua: hẻm rộng bao nhiêu, sát kênh mương hay không. */
+  state.baseSat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    {attribution:'Ảnh vệ tinh: Esri, Maxar, Earthstar Geographics | Dữ liệu tuyến đường & metro: © OpenStreetMap',maxZoom:19,maxNativeZoom:19});
   /* Nhãn địa danh vẽ đè lên trên, nằm ở pane riêng để không che các lớp dữ liệu */
   map.createPane('labels');
   map.getPane('labels').style.zIndex=650;
@@ -1197,14 +1396,44 @@ function initMap(){
   L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
     {maxZoom:16,maxNativeZoom:16,pane:'labels'}).addTo(map);
   renderZones();renderFloodPoints();
+  /* Nhãn vùng bật/tắt theo mức zoom → vẽ lại đúng lúc vượt ngưỡng */
+  map.on('zoomend',()=>{
+    if(labelsOn()!==_labelsShown)renderZones();
+  });
 }
+
+/* ---------- Nhìn tận nơi: ảnh vệ tinh ngay trong bản đồ ---------- */
+function setBase(kind){
+  if(!map)return;
+  state.base=kind;
+  const sat=kind==='sat';
+  try{map.removeLayer(sat?state.baseMap:state.baseSat);}catch(e){}
+  (sat?state.baseSat:state.baseMap).addTo(map);
+  try{(sat?state.baseSat:state.baseMap).bringToBack();}catch(e){}
+  document.getElementById('base-map').classList.toggle('active',!sat);
+  document.getElementById('base-sat').classList.toggle('active',sat);
+  /* nền ảnh tối màu → vùng phủ mờ đi để vẫn nhìn rõ mái nhà, ngõ, kênh mương */
+  Object.values(state.layers).forEach(l=>{try{l.layer.setStyle({fillOpacity:sat?.22:.62,weight:sat?1.5:2});}catch(e){}});
+  if(sat&&map.getZoom()<16)map.setZoom(16);
+}
+
+/* Ngưỡng hiện nhãn vùng. Dưới ngưỡng, tên các vùng chồng lên nhau kín bản đồ —
+   thấy rõ nhất trên điện thoại, nơi khung nhìn mở đầu là zoom 9. TP.HCM có 41
+   vùng nên chịu được zoom 10; Hà Nội 126 phường/xã thì phải từ 12 trở lên. */
+function labelZoom(){return state.city==='hanoi'?12:10;}
+function labelsOn(){return !map||map.getZoom()>=labelZoom();}
+let _labelsShown=true;
 
 function clearZones(){Object.values(state.layers).forEach(l=>{try{map.removeLayer(l.layer);if(l.label)map.removeLayer(l.label);}catch(e){}});state.layers={};}
 
 function renderZones(){
   clearZones();
   if(!CITIES[state.city].hasZones||!state.show.dist)return;
-  DISTRICTS.features.forEach(feat=>{
+  const feats=zoneFeats();
+  if(!feats.length){ensureCityData(()=>{renderZones();renderList();updateStats();});return;}
+  const showLab=labelsOn();
+  _labelsShown=showLab;
+  feats.forEach(feat=>{
     const p=feat.properties,si=state.compare.indexOf(p.name),inC=si>=0;
     const layer=L.geoJSON(feat,{style:{color:inC?SLOT_COLORS[si]:'#fff',weight:inC?4:2,fillColor:getColor(feat),fillOpacity:inC?.85:.62}}).addTo(map);
     layer.on('click',()=>openZonePopup(feat,layer));
@@ -1212,7 +1441,10 @@ function renderZones(){
     layer.on('mouseout',e=>e.target.setStyle({fillOpacity:state.compare.indexOf(p.name)>=0?.85:.62}));
     const center=layer.getBounds().getCenter();
     const nm=lang==='en'?p.name:(p.vn||p.name);
-    const label=L.marker(center,{icon:L.divIcon({className:'',html:`<div class="dist-label${inC?' in-'+SLOT_LETTERS[si]:''}">${inC?SLOT_LETTERS[si]+' · ':''}${esc(nm)}</div>`,iconAnchor:[45,6],iconSize:[90,12]}),interactive:false}).addTo(map);
+    let label=null;
+    if(showLab||inC){
+      label=L.marker(center,{icon:L.divIcon({className:'',html:`<div class="dist-label${inC?' in-'+SLOT_LETTERS[si]:''}">${inC?SLOT_LETTERS[si]+' · ':''}${esc(nm)}</div>`,iconAnchor:[45,6],iconSize:[90,12]}),interactive:false}).addTo(map);
+    }
     state.layers[p.name]={layer,label,feat};
   });
 }
@@ -1222,19 +1454,22 @@ function openZonePopup(feat,layer){
   const l=adjustedRisk(p.risk||1),pct=adjustedPct(p);
   const nm=lang==='en'?p.name:(p.vn||p.name);
   const inC=state.compare.indexOf(p.name)>=0;
+  const c0=layer.getBounds().getCenter(),ctr=p.ctr||[c0.lat,c0.lng];
   const rentTxt=e[rentKey()][1]?`${e[rentKey()][0]}–${e[rentKey()][1]} tr/tháng`:'—';
   const html=`<div class="pop">
     <div class="pop-head"><span class="pop-name">${esc(nm)}</span>
       <span class="pop-tag" style="background:${C_FLOOD[l]}">${T('risk')[l]}</span></div>
-    <div class="pop-row"><span class="k">${T('vd_ward')}</span><span class="v" style="font-family:var(--font);font-size:10px;text-align:right">${esc(e.wards)}</span></div>
+    <div class="pop-row"><span class="k">${state.city==='hanoi'?'Quận/huyện cũ':T('vd_ward')}</span><span class="v" style="font-family:var(--font);font-size:10px;text-align:right">${esc(e.wards)}</span></div>
     <div class="pop-row"><span class="k">% ${T('m_flood').toLowerCase()}</span><span class="v">${pct}%</span></div>
     <div class="pop-row"><span class="k">${T('vd_days')}</span><span class="v">~${e.fdays}</span></div>
-    <div class="pop-row"><span class="k">${T('vd_drain')}</span><span class="v">${e.drain<60?e.drain+'′':Math.round(e.drain/60)+'h'}</span></div>
+    <div class="pop-row"><span class="k">${T('vd_drain')}</span><span class="v">${fmtDrain(e.drain)}</span></div>
     <div class="pop-row"><span class="k">${T('vd_cause')}</span><span class="v" style="font-family:var(--font)">${T(e.cause)}</span></div>
     <div class="pop-row"><span class="k">${state.persona==='rentshop'?T('m_rentshop'):state.persona==='renthome'?T('m_renthome'):T('m_price')}</span><span class="v" style="color:var(--green)">${isRent()?rentTxt:(p.house_min+'–'+p.house_max+' tr/m²')}</span></div>
     ${p.hotspots?`<div class="pop-warn">⚠️ ${esc(p.hotspots)}</div>`:''}
-    <div class="pop-src">Giá & ngày ngập: <span class="srcbadge src-est">ước tính</span> · Tên phường: <span class="srcbadge src-official">chính thức</span></div>
-    <a class="pop-row" style="display:block;margin-top:9px;padding:8px;background:${inC?'var(--green)':'var(--accent)'};color:#fff;text-align:center;border-radius:7px;font-size:11px;font-weight:800;cursor:pointer;text-decoration:none" onclick="toggleCompare('${p.name.replace(/'/g,"\\'")}');map.closePopup()">${inC?'✓ Đã thêm — bỏ ra':T('vd_add')}</a>
+    ${(state.city==='hanoi'&&p.note&&p.note!=='—')?`<div class="pop-hl">${esc(p.note)}</div>`:''}
+    <div class="pop-src">Giá & ngày ngập: <span class="srcbadge src-est">ước tính</span> · ${state.city==='hanoi'?'Ranh giới 126 phường/xã theo Nghị quyết 1656/NQ-UBTVQH15':'Tên phường'}: <span class="srcbadge src-official">chính thức</span></div>
+    <a class="pop-row" style="display:block;margin-top:9px;padding:8px;background:#0f172a;color:#fff;text-align:center;border-radius:7px;font-size:11px;font-weight:800;cursor:pointer;text-decoration:none" onclick="map.closePopup();openEye(${ctr[0]},${ctr[1]},${jsStr(nm)})">👁 Nhìn tận nơi khu vực này</a>
+    <a class="pop-row" style="display:block;margin-top:6px;padding:8px;background:${inC?'var(--green)':'var(--accent)'};color:#fff;text-align:center;border-radius:7px;font-size:11px;font-weight:800;cursor:pointer;text-decoration:none" onclick="toggleCompare(${jsStr(p.name)});map.closePopup()">${inC?'✓ Đã thêm — bỏ ra':T('vd_add')}</a>
   </div>`;
   layer.bindPopup(html,{maxWidth:300}).openPopup();
 }
@@ -1248,20 +1483,23 @@ function renderFloodPoints(){
   FLOOD_POINTS.filter(f=>f.c===state.city).forEach(f=>{
     // triều: không phụ thuộc mưa; mưa: phụ thuộc tháng
     const active=f.cause==='tide'?true:(rf*sc>=.45);
-    const col=f.cause==='tide'?'#7c3aed':'#0ea5e9';
+    const col=f.cause==='tide'?'#7c3aed':(f.cause==='river'?'#0369a1':'#0ea5e9');
     const r=f.cause==='tide'?9:8;
     const m=L.marker(f.ll,{icon:L.divIcon({className:'',iconSize:[r*2,r*2],iconAnchor:[r,r],
       html:`<div class="fp-dot" style="width:${r*2}px;height:${r*2}px;background:${col};opacity:${active?1:.35}"></div>`})}).addTo(map);
     m.bindPopup(`<div class="pop">
       <div class="pop-head"><span class="pop-name">${esc(f.n)}</span>
-        <span class="pop-tag ${f.cause==='tide'?'tag-tide':'tag-rain'}">${f.cause==='tide'?T('tide'):T('rain')}</span></div>
+        <span class="pop-tag ${f.cause==='tide'?'tag-tide':'tag-rain'}">${T(f.cause)}</span></div>
       <div class="pop-row"><span class="k">${T('vd_ward')}</span><span class="v" style="font-family:var(--font);font-size:10.5px">${esc(f.w)}</span></div>
       <div class="pop-row"><span class="k">${T('vd_depth')}</span><span class="v">~${f.d} cm</span></div>
-      <div class="pop-row"><span class="k">${T('vd_drain')}</span><span class="v">${f.drain<60?'< '+f.drain+' phút':'~'+Math.round(f.drain/60)+' giờ'}</span></div>
+      <div class="pop-row"><span class="k">${T('vd_drain')}</span><span class="v">${f.drain<60?'< ':'~'}${fmtDrain(f.drain)}</span></div>
       ${f.cause==='tide'
         ?`<div class="pop-warn">🌙 Ngập theo <b>đỉnh triều</b>, không cần mưa. Nặng nhất quanh mùng 1 &amp; rằm âm lịch, mỗi ngày 2 lần (rạng sáng và chiều tối). Tháng 10–11 là đỉnh.</div>`
-        :`<div class="pop-hl">🌧️ Ngập khi mưa lớn; nước thường rút trong 30 phút sau khi tạnh.</div>`}
-      <div class="pop-src">${f.src==='official'?'<span class="srcbadge src-official">chính thức</span> Sở Xây dựng TP.HCM công bố 6/2026':'<span class="srcbadge src-press">báo chí</span> tổng hợp 2025–2026'} · toạ độ gần đúng</div>
+        :f.cause==='river'
+        ?`<div class="pop-warn">🌊 Ngập do <b>lũ sông</b>, không phải mưa tại chỗ: nước từ thượng nguồn đổ về, có thể ngập cả khi trời đã tạnh. Rút theo <b>ngày và tuần</b>, không theo giờ — nhà ở đây thường phải làm gác lửng tránh lũ.</div>`
+        :`<div class="pop-hl">🌧️ Ngập khi mưa lớn; nước thường rút trong ${fmtDrain(f.drain)} sau khi tạnh.</div>`}
+      <div class="pop-src">${f.src==='official'?'<span class="srcbadge src-official">chính thức</span> '+(f.c==='hanoi'?'Hà Nội công bố (điểm ngập cố hữu)':'Sở Xây dựng TP.HCM công bố 6/2026'):'<span class="srcbadge src-press">báo chí</span> tổng hợp 2025–2026'} · toạ độ gần đúng</div>
+      <a class="pop-row" style="display:block;margin-top:8px;padding:8px;background:#0f172a;color:#fff;text-align:center;border-radius:7px;font-size:11px;font-weight:800;cursor:pointer;text-decoration:none" onclick="map.closePopup();openEye(${f.ll[0]},${f.ll[1]},${jsStr(f.n)})">👁 Nhìn tận nơi điểm ngập này</a>
     </div>`,{maxWidth:300});
     state.fpLayers.push(m);
   });
@@ -1301,14 +1539,30 @@ function toggleLayer(k,v){state.show[k]=v;if(k==='fp')renderFloodPoints();if(k==
 /* =====================================================================
    6. KIỂM TRA MỘT ĐỊA CHỈ  (tính năng chính)
    ===================================================================== */
+/* Hộp bao của một vùng, tính một lần rồi nhớ lại — chỉ để lọc nhanh */
+function featBBox(feat){
+  if(feat.__bb)return feat.__bb;
+  let s=90,w=180,n=-90,e=-180;
+  const g=feat.geometry,polys=g.type==='MultiPolygon'?g.coordinates:[g.coordinates];
+  polys.forEach(poly=>poly[0].forEach(c=>{
+    if(c[1]<s)s=c[1];if(c[1]>n)n=c[1];
+    if(c[0]<w)w=c[0];if(c[0]>e)e=c[0];
+  }));
+  return (feat.__bb=[s,w,n,e]);
+}
+/* Toạ độ rơi vào vùng nào? Đọc thẳng từ dữ liệu chứ KHÔNG đọc từ các lớp đang
+   vẽ: tắt lớp "Vùng" trong bảng lớp bản đồ thì state.layers rỗng, và phần tra
+   cứu địa chỉ sẽ mất luôn tên vùng, số ngày ngập, giá — dù dữ liệu vẫn còn đó. */
 function pointInZone(ll){
-  let hit=null;
-  Object.values(state.layers).forEach(l=>{
-    if(hit)return;
-    const b=l.layer.getBounds();
-    if(b.contains(L.latLng(ll[0],ll[1])))hit=l.feat;
-  });
-  return hit;
+  let fallback=null;
+  for(const feat of zoneFeats()){
+    const b=featBBox(feat);
+    if(ll[0]<b[0]||ll[0]>b[2]||ll[1]<b[1]||ll[1]>b[3])continue;
+    if(!fallback)fallback=feat;
+    const g=feat.geometry,polys=g.type==='MultiPolygon'?g.coordinates:[g.coordinates];
+    for(const poly of polys)if(inPolygonLonLat(ll,poly[0]))return feat;
+  }
+  return fallback;
 }
 
 /* Điểm rủi ro 0–100: khoảng cách tới điểm ngập + đặc tính vùng */
@@ -1413,20 +1667,22 @@ function showVerdict(ll,label){
   if(near&&near.km<3){
     facts+=`<div class="vd-fact"><span class="fi">📍</span><span class="fk">${T('vd_nearest')}</span><span class="fv">${esc(near.f.n)}</span></div>
     <div class="vd-fact"><span class="fi">📏</span><span class="fk">${T('vd_dist')}</span><span class="fv">${near.km<1?Math.round(near.km*1000)+' m':near.km.toFixed(1)+' km'}${R.within3>1?` · còn ${R.within3-1} điểm khác trong 3 km`:''}</span></div>
-    <div class="vd-fact"><span class="fi">${near.f.cause==='tide'?'🌙':'🌧️'}</span><span class="fk">${T('vd_cause')}</span><span class="fv">${near.f.cause==='tide'?T('tide')+' (lặp lại hàng tháng, không cần mưa)':T('rain')}</span></div>
-    <div class="vd-fact"><span class="fi">📐</span><span class="fk">${T('vd_depth')}</span><span class="fv">~${near.f.d} cm · rút ${near.f.drain<60?'< '+near.f.drain+' phút':'~'+Math.round(near.f.drain/60)+' giờ'}</span></div>`;
+    <div class="vd-fact"><span class="fi">${near.f.cause==='tide'?'🌙':'🌧️'}</span><span class="fk">${T('vd_cause')}</span><span class="fv">${near.f.cause==='tide'?T('tide')+' (lặp lại hàng tháng, không cần mưa)':near.f.cause==='river'?T('river')+' (nước từ thượng nguồn đổ về, rút theo ngày)':T('rain')}</span></div>
+    <div class="vd-fact"><span class="fi">📐</span><span class="fk">${T('vd_depth')}</span><span class="fv">~${near.f.d} cm · rút ${near.f.drain<60?'< ':'~'}${fmtDrain(near.f.drain)}</span></div>`;
   }else{
     facts+=`<div class="vd-fact"><span class="fi">✅</span><span class="fk">${T('vd_nearest')}</span><span class="fv" style="font-weight:600;font-size:11px">${T('vd_none')}</span></div>`;
   }
-  /* Phường/xã mới: tra từ ranh giới thật (168 đơn vị), không đoán */
-  const wd=(state.city==='hcmc')?wardAt(ll):null;
+  /* Phường/xã mới: tra từ ranh giới thật, không đoán.
+     TP.HCM: lớp 168 phường/xã riêng. Hà Nội: chính vùng đang vẽ đã là phường/xã mới. */
+  const wd=(state.city==='hcmc')?wardAt(ll)
+    :(feat?{t:feat.properties.t,n:feat.properties.name,od:extra(feat.properties.name).wards.replace(' (cũ)','')}:null);
   if(wd){
     facts+=`<div class="vd-fact" style="background:#eff6ff;border-radius:6px;padding:6px"><span class="fi">🏛️</span><span class="fk">${T('vd_ward')}</span>
       <span class="fv">${esc(wd.t)} ${esc(wd.n)} <span class="srcbadge src-official">chính thức</span><br>
       <span style="font-weight:500;color:var(--muted);font-size:10px">trước đây thuộc ${esc(wd.od)} · đây là tên phải ghi trên hợp đồng / sổ đỏ</span></span></div>`;
   }
   if(feat){
-    facts+=`<div class="vd-fact"><span class="fi">🗺️</span><span class="fk">${T('vd_zone')}</span><span class="fv">${esc(zoneName)} <span style="color:var(--muted);font-weight:500">(quận cũ)</span></span></div>
+    facts+=`<div class="vd-fact"><span class="fi">🗺️</span><span class="fk">${T('vd_zone')}</span><span class="fv">${esc(zoneName)} <span style="color:var(--muted);font-weight:500">${state.city==='hanoi'?'(phường/xã mới)':'(quận cũ)'}</span></span></div>
     <div class="vd-fact"><span class="fi">📅</span><span class="fk">${T('vd_days')}</span><span class="fv">~${e.fdays} ngày <span class="srcbadge src-est">ước tính</span></span></div>`;
   }else if(wd&&NO_DATA_OD[wd.od]){
     facts+=`<div class="vd-fact"><span class="fi">ℹ️</span><span class="fk">${T('vd_zone')}</span><span class="fv" style="font-size:11px;font-weight:600">${esc(wd.od)} — khu vực sáp nhập vào TP.HCM 01/07/2025, chưa có ước tính giá/ngập theo vùng</span></div>`;
@@ -1446,7 +1702,6 @@ function showVerdict(ll,label){
   }
 
   const acts=verdictActions(band.i,near,lez,cbd,mt);
-  const nmSafe=feat?feat.properties.name.replace(/'/g,"\\'"):'';
   document.getElementById('verdict').innerHTML=`
     <div class="vd-head" style="background:${band.c}">
       <div class="vd-score">${R.score}</div>
@@ -1457,7 +1712,8 @@ function showVerdict(ll,label){
       ${facts}
       <div class="vd-act"><h5>${T('vd_ask')}</h5><ul>${acts.map(a=>'<li>'+a+'</li>').join('')}</ul></div>
       <div class="vd-btns">
-        ${feat?`<button onclick="toggleCompare('${nmSafe}')">${T('vd_add')}</button>`:''}
+        <button onclick="openEye(${ll[0]},${ll[1]},${jsStr(String(label).substring(0,80))})">👁 Nhìn tận nơi</button>
+        ${feat?`<button onclick="toggleCompare(${jsStr(feat.properties.name)})">${T('vd_add')}</button>`:''}
         <button onclick="openModal('calc')">${T('vd_calc')}</button>
         <button onclick="openModal('check')">📋 Checklist</button>
       </div>
@@ -1616,24 +1872,27 @@ const OD_TO_KEY={
   'Bình Chánh':'Binh Chanh District','Cần Giờ':'Can Gio District','Củ Chi':'Cu Chi District',
   'Hóc Môn':'Hoc Mon District','Nhà Bè':'Nha Be District','TP Thủ Đức (cũ)':'District 2'
 };
-/* khu vực mới sáp nhập — chưa có ước tính giá/ngập theo vùng */
-const NO_DATA_OD={'Bình Dương':1,'Bà Rịa – Vũng Tàu':1};
+/* Từ bản 3.2 mọi phường/xã đều thuộc một vùng có số liệu — không còn vùng trắng. */
+const NO_DATA_OD={};
+/* phường/xã -> feature vùng chứa nó */
+function zoneOfWard(f){
+  const key=WARD2ZONE[f.properties.n]||OD_TO_KEY[f.properties.od];
+  return key?DISTRICTS.features.find(x=>x.properties.name===key):null;
+}
 
 function loadWards(cb){
   if(state.wardLoaded){cb&&cb();return;}
   if(window.WARD_DATA){state.wardLoaded=true;cb&&cb();return;}
   const s=document.createElement('script');
-  s.src='ban_do_phuong.js';
+  s.src='data/ban_do_phuong.js';
   s.onload=()=>{state.wardLoaded=true;cb&&cb();};
-  s.onerror=()=>{toast('Không nạp được ranh giới phường (ban_do_phuong.js).');};
+  /* lỗi mạng vẫn phải trả kết quả tra cứu — chỉ thiếu tên phường mới */
+  s.onerror=()=>{toast('Không nạp được ranh giới phường (data/ban_do_phuong.js).');cb&&cb();};
   document.head.appendChild(s);
 }
 
 function wardColor(f){
-  const od=f.properties.od;
-  if(NO_DATA_OD[od])return '#cbd5e1';                 // xám: chưa có dữ liệu
-  const key=OD_TO_KEY[od];
-  const feat=key&&DISTRICTS.features.find(x=>x.properties.name===key);
+  const feat=zoneOfWard(f);
   return feat?getColor(feat):'#cbd5e1';
 }
 
@@ -1654,10 +1913,11 @@ function renderWards(){
 }
 
 function wardPopup(f){
-  const p=f.properties,od=p.od,key=OD_TO_KEY[od];
-  const feat=key&&DISTRICTS.features.find(x=>x.properties.name===key);
+  const p=f.properties,od=p.od;
+  const feat=zoneOfWard(f);
+  const key=feat?feat.properties.name:null;
   const e=key?extra(key):null;
-  const nodata=!!NO_DATA_OD[od];
+  const nodata=!feat;
   let rows='';
   if(feat&&e){
     const l=adjustedRisk(feat.properties.risk||1);
@@ -1666,16 +1926,16 @@ function wardPopup(f){
       <div class="pop-row"><span class="k">${T('vd_cause')}</span><span class="v" style="font-family:var(--font)">${T(e.cause)}</span></div>
       <div class="pop-row"><span class="k">${state.persona==='rentshop'?T('m_rentshop'):state.persona==='renthome'?T('m_renthome'):T('m_price')}</span>
         <span class="v" style="color:var(--green)">${moneyRange(feat)} ${isRent()?'tr/th':'tr/m²'}</span></div>
-      <div class="pop-src">Số liệu suy từ <b>${esc(od)}</b> (quận/huyện cũ) <span class="srcbadge src-est">ước tính</span></div>`;
+      <div class="pop-src">Số liệu suy từ vùng <b>${esc(feat.properties.vn||key)}</b> <span class="srcbadge src-est">ước tính</span></div>`;
   }else if(nodata){
-    rows=`<div class="pop-warn">Khu vực mới sáp nhập vào TP.HCM từ 01/07/2025. Công cụ <b>chưa có ước tính giá và ngập theo vùng</b> ở đây — mới chỉ có các điểm ngập công bố (chấm tròn trên bản đồ).</div>`;
+    rows=`<div class="pop-warn">Chưa tra được vùng chứa phường/xã này.</div>`;
   }
   return `<div class="pop">
     <div class="pop-head"><span class="pop-name">${esc(p.t)} ${esc(p.n)}</span>
       <span class="pop-tag" style="background:${nodata?'#64748b':'#2563eb'}">${esc(p.t)}</span></div>
     <div class="pop-row"><span class="k">Thuộc (cũ)</span><span class="v" style="font-family:var(--font)">${esc(od)}</span></div>
     ${rows}
-    <div class="pop-src"><span class="srcbadge src-official">chính thức</span> Ranh giới 168 phường/xã theo Nghị quyết 1685/NQ-UBTVQH15, hiệu lực 01/07/2025. Đây là <b>tên phải ghi trên hợp đồng và sổ đỏ</b>.</div>
+    <div class="pop-src"><span class="srcbadge src-official">chính thức</span> Ranh giới 168 phường/xã (113 phường, 54 xã, 1 đặc khu) theo Nghị quyết 1685/NQ-UBTVQH15, hiệu lực 01/07/2025 — đã gồm cả Bình Dương và Bà Rịa – Vũng Tàu cũ. Đây là <b>tên phải ghi trên hợp đồng và sổ đỏ</b>.</div>
   </div>`;
 }
 
@@ -1683,9 +1943,13 @@ function wardPopup(f){
 function wardAt(ll){
   if(!window.WARD_DATA)return null;
   for(const f of window.WARD_DATA.features){
-    const rings=f.geometry.coordinates;
-    for(const ring of rings){
-      if(inPolygonLonLat(ll,ring))return f.properties;
+    const g=f.geometry,polys=g.type==='MultiPolygon'?g.coordinates:[g.coordinates];
+    for(const poly of polys){
+      if(!inPolygonLonLat(ll,poly[0]))continue;
+      /* các vòng sau vòng đầu là lỗ thủng — rơi vào lỗ nghĩa là ở ngoài phường */
+      let hole=false;
+      for(let i=1;i<poly.length;i++)if(inPolygonLonLat(ll,poly[i])){hole=true;break;}
+      if(!hole)return f.properties;
     }
   }
   return null;
@@ -1738,14 +2002,14 @@ function moneyRange(feat){
 
 function renderList(){
   const c=document.getElementById('zone-list');c.innerHTML='';
-  if(!CITIES[state.city].hasZones){
+  if(!CITIES[state.city].hasZones||!zoneFeats().length){
+    ensureCityData(()=>renderList());
     const fps=FLOOD_POINTS.filter(f=>f.c===state.city);
     document.getElementById('list-count').textContent=fps.length;
     c.innerHTML=`<div style="font-size:11.5px;line-height:1.6;color:var(--muted);padding:4px 0 10px">
-      Hà Nội chưa có dữ liệu ranh giới vùng và giá theo khu vực trong công cụ này.
-      Dưới đây là <b>${fps.length} điểm ngập</b> đã được báo chí ghi nhận 2025–2026, và các lớp
-      <b>quy hoạch / metro / vùng phát thải thấp</b> vẫn hoạt động đầy đủ.
-      Bạn vẫn <b>kiểm tra được từng địa chỉ</b> ở ô phía trên.</div>`;
+      Đang nạp ranh giới phường/xã… Trong lúc chờ, dưới đây là <b>${fps.length} điểm ngập</b>
+      đã được công bố / báo chí ghi nhận. Các lớp <b>quy hoạch / metro / vùng phát thải thấp</b>
+      vẫn hoạt động đầy đủ, và bạn vẫn <b>kiểm tra được từng địa chỉ</b> ở ô phía trên.</div>`;
     fps.sort((a,b)=>b.d-a.d).forEach(f=>{
       const el=document.createElement('div');el.className='item';
       el.innerHTML=`<div class="item-marker" style="background:${f.cause==='tide'?'#7c3aed':'#0ea5e9'}"></div>
@@ -1761,7 +2025,7 @@ function renderList(){
     return;
   }
 
-  let items=DISTRICTS.features.map(f=>{
+  let items=zoneFeats().map(f=>{
     const p=f.properties,e=extra(p.name);
     return{feat:f,p,e,name:p.name,dn:lang==='en'?p.name:(p.vn||p.name),
       l:adjustedRisk(p.risk||1),pct:adjustedPct(p),money:moneyOf(f),vs:valueScore(f)};
@@ -1777,6 +2041,7 @@ function renderList(){
     const ob=it.money>state.budget&&it.money>0;
     const el=document.createElement('div');
     el.className='item'+(inC?' in-compare':'')+(ob?' out-budget':'');
+    el.setAttribute('role','button');el.tabIndex=0;
     const unit=isRent()?'tr/th':'tr/m²';
     el.innerHTML=`<div class="item-marker" style="background:${C_FLOOD[it.l]}"></div>
       <div class="item-info">
@@ -1785,7 +2050,7 @@ function renderList(){
         <div class="ward">${esc(it.e.wards)}</div>
       </div>
       <div class="item-pct">${moneyRange(it.feat)}<span class="pl">${unit}</span></div>
-      <button class="add-btn ${inC?'added':''}" onclick="event.stopPropagation();toggleCompare('${it.name.replace(/'/g,"\\'")}')">${inC?SLOT_LETTERS[si]:'+'}</button>`;
+      <button class="add-btn ${inC?'added':''}" onclick="event.stopPropagation();toggleCompare(${jsStr(it.name)})">${inC?SLOT_LETTERS[si]:'+'}</button>`;
     el.onclick=()=>{const L0=state.layers[it.name];if(L0){map.flyToBounds(L0.layer.getBounds(),{padding:[40,40],duration:.6});openZonePopup(it.feat,L0.layer);}};
     c.appendChild(el);
   });
@@ -1828,19 +2093,20 @@ function updateStats(){
   const rain=cityRain();
   if(CITIES[state.city].hasZones){
     let tp=0,td=0,tm=0,n=0;
-    DISTRICTS.features.forEach(f=>{const p=f.properties,e=extra(p.name);
+    zoneFeats().forEach(f=>{const p=f.properties,e=extra(p.name);
       tp+=adjustedPct(p);td+=e.fdays;tm+=moneyOf(f);n++;});
+    if(!n){document.getElementById('st-a').textContent='…';document.getElementById('st-b').textContent='…';return;}
     const pctAvg=Math.round(tp/n);
     document.getElementById('st-a').textContent=pctAvg+'%';
     document.getElementById('st-a').className='sv'+(pctAvg>45?' bad':'');
     document.getElementById('st-a-lab').textContent=T('stat_lab').flood;
-    document.getElementById('st-b').textContent=Math.round(tm/n)+(isRent()?'tr':'tr');
+    document.getElementById('st-b').textContent=Math.round(tm/n)+'tr';
     document.getElementById('st-b-lab').textContent=isRent()?(state.persona==='rentshop'?T('stat_lab').rentshop:T('stat_lab').renthome):T('stat_lab').price;
   }else{
     const fps=FLOOD_POINTS.filter(f=>f.c===state.city);
     document.getElementById('st-a').textContent=fps.length;
     document.getElementById('st-a-lab').textContent='Điểm ngập';
-    document.getElementById('st-b').textContent=Math.round(fps.reduce((s,f)=>s+f.d,0)/fps.length)+'cm';
+    document.getElementById('st-b').textContent=fps.length?Math.round(fps.reduce((s,f)=>s+f.d,0)/fps.length)+'cm':'—';
     document.getElementById('st-b-lab').textContent='Sâu TB';
   }
   document.getElementById('st-c').textContent=`${state.compare.length}/3`;
@@ -1876,11 +2142,17 @@ function renderSeason(){
    8. ĐIỀU KHIỂN
    ===================================================================== */
 function setCity(c){
-  state.city=c;state.compare=[];state.geoMarker=null;state.geoCircle=null;
+  state.city=c;state.compare=[];
+  /* Chỉ gán null thì ghim 📍 và vòng tròn 1 km của địa chỉ đã tra ở thành phố
+     trước vẫn nằm lại trên bản đồ vĩnh viễn — phải gỡ khỏi bản đồ trước. */
+  if(state.geoMarker){try{map.removeLayer(state.geoMarker)}catch(e){}state.geoMarker=null;}
+  if(state.geoCircle){try{map.removeLayer(state.geoCircle)}catch(e){}state.geoCircle=null;}
+  state.lastCheck=null;
+  if(document.getElementById('eye').classList.contains('show'))closeEye();
   document.querySelectorAll('#city-group .pill').forEach(b=>b.classList.toggle('active',b.dataset.city===c));
   document.getElementById('verdict').classList.remove('show');
-  const cc=CITIES[c];
-  map.setView(cc.center,cc.zoom);
+  fitCity();
+  ensureCityData(()=>{renderZones();renderList();updateStats();});
   renderZones();renderFloodPoints();renderRoads();renderPlanning();renderWards();
   renderAll();
 }
@@ -1902,10 +2174,24 @@ function setMonth(m){
   state.month=m;
   renderZones();renderFloodPoints();renderWards();renderMonthBar();renderList();updateStats();
 }
+/* Đổ chữ tĩnh (data-i18n) theo ngôn ngữ hiện tại. Tách riêng để lúc mở trang
+   cũng gọi được: trước đây chỉ setLang mới gọi, nên người đã chọn EN lần trước
+   quay lại vẫn thấy nguyên thanh tiêu đề bằng tiếng Việt. */
+function applyI18nDom(){
+  document.documentElement.lang=lang;
+  document.querySelectorAll('#lang-group .pill').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const v=I18N[lang][el.dataset.i18n];
+    if(typeof v!=='string')return;
+    /* innerHTML vì vài chuỗi có thực thể HTML (&amp;) — nên phần tử mang
+       data-i18n không được chứa phần tử con, kẻo đổi ngôn ngữ là xoá mất nó. */
+    if(el.firstElementChild){console.warn('data-i18n đặt trên phần tử có con:',el.dataset.i18n);return;}
+    el.innerHTML=v;
+  });
+}
 function setLang(l){
   lang=l;try{localStorage.setItem('fm_lang',l)}catch(e){}
-  document.querySelectorAll('#lang-group .pill').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));
-  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(I18N[lang][k]!==undefined&&typeof I18N[lang][k]==='string')el.innerHTML=I18N[lang][k];});
+  applyI18nDom();
   renderAll();renderZones();
 }
 function toggleCompare(name){
@@ -1923,9 +2209,9 @@ function renderSlots(){
     const nm=state.compare[i],s=document.createElement('div');
     s.className='cb-slot'+(nm?'':' empty');
     if(nm){
-      const f=DISTRICTS.features.find(x=>x.properties.name===nm);
+      const f=zoneFeats().find(x=>x.properties.name===nm);
       const dn=lang==='en'?nm:(f?.properties.vn||nm);
-      s.innerHTML=`<div class="cb-dot" style="background:${SLOT_COLORS[i]}"></div><span>${SLOT_LETTERS[i]} · ${esc(dn)}</span><span class="cb-close" onclick="toggleCompare('${nm.replace(/'/g,"\\'")}')">✕</span>`;
+      s.innerHTML=`<div class="cb-dot" style="background:${SLOT_COLORS[i]}"></div><span>${SLOT_LETTERS[i]} · ${esc(dn)}</span><span class="cb-close" role="button" tabindex="0" aria-label="Bỏ khỏi so sánh" onclick="toggleCompare(${jsStr(nm)})">✕</span>`;
     }else s.innerHTML=`<div class="cb-dot" style="background:#cbd5e1"></div><span>Slot ${SLOT_LETTERS[i]}</span>`;
     c.appendChild(s);
   }
@@ -1947,20 +2233,27 @@ function renderAll(){
   /* Hà Nội chưa có dữ liệu giá theo vùng → ẩn bộ lọc ngân sách cho khỏi gây hiểu nhầm */
   document.getElementById('filter-sec').style.display=CITIES[state.city].hasPrice?'':'none';
   document.getElementById('mb-sub').textContent=state.city==='hcmc'?'mưa + triều':'cường độ mưa';
+  const dl=document.getElementById('ly-dist-lab');
+  if(dl)dl.textContent=state.city==='hanoi'?'Vùng (126 phường/xã mới)':'Vùng (quận cũ)';
+  const wrow=document.getElementById('ly-ward-row');
+  if(wrow)wrow.style.display=state.city==='hcmc'?'':'none';
   document.getElementById('srch-btn').textContent=T('check_btn');
-  document.getElementById('addr-title').textContent=state.persona==='rentshop'?'📍 Kiểm tra mặt bằng bạn định thuê':state.persona==='renthome'?'📍 Kiểm tra căn nhà bạn định thuê':'📍 Kiểm tra nhà/đất bạn định mua';
-  document.getElementById('addr-hint').textContent=state.persona==='rentshop'
-    ?'Dán địa chỉ mặt bằng trong tin đăng. Bạn sẽ biết: cách điểm ngập công bố bao xa, ngập sâu và lâu bao nhiêu, có nằm trong vùng phát thải thấp không, và cần đưa điều khoản gì vào hợp đồng.'
-    :state.persona==='renthome'
-    ?'Dán địa chỉ căn nhà trong tin đăng. Bạn sẽ biết nó gần điểm ngập nào, ngập bao lâu, gần metro nào, và cần hỏi chủ nhà điều gì trước khi đặt cọc.'
-    :'Dán địa chỉ nhà/đất. Bạn sẽ có điểm rủi ro ngập, tên phường mới cần đối chiếu trên sổ, hạ tầng quanh khu vực và mức giá thị trường để thương lượng.';
+  document.getElementById('addr-title').textContent=T('addr_title')[state.persona];
+  document.getElementById('addr-hint').textContent=T('addr_hint')[state.persona];
   renderExamples();renderSortChips();renderLegend();renderMonthBar();renderList();renderSlots();updateStats();renderSeason();
 }
 function renderExamples(){
   const eg=state.city==='hcmc'
     ?['Huỳnh Tấn Phát, Phú Thuận','Phan Xích Long, Phú Nhuận','Nguyễn Văn Quá, Đông Hưng Thuận','Thảo Điền, An Khánh']
     :['Nguyễn Khuyến, Văn Miếu','Tràng Tiền, Hoàn Kiếm','Nguyễn Xiển, Thanh Xuân','Phạm Văn Đồng, Nghĩa Đô'];
-  document.getElementById('addr-eg').innerHTML=eg.map(e=>`<span onclick="document.getElementById('srch').value='${e}';checkAddress()">${e}</span>`).join('');
+  const box=document.getElementById('addr-eg');
+  box.innerHTML='';
+  eg.forEach(e=>{
+    const b=document.createElement('button');
+    b.type='button';b.textContent=e;
+    b.onclick=()=>{document.getElementById('srch').value=e;checkAddress();};
+    box.appendChild(b);
+  });
 }
 
 /* =====================================================================
@@ -1975,6 +2268,13 @@ function openModal(tab){
   renderModal();
 }
 function closeModal(){document.getElementById('modal').classList.remove('show');}
+document.addEventListener('keydown',e=>{
+  if(e.key!=='Escape')return;
+  const ey=document.getElementById('eye');
+  if(ey.classList.contains('max')){eyeToggleMax();return;}
+  if(ey.classList.contains('show'))closeEye();
+  else closeModal();
+});
 
 function renderModal(){
   const tb=document.getElementById('mo-tabs');tb.innerHTML='';
@@ -1994,11 +2294,447 @@ function renderModal(){
   if(curTab==='calc')calcUpdate();
 }
 
+
+/* =====================================================================
+   9. NHÌN TẬN NƠI  ("mắt thần")
+   Mở thẳng trên web, KHÔNG cần khoá API: ảnh vệ tinh phủ lên địa hình thật,
+   nhà dựng khối 3D từ OpenStreetMap, và — thứ không bản đồ nào khác có —
+   MỰC NƯỚC NGẬP đã công bố dựng thành khối nước xanh ngay cạnh các khối nhà,
+   để thấy nước dâng tới đâu so với tầng trệt căn nhà mình định thuê / mua.
+
+     · Ảnh vệ tinh : Esri World Imagery (không khoá)
+     · Địa hình    : Terrain Tiles / AWS Open Data, mã hoá terrarium (không khoá)
+     · Khối nhà    : OpenStreetMap qua Overpass API (không khoá)
+     · Tuỳ chọn    : ảnh 3D CHỤP THẬT của Google (Photorealistic 3D Tiles) —
+                     chỉ bật nếu người dùng tự dán khoá Google Maps API của mình.
+   ===================================================================== */
+const GKEY_LS='fm_gmaps_key';
+const CESIUM_V='1.143.0', MAPLIBRE_V='5.24.0';
+let eye={ll:null,label:'',viewer:null,gl:null,mode:'free'};
+
+function gKey(){try{return localStorage.getItem(GKEY_LS)||'';}catch(e){return '';}}
+function saveGKey(){
+  const v=document.getElementById('eye-key-in').value.trim();
+  try{v?localStorage.setItem(GKEY_LS,v):localStorage.removeItem(GKEY_LS);}catch(e){}
+  if(v)eyeStart3D(); else eyeStartFree();
+}
+function forgetGKey(){
+  try{localStorage.removeItem(GKEY_LS);}catch(e){}
+  toast('Đã xoá khoá khỏi trình duyệt này.');
+  eyeStartFree();
+}
+
+/* Phóng to / thu nhỏ ô xem. Lúc nhỏ, cảnh 3D chỉ để nhìn — mọi thao tác
+   kéo xoay chỉ bật khi đã phóng to, để không cướp thao tác của bản đồ chính. */
+function eyeToggleMax(){
+  const el=document.getElementById('eye');
+  const max=el.classList.toggle('max');
+  document.getElementById('eye-max').textContent=max?'⤡':'⤢';
+  document.getElementById('eye-max').title=max?'Thu nhỏ':'Phóng to';
+  eyeInteractive(max);
+  setTimeout(()=>{
+    if(eye.gl){try{eye.gl.resize();}catch(e){}}
+    if(eye.viewer){try{eye.viewer.resize();}catch(e){}}
+  },240);
+}
+function eyeInteractive(on){
+  const m=eye.gl;
+  if(m){
+    ['scrollZoom','boxZoom','dragRotate','dragPan','keyboard','doubleClickZoom','touchZoomRotate']
+      .forEach(h=>{try{on?m[h].enable():m[h].disable();}catch(e){}});
+  }
+  if(eye.viewer){
+    try{
+      const c=eye.viewer.scene.screenSpaceCameraController;
+      c.enableRotate=c.enableTranslate=c.enableZoom=c.enableTilt=c.enableLook=on;
+    }catch(e){}
+  }
+}
+
+function openEye(lat,lng,label){
+  eye.ll=[lat,lng];eye.label=label||'';
+  const el=document.getElementById('eye');
+  el.classList.add('show');el.classList.remove('max');
+  document.getElementById('eye-max').textContent='⤢';
+  document.getElementById('eye-sub').textContent=label||`${lat.toFixed(5)}, ${lng.toFixed(5)}`;
+  /* có khoá Google thì dùng ảnh chụp thật, không thì dùng bản miễn phí — cả hai đều mở ngay */
+  if(gKey())eyeStart3D(); else eyeStartFree();
+}
+function closeEye(){
+  const el=document.getElementById('eye');
+  el.classList.remove('show');el.classList.remove('max');
+  eyeDestroy();
+  eyeStatus('');eyeLegend('');
+}
+function eyeDestroy(){
+  if(eye.viewer){try{eye.viewer.destroy();}catch(e){}eye.viewer=null;}
+  if(eye.gl){try{eye.gl.remove();}catch(e){}eye.gl=null;}
+  document.getElementById('eye-3d').innerHTML='';
+  document.getElementById('eye-panel').style.display='none';
+}
+function eyeStatus(msg){
+  let el=document.getElementById('eye-status');
+  if(!msg){if(el)el.remove();return;}
+  if(!el){el=document.createElement('div');el.id='eye-status';el.className='eye-status';
+    document.querySelector('.eye-body').appendChild(el);}
+  el.innerHTML=msg;
+}
+function eyeLegend(html){
+  let el=document.getElementById('eye-legend');
+  if(!html){if(el)el.remove();return;}
+  if(!el){el=document.createElement('div');el.id='eye-legend';el.className='eye-legend';
+    document.querySelector('.eye-body').appendChild(el);}
+  el.innerHTML=html;
+}
+/* các điểm ngập đã công bố quanh vị trí này */
+function eyeNearby(km){
+  if(!eye.ll)return [];
+  return FLOOD_POINTS.filter(f=>f.c===state.city)
+    .map(f=>({f,km:distKm(eye.ll,f.ll)}))
+    .filter(x=>x.km<=km).sort((a,b)=>a.km-b.km);
+}
+function fpColor(c){return c==='tide'?'#7c3aed':(c==='river'?'#0369a1':'#0ea5e9');}
+
+/* ---------------------------------------------------------------
+   A. Bản 3D miễn phí — mở thẳng, không cần khoá
+   --------------------------------------------------------------- */
+function loadScript(src,cb,onerr){
+  const el=document.createElement('script');el.src=src;el.onload=cb;el.onerror=onerr;
+  document.head.appendChild(el);
+}
+function loadCss(href){
+  const el=document.createElement('link');el.rel='stylesheet';el.href=href;document.head.appendChild(el);
+}
+function loadMapLibre(cb){
+  if(window.maplibregl){cb();return;}
+  const base=`https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/${MAPLIBRE_V}/`;
+  loadCss(base+'maplibre-gl.css');
+  loadScript(base+'maplibre-gl.js',cb,()=>{
+    eyeStatus('Không tải được thư viện bản đồ 3D (cần kết nối mạng).');
+    renderEyePanel();
+  });
+}
+
+function eyeStartFree(){
+  eye.mode='free';
+  eyeDestroy();
+  eyeStatus('Đang dựng cảnh 3D…');
+  loadMapLibre(()=>{
+    const [lat,lng]=eye.ll;
+    let m;
+    try{
+      m=new maplibregl.Map({
+        container:'eye-3d',
+        style:{
+          version:8,
+          sources:{
+            sat:{type:'raster',tileSize:256,maxzoom:19,
+              tiles:['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'],
+              attribution:'Ảnh vệ tinh: Esri, Maxar, Earthstar Geographics'},
+            dem:{type:'raster-dem',tileSize:256,maxzoom:14,encoding:'terrarium',
+              tiles:['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],
+              attribution:'Địa hình: Terrain Tiles / AWS Open Data'}
+          },
+          layers:[{id:'sat',type:'raster',source:'sat'}]
+        },
+        center:[lng,lat],zoom:17.2,pitch:66,bearing:-22,
+        maxPitch:85,attributionControl:{compact:true}
+      });
+    }catch(err){
+      eyeStatus('Trình duyệt này không bật được WebGL nên chưa dựng được cảnh 3D.');
+      renderEyePanel();
+      return;
+    }
+    eye.gl=m;
+    m.addControl(new maplibregl.NavigationControl({visualizePitch:true}),'top-right');
+    let built=false;
+    const build=()=>{
+      if(built||eye.gl!==m)return; built=true;
+      try{m.setTerrain({source:'dem',exaggeration:1.3});}catch(e){}
+      try{m.setSky({'sky-color':'#7fb2e5','horizon-color':'#dbeafe','fog-color':'#e2e8f0','fog-ground-blend':.6});}catch(e){}
+
+      /* vị trí đang xem */
+      const pin=document.createElement('div');
+      pin.style.cssText='font-size:30px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5));transform:translateY(-6px)';
+      pin.textContent='📍';
+      new maplibregl.Marker({element:pin,anchor:'bottom'}).setLngLat([lng,lat])
+        .setPopup(new maplibregl.Popup({offset:12}).setHTML(
+          `<b style="font-size:12px">${esc(eye.label||'Vị trí bạn đang xem')}</b>`))
+        .addTo(m);
+
+      /* điểm ngập + KHỐI NƯỚC dựng theo độ sâu đã công bố */
+      const near=eyeNearby(2);
+      const disks={type:'FeatureCollection',features:near.map(({f})=>({
+        type:'Feature',
+        properties:{d:f.d/100,col:fpColor(f.cause)},
+        geometry:{type:'Polygon',coordinates:[circleRing(f.ll[0],f.ll[1],55)]}
+      }))};
+      m.addSource('water',{type:'geojson',data:disks});
+      m.addLayer({id:'water',type:'fill-extrusion',source:'water',paint:{
+        'fill-extrusion-color':['get','col'],
+        'fill-extrusion-height':['get','d'],
+        'fill-extrusion-opacity':.55}});
+      near.forEach(({f,km})=>{
+        const d=document.createElement('div');
+        d.style.cssText=`width:14px;height:14px;border-radius:50%;background:${fpColor(f.cause)};
+          border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.5);cursor:pointer`;
+        new maplibregl.Marker({element:d}).setLngLat([f.ll[1],f.ll[0]])
+          .setPopup(new maplibregl.Popup({offset:10}).setHTML(
+            `<b style="font-size:12px">${esc(f.n)}</b><br>
+             <span style="font-size:11px">${esc(f.w)} · sâu ~${f.d} cm · rút ${fmtDrain(f.drain)}</span>`))
+          .addTo(m);
+      });
+
+      /* khối nhà thật quanh đó, lấy từ OpenStreetMap */
+      loadBuildings(m,lat,lng,(nbld)=>{
+        const nb=near.length;
+        eyeStatus(`Ảnh vệ tinh phủ địa hình thật · ${nbld?('<b>'+nbld+' khối nhà</b> dựng từ OpenStreetMap'):'chưa dựng được khối nhà (máy chủ OpenStreetMap đang bận)'} ·
+          <b>${nb} điểm ngập</b> công bố trong 2 km${nb?', khối nước xanh dựng đúng độ sâu đã công bố':''}.<br>
+          Bấm ⤢ hoặc bấm vào ô để phóng to · kéo để xoay · giữ chuột phải (hoặc hai ngón) để nghiêng ·
+          <a href="#" onclick="eyeSpin();return false" style="color:#7dd3fc">quay 360°</a> ·
+          <a href="#" onclick="renderEyePanel();return false" style="color:#7dd3fc">cách xem khác</a>`);
+      });
+      eyeLegend(`<i style="background:#2563eb"></i>Vị trí bạn đang xem<br>
+        <i style="background:#0ea5e9"></i>Ngập do mưa<br>
+        <i style="background:#7c3aed"></i>Ngập do triều cường<br>
+        <i style="background:#0369a1"></i>Ngập do lũ sông<br>
+        <span style="opacity:.75;font-size:9.5px">Khối nước dựng theo độ sâu điển hình đã công bố,
+        không phải mực nước thời gian thực.</span>`);
+    };
+    eyeInteractive(document.getElementById('eye').classList.contains('max'));
+    if(m.isStyleLoaded())build(); else m.once('style.load',build);
+    /* mạng chậm vẫn phải dựng được cảnh, đừng để người dùng nhìn màn hình chờ mãi */
+    setTimeout(build,6000);
+  });
+}
+
+/* vòng tròn bán kính r mét quanh một toạ độ (để dựng khối nước) */
+function circleRing(lat,lng,r,n){
+  n=n||36;const ring=[];
+  const dLat=r/111320, dLng=r/(111320*Math.cos(lat*Math.PI/180));
+  for(let i=0;i<=n;i++){
+    const a=2*Math.PI*i/n;
+    ring.push([lng+dLng*Math.cos(a),lat+dLat*Math.sin(a)]);
+  }
+  return ring;
+}
+
+/* khối nhà từ OpenStreetMap — chiều cao thật nếu có, không thì suy từ số tầng.
+   Overpass là dịch vụ cộng đồng, có lúc quá tải → thử lần lượt vài máy chủ,
+   và nếu không máy nào trả lời thì cảnh 3D vẫn xem được, chỉ thiếu khối nhà. */
+const OVERPASS=['https://overpass-api.de/api/interpreter',
+                'https://overpass.kumi.systems/api/interpreter',
+                'https://overpass.private.coffee/api/interpreter'];
+function overpassGet(q,i){
+  i=i||0;
+  if(i>=OVERPASS.length)return Promise.reject(new Error('busy'));
+  const ctl=new AbortController();
+  const to=setTimeout(()=>ctl.abort(),12000);
+  return fetch(OVERPASS[i]+'?data='+encodeURIComponent(q),{signal:ctl.signal})
+    .then(r=>{clearTimeout(to);if(!r.ok)throw new Error('HTTP '+r.status);return r.json();})
+    .catch(()=>{clearTimeout(to);return overpassGet(q,i+1);});
+}
+function loadBuildings(m,lat,lng,done){
+  const q=`[out:json][timeout:25];(way["building"](around:420,${lat},${lng}););out geom;`;
+  overpassGet(q)
+    .then(j=>{
+      const feats=[];
+      (j.elements||[]).forEach(el=>{
+        if(!el.geometry||el.geometry.length<4)return;
+        const ring=el.geometry.map(p=>[p.lon,p.lat]);
+        if(ring[0][0]!==ring[ring.length-1][0]||ring[0][1]!==ring[ring.length-1][1])ring.push(ring[0]);
+        const t=el.tags||{};
+        let h=parseFloat(String(t.height||'').replace(/[^\d.]/g,''));
+        if(!h||!isFinite(h)){
+          const lv=parseFloat(t['building:levels']);
+          h=(lv&&isFinite(lv))?lv*3.3:9;
+        }
+        feats.push({type:'Feature',properties:{h:Math.max(3,Math.min(300,h))},
+          geometry:{type:'Polygon',coordinates:[ring]}});
+      });
+      if(!m||!m.getStyle)return;
+      m.addSource('bld',{type:'geojson',data:{type:'FeatureCollection',features:feats}});
+      m.addLayer({id:'bld',type:'fill-extrusion',source:'bld',paint:{
+        'fill-extrusion-color':'#dfe6ef',
+        'fill-extrusion-height':['get','h'],
+        'fill-extrusion-base':0,
+        'fill-extrusion-opacity':.92,
+        'fill-extrusion-vertical-gradient':true}},'water');
+      done&&done(feats.length);
+    })
+    .catch(()=>{done&&done(0);});
+}
+
+/* quay một vòng quanh vị trí */
+function eyeSpin(){
+  const m=eye.gl;if(!m)return;
+  const start=m.getBearing();
+  let t0=null;
+  function step(ts){
+    if(!eye.gl)return;
+    if(!t0)t0=ts;
+    const p=(ts-t0)/9000;
+    m.setBearing(start+360*Math.min(1,p));
+    if(p<1)requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+/* ---------------------------------------------------------------
+   B. Các cách xem khác (mở tab mới / ảnh vệ tinh trong bản đồ chính)
+   --------------------------------------------------------------- */
+function renderEyePanel(){
+  const p=document.getElementById('eye-panel');
+  p.style.display='';
+  const [lat,lng]=eye.ll;
+  const gm=`https://www.google.com/maps/@?api=1&map_action=map&center=${lat},${lng}&zoom=19&basemap=satellite`;
+  const sv=`https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${lat},${lng}`;
+  const ge=`https://earth.google.com/web/@${lat},${lng},0a,250d,35y,0h,60t,0r`;
+  const near=eyeNearby(1.5);
+  const nearTxt=near.length
+    ? `Trong bán kính 1,5 km quanh điểm này có <b>${near.length} điểm ngập đã công bố</b>, gần nhất là
+       <b>${esc(near[0].f.n)}</b> (${near[0].km<1?Math.round(near[0].km*1000)+' m':near[0].km.toFixed(1)+' km'},
+       sâu ~${near[0].f.d} cm).`
+    : 'Trong bán kính 1,5 km quanh điểm này chưa có điểm ngập nào được công bố.';
+  p.innerHTML=`<div class="eye-card">
+    <h4>Các cách nhìn tận nơi</h4>
+    <p>${nearTxt}</p>
+    <div class="eye-btns">
+      <button type="button" class="eye-btn primary" onclick="eyeStartFree()">
+        <b>🧊 Quay lại cảnh 3D trong công cụ</b>
+        <span>Ảnh vệ tinh + khối nhà OpenStreetMap + khối nước theo độ sâu ngập — không cần khoá</span></button>
+      <button type="button" class="eye-btn" onclick="eyeSatInMap()">
+        <b>🛰 Ảnh vệ tinh trên bản đồ chính</b><span>Xem từ trên xuống, có ranh phường và vùng phát thải thấp</span></button>
+      <a class="eye-btn" href="${gm}" target="_blank" rel="noopener">
+        <b>🗺 Google Maps vệ tinh</b><span>Ảnh nét hơn, đo được bề rộng hẻm</span></a>
+      <a class="eye-btn" href="${sv}" target="_blank" rel="noopener">
+        <b>🚶 Street View</b><span>Nhìn mặt tiền, bậc thềm, cốt nền so với mặt đường</span></a>
+      <a class="eye-btn" href="${ge}" target="_blank" rel="noopener">
+        <b>🌍 Google Earth 3D</b><span>Khối nhà và địa hình xung quanh</span></a>
+      <button type="button" class="eye-btn" onclick="document.getElementById('eye-key-box').style.display='block';this.style.display='none'">
+        <b>👁 Ảnh 3D CHỤP THẬT của Google</b><span>Nét hơn khối nhà OSM — cần khoá Google Maps API của bạn</span></button>
+    </div>
+    <div id="eye-key-box" style="display:none">
+      <h4>Khoá Google Maps API (tuỳ chọn)</h4>
+      <p style="margin-bottom:6px">Tạo khoá trong Google Cloud Console, bật <b>Map Tiles API</b>.
+        Khoá chỉ lưu trong trình duyệt này (localStorage) và gửi thẳng tới Google — công cụ
+        không có máy chủ nào để nhận nó. Google tính phí theo lượt tải, nên hãy giới hạn khoá
+        theo tên miền trong Cloud Console.</p>
+      <div class="eye-key">
+        <input id="eye-key-in" placeholder="AIza…" value="${esc(gKey())}">
+        <button onclick="saveGKey()">Bật ảnh chụp thật</button>
+      </div>
+      ${gKey()?`<p style="margin-top:8px"><a href="#" onclick="forgetGKey();return false" style="color:var(--danger)">Xoá khoá khỏi trình duyệt này</a></p>`:''}
+    </div>
+    <div class="eye-note">
+      Điều quan trọng nhất không ảnh nào thấy được: <b>cao độ nền nhà so với mặt đường</b>.
+      Đường được nâng không có nghĩa là nhà hết ngập — Nguyễn Hữu Cảnh nâng đường xong,
+      nhà trong hẻm ngập nặng hơn trước. Ảnh giúp bạn biết cần đo cái gì khi đến tận nơi.
+    </div>
+  </div>`;
+}
+
+function eyeSatInMap(){
+  const ll=eye.ll;
+  closeEye();
+  setBase('sat');
+  map.flyTo(ll,18,{duration:.8});
+  toast('Đã bật ảnh vệ tinh. Bấm "Sơ đồ" trong bảng lớp bản đồ để quay lại.');
+}
+
+/* ---------------------------------------------------------------
+   C. Ảnh 3D chụp thật của Google (tuỳ chọn, cần khoá của người dùng)
+   --------------------------------------------------------------- */
+function loadCesium(cb){
+  if(window.Cesium){cb();return;}
+  const base=`https://cdnjs.cloudflare.com/ajax/libs/cesium/${CESIUM_V}/`;
+  window.CESIUM_BASE_URL=base;
+  loadCss(base+'Widgets/widgets.css');
+  loadScript(base+'Cesium.js',cb,()=>{
+    eyeStatus('Không tải được thư viện 3D. '+
+      '<a href="#" onclick="eyeStartFree();return false" style="color:#7dd3fc">Dùng bản miễn phí</a>');
+  });
+}
+
+async function eyeStart3D(){
+  const key=gKey();
+  if(!key){eyeStartFree();return;}
+  eye.mode='google';
+  eyeDestroy();
+  eyeStatus('Đang tải ảnh 3D chụp thật…');
+  loadCesium(async()=>{
+    try{
+      const v=new Cesium.Viewer('eye-3d',{
+        globe:false,baseLayer:false,baseLayerPicker:false,geocoder:false,homeButton:false,
+        sceneModePicker:false,navigationHelpButton:false,infoBox:false,selectionIndicator:false,
+        timeline:false,animation:false,fullscreenButton:false,requestRenderMode:true
+      });
+      eye.viewer=v;
+      v.scene.skyAtmosphere.show=true;
+      let ts=null;
+      try{ts=await Cesium.createGooglePhotorealistic3DTileset({key});}
+      catch(e1){
+        try{ts=await Cesium.createGooglePhotorealistic3DTileset(key);}
+        catch(e2){
+          ts=await Cesium.Cesium3DTileset.fromUrl(
+            `https://tile.googleapis.com/v1/3dtiles/root.json?key=${encodeURIComponent(key)}`,
+            {showCreditsOnScreen:true});
+        }
+      }
+      v.scene.primitives.add(ts);
+      const [lat,lng]=eye.ll;
+      v.camera.setView({
+        destination:Cesium.Cartesian3.fromDegrees(lng,lat-0.0022,300),
+        orientation:{heading:0,pitch:Cesium.Math.toRadians(-38),roll:0}
+      });
+      v.entities.add({
+        position:Cesium.Cartesian3.fromDegrees(lng,lat,25),
+        point:{pixelSize:15,color:Cesium.Color.fromCssColorString('#2563eb'),
+          outlineColor:Cesium.Color.WHITE,outlineWidth:3,
+          disableDepthTestDistance:Number.POSITIVE_INFINITY},
+        label:{text:'Vị trí bạn đang xem',font:'700 13px system-ui,sans-serif',
+          fillColor:Cesium.Color.WHITE,showBackground:true,
+          backgroundColor:Cesium.Color.fromCssColorString('rgba(37,99,235,.92)'),
+          pixelOffset:new Cesium.Cartesian2(0,-26),
+          disableDepthTestDistance:Number.POSITIVE_INFINITY}
+      });
+      const near=eyeNearby(2);
+      near.forEach(({f})=>{
+        v.entities.add({
+          position:Cesium.Cartesian3.fromDegrees(f.ll[1],f.ll[0],20),
+          point:{pixelSize:12,color:Cesium.Color.fromCssColorString(fpColor(f.cause)),
+            outlineColor:Cesium.Color.WHITE,outlineWidth:2,
+            disableDepthTestDistance:Number.POSITIVE_INFINITY},
+          label:{text:`${f.n} · ~${f.d} cm`,font:'600 12px system-ui,sans-serif',
+            fillColor:Cesium.Color.WHITE,showBackground:true,
+            backgroundColor:Cesium.Color.fromCssColorString('rgba(15,23,42,.85)'),
+            pixelOffset:new Cesium.Cartesian2(0,-22),
+            distanceDisplayCondition:new Cesium.DistanceDisplayCondition(0,2500),
+            disableDepthTestDistance:Number.POSITIVE_INFINITY}
+        });
+      });
+      eyeInteractive(document.getElementById('eye').classList.contains('max'));
+      eyeStatus(`Ảnh 3D chụp thật (Google) · ${near.length} điểm ngập công bố trong 2 km.
+        <a href="#" onclick="eyeStartFree();return false" style="color:#7dd3fc">Bản miễn phí</a> ·
+        <a href="#" onclick="renderEyePanel();return false" style="color:#7dd3fc">cách xem khác</a>`);
+      eyeLegend(`<i style="background:#2563eb"></i>Vị trí bạn đang xem<br>
+        <i style="background:#0ea5e9"></i>Ngập do mưa<br>
+        <i style="background:#7c3aed"></i>Ngập do triều cường<br>
+        <i style="background:#0369a1"></i>Ngập do lũ sông`);
+    }catch(err){
+      eyeStatus('Không mở được ảnh chụp thật: '+esc(String(err&&err.message||err))+
+        '<br>Thường do khoá chưa bật <b>Map Tiles API</b> hoặc bị giới hạn tên miền. '+
+        '<a href="#" onclick="eyeStartFree();return false" style="color:#7dd3fc">Dùng bản miễn phí</a>');
+    }
+  });
+}
+
+
 /* ---------- So sánh ---------- */
 function tabCompare(){
   if(state.compare.length<2)return `<div class="disclaimer">${T('need2')}</div>`;
   const data=state.compare.map(nm=>{
-    const f=DISTRICTS.features.find(x=>x.properties.name===nm),p=f.properties,e=extra(nm);
+    const f=zoneFeats().find(x=>x.properties.name===nm),p=f.properties,e=extra(nm);
     return{nm,p,e,feat:f,l:adjustedRisk(p.risk||1),pct:adjustedPct(p),
       dp:Math.round((p.depth||0)*parseFloat(state.scenario)*cityRain()[state.month-1]),
       money:moneyOf(f),vs:valueScore(f)};
@@ -2247,7 +2983,11 @@ function tabSources(){
     ['159 vị trí ngập toàn TP.HCM sau sáp nhập (TP.HCM cũ 76, Thủ Đức cũ 19, Bình Dương cũ 52, BR-VT cũ 31)','Báo chí dẫn số liệu ngành xây dựng','6/2026','press'],
     ['Đỉnh triều Thủ Dầu Một 1,88 m; Phú An 1,78 m','Đài KTTV Nam Bộ qua báo chí','11/2025','official'],
     ['Bỏ cấp quận/huyện; TP.HCM còn 168 phường/xã + 1 đặc khu','Nghị quyết 1685/NQ-UBTVQH15','16/6/2025, hiệu lực 1/7/2025','official'],
-    ['Hà Nội: 11 / 71 / 220 điểm ngập theo ngưỡng mưa 50–70 / 70–100 / &gt;100 mm/h','Kế hoạch thoát nước nội thành Hà Nội 2026','2026','official'],
+    ['Hà Nội: 11 / 71 / 220 điểm ngập theo ngưỡng mưa 50–70 / 70–100 / &gt;100 mm/h (220 điểm rơi vào 54 phường/xã)','Kế hoạch thoát nước nội thành Hà Nội mùa mưa 2026, UBND TP phê duyệt 29/4','2026','official'],
+    ['Danh sách 11 điểm ngập cố hữu: Nguyễn Khuyến, Hoa Bằng, Phan Bội Châu – Lý Thường Kiệt, ngã năm Đường Thành – Bát Đàn – Nhà Hỏa, Cao Bá Quát, Thụy Khuê (dốc La Pho), Minh Khai (chân cầu Vĩnh Tuy), Nguyễn Chính, Đại lộ Thăng Long, Ngọc Lâm, Hoàng Như Tiếp','Sở Xây dựng Hà Nội / Công ty Thoát nước Hà Nội qua báo chí','2025–2026','official'],
+    ['Hà Nội có 126 phường/xã mới (51 phường, 75 xã) từ 01/07/2025','Nghị quyết 1656/NQ-UBTVQH15','01/07/2025','official'],
+    ['Ranh giới 126 phường/xã Hà Nội vẽ trên bản đồ này','OpenStreetMap (Overpass API), đã đơn giản hoá','8/2026','official'],
+    ['Trục tiêu thoát nước Hà Nội: sông Tô Lịch, Kim Ngưu, Lừ, Sét, Cầu Bây; trạm bơm Yên Sở, Yên Nghĩa, Cổ Nhuế, Đồng Bông; đập Thanh Liệt','Kế hoạch thoát nước nội thành 2026','2026','official'],
     ['Hà Nội: 122 điểm ngập, 23 điểm không lưu thông được','Báo chí ghi nhận đợt mưa lớn','10/2025','press'],
     ['Vùng phát thải thấp Hà Nội: 9 phường trong Vành đai 1 từ 01/07/2026; mở rộng 14 phường/xã từ 01/01/2028','Nghị quyết HĐND TP Hà Nội','11/2025','official'],
     ['TP.HCM: đề án vùng phát thải thấp trung tâm (15 cầu, 20 tuyến đường) + Cần Giờ; hỗ trợ chuyển đổi xe 100/80/20%','Đề xuất của Sở ngành TP.HCM','2025–2026','press'],
@@ -2259,6 +2999,10 @@ function tabSources(){
     ['Bán lẻ tầng trệt Hà Nội 51,8 USD/m²/tháng, lấp đầy 87,9%; vị trí đắc địa tới 350 USD/m²/tháng','Đơn vị nghiên cứu thị trường qua báo chí','Q2/2026','press'],
     ['TP.HCM: giá thuê nhà phố giảm mạnh do làn sóng trả mặt bằng','Báo chí','2026','press'],
     ['Ranh giới <b>168 phường/xã mới</b> của TP.HCM (113 phường, 54 xã, 1 đặc khu)','Theo Nghị quyết 1685/NQ-UBTVQH15','hiệu lực 01/07/2025','official'],
+    ['Sáp nhập Bình Dương và Bà Rịa – Vũng Tàu vào TP.HCM','Nghị quyết 202/2025/QH15','hiệu lực 01/07/2025','official'],
+    ['41 vùng của TP.HCM trên bản đồ này hợp nhất từ chính 168 ranh giới phường/xã — không vẽ tay','Suy ra từ dữ liệu ranh giới phường/xã','2026','official'],
+    ['Bảng giá đất TP.HCM 2026: đất ven biển trung tâm Vũng Tàu tới ~149,5 triệu/m²; Bà Rịa ~20–40 triệu/m²; căn hộ hiện hữu Phú Mỹ từ ~33 triệu/m²','Bảng giá đất TP.HCM 2026 qua báo chí','2026','press'],
+    ['Bình Dương cũ: Thuận An và Dĩ An khoảng 50–90 triệu/m², Bàu Bàng khoảng 9–15 triệu/m²; căn hộ Dĩ An ~40–60 triệu/m²','Tổng hợp thị trường qua báo chí','2026','press'],
     ['Ranh giới quận/huyện cũ (dùng để đối chiếu với tin đăng)','OpenStreetMap','—','press'],
     ['<b>Hình học tuyến đường và tuyến metro vẽ trên bản đồ</b>','Lấy trực tiếp từ OpenStreetMap (Overpass API) nên trùng khớp với nền bản đồ','8/2026','press'],
     ['Nền bản đồ','Esri World Light Gray Canvas (không cần API key). Đã bỏ CARTO vì nhà cung cấp chuyển sang bắt buộc API key và in chữ “API KEY REQUIRED” lên tile.','8/2026','official'],
@@ -2282,12 +3026,13 @@ function tabSources(){
 (function addPlanLayerRows(){
   const box=document.querySelector('.map-layers');
   if(!box)return;
-  [['ward','#2563eb','Phường/xã mới (168)',false],
+  [['ward','#2563eb','168 phường/xã mới (TP.HCM)',false],
    ['lez','#22c55e','Vùng phát thải thấp',true],
    ['infra','#dc2626','Metro / hạ tầng',true],
    ['cbd','#f59e0b','Khu trung tâm (CBD)',false]].forEach(([k,c,lbl,on])=>{
     const l=document.createElement('label');
     l.className='ml-row';
+    if(k==='ward')l.id='ly-ward-row';
     l.innerHTML=`<input type="checkbox" ${on?'checked':''}><span class="swatch" style="background:${c}"></span><span>${lbl}</span>`;
     l.querySelector('input').onchange=e=>{
       state.show[k]=e.target.checked;
@@ -2365,7 +3110,9 @@ function setSheet(i){sheetPos=Math.max(0,Math.min(2,i));applySheet();}
     a.style.transition='';
     const y=(e.changedTouches?e.changedTouches[0]:e).clientY,dy=y-y0,dt=Date.now()-t0;
     y0=null;
-    if(!moved){toggleSheet();return;}
+    /* Bấm mà không kéo: để sự kiện click lo (onclick trên .sheet-handle).
+       Gọi toggleSheet() ở đây nữa là ngăn kéo nhảy hai nấc một lần bấm. */
+    if(!moved)return;
     const fast=Math.abs(dy)/dt>0.5;
     if(dy<-30)setSheet(fast?2:sheetPos+1);          /* vuốt lên */
     else if(dy>30)setSheet(fast?0:sheetPos-1);      /* vuốt xuống */
@@ -2377,6 +3124,15 @@ function setSheet(i){sheetPos=Math.max(0,Math.min(2,i));applySheet();}
   window.addEventListener('mousemove',move);
   window.addEventListener('mouseup',end);
 })();
+
+/* Phần tử mang role="button" (tay cầm ngăn kéo, dấu ✕ trên ô so sánh) phải
+   bấm được bằng Enter / Space như một nút thật, không chỉ bằng chuột. */
+document.addEventListener('keydown',e=>{
+  if(e.key!=='Enter'&&e.key!==' ')return;
+  const el=e.target.closest&&e.target.closest('[role="button"]');
+  if(!el)return;
+  e.preventDefault();el.click();
+});
 
 /* Đổi hướng màn hình / đổi cỡ: tính lại bản đồ và trạng thái ngăn kéo */
 let _rz;
@@ -2398,14 +3154,15 @@ window.addEventListener('orientationchange',()=>setTimeout(()=>{if(map&&map.inva
 
 document.getElementById('srch').addEventListener('keydown',e=>{if(e.key==='Enter')checkAddress();});
 document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal();});
+/* Escape đã được xử lý ở mục 9 (ô "nhìn tận nơi" ưu tiên hơn cửa sổ chi tiết);
+   đăng ký thêm ở đây sẽ đóng cả hai cùng một lúc. */
 document.addEventListener('keydown',e=>{
-  if(e.key==='Escape')closeModal();
   if(e.key==='/'&&document.activeElement.tagName!=='INPUT'){e.preventDefault();document.getElementById('srch').focus();}
 });
 
 /* khôi phục lựa chọn đã lưu */
 document.querySelectorAll('#persona-group .pill').forEach(b=>b.classList.toggle('active',b.dataset.persona===state.persona));
-document.querySelectorAll('#lang-group .pill').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
+applyI18nDom();
 (function(){const cfg=budgetCfg(),el=document.getElementById('budget');
   el.min=cfg.min;el.max=cfg.max;el.step=cfg.step;el.value=cfg.def;state.budget=cfg.def;})();
 

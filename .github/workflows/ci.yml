@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Kiểm tra dữ liệu và giao diện
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Cài phụ thuộc
+        run: npm ci
+
+      - name: Cài trình duyệt cho Playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: Chạy toàn bộ bài kiểm tra
+        run: npm test
