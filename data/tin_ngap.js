@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-08-31T17:58:02.571Z",
+ "capNhat": "2026-09-01T01:45:15.950Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM và Nam Bộ tiếp tục mưa dông, cảnh báo triều cường",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-dong-canh-bao-trieu-cuong-20260831190024200.htm",
+   "s": "Dân Trí",
+   "d": "2026-08-31",
+   "img": "https://icdn.dantri.com.vn/2026/05/08/9cdf96ec-a7c5-4562-97f0-f8a52190fa60-cropped-1778250605434.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Khẩn trương ứng phó áp thấp nhiệt đới có nguy cơ mạnh lên thành bão",
    "u": "https://www.sggp.org.vn/khan-truong-ung-pho-ap-thap-nhiet-doi-co-nguy-co-manh-len-thanh-bao-post869676.html",
@@ -275,6 +286,17 @@ window.TIN_NGAP = {
    "t": "TP.HCM dùng 2 khu \"đất vàng\" thanh toán cho dự án chống ngập 10.000 tỷ đồng",
    "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQlpqTkVlbDlNQ1g1ZVc1MkotSXloSXNLVno4UlctdEpjUG1qaWtQNmlOWlZKMmNQRUUwWExEQU1UbmtVQTN5RUI3Q1p2WDVrQTl2Rm9hRHY2YjdpWjFoUUk1MXN0QlAyS3JFMi1tMlhoUVZBS3VTa2RwUEx0MHNuTTktZ2JqbUNnMEZqM3R6LUJZdmFFcndxUUlVMzFPTnhJcXlLRWFPeXJTNWxfdGlteVd6dmJSQmdzSUtIelh30gG6AUFVX3lxTE5HeWpCNEdmRUprRUlQV00zYkZOQ21nc3NPV0t1Q2Fua3hsRnRnbUZjbTBJbGF1ZVBxS3M2RGwzdXJEVUh3TVp3YU10RF9KbnNoRU96bWktbGxjemF0bTVXSjVGNnh0WTdhemJwRmdUTlkzSG9rNzdiZ1lNZEl2YXlSTGhmRU42ZC00c2kybkhxM1laSmUwaXEyeXF0bFMtMGo5cmtORnUxdXRoYk8xZ2VWVVI5YzhoeWVhdw?oc=5",
    "s": "Tin nhanh chứng khoán",
+   "d": "2026-08-27",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
+  {
+   "t": "TPHCM đề xuất dùng 2 khu đất thanh toán hợp đồng BT dự án chống ngập",
+   "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSlM3bjRneWtEREhBUzMzeFYyRklYNGFjRE9mc1RjOEpzcVBGa1IzbHJERjdIcjhjQVZHdGhfTi1iSVAxYmY2c0NHNTJ3ejdDNlJmekcxTmJ3YUZfOXJ4aV85S2JUNWdCcnlZbmw5VXFsQk1jVWVkTDFOckgyRzVYdmhLNG14Q2dGZExILUJrOFdFcjZxRlk0SmE4a2tkeWZLckJBRTBOTXBMa29OVS0zMnJ5UQ?oc=5",
+   "s": "Thành ủy Thành phố Hồ Chí Minh",
    "d": "2026-08-27",
    "img": "",
    "c": "hcmc",
@@ -1227,6 +1249,17 @@ window.TIN_NGAP = {
    "canh": 0
   },
   {
+   "t": "Hơn 7.150 tỷ đồng triển khai 9 dự án chống ngập tại Thành phố Hồ Chí Minh",
+   "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNd1hvQ0tnYWZIcWJPclE5RW4xVU5JTHNqUlBBNnprbktjVV9FMGhqT25fNXoyaDVsUlZ0RFVtNkRQdktLOUpzM29oMmxOelRGNEZuSm5IS2ZLTzl2U0FJSmZkWHU2TnV1S3lULW1IamtqUTdESF8zRzdTX2FLRFJmRWx2SWh4alhmaG5mc19pNnBaWDVlZm4wVURvb095Z2VNRTRTT0R4V3phNGJTTms0WE4tZEs?oc=5",
+   "s": "Thành ủy Thành phố Hồ Chí Minh",
+   "d": "2026-07-28",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
+  {
    "t": "TP.HCM chi hơn 7.000 tỉ đồng chống ngập, đường Bình Quới sắp thoát cảnh bì bõm",
    "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVWxCT1oxWU84Z2F2b2dRUjRib3dGN3FMbzBsaXUyRUxJR1hOQ0FveHhFZzFVWkluX0RnV28xdmJLM0wzSVUzZDVjM2RybkxoaUlTV2JCVkNGcUduSHFBNk9vcUJNM3UwdWFMdU1EU3d2eFRqdGZwVFpwVnBabmxHdThySmJiSEs4UG1fNjQybkFkRUhaeGZ4U0g1cjNGd0pMckR1VlJZUXJxa1NFYWNXdXdQbEN4RXR3VHNn?oc=5",
    "s": "Báo Thanh Niên",
@@ -1491,17 +1524,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "TPHCM lập đề án chống ngập mới vì quy hoạch cũ đã lạc hậu",
-   "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMEVGb0NjT012Z1J3NHlZUjV5YXE1aWV2WHhySTIxbzRqQUdBdnA3SXcyM0ZYeU9YLTd0U2FSVUVGaXNmbWt2a2RoNTFFTXd1ZGJxWkIwVWRmSUxMVE1OeTdGLWFVTDF3MHMxbjQ2WktKcnRoalI3Q1NTbngzR1JjcW5PZWNpZHJ3S3pyUzFTRWlyTWxGcFRZXzJlTQ?oc=5",
-   "s": "Laodong.vn",
-   "d": "2026-06-17",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
    "t": "Chân cầu Ba Son ở TP.HCM ngập nặng, xe nối dài đến giữa cầu",
    "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUk9WeU42bDFjWnFGQUpxbkVfN0VJN1IyMC1DRmgzUXBJeEM5Um1KbHRxLTMwUXpOWlVtTmFEN1FaZ3BNQ1NsaEZxMXhCMlM2VFJ2NXZZYXlWVlBaeFRCMlB5aG80LVpMMVVfWGpnMVdlQ295bjhpc3NaWEtQQVNNUlhwWVFQejI0TW8wWkJlYW5SdkhyWkJGNEd2VGpGRzV5ajhv?oc=5",
    "s": "Báo Thanh Niên",
@@ -1700,17 +1722,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Vướng mặt bằng, dự án chống ngập phía Bắc TPHCM có nguy cơ lỡ hẹn về đích",
-   "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaXg0dkpYekJOUThFc3UzWjZqVGxyU3hNR0w2MFRpZVN0RzVFRjVscU1DSzlmNTNycmwxU1R4UGFoSDZ0d0RucnBRLWxTQ0EwUko5UkQzcEh2VDVNQzhicEhBMjJGWHZTaDlIb3hVRXFVMnFtTk1sRTBPdEsyNzlvakFHbDVCcXZoclhDd1F3eEJuanBORFJVSUh0OFNfOHpOOWg2YzFjX3VMNU1IVVlNeFZn?oc=5",
-   "s": "BÁO SÀI GÒN GIẢI PHÓNG",
-   "d": "2026-06-11",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
    "t": "TPHCM và Nam Bộ tiếp tục đón mưa lớn, cảnh báo ngập úng và dông lốc nguy hiểm",
    "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVFUzTzhDNTMwSndBdE5YZFdvb1FWbVhtUmpMR3huZUx6NG4tcm9fWFdaUkV5eHdHOExPdVRTajVzbVhQck5va3B1cXNiRWZxSUM0emFIM2J4Z2dtWXM1NXc5VWVfNE05V183NGZtVm5RM0xWVEtkUTBsS25Ob3YtTTIzMUtvZnQ2c3ZQQW1GSll1WGl5bVgyOHRpcmVFa1pGYW1JbzJMSG5IVm1GLW9XWlpn?oc=5",
    "s": "moitruong.net.vn",
@@ -1753,17 +1764,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 1
-  },
-  {
-   "t": "Giải bài toán kẹt xe, ngập nước trong quy hoạch tổng thể TPHCM",
-   "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQUg4REJ1bmhXRks2dGpjSXVKbHE2eEM1WDh3NUR3LTl2eUhTTEZ4VlpQd21fXzUwRXdDdGRjRUlTVnpvQVUyY0FKcUtRREd6dm5nbkpvdTlFM25wdG9lZGwtZHBFWE9lellWS015aWpscVdNb1VXeXRBMmhHMC10UlVXWTNHcU84Vl9raDl2NDltMndKcUVZZ3pmXzk3VURs?oc=5",
-   "s": "Laodong.vn",
-   "d": "2026-06-02",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
   },
   {
    "t": "Mưa lớn đầu tuần, nhiều tuyến đường ở TP.HCM ngập sâu",
