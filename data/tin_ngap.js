@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-05T00:47:45.481Z",
+ "capNhat": "2026-09-05T13:48:48.377Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM và Nam Bộ tiếp tục mưa dông, cảnh báo nguy cơ ngập úng",
+   "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOajQ3cmJyc1hBZmtlN0RGNmJOVFJxemFWellKbllZTmxSVVRpMWVXZ1FqZU5SYUhNd25xUGR1SlR2cGx2Q3hMdzR5ZE5GcjBrbzdzdGtmdmFjemttV2dWSFgtMkR0VDFVaC1JUGtrdTRxWlRYcHJCVGJCbXppU3M2N2Q4aU1FQ2xKTFo0TlBheHhheU40ZnItTDQyTkg?oc=5",
+   "s": "moitruong.net.vn",
+   "d": "2026-09-05",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TPHCM và Nam Bộ chiều tối mưa dông, đề phòng ngập",
    "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-chieu-toi-mua-dong-de-phong-ngap-20260904202710357.htm",
@@ -1962,17 +1973,6 @@ window.TIN_NGAP = {
    "t": "Đường ngập lênh láng, dòng xe ùn ứ kéo dài sau cơn mưa lớn ở TPHCM",
    "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYXAxLWRwdjg5SUtsWWRQb1p1Qkw4NkpJTzVHQTFRaVdwZUNscWpjUlFZTUxCNkxjUFRYeFQxeS1FQU5vdlZqcFphVlpPcjB3SGR0RlZMdHhXYlVzcHkzSEt3WFl1elYweVdpRHFacThUMG5aM09CemN2ZVlEZUpiXy00ek1zbVVBN1czWFBrbDFKalljQTdRSjAzVmw2Z3FmXzhjZGR5a2xrMk5VelU3TzEtQmdlOF9x?oc=5",
    "s": "Báo Dân trí",
-   "d": "2026-05-25",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn gây ngập ở TPHCM, nhiều xe té ngã giữa dòng nước",
-   "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPY1l4d0diNEYwQnN0VXhhRGNzRl9nRjIzc2xaem4td01kVWJLVm9ERW9OVEJWalNFYUZtdzY0N0FLRjBGLUpTa3JLQlgya0hJdmpTQUQ4Z1ZvZ1Z3ZG1xM29FN00wMk5jTGM5MkdmbHRGV2pMVHF5anFBVmtmbGpZckRIYmd6WjFpUFR0MkdWRUMwb1hUdUtVQ21MendyY1pkZnNxOFhtS1NWMjQ?oc=5",
-   "s": "dantri.com.vn",
    "d": "2026-05-25",
    "img": "",
    "c": "hcmc",
