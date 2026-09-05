@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-04T14:53:15.283Z",
+ "capNhat": "2026-09-05T00:47:45.481Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM và Nam Bộ chiều tối mưa dông, đề phòng ngập",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-chieu-toi-mua-dong-de-phong-ngap-20260904202710357.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-04",
+   "img": "https://icdn.dantri.com.vn/2026/06/03/3e474a67-d17e-4467-8b45-cb7a9bae4a461201a-1780495685471.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Thả cá \"ăn\" lúa chét: Mô hình sinh kế lạ ở ngoại thành Hà Nội",
    "u": "https://tienphong.vn/tha-ca-an-lua-chet-mo-hinh-sinh-ke-la-o-ngoai-thanh-ha-noi-post1873656.tpo",
@@ -17,6 +28,17 @@ window.TIN_NGAP = {
     "Kiều Phú"
    ],
    "canh": 0
+  },
+  {
+   "t": "Hà Nội ra mắt Mini App 'Bản đồ mưa ngập' trên iHanoi, người dân có thể theo dõi mưa lớn, điểm ngập theo thời gian thực",
+   "u": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNSzlLOTJXR2RXSVBjTm56OFljVGdOSzRCWGRKaDQ3OVRvNFlPbXRid1ZwWDRDYk1hT0dtMWswa3BrVnZrOTQ5a2N5bEZkcmxPZ1VXR0JNZmtqWTJZbl9wZnRnZ25VdU5tRlpRNjZnenVhWXp2WmUzYU8teVRNMmh6N0I1eTg4cHQ0VHdPZWtVQU85WWowQWRoQUV0bXcteThKaWZPUWVkNEVFNGRRaGV0RWdXZFRQUGFlUHU4d0xrM3QyaU9yaGhCYVlBZm5rc1VEN0RHZjBFS3hkbXZ0V0tiaA?oc=5",
+   "s": "danviet.vn",
+   "d": "2026-09-04",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
   },
   {
    "t": "TPHCM và Nam Bộ tiếp tục mưa dông chiều tối",
@@ -1055,17 +1077,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "[Video] Công an Hà Nội khuyến cáo an toàn khi mưa lớn, ngập lụt",
-   "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWF8yLTVzVzZnNmtFcTZIQ3V3d19pZkY4YzBQUE5XNU1MT2hISTQ5RVhtbk5YZW4zZDhsRWhiYVFma1pQYlAwS1VOWWFubE45VUlXVFlKRFNrRjNOaHNNMEVuY19CQ25QR0VuSElfeERiUlBHNUExS1V0dmpYQ0haQWVhZXV3ZVRMUE93XzY0bWpFSnYydG9neFhMVQ?oc=5",
-   "s": "Báo Nhân Dân điện tử",
-   "d": "2026-08-23",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Cảnh báo triều cường gây ngập tại TPHCM",
    "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZHRpcThrZ0J3WW1mR2h1ZTRXN3VyYkxDSU5kb1Rfby0yajNwdXg1SU9PUTRZdlJ1MkxqaGhwbWxUT1NlOUV0WWlPWk1qNlZsZU5RMm02UlplY0FUb3RuSWRiN0VQR2h3dkZXQVBldEFpaTNUdUFFeUpqanJnVEEza1llbDlTLXVuVXZ5d3NaOVd0N19jRXAxZA?oc=5",
    "s": "Báo Dân trí",
@@ -1963,17 +1974,6 @@ window.TIN_NGAP = {
    "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPY1l4d0diNEYwQnN0VXhhRGNzRl9nRjIzc2xaem4td01kVWJLVm9ERW9OVEJWalNFYUZtdzY0N0FLRjBGLUpTa3JLQlgya0hJdmpTQUQ4Z1ZvZ1Z3ZG1xM29FN00wMk5jTGM5MkdmbHRGV2pMVHF5anFBVmtmbGpZckRIYmd6WjFpUFR0MkdWRUMwb1hUdUtVQ21MendyY1pkZnNxOFhtS1NWMjQ?oc=5",
    "s": "dantri.com.vn",
    "d": "2026-05-25",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM siết trách nhiệm chống ngập khi mưa đầu mùa liên tiếp xuất hiện",
-   "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcnZnQkZLUXpQUF9mV2oyZVRsYi1SQng2SkxpbXFLXzJiQ1lzV1IxbzR2X2dmTHdsX3d4TDRiTjhBSC1ydUo2NFBiVWVicGRZejl0WXBVNHZfSGViWGVuVGpVTnE5WGdUYmt4SV9zbFlPaTB6M3ljZDlNNW9RS0FaRy1tMW1MQlVmcnN6eUgta2FkMGlWMVlqUmpDTjdmTnhTdlg1OF9OZFExQQ?oc=5",
-   "s": "moitruong.net.vn",
-   "d": "2026-05-21",
    "img": "",
    "c": "hcmc",
    "fp": [],
