@@ -2,9 +2,75 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-06T00:46:39.699Z",
+ "capNhat": "2026-09-06T14:05:39.515Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Bản tin trưa 6-9: Nam bộ mưa diện rộng từ ngày 9-9",
+   "u": "https://www.sggp.org.vn/ban-tin-trua-6-9-nam-bo-mua-dien-rong-tu-ngay-9-9-post870417.html",
+   "s": "SGGP",
+   "d": "2026-09-06",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/agesfjbfjpy/2026_09_06/tit-yt-sggp00-00-09-06still6234-617-6442.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "To&agrave;n cảnh 6 cống ngăn triều &#039;khổng lồ&#039; thuộc dự &aacute;n chống ngập 10.000 tỉ ở TP.HCM",
+   "u": "https://thanhnien.vn/toan-canh-6-cong-ngan-trieu-khong-lo-thuoc-du-an-chong-ngap-10000-ti-o-tphcm-185260905155106916.htm",
+   "s": "Thanh Niên",
+   "d": "2026-09-06",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/9/5/edit-cong-tan-thuan-hoan-thanh-cac-hang-muc-1788598148663739742273-107-0-1707-2560-crop-1788600547985936123653.jpeg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Podcast tin thời sự ngày 6-9: Phụ huynh xếp hàng mua từng cuốn sách giáo khoa",
+   "u": "https://www.sggp.org.vn/podcast-tin-thoi-su-ngay-6-9-phu-huynh-xep-hang-mua-tung-cuon-sach-giao-khoa-post870458.html",
+   "s": "SGGP",
+   "d": "2026-09-06",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/cjvwpdhnw/2026_09_06/a-thulm-ytb-7-3356-9805.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
+  {
+   "t": "Bản tin thời sự ngày 6-9: Khả năng xuất hiện áp thấp nhiệt đới hoặc bão vào tuần sau",
+   "u": "https://www.sggp.org.vn/ban-tin-thoi-su-ngay-6-9-kha-nang-xuat-hien-ap-thap-nhiet-doi-hoac-bao-vao-tuan-sau-post870456.html",
+   "s": "SGGP",
+   "d": "2026-09-06",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/cjvwpdhnw/2026_09_06/a-thulm-ytb-6-9916-2692.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
+  {
+   "t": "Podcast bản tin trưa 6-9: Vé giường nằm xe lửa giảm tới 40%",
+   "u": "https://www.sggp.org.vn/podcast-ban-tin-trua-6-9-ve-giuong-nam-xe-lua-giam-toi-40-post870419.html",
+   "s": "SGGP",
+   "d": "2026-09-06",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/agesfjbfjpy/2026_09_06/tit-yt-sggp00-03-41-07still6233-218-3867.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
+  {
+   "t": "Hiện trạng 2 khu “đất vàng” được đề xuất thanh toán cho dự án chống ngập 10.000 tỷ đồng",
+   "u": "https://batdongsan.baoxaydung.vn/hien-trang-2-khu-dat-vang-duoc-de-xuat-thanh-toan-cho-du-an-chong-ngap-10000-ty-dong-192260905142513491.htm",
+   "s": "Báo Giao thông",
+   "d": "2026-09-06",
+   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/9/6/anh-bia-17886871709231884517783-111-0-1361-2000-crop-1788687235548384604688.jpeg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
   {
    "t": "TPHCM và Nam Bộ sắp đón đợt mưa lớn trên diện rộng",
    "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-sap-don-dot-mua-lon-tren-dien-rong-20260905175242782.htm",
@@ -1908,72 +1974,6 @@ window.TIN_NGAP = {
    "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWUU4aXFsR2VuQUFPU3I3cG5Tb3J2SnNRdE14Yjc0WEN0ZmZpYTdXeExodHJjc2gxbHFYclJrcjYxTGs5MWg5UnhMSC1QZ1FhNnNpQkNBUWVsSmN4bmdzeDl1ZTFEekp6NlU3RmxqNXotcjlGYVozbE9QMWVVLU93dlBnLXhsVkg0dGU4alBkMG5yZFgzUVRRT2piN25KNmotUG9vZjVGTEZGUQ?oc=5",
    "s": "Báo Thanh Niên",
    "d": "2026-05-30",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn kéo dài tối 30.5, nhiều tuyến đường ở TPHCM bị ngập",
-   "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPc3owSWp6Q3R3b0NveWxSN1MxeThJUnAyU2FjTzc4UWVMck5hMGdfN2hmNHA1dzB3RWNHenZJbWN4Ym94TkNmSmVUSDcwanM3Vmx1T2VHT0RxRUU3enpENW1MTllOMFpUeDVUSFl2UjlhQVdUYjMzTDlmTFBqYnI3VVRKR0hRcFZsdXFNSlA0emtya1JBamZlbTVFYw?oc=5",
-   "s": "Laodong.vn",
-   "d": "2026-05-30",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Đường ngập lênh láng, nhiều xe chết máy sau mưa lớn ở TPHCM",
-   "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYndxMDhUQkh2TjZLNHJNLURXOF9GYVVGZ3NaOEYxdUE4S0RPQ3NMSFJKVTdDM24xSDNtZHhoTFhqSEJXZnlaMU5hbVFoUko2cVphQzg0SktnYXlqZU9YRXROTlZNbUZjM3JvTGY4NXdWaVJJV0dmbWtXalRfaV91ek56YVU0YlBWRGtGSGUwaUd5Z2Y0M3FYNVEtNmo5NkM3TEdFbGNfSTlzTW1IbkdJ?oc=5",
-   "s": "Báo Dân trí",
-   "d": "2026-05-30",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn kéo dài, nhiều tuyến đường TPHCM ngập nước",
-   "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNV2xUQklmTXhJV3N1dW5SYVdnZTg1SWxRQVh2OWJSN0EwNVVYNGxPd19kNHEwYndSTFFMOGZZaDhFY0Z2VHQ5ajB0S1NYYU9vR2Y1cDRoSlFCMlhpdEhMMmdTOFRVbEdKdzI2eTlEU1haTkJJWHBMVmpXSFFUZW1rdDdjU0lMaHlwcVBtV3VlYw?oc=5",
-   "s": "Báo điện tử Tiền Phong",
-   "d": "2026-05-29",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Trưa nay TP.HCM tối sầm như ban đêm, mưa lớn khiến nhiều tuyến đường ngập nặng",
-   "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOX0E0cFVTa0E4N19kdTBxdFZBUXV0QmdFdnZOS011R1l1S19wMllqZ0NwVlg4OXEzYWloMG14UGJnb1J4MlVUMEtNN2YwSmhZa0tYR2hId0xpZkhENmJQaTFOMjVORmdKdVY5TlZnNWJIMTdEeWh1dFBVOTVuQkxndmhUNV9qSUU3eW9zUzVfQXIzaGswSGVxSHI1Z3dZOEZBbTdjdEhpYjRqX2k5akQ4ckozV2FlRUlwcjFaQg?oc=5",
-   "s": "Báo Thanh Niên",
-   "d": "2026-05-29",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM triển khai đồng bộ giải pháp chống ngập mùa mưa 2026",
-   "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOY1U0blNNLXJzUDhmNXVGWUVUaWJSbzN4YkwybzRSRW8yUDhSb21GekRsLTBnbFZmc094LTZkNlZucFRRREx0bW5BVjcydnRvN2ZUbUxjT3ZLYkN0b2RpeWU5UUlEREJHa0VTRTVjZWxHN3pfR2xOcENYWHJ0MjdTS0lvckE1UnZkVkVqeUdRRm4zNEZLU0RiVktQNA?oc=5",
-   "s": "moitruong.net.vn",
-   "d": "2026-05-29",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nghị quyết phát triển trong kỷ nguyên mới: TP.HCM thích ứng với biến đổi khí hậu, chống ngập ra sao?",
-   "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPQWNjU1dQbnl4dUJxMHoydzR4WlRzTWJESC1WQnVfUVJlU3hidkNpeFFKdzJVQnlxalpURElGUVQyeTRyZUU4XzVSbThRRHp0WHozbXF1NW5Mem5DRGxRQ1ZnNjdxVGJKemNnRm5xMW1wa2xma0RUaVRTa3FpX1I1U3JFc2Nxb3FJSUozM2hNcXZRanVLTm93a2JNOFRHRzllZzRVNHVSdWUzaFZQSTF1bDVqV2lGMUU5emh4c1BSaXJjdkhEOXVsSTVlMWh3dm9mcDRHLQ?oc=5",
-   "s": "Báo Tuổi Trẻ",
-   "d": "2026-05-26",
    "img": "",
    "c": "hcmc",
    "fp": [],
