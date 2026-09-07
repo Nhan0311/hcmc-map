@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-07T00:49:17.780Z",
+ "capNhat": "2026-09-07T16:21:41.637Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -15,6 +15,17 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 0
+  },
+  {
+   "t": "3 trạm bơm sắp hoàn thành, nâng cao năng lực chống ngập cho phía Bắc Hà Nội",
+   "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPLXI1bTZsWEVyc254cmFwZTk4S1pwNEVOSFYtdlJBU2JCSllScXZYbElnMFhwaTM1M0VnLW9pNTE4VEFyY1hHNlVYaXRFYVd1TzFTV3lrS0U0dWwtWF9sS1Q5dTdrY0NBYXQ4SHF0WlVzTS1LeldwMTdrVE5zVDZ5b2tLNlhWNk04RndIdV9ralRVbDJtQlFrVUZXTlpJdw?oc=5",
+   "s": "Vietnam.vn",
+   "d": "2026-09-07",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
   },
   {
    "t": "Bản tin trưa 6-9: Nam bộ mưa diện rộng từ ngày 9-9",
@@ -92,6 +103,17 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 0
+  },
+  {
+   "t": "Công trình chống ngập 10.000 tỷ ở TPHCM sẽ vận hành thế nào?",
+   "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdjh3c1lyMjJjUWZzNDk0ejBrbnM0di1QeUVPQWlVY3c1V1BZR1g0TlZmNzNjOUstMHMxZWhWbjVhYWhLeDlqRE9oUHE2TzJwWDd0S3N1QUpkQnJJanBkaWhRYTNweXNobnQtSWtIQlJ1YWJIMXdBZWNsUWItRnYzaFF6cVYxNzJvMzFTVnZ4YUFhRlNjMFljeTN0VTVCekg0U2M2a1QyZXo2d2lYNUpna3lFMlhXTnJ0?oc=5",
+   "s": "24h.com.vn",
+   "d": "2026-09-06",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
   },
   {
    "t": "Tìm lời giải chống ngập hiệu quả cho Hà Nội Bài 2: Nhận diện những “vật cản”",
@@ -1167,17 +1189,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Công trình chống ngập hiệu quả, Hà Nội hết cảnh ngập sâu",
-   "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZERuMlpiZEhJVkc3aEQ5cGw0NldsZVU3SFBMaVJTbVVvUUxVWmZwbm9FQng0ZV9DTVY2VGFNNU51QXJoX0RmQjkxR1lHYWhuanpEUkc5dXlTTk5uQ2UzazloNGEzdk8yaVZSdkItVmd3QW55eU5oMU5oVUhsYTkwQ3FPRlIzMW1idnJYdEkwTTdpYzA?oc=5",
-   "s": "hanoionline.vn",
-   "d": "2026-08-24",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Hà Nội có 220 điểm ngập, hệ thống thoát nước mới đáp ứng 20%",
    "u": "https://vietnamnet.vn/ha-noi-co-220-diem-ngap-vi-sao-chong-ngap-van-la-diem-nghen-lon-2547979.html",
    "s": "VietnamNet",
@@ -1964,17 +1975,6 @@ window.TIN_NGAP = {
    "t": "Mưa dông kéo dài, nhiều nơi ở TPHCM ngập nước",
    "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPam5pcERjNjJaSEpZR3NCZUFqZUk2R2FzWHNwaWk5MVdZWHoyMmNzcFRKT3ZvWEk4RDFEdlJzV2R6UlhDWVNfVFBIYVY4WTBMV3lNUkNNQlBpQTVnaTlNZGRLaG5xNVBtQzc1cWRMV0thV29VM2tuUWU5cWdqdTk1aUZacXI5UVRCTGZNd1NOTmdnYnN6?oc=5",
    "s": "Báo Tuổi Trẻ",
-   "d": "2026-05-30",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM: Mưa như trút khiến đường biến thành sông, xe chết máy hàng loạt",
-   "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZ21LdVhDOHlVbEJFWGcwN09Pc1V0NTdJNVptTlhwSDlJYXFhRDRjMDVTZ0lGNkV3S1ZaYl9IRFlzby10bWJLNGZhTURVcVJyYXNUM2hDWGc4YW5OR0p3NHhyWnNScFlCMXhoSF9CbXFyNk5ZbG41OFdNVWRJX0U4V1YtbDZiUkxHQ3VTdkdHOWpXdzdDVzBMUlpzWmNuVmF6SHkyb0xR?oc=5",
-   "s": "Báo VietNamNet",
    "d": "2026-05-30",
    "img": "",
    "c": "hcmc",
