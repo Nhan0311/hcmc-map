@@ -2,9 +2,31 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-08T01:04:41.286Z",
+ "capNhat": "2026-09-08T15:01:40.394Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Mưa lớn kết hợp triều cường, TPHCM đề phòng ngập",
+   "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQXy1DdjlhQlNqclRSWU9SWkhOWkRnNmRUOVJMRXUtQWJrZ2VuMkJ6OEVCd25WaTcxWGhrVmRLWlMwQmxaVmJKSXJNYlE5WC04a2JRUDVvUmJfTlhZNUVBSVBtNl9mYXdUU0hhQVFJblZTWUZsYzFoMnFkU2U1OTJzQzdqQzVDb0lBd2tfejFR?oc=5",
+   "s": "Laodong.vn",
+   "d": "2026-09-08",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Bộ đội đắp kè, chống ngập giúp người dân ở Gia Lai",
+   "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPemxLMEtNVHJsU0FTeWpVOFVaRXYwd3h4T0pfVjc5MUJ5RDdwZWVKYzFweVBFa1BxeWJEeEY5dHI2alFuUDhyQ3BBVXhsTlRLNGZtb3VUQ2g1VklDMU93bDRQSDFCczhTX2ZXbk1XZ0E5Zmxha1J5MFRpeDFRN0gxUFZLdU44VHhRMnJSLXBn?oc=5",
+   "s": "Báo Công an Thành Phố Hồ Chí Minh",
+   "d": "2026-09-08",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Thời tiết 8/9: Miền Bắc thời tiết tốt, TPHCM có mưa",
    "u": "https://dantri.com.vn/dt360/thoi-tiet-89-mien-bac-thoi-tiet-tot-tphcm-co-mua-20260908000328765.htm",
@@ -1369,6 +1391,17 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
+   "t": "Người đàn ông ở TP.HCM bì bõm trong đêm hướng dẫn xe tránh đường ngập",
+   "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSXBZWmpTOFZNSXlBZWRrc0NyVC1ZS0F1YXM0MHVRVnRXakxUTGVpOFhUSDYtSDctbXdqRHZQMnhhSUdtcDR2QUplNURUVFZNVk1WVjJ3WXNGd1BfZk5jYmlSVDduRmVHUmNKYkw5eVFraV9rU1hkSXR0am5WdkE5c3NvdDA5cGljSXI2RldJNEtYR3FSWDhWUUJaM0lkZFZ4US1GWW1qLWdRMmxiTF9j?oc=5",
+   "s": "Báo Tuổi Trẻ",
+   "d": "2026-07-26",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
    "t": "Mưa lớn, nước cống đen kịt tràn ngập đường Mã Lò",
    "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYUFtbnNKeFQycUI2Z29sUGYyVkIwbUQtTEFEUUJ4eDB5T1dMMkU2VVc4bGtkREdkbzJ2bXZjTV85MGVxcWJsWkpacGo3NXF0ZjJRQ2tteEo2WUh5UUhmQ0t2ZXNrSHpHQzJsZ0VWZFFHTDhpU1pZbXNJYW5wYml5TkpwMldRTzM3cEp3clJ4MWM?oc=5",
    "s": "BÁO SÀI GÒN GIẢI PHÓNG",
@@ -1945,39 +1978,6 @@ window.TIN_NGAP = {
    "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeDhybDBELWVoZXJBbVNMTmNxQ3ZuZGFjU19ZMTRVQTE5T1h4ZkVIYVl6UkdXQWZEWFBXTlVrOHNvQWRxRks2THhqSWUtallRNDRnTGY4S0NjbThnMUhtS0VWem1uaHVOSVpmSEltZzZKWUlFSzBaYUt5YVdaelVncXBISHQ5QmlZRnVOSzY3S0lxbjNZR3p1dA?oc=5",
    "s": "Laodong.vn",
    "d": "2026-06-02",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "CSGT An Sương hỗ trợ người dân qua đoạn đường ngập sâu",
-   "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNakZKRHBxZnFoSXI4eTg5LW5FWjBsLVRhbWdzMW5hQjNYRWk2UUVEVE1GMmQxcFhoTG5aQnlJU0o4TUVwb2R0ZlJJWFY4U3g2T1Z1a3l2bERqRnhHY3VUVW85c0JVZ0V3WkctTmRDS3l2blJOY3lIM3RobGNBN3ZBOXVCaGhuekhNQXVjTDJZWlM5LTVHeXk2Mjhn?oc=5",
-   "s": "BÁO SÀI GÒN GIẢI PHÓNG",
-   "d": "2026-06-02",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "CSGT TPHCM dùng xe đặc chủng đưa người dân qua điểm ngập sâu",
-   "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSjRGdGJhakRGdDVSRm5UQkdkaXBpYXUtT20xc1h3RjJINFBjYWljSkY1SGU4bElqU1gwTTRqM2xuSk1XZFY2cUs0TEdobVVST2ZUYWNPZlBacHJqUEExdmduaHhONmFiZWM2RzBVUG1RcFNYVWU3TURhT0hoSGF5UGFhVThHUDZMWjJNamxNcXVHa04tZnVZUXNhOHZSZFVxWDFHT1lvaFUzaUVmclU1MjhB?oc=5",
-   "s": "Báo Dân trí",
-   "d": "2026-06-02",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn đầu tuần, nhiều tuyến đường ở TP.HCM ngập sâu",
-   "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWDNyclIzTVBEemxxekFfNEU1enhLWkNVc3ZCZm5tc0tTUGV6QWxYSVhDbHd0ZlByUElpOHFOb2huazE5ajAwVGRLUUhHTHNWbUlpUU8wVXJaelJPeUs4cGJYbkNlNFg5a202TGkzWXc1UHJnN3pySnJNZ1ktZkp0czl5MFdDYkl6Q1pEUHVDU1hpUQ?oc=5",
-   "s": "Báo Tuổi Trẻ",
-   "d": "2026-06-01",
    "img": "",
    "c": "hcmc",
    "fp": [],
