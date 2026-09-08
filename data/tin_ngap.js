@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-07T16:21:41.637Z",
+ "capNhat": "2026-09-08T01:04:41.286Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Thời tiết 8/9: Miền Bắc thời tiết tốt, TPHCM có mưa",
+   "u": "https://dantri.com.vn/dt360/thoi-tiet-89-mien-bac-thoi-tiet-tot-tphcm-co-mua-20260908000328765.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-07",
+   "img": "https://icdn.dantri.com.vn/2026/09/08/thao-1-1788800413827.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Tin tức sáng 7-9: Nữ tỉ phú Phạm Thu Hương lần đầu vào top 1.000 người giàu nhất thế giới",
    "u": "https://tuoitre.vn/tin-tuc-sang-7-9-nu-ti-phu-pham-thu-huong-lan-dau-vao-top-1000-nguoi-giau-nhat-the-gioi-100260906194144019.htm",
@@ -17,6 +28,17 @@ window.TIN_NGAP = {
    "canh": 0
   },
   {
+   "t": "Con đường ven rạch từng sình lầy, ngập nước ở TP.HCM giờ đã khác đến mức người dân bất ngờ",
+   "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMmtuT2o4M3p1OVVEV184S05OdmdQb3BqRm1WdzFENUlqSGFYaFNyLTFfa1hYWFdqWEpOY1JuX2c0RlJEa00tOGlkTFdXMTB5TWdCeV9DWllWaGtTeUFibkRKWV9WaHR3c2hYYkh6OEdaNUxsZ1ZMdWRTakhidWtxMHJoTTcwcDgwUzFHLWtVbHFnby1jclBKRnlHYS1zdGJ6ZXUyOHk2ZF9NWFMzNkJrNGsxSjRfaXNCTDYtcWVzYmF1QXMzUzBCbXg0ajc?oc=5",
+   "s": "Báo Thanh Niên",
+   "d": "2026-09-07",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
    "t": "3 trạm bơm sắp hoàn thành, nâng cao năng lực chống ngập cho phía Bắc Hà Nội",
    "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPLXI1bTZsWEVyc254cmFwZTk4S1pwNEVOSFYtdlJBU2JCSllScXZYbElnMFhwaTM1M0VnLW9pNTE4VEFyY1hHNlVYaXRFYVd1TzFTV3lrS0U0dWwtWF9sS1Q5dTdrY0NBYXQ4SHF0WlVzTS1LeldwMTdrVE5zVDZ5b2tLNlhWNk04RndIdV9ralRVbDJtQlFrVUZXTlpJdw?oc=5",
    "s": "Vietnam.vn",
@@ -25,6 +47,19 @@ window.TIN_NGAP = {
    "c": "hanoi",
    "fp": [],
    "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Tìm lời giải chống ngập hiệu quả cho Hà Nội Bài 3: Nâng sức tiêu thoát của hệ thống",
+   "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbzFxZkdDYW9Fc1UzN1R1TUY4RUdaaUJkeWpmM0ZuMFpHVG45dVg1WnltenZJZkEzYk5KeW5QRGlIb19BWnRXQ1pORFZTMmk4eHY5OC1lU0UzbjFLYjdUeC1zeUN1c05kd1Z3c3lWd1Z0SFF5dzg2WnZ2Tm1JWFowdEprT2JPcGhTV2JiekRuRFhVYnZtcUV5NWRyeXBBY0dTaHhuUFBoWkhaMG1HX1FpMDVaZWY1QQ?oc=5",
+   "s": "Báo Hànộimới",
+   "d": "2026-09-07",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [
+    "Nội Bài"
+   ],
    "canh": 1
   },
   {
@@ -1178,17 +1213,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Những 'rốn ngập' Hà Nội đang khô dần",
-   "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSk1ZVHZ5NGwtdzcxWFRMLWZXSWFSM3Vkc3dtcmdpOXlVTEJxUkVMYjdWRHRTbjlFLUxEUURMZ0RVZWUtZm9haXZFcTdXajJmWVBfV3hLcERfR2cwaEpSLUhvelBqUk5jNHRQZ1VoY1NYNm9GUnEzRHVKX1JvVWVZMjliUnA?oc=5",
-   "s": "Báo Nông nghiệp và Môi trường",
-   "d": "2026-08-24",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Hà Nội có 220 điểm ngập, hệ thống thoát nước mới đáp ứng 20%",
    "u": "https://vietnamnet.vn/ha-noi-co-220-diem-ngap-vi-sao-chong-ngap-van-la-diem-nghen-lon-2547979.html",
    "s": "VietnamNet",
@@ -1954,28 +1978,6 @@ window.TIN_NGAP = {
    "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWDNyclIzTVBEemxxekFfNEU1enhLWkNVc3ZCZm5tc0tTUGV6QWxYSVhDbHd0ZlByUElpOHFOb2huazE5ajAwVGRLUUhHTHNWbUlpUU8wVXJaelJPeUs4cGJYbkNlNFg5a202TGkzWXc1UHJnN3pySnJNZ1ktZkp0czl5MFdDYkl6Q1pEUHVDU1hpUQ?oc=5",
    "s": "Báo Tuổi Trẻ",
    "d": "2026-06-01",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn ở TP.HCM: Chủ xe bất lực bỏ lại ô tô ngập giữa 'biển nước'",
-   "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQkdueDVEUFVXSlJmcFBqX0ZPajVVanBFVjBmMEdIN0NwbDR4NklESlZSbkpUOVNmRzJqelhSd0c3cWk1dENqck1MYVlaRGJDWF9TdGJGWDdZWHByRURnT3JrTVNTaW9ZSnR3U3doMmlNbkFwdy05ZGpnbDR3SVBSR0tiR3lXTWxVV1FCUTVVUXI2clJ0LU4xeHZWd2VSS1hqR0hrSGxDYzg?oc=5",
-   "s": "Báo Thanh Niên",
-   "d": "2026-05-31",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa dông kéo dài, nhiều nơi ở TPHCM ngập nước",
-   "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPam5pcERjNjJaSEpZR3NCZUFqZUk2R2FzWHNwaWk5MVdZWHoyMmNzcFRKT3ZvWEk4RDFEdlJzV2R6UlhDWVNfVFBIYVY4WTBMV3lNUkNNQlBpQTVnaTlNZGRLaG5xNVBtQzc1cWRMV0thV29VM2tuUWU5cWdqdTk1aUZacXI5UVRCTGZNd1NOTmdnYnN6?oc=5",
-   "s": "Báo Tuổi Trẻ",
-   "d": "2026-05-30",
    "img": "",
    "c": "hcmc",
    "fp": [],
