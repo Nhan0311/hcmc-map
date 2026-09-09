@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-08T15:01:40.394Z",
+ "capNhat": "2026-09-09T01:08:37.277Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Dự báo thời tiết TP.HCM ngày 9/9: Mưa to, đề phòng ngập",
+   "u": "https://lifestyle.zingnews.vn/du-bao-thoi-tiet-tphcm-ngay-99-mua-to-de-phong-ngap-post1681950.html",
+   "s": "Znews",
+   "d": "2026-09-08",
+   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_09_08/anh8_znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Mưa lớn kết hợp triều cường, TPHCM đề phòng ngập",
    "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQXy1DdjlhQlNqclRSWU9SWkhOWkRnNmRUOVJMRXUtQWJrZ2VuMkJ6OEVCd25WaTcxWGhrVmRLWlMwQmxaVmJKSXJNYlE5WC04a2JRUDVvUmJfTlhZNUVBSVBtNl9mYXdUU0hhQVFJblZTWUZsYzFoMnFkU2U1OTJzQzdqQzVDb0lBd2tfejFR?oc=5",
@@ -25,6 +36,30 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Bản tin Thời tiết Hà Nội (9 - 10/9): Khí lạnh tác động khu vực từ đêm nay",
+   "u": "https://tienphong.vn/ban-tin-thoi-tiet-ha-noi-9-109-khi-lanh-tac-dong-khu-vuc-tu-dem-nay-post1874731.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-08",
+   "img": "https://cdn.tienphong.vn/images/rwN0lHPym7CwCTZmSkMFYRW6UGNcP-Flq7rnYyZwXJRuCe4wdwbvfPcQp3mkcolL/11119.gif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
+  {
+   "t": "Tìm lời giải chống ngập hiệu quả cho Hà Nội Bài cuối: Chủ động các giải pháp bảo đảm tiêu thoát nước",
+   "u": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPY3YzMjRjaEFZcXRlQXpiYWRjR2VxX2dzaGE5ZnBSTVZJbnFKYnAzVXp5SkNvc2pTQkJBMnJVMTk0eXJoTWtYTnZkdTdNSDUyYjcwV2hNRnFmMnRMWVBhLXBOaHZIRVdMQWI1SXkteGxYRGVIbTY3bFQtSTUzdnQwMjl1NlhHY0JnT2RCbVNVSVEyWnRoVkk0WXE4WjdsYkpZWVZ1Q3JNekV1bmdEUU1EN3l3ZVI2S1VMRlRkQk92amI3NVBHMnhIU0RoejI?oc=5",
+   "s": "Báo Hànộimới",
+   "d": "2026-09-08",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [
+    "Nội Bài"
+   ],
    "canh": 1
   },
   {
@@ -1213,28 +1248,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Hà Nội giảm điểm ngập sau mưa lớn, chuyên gia cảnh báo chưa thể chủ quan",
-   "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSjdNSmhjVkttUjM2dkNhbHFGUEV2NVZaUWF1R0lZOWxGVEluSUVuZEdLTDNPQ0JJRDJSU2YxYk1OUzdNZnh3UktVdVNTQVdubUtOQ0hrbVFVcFdGbEtOTi1zSXFIOGxhUnhEVUVWdnM3RHJ5aGhDUXlSdEF3eHRjaElXcXBGUUUtb1JXLVJ0WEw5M1ROZ1N0OWlR?oc=5",
-   "s": "Vietnam.vn",
-   "d": "2026-08-24",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Khu vực trung tâm Hà Nội không có điểm úng ngập",
-   "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdUdZYlJVWElxbEhMUEl3UTBwcFRVUXN4ZWUybXV3d2ZSNVBxcWRjVnZoZTVBWDZXZ0VYN1NFM19GRmVnZlNBTlRZSnQ3bGxzSk5VRnVxbzZwYm05ZnFLTm1jRGd5MVNZUlhUTFFJc2ZFVl9Yb0xSZm1FeFNJM2JZeWNwbkkybnFWcW1MSDZiUkJIcUZQWDRHVFp5YlY?oc=5",
-   "s": "baovanhoa.vn",
-   "d": "2026-08-24",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Hà Nội có 220 điểm ngập, hệ thống thoát nước mới đáp ứng 20%",
    "u": "https://vietnamnet.vn/ha-noi-co-220-diem-ngap-vi-sao-chong-ngap-van-la-diem-nghen-lon-2547979.html",
    "s": "VietnamNet",
@@ -1966,17 +1979,6 @@ window.TIN_NGAP = {
    "t": "CSGT dùng xe đặc chủng chở người dân vượt đường ngập sâu giữa mưa lớn ở TP.HCM",
    "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNd0lEMXplN0dIOGlsakVQNG1vTF9JUEJxVVdqY3c5WjE3UE0zM0lfdkNuLTFFekVhYm8zTGxOWFRlLXBFOU5IcUJGVGlFaDhzSnRseGl4a09mLXMwbWZqLXZZX0s4X3F3ckpfbExlNkhKd3pXcEtnMEZPM1d4QWVuT2tIdF83MkNEYjR5NUxFSy0wM0hDclJ0VzBpMmlqY09UbFptZVRJOXoyT1phX2ZqQUlWMjNUUkNkaDJKRHJn?oc=5",
    "s": "Báo Thanh Niên",
-   "d": "2026-06-02",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Quốc lộ 13 ở TPHCM bị ngập sau mưa lớn gây ùn ứ kéo dài",
-   "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeDhybDBELWVoZXJBbVNMTmNxQ3ZuZGFjU19ZMTRVQTE5T1h4ZkVIYVl6UkdXQWZEWFBXTlVrOHNvQWRxRks2THhqSWUtallRNDRnTGY4S0NjbThnMUhtS0VWem1uaHVOSVpmSEltZzZKWUlFSzBaYUt5YVdaelVncXBISHQ5QmlZRnVOSzY3S0lxbjNZR3p1dA?oc=5",
-   "s": "Laodong.vn",
    "d": "2026-06-02",
    "img": "",
    "c": "hcmc",
