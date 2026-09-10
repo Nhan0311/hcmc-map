@@ -2,9 +2,33 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-09T15:04:31.664Z",
+ "capNhat": "2026-09-10T00:57:12.419Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Cận cảnh 2 khu đất TP.HCM thanh to&aacute;n dự &aacute;n chống ngập 10.000 tỉ đồng",
+   "u": "https://thanhnien.vn/can-canh-2-khu-dat-tphcm-thanh-toan-du-an-chong-ngap-10000-ti-dong-185260909000139408.htm",
+   "s": "Thanh Niên",
+   "d": "2026-09-09",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/9/9/edit-79-b-ly-thuong-kiet-du-an-chong-ngap-10000-ti-tp-hcm-1788954080261883937200-106-0-1706-2560-crop-1788954814064479440704.jpeg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Cận cảnh đường Ung Văn Khiêm trước ngày 'lột xác' với dự án gần 4.600 tỷ đồng",
+   "u": "https://vietnamnet.vn/can-canh-duong-ung-van-khiem-truoc-ngay-lot-xac-voi-du-an-gan-4-600-ty-dong-2553472.html",
+   "s": "VietnamNet",
+   "d": "2026-09-09",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/9/can-canh-duong-ung-van-khiem-truoc-ngay-lot-xac-voi-du-an-gan-4-2418.gif?width=0&s=XnTAvszbEWMUfQod7mrZnQ",
+   "c": "hcmc",
+   "fp": [
+    "Ung Văn Khiêm"
+   ],
+   "z": [],
+   "canh": 0
+  },
   {
    "t": "3 ngày tới TP.HCM, Nam Bộ có mưa to, triều cường dâng",
    "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeXRxNFo5dEw1bzdHYS1xR0VfNTcyV1FQY0VlY085alNzb2U4cWRJTmRuR2Z5SGVhQ3F1bHJDZ3RrVS1RYkJNaDhURjhaQVY5QlpZZTlkczBZeHI3NFRrMUtJaHRUdmE2RndHX09jM1AxQV85M2VWU2E4UFhabVk5OVdwbC1DUXluOXp4TXIzTTJGQ2h2MzNZ?oc=5",
@@ -97,6 +121,28 @@ window.TIN_NGAP = {
    "t": "Hà Nội chuyển mát từ đêm 9/9, đề phòng mưa dông và ngập úng",
    "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdEFpWTN6YTFKSnllZW1HVnZHY3ZyOGRqVDdSelljNEhNUzNQTlhGTWdPYXlMWEgxak00Mk5YdC1fOW1xU2hQcktqV3V0bTNmbXZIbmxIWmlxX1YzQzJfTk5oYmlSWVNYM3p1ZVp0OFNaVWJ2WHlabl9TR01RVzJOLXNjSGd4ZEY0Q3VGTDNMMmlXZkQzM2JGZjh3?oc=5",
    "s": "baove.congly.vn",
+   "d": "2026-09-09",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội: Mưa lớn gây ra 6 điểm úng ngập cục bộ",
+   "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRFd5MkZROFJDdmZVcU9XNlMxNWJXMy1pMjVCdndOODliQU5VTlpUNDkwSE5YdmtaS0Q3YU44T3Bmb3VHajRYeTF6YmlQaWJ1X3JSTUF1OGh4eUZtM2FiR0Z6TURTeDZaQ3lnZDBuOEI0Ylpwa2swcDVLUkxDWVo0cExBZEM?oc=5",
+   "s": "Báo và Phát thanh Truyền hình Hà Nội",
+   "d": "2026-09-09",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội mưa to xối xả chiều tối 9/9/2026: Cảnh báo ngập úng giờ tan tầm",
+   "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVlFhRG9qRmJLNk8zZV9ublFJQkxlSkFHZ3hBT1Y0Z240SGZxdmdDdFo3aUtCdUlnTXAyV0V2eTZiUjdaSkIwbjdEeWFoYURDSFBzTFBzcFJLMnNGQ3NIRjA4Q0tQVmFLbUVtSW02T0oxb2pmQW05QVMzRFdubzd6N25yTmJRNkdIWHpVczRBSnVsdWozWTFidENVN2tHT1VrUG5SbVNR?oc=5",
+   "s": "Tạp chí Gia Đình Mới",
    "d": "2026-09-09",
    "img": "",
    "c": "hanoi",
@@ -1237,17 +1283,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Hà Nội phân luồng giao thông tại các điểm ngập sau bão số 4",
-   "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZjlrbUI5M0Y2TFh4THNtek15aWs0RkVudEk1RUtlQXdibThGQlduLWhTcndnc01OT290SGNsNTVJQWhqaG5Lc0xXWnZ6MmhWOFU3SVlKZUVSRUlqVzNnSkxpYkVUQjZTM09vcllBNEdfdGUtTUJBOVJJN3QtWng4ZW5RclBwZFNVZG14LWFlWUJUbE1vbVNMMkdsVnpuQQ?oc=5",
-   "s": "laodong.vn",
-   "d": "2026-08-25",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Hà Nội tính 'xoá' ngập úng bằng hồ điều hòa, bể ngầm trữ nước mưa",
    "u": "https://vietnamnet.vn/ha-noi-tinh-xoa-ngap-ung-bang-ho-dieu-hoa-be-ngam-tru-nuoc-mua-2548743.html",
    "s": "VietnamNet",
@@ -1264,17 +1299,6 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-08-24",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/8/24/ha-noi-mua-lon-nhieu-diem-den-khong-con-ngap-keo-dai-1198.jpg?width=0&s=mMx3MptdQbOPjBWY0JtzWg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội: Lũ sông Cầu, sông Tích vượt báo động II, 8 xã phường nguy cơ ngập lụt",
-   "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaVdEbENSNS1ZeWtzU2tLbXJLMXMxSXhMa04xRGRtdmxVeGR6WElwU0ZyRE9wU19sY2l5VHRGOUZ6N1NGUGdUb1NfdlVILWoxYTJUQll1QkRSa01yRjRQa1lGOXRhWURteTJnTF96LU80T3dVcHFzcnZmUUNFUTRiR1p4QXRTeVNqaXl2UzhCMnZHdWl4Y2RpVlBxMVNTdGtTNjNsYU9CZXJNeGM?oc=5",
-   "s": "Báo Hànộimới",
-   "d": "2026-08-24",
-   "img": "",
    "c": "hanoi",
    "fp": [],
    "z": [],
@@ -1957,28 +1981,6 @@ window.TIN_NGAP = {
    "t": "Mưa lớn ở TP.HCM: Nhiều tuyến đường lại ngập sâu, người dân chật vật dắt bộ xe",
    "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPX1pXM1FrcDZSb2ZwM0l1Y2ZBbXF4SEhHM1JUa0RfbVFqU3duaTgydkFHUm5ZaFlpM1Npbl9zQlVWVlBVWDFqRmZWX1pYNGRhQ0xTZDM2d1dWNy1iV2RkcnhEMTdCQlhvNzg0QlR4OGhGa2ZXdGd4NHVjSGt1TGljVVBlZEswejFBRlpzWkxHVUhmRFk1RldMNE5JeU5seWZ3TmlFak1FdF9aNGJtNU9xWXVZN2VlMTZhYVJz?oc=5",
    "s": "Báo Thanh Niên",
-   "d": "2026-06-11",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM: Vì sao đường Đặng Thùy Trâm vẫn ngập dù đang thi công chống ngập?",
-   "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTkRmT2lPSVFISE9icm9yWHgyeW1jajVrVkg0ZDlzOU8yZFd2MGFvYUhxRVBFY2s5NUtKRjgyZVFiWV9LRk52TGxkS1JXRk81QlNYd2dlR1MwcWIxVFIwWlhxNEFHc3U3Um1SYTBRQ1U1d29QWXBGY0l0dVR0aGhiYUZlN0oxNU5GOHVJV2U2QUJDZTItTkNzbXdiLWtCdk5FcDJZam1OZWRic1ktWXV4Q3JRSmM?oc=5",
-   "s": "Báo Thanh Niên",
-   "d": "2026-06-11",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM: Trời đổ mưa lớn, đường Mã Lò ngập nặng, nhiều xe chết máy",
-   "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVV9pR1VJVTZTVkFWWGlkQXZkS2RCcHV0VDh4a1FvMTItb1g3dWhuMkR2VmpCVV9CUllEbjA3QzE0RndUc0pkTDEzdEFCRFZZbmlrblRrUFBxZ3NlOFJIRFZiVmNhZm1VUXAyRVUyc3poaWhLVE5uZXFOOWVmWEtEeTlGdE1CaUwxWHRCZWVXcE5HTkhscEhNRmRGbWxrUjg2a1RN?oc=5",
-   "s": "BÁO SÀI GÒN GIẢI PHÓNG",
    "d": "2026-06-11",
    "img": "",
    "c": "hcmc",
