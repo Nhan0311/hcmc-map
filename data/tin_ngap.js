@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-10T14:56:58.605Z",
+ "capNhat": "2026-09-11T00:54:08.050Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -199,6 +199,74 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
+   "t": "5 tỉnh/thành phố sẽ mưa dữ dội những ngày tới",
+   "u": "https://tienphong.vn/5-tinhthanh-pho-se-mua-du-doi-nhung-ngay-toi-post1875377.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-10",
+   "img": "https://cdn.tienphong.vn/images/Cnj4WjvRBHYQoCoEhCPn8jmikOnLAIo-6DCl0w06FiZk8mFxZOak9v_IkNP11hyxw2Ie3iUHby0zzTgyiCA_-A/mua-da-nang-1006.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM hứng trận mưa lớn nhất từ đầu năm đến nay",
+   "u": "https://dantri.com.vn/thoi-su/tphcm-hung-tran-mua-lon-nhat-tu-dau-nam-den-nay-20260910223303376.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-10",
+   "img": "https://icdn.dantri.com.vn/2026/09/10/e00d5195-fdca-48d1-a2ba-abd19f8062d31201a-1789054256254.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Thời tiết 11/9: Mưa lớn 3 miền, TPHCM nguy cơ ngập nặng",
+   "u": "https://dantri.com.vn/dt360/thoi-tiet-119-mua-lon-3-mien-tphcm-nguy-co-ngap-nang-20260911042619408.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-10",
+   "img": "https://icdn.dantri.com.vn/2026/09/11/huyen-tt-1789075618951.png",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM tiếp tục mưa to",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-tiep-tuc-mua-to-20260910210807328.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-10",
+   "img": "https://icdn.dantri.com.vn/2026/09/10/d327ea70-44a1-4be3-84fd-0b559a962d271201a-1789049167240.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hầm chui nút giao An Phú TP.HCM ngập, phải đóng tạm",
+   "u": "https://tuoitre.vn/ham-chui-nut-giao-an-phu-tphcm-ngap-phai-dong-tam-100260910205623941.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-10",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/10/ham-chui-an-phu-ngap-1789049567557742868818-215-0-1840-2600-crop-1789049662258894085962.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Đồng Nai: Khu dân cư ven cao tốc Biên Hòa - Vũng Tàu ngập nặng",
+   "u": "https://baoxaydung.vn/dong-nai-khu-dan-cu-ven-cao-toc-bien-hoa-vung-tau-ngap-nang-192260910193141307.htm",
+   "s": "Báo Giao thông",
+   "d": "2026-09-10",
+   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/9/10/ngap-178904332937191479380-0-138-1168-2007-crop-17890835746301956722376.png",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Vũng Tàu"
+   ],
+   "canh": 1
+  },
+  {
    "t": "Gặp tai nạn trên đường đi học về, hai nữ sinh lớp 9 thương vong",
    "u": "https://tienphong.vn/gap-tai-nan-tren-duong-di-hoc-ve-hai-nu-sinh-lop-9-thuong-vong-post1875330.tpo",
    "s": "Tiền Phong",
@@ -218,6 +286,30 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
+   "canh": 0
+  },
+  {
+   "t": "Loạt siêu dự án khởi công, TPHCM cần gấp hơn 150.000 lao động xây dựng",
+   "u": "https://tienphong.vn/loat-sieu-du-an-khoi-cong-tphcm-can-gap-hon-150000-lao-dong-xay-dung-post1875340.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-10",
+   "img": "https://cdn.tienphong.vn/images/AHsu0WetIg3QIF4V2I7ZaP60UEZRD88Vf-NCMaMFC80O9kULzqcxnd7MRFadOMHa/cong-nhan-7366.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
+  {
+   "t": "Đối thoại Hữu nghị TPHCM 2026: Thấu hiểu, kết nối để phát triển bền vững",
+   "u": "https://www.sggp.org.vn/doi-thoai-huu-nghi-tphcm-2026-thau-hieu-ket-noi-de-phat-trien-ben-vung-post871078.html",
+   "s": "SGGP",
+   "d": "2026-09-10",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/drkxraekxq/2026_09_10/tphcm-gap-go-de-thau-hieu-ket-noi-de-phat-trien-ben-vung-676-6080.png.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Vũng Tàu"
+   ],
    "canh": 0
   },
   {
@@ -279,6 +371,127 @@ window.TIN_NGAP = {
    "t": "Mưa lớn đúng giờ tan tầm, nhiều tuyến đường TPHCM ngập sâu",
    "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUDJSSnBCZkliUEgtc05CWC1YdE13M0N3X2EtVlZOeVVsY0plN2tHOUNOclE0eC1Cd3VrcjQ2cXIyS1dfb1F1RERyMFNjdm1ab2RpQ0hHTldQVzgyMFRIZEtScG0wc2Vocjd6TXNYckZ2RlpvOERzOXhiUXVfZnBYUVRuQW1BOHFSaTN6aDMyRDd1WGo5M0ZZY3ZyTnA?oc=5",
    "s": "laodong.vn",
+   "d": "2026-09-10",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nhiều tuyến đường tại TPHCM ngập sâu sau mưa lớn",
+   "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQcEt3Y1IyVmNmVEN4LWtXZzdtWEtKdF9yeFBxcUZsLXBFYmdQSmJDSWlySFZXMzk0T003TEk2Y2dpelZ1bTVkNVRJRGx0dFBwd2xmNVBJdW1yQ25tb0FtcllNOXhPZEtDWXJ5VlktNjhWbHpJMmk0WU1RWTJURmFUU3NaaDhjTkhGbUFCZnJIcE8zbHc?oc=5",
+   "s": "Báo Sài Gòn Đầu Tư Tài Chính",
+   "d": "2026-09-10",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn gây ngập sâu, đường phố TP HCM lút bánh xe máy",
+   "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOR2ppdDJSY3dzeHZIN2NBdWJTMl9DVjB6REE5dURVaUx0QkJSMFJ0azNCcDhSUFJkWVFQSklvVlduVmVEQkY4STh3TlJvd1liVVlhQVR4Yl9QMEM0dUNZM09STWtYdEdwWXlZZDdrSkZaZ1JSM184ZGRwbmZjdEQyczVOMm1nVW5LeTdpZm9BYUFxNGlvUW5wMEh5WmhJSXFY?oc=5",
+   "s": "Khoa học và Đời sống",
+   "d": "2026-09-10",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP. Hồ Chí Minh mưa lớn cuối ngày, nhiều tuyến đường ngập, người dân chật vật di chuyển",
+   "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTTJJNEx4YUd4LWlBTVl0Um8ta0VOSHl6aU9RV3NuX01qSEFZQl9CTEhaQ0p0eTk4TU5jZU4wSmxiM2lrNXdaT0dNdWFORWNlTWgxU3VpNnFIcE5NUlpWVVYzQlZYeWQ1aDhqUWpkQzVWRjEwd242RWoxeEl6UFBwemhhRDJpbk9pRDhBcFh4bzFBYWUxVV9raUdWTFJLMXVKVlJtcGZTbUxQbkRqTXB5UmV5Y1BmbnY1amh0ZVlINA?oc=5",
+   "s": "VOH",
+   "d": "2026-09-10",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP Hồ Chí Minh tăng cường chống ngập trong mùa mưa",
+   "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNnUxRDBjX2lhaTZNMUl0QW8xUDFTTDh6VVJ3UDNmYklXV3RvbkFxSEZjMXBjeXBiQVNzNlRYM2U5cGlwX3JYWWdIUHFPNGhac1B1RUg0Ni1rNlpTUTdZM0h6X1gzM0tHb1pwdDI3X0Y3Y1NTUGtGVjlTcnF2YkZGakxPaEdsVWliSmliUmpuSHRjUQ?oc=5",
+   "s": "VTV.vn",
+   "d": "2026-09-10",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nhiều tuyến đường tại TPHCM ngập sâu sau cơn mưa lớn",
+   "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOc3BpYzhuZXNXWTk3UXo3Si1jTWRFYkYyd2l1SXlfdVByZ21OYk9PdE1vdE01VWM5YzN0ZWF6QTFMVTBzUHlGQWdvNDgxaUhidXBlbE9YaEVMYzMzZEZ1UC12UGd6YmZFam43Vnd6WWFOdnh4aF9NX0VFMmhNRUwwWUJfSnQ4TUt2LS1CWGxXcUNLYmJfSjdNYg?oc=5",
+   "s": "Báo Sài Gòn Đầu Tư Tài Chính",
+   "d": "2026-09-10",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn giờ tan tầm khiến nhiều tuyến đường tại TP.HCM bị ngập, giao thông ùn ứ",
+   "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZEw1QXhFbnBydWVNUUhSR09ia3pEZTg3OHBFdkpnWkRxc3NmQXR5Q0h6cGI1UG55Y1F6MGd3U0kyaERkTGRZTWh1Sy1fZ1pXZ2NFb2NyVlJvYWxLdVRaYlh1eDBUV0lFZDFLbmFURTRsZ0Fwc0ExTk5rcjFScjlEYkJsZ0lMeF9aeVh0dEI4aGU3ZlBEUEd2OHdkTldtaVdkTExhdElySFhDaWV5UmFqelhvSzduZw?oc=5",
+   "s": "VOV.VN",
+   "d": "2026-09-10",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM chốt lộ trình 2026: Xóa sổ dứt điểm 3 'rốn ngập' nặng nhất",
+   "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOV0gtU0U2c2VsenQ1cV91SUVTQ1RnbW9SaWpaVG15d2NIZHR2c2YxOVJaM0FWcEFsY0VuVmpsNzJkOG8zTHFPQ2U0OUQtS18ycnVHT1dnY2JydjAyS1pXUG5DdUtzZFVJOU1vM2NZZlJmN2xYT2hNQS0yeWhMNUxMS3lJMDdKa2pYWlh3bUJHSTNsVjNFcHBDYnZmUy1aN0pRWm5vOFRSS1E?oc=5",
+   "s": "Báo Thanh Niên",
+   "d": "2026-09-10",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn ở TP HCM gây ngập nặng, giao thông hỗn loạn",
+   "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTkxHQ3hmRjlfcjNuai10VkItR2U3Wkc2eTJvZU9JQURyUERDcmFuRWZSbkEyWi1XOGFwMGR5MUN0TDROZGl2cDdMTC1MMWxrcnZudXJYT1BDNEFjMmpVTzh5OG5lZnVQbHdldGVrdzVGZ19NTlBFWmdpTDVUV19HNWl4NG9YSV96TjZacGpCR0hFNUpJMjFRYg?oc=5",
+   "s": "VnExpress",
+   "d": "2026-09-10",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM: Mưa lớn giờ tan tầm gây ngập, ùn ứ giao thông",
+   "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQM043YmdmaUFpYzBLV2s4MmFjMDR4V2s1MkRXdXAyMzFqMlpxOHdIdm5PaUlFZFJBT0ZjTzVCUHM4Rnl3MmljT1dGWEtGRTBMZ0x6R00zSk83Ul9Xa052b3RjeTJUVldTOXBBTlRaUFU3eExFUlFmb3dwLThKRE9QQ2dKSEFmaXJycDdIWlAxZFA5ZkE5bTM5SjVwWGlnQXM?oc=5",
+   "s": "Trung tâm Nội dung số và Truyền thông",
+   "d": "2026-09-10",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Trạm tin sáng 11/9: TP.HCM lên nhiều phương án thoát nước, chống ngập mùa mưa | Sắp diễn ra hội chợ ẩm thực tại Cần Thơ",
+   "u": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUl9OV3k3SUJ2Mlh6bGFCaksyRzhFTy0yNXc5amw5U3U4YlZwR0hBTDVJZFVpSlZibEtsazNkbl9kQ1lhSUszbUxIekNfWVd0Z3k1RnZkWUMzeVczWl9uT1J4b3Z6YVM1QWFaS05CX3lMVkNnSHppUXVRb09zRFhFRWdFakhTNXJpZmI1ODhKaVh0N1pXVm9lcDZaTS05OElXX2swcThsOUVLVHpGOTc4eDlmTktlTzdMeldGbEZDTjFfVW9TY0hDbnlyYUFRdHg1WVByT2NtNmJHRXZYM3RWUUtGaVc2b00?oc=5",
+   "s": "VOH",
+   "d": "2026-09-10",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM mưa nhiều giờ, xe cộ chết máy, đường thành sông",
+   "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNLWZrR3hIajhEcXRkWnRvLXJKbENGdS1EVVlQQTdEblJPSTllTXlLaFJ5VDNCeVhQTnFfbjNOWUM2aDlsZ0JJTWJEY2ZZRG9Rak9NUUl0ZkNBMGFXTGtoaktSMkM0RWtlemtBNXhySi1QQzNLMWNkekg1VjJLQmZxTy1TQzhPVFllV0E?oc=5",
+   "s": "congly.vn",
    "d": "2026-09-10",
    "img": "",
    "c": "hcmc",
@@ -1779,215 +1992,6 @@ window.TIN_NGAP = {
    "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVXBnX3ItWUh2NnJrWUh1ekNpMGEtQ0ppa19meWYzWThYOHFlVUx6NXpBLS1nWDBBV3JoNzRCQkd1enY4enZrNmpFQ0h4NC1WUFRKZ1NWT2w4UDl6NXhOcl93Z1ZlRVpXT0VZcENwR1RWTGRqTGZ5aGRfZEp3LXpXT3VVTHJmY2tyTGJkYzRvajduYWRSTHIxTjF2emRRR2ZLY1lLc2VPYU1hTk95amxv?oc=5",
    "s": "Báo Dân trí",
    "d": "2026-07-15",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM đặt mục tiêu giải quyết ngập nước, ùn tắc vào năm 2030",
-   "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNa1c0aTZJaF9JQTV5bXhKLVU1NTRaVFJTLWh4ZmRtTkRPSy1KYWVpRDNrVFAycUw0MXVzWUZWWi1ibklfNHd5WE5haEJienBTMTM0Mi1sTHVNSEpQMXBCMkxXNl9WM0NyS3FsYnhrcEsyZ3pmQWhhTkw4NVRZNGlSU2paRlFhNDRkZkVNbXo0MHc0N1g2TzNxWlV6d21nZ0FQQVc4NXpZeURBMUlQS21sQw?oc=5",
-   "s": "Báo Dân trí",
-   "d": "2026-07-14",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM ưu tiên xử lý điểm ngập trước mùa mưa",
-   "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMkRiU0lzZGhsVHlSSloyTmhzTjhWN3pLYWp4eXFWRGxNT3BXN1k1NmlsTDdpUm51OWNEUTNVRmp6cXFVWV9iRnUxb0FIMUMyY0NVcFZmLXl0NUNTbXJyeVVBVjRYNjh3LUNhd1BkNE5JNVBnLUVMYnNwRmJBNnFtZnY3Z1huZmlD?oc=5",
-   "s": "moitruong.net.vn",
-   "d": "2026-07-11",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM xây dựng lại chiến lược chống ngập cho siêu đô thị",
-   "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQb0NqQ0lfODh6YVhubTZvX3BiSGpMQjNUbUx5QVlfQ0pkZFJMbkZseEl5NF82cHhITVg0TkpPZ3ltYWk0MkVXdWcxNnlpWHJ5ZnQxNW1yQWx3LUtPb0R0SDgzY1U2d0xYcDZNeVV4NThoMk1scUxaeFU1WGwxcDdHRVBKTkhTUFFISjZoY0VwOHRmamsyRkM3YUpn?oc=5",
-   "s": "Laodong.vn",
-   "d": "2026-07-10",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Khu vực 600 ngôi nhà là “vùng trũng” bất động sản, cứ triều cường là ngập, sắp được giải tỏa làm công viên, đường lớn ở trung tâm TP.HCM",
-   "u": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPUll2aTI2Y19YSkdpbS1mQ3dxYkpOVXN1b3ZLb0REa19oeFBEUDVvdDVHSFRHTS11cjZ6UWItUmxWT1ZjVXEzMi0yZzFkSWZ1NmwzbFdEWGN5VkdISGFQZXZuVXhGXzI1Q1BxUnRXV0hJeGZyd3pENm5XQVRScE9WV2RydEZScGVudExSNkJneHlhTHUwRnlINHpPblU1RXlaQjNNUlB0VThMN0M1UTBVcVdRcXRFUmhvZ2tuenVjYWVmcm9HT3RZdWRRNnNSb2hjMWQzZnFxRUthVXB3elhXTVVzZEd5cnExdGlKR2xfeGZEdUs3ak9Objl1bExlQWs?oc=5",
-   "s": "cafef.vn",
-   "d": "2026-07-08",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM và Nam Bộ sắp đón đợt mưa lớn, cảnh báo lốc, sét và ngập úng cục bộ",
-   "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNVEItRXVWbmZnbkFQb1JESVJtVE51R0RaMlNSUFRZcDA3bDFtejQ2WDVjZXJ4WWJiaHVvQnI0akotbk01aVlwODhCUEQtZFhxZ0lsRDdDcERRemxzd1pLMUcwbnM2WnZBcGlDcl9ZOGZvUGlVdkZGWXJwODdMZTcxblJPU0h5dGVGN0kxdmxjM0IzYXpqNmJNaEdqY0tZWEg3Y05VVUlNemRSWG5sMHc?oc=5",
-   "s": "moitruong.net.vn",
-   "d": "2026-07-07",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM: Chống ngập không thể chỉ trông vào cống thoát nước",
-   "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQ1pnNTZ6cEstd094RzN0OGNFcTUtdDk4VFV5WHpzMWlaVC1TazBrRXRhLTZWZUEwT2xLX09pRGNfcFY4TW1oSXMtVi1QMW93Qzd6VTVHVEg1Rl9XVldOekN0NVE0Z3ZHZzVKUVppdmxPUllUSXJRRjFTLUJrNC1GR283eE9lZHdGUTBVQkVQNlItZWtRYXR4bTB3?oc=5",
-   "s": "moitruong.net.vn",
-   "d": "2026-07-04",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM lên 'phác đồ điều trị' dứt điểm ngập",
-   "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbDg4YVVsTTNXVmpLTWdaMEw0NWhUMFYwUXNUM01qbElyTUhHRDdrNHR0QnFRMmpkS1FUMVcyR0RKQ3BrZDNRQ01SZmNmR3hzOFZxMHdOQlpNUmQxRlZKZ1pudkRhcS16SkhuYnVHZ0k3eWxxT3R0NV9SUXU1RUhfOHJvaWtWNzJCd1lRMg?oc=5",
-   "s": "Báo Thanh Niên",
-   "d": "2026-07-03",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP. Hồ Chí Minh: Chủ động chống ngập do mưa lớn, triều cường",
-   "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZThVbmhJeE1KTFFUUEFlNXlvWFZNRlFaclRNaWdvcmJHanR1WVFVTlpFVm80N0ZBRDJlMHhKRkFHNUw4SWtybEtuelN6cXlhNTlIR1gyYmkzMzU0VGFWdVdEMzlaQnprVmpjR2Yxa3JYelN0Zk9EWm1mR1ZhY19Gb2h0R2ZXdWM1dzJkc1d1SUk5SWV5U1NOc0diWWZBdw?oc=5",
-   "s": "Báo Đại biểu Nhân dân",
-   "d": "2026-06-30",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP Hồ Chí Minh còn 26 tuyến đường ngập khi mưa lớn",
-   "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQWUVqa3VwX1FoZ1lWLTBiQ3lXZzdHS2lRMG0zUF82a1FLUHdGZzFSdjF0OFdxdEt0X3dJN0tWeDdtR2otTnpmMFp2d0FEbVB5dXhMTUh0VnNlRVEtLXRlWnBoUzAtbHBjd0I0eGQxYjZSbEtrUnpyMW1SbTlUcXk3bHkyOE1mb2hGRllaNEtpdlc?oc=5",
-   "s": "moitruong.net.vn",
-   "d": "2026-06-26",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Thành phố Hồ Chí Minh tập trung xử lý 34 tuyến đường ngập nặng do mưa và triều cường",
-   "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcDNrS2JNYUdqLTloMjR6NFhtVE54SUxwYTNEUkZURjQyQ0VPdEJpVHJ4SS1MU0x4YmhFR0FHQk82QllvS0lVUXdfQTluTi1CVlFQaGNoeUhLZGluaW5ZRmhQbnJtRGtqbzJRXzBGX1daamtxQk54dW0zTmFsc0V0TkphV0dsVTBaNUp4VWhPeWpqRnBJOG85TzNoNlFnRFRaNnRxQnFrc1lRYWtIR2tIOVJhbU1ob05WaGdSa3V3?oc=5",
-   "s": "Báo và Phát thanh, Truyền hình Lạng Sơn",
-   "d": "2026-06-26",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM có 159 điểm ngập nước: Lưu ý loạt tuyến đường cứ mưa lớn là thành sông",
-   "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWUl0ZFNveW1RNHBoVEYwQVRPWUxoc0lLd1ZKNUIwVUdueWdRaC1RM2U0ZzJpRFFQZDhOcnh4NzhzckgyeFp4T2M0TnNRSVg4WTJRNUliTnZ0ZnhwYWhDWWZjVkswQmsyUXNuOXQtdk1MQUk1YklxU1hsdzNmRlAwMVBCQkE3bTlyb2lFLThpR1QzTmMyZnV0cjFRcjdjTzVrZWh1Vmdjb2cyZmM3djJVRl9KWFpUdFVhQjVZ?oc=5",
-   "s": "Báo Thanh Niên",
-   "d": "2026-06-25",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Danh sách 34 tuyến đường ngập do mưa và triều cường ở TPHCM",
-   "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxOb2pxZ2k1RDNzU19OLVM1RnZ1Smw3bHZJY2Nfdk5hTHZCd1RJM09jTnJ1dDlVMjN3Mk94dmVMMkVoREMtaWljRlNhYzlaX1Z2Nnd3OURKR084UXpGYlNaSTVFZmptYnZRbzVXajZVVUMyZktvZUJVSlNwXzRxMFJZbW9FME9HTVN5RHRmRmIyaVdlS2x4VHdsUW4yLUUyQQ?oc=5",
-   "s": "Laodong.vn",
-   "d": "2026-06-25",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Sở xây dựng TPHCM điểm danh 34 'rốn ngập'",
-   "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9GekhPZzVxWnp0Z1NoSl9WYlc2c3hwTzJEZnk4OUtTZFN1WndKSDV6N0NJZ2lVY20xSjlGTGRac0xpeXUyZ2l3NGdhTkdIdkVwWG8tUVcxaEpjU1FxeUhzNEJwT25MTnJzZjJJQTB5cG01YzJyMFZ1dHhiTVdpTEE?oc=5",
-   "s": "Báo VietNamNet",
-   "d": "2026-06-25",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM có 34 tuyến đường ngập khi mưa lớn, triều cường",
-   "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZHVBbmV3a0ZSYkxCSU05MEN4b2Vha3pENXYzX2ZaOWxEQjM5X3dOUzFWVmo1MjJpZGxMX0h6RzdRVHFvdlo1OUlkek93T0x2ZVNHMjZYajd3YnVjcmlNTlNmTUVDQnlNZU5ONk1WbFNWMFlROXUwSlhsNDl6UmR6eWwzblplb3JCNS1OVW02MU5EQTk2Wkxr?oc=5",
-   "s": "BÁO SÀI GÒN GIẢI PHÓNG",
-   "d": "2026-06-25",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM công bố 34 tuyến đường ngập do mưa và triều cường",
-   "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdEVjSWJDN0hrdE9lVlNiNk1zS2dEdTRYbkFGVjZLODVVTm5ONGhqT1p5VHRtTTl0TXhsVEQybGRieTZPSHZTSkV2Uy1EcldVYi1vWi1XRGpVV1MyaERDb1otWjl1QThxMkM2VHkwa2h1aktyalJYTk5OcXJXZV82WjN4SlppWjFLQVJjS0JDUFBuRjZkaklsR0cwZnRXZ0FkYkdNcEQ2RDY2bzQ?oc=5",
-   "s": "Báo Dân trí",
-   "d": "2026-06-25",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM có 34 tuyến đường ngập do mưa, triều cường",
-   "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZ2o5ZER6UzRrS1JiWndCNW00TlhDTXZVR2ZRdGJYYWU3bE44M1ZvaE5USjRKX0lDb1BidEtxdnphb2pDNVk1a3ZrZ3dXRkgxb05IUmlERUhZcHFCR0FXczRqZVQyNFBxSzFUOUN6SDhjY2ZmX3pFOFB3VmZ5QVJwT3RoUEcxWFZpeXZnQXE0aVZuTkpaZU81cg?oc=5",
-   "s": "Báo Tuổi Trẻ",
-   "d": "2026-06-25",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP Hồ Chí Minh vẫn còn 26 tuyến đường ngập khi mưa lớn",
-   "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSE1RQnBzZVNBUlpybHZNTXd2dWVnRm5CakxFdFBBZEhSaXNWMFlXR3FVeUx1ZTg2OXJXMzJlYUpXZy1OQ3FybEdiY1RKVklya3VCWWdYVlhCS3dXMm1SWGZmemVJeDFMVzNUTmdTVzdfRnBSX1g1ZUF3Z2lGWEIzZGVEZG1zc1N4Q1h5d2Q2ZWhrcG0yRXlRenAyOGlwbnVpYWZ6VDNnWmV2RFF5V2tRV1Vodw?oc=5",
-   "s": "baotintuc.vn",
-   "d": "2026-06-25",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM còn 26 tuyến đường ngập do mưa",
-   "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNc0F3b1RVOFZtWl80XzFsMk93cjNzQVZnUmVtVDJpckZhYlhKUXFsa2p2WHRDU3h1WGc4RVlPakJ3TVgyU0FoMVRCQ3VEZ3ZUY3hfOEFHX1F6OFRCN2FQVmRzR3Z0NVZodm9oYTVmbkNMYjE4VzhBN1lObnJoQVVYd0plVnNrZUdXeUdfakM3UQ?oc=5",
-   "s": "VOH",
-   "d": "2026-06-25",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Chi tiết về 34 tuyến đường ngập do mưa, triều cường ở TP.HCM",
-   "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQa0QxWDE2MHlRWmhQT1BKakFyZE1xVHB4RWlxM3pQSFZHdVdrOEcybElaRWRmX3EzZ3VwbkNUODR3c3RwZVItT3ZzZDJ4Ty1TZkNPU2gxVlotYVNPRGgxcVc3MlRFSzQ0ckpfNjZRSThEN3ZoZDRYeDQ0bHdfLVpraUZMcHZwemFoWDBBckNMaVJHcGx4a1RtbHg0cWs?oc=5",
-   "s": "Người Đô Thị",
-   "d": "2026-06-25",
    "img": "",
    "c": "hcmc",
    "fp": [],
