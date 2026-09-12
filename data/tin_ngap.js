@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-11T14:56:40.486Z",
+ "capNhat": "2026-09-12T00:59:36.377Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Dự báo đỉnh triều sông Sài Gòn lên cao",
+   "u": "https://lifestyle.zingnews.vn/du-bao-dinh-trieu-song-sai-gon-len-cao-post1682629.html",
+   "s": "Znews",
+   "d": "2026-09-12",
+   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_10/Mua_SG_03_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
   {
    "t": "TPHCM: Lý do hầm chui nút giao An Phú ngập sâu",
    "u": "https://tienphong.vn/tphcm-ly-do-ham-chui-nut-giao-an-phu-ngap-sau-post1875473.tpo",
@@ -132,6 +143,39 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-09-11",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/11/sau-mot-dem-ngap-nguoi-dan-tphcm-deo-ung-bi-bom-don-nha-2301.jpg?width=0&s=INfHHRJ2bHoDK4VZc3m0aA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường tại TPHCM và Nam Bộ đạt đỉnh, khả năng vượt báo động 3",
+   "u": "https://dantri.com.vn/thoi-tiet/trieu-cuong-tai-tphcm-va-nam-bo-dat-dinh-kha-nang-vuot-bao-dong-3-20260911190947484.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-11",
+   "img": "https://icdn.dantri.com.vn/2026/09/11/mua111-1789128522105.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Dự báo thời tiết TP.HCM hôm nay 12/9: Tiếp tục mưa to, đề phòng ngập úng",
+   "u": "https://vtcnews.vn/du-bao-thoi-tiet-tp-hcm-hom-nay-12-9-tiep-tuc-mua-to-de-phong-ngap-ung-ar1039318.html",
+   "s": "VTC News",
+   "d": "2026-09-11",
+   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/12/thoi-tiet-06375620.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nguyên nhân hầm chui An Phú ngập nặng sau mưa lớn",
+   "u": "https://lifestyle.zingnews.vn/nguyen-nhan-ham-chui-an-phu-ngap-nang-sau-mua-lon-post1682624.html",
+   "s": "Znews",
+   "d": "2026-09-11",
+   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_11/Ngap_nuoc_05_Znews.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -284,6 +328,17 @@ window.TIN_NGAP = {
    "t": "Mưa lớn gây ngập ở TP Hồ Chí Minh và TP Đồng Nai",
    "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5wTkl2ZV9XcFdKZ2JuRUFiZ1V5LUxsWVdUaEwxOU9BZXJObkhFQXRYS3FKZTNuV0Zfby1Tc2VLNC1xcGhuRWExQ2pQQ0RyLVJkS3Z1QUowc1ZqVjA4QjUwZm82MFl5eFFMNzl6Q0ZmVTFDTW5oNGhwMkhhWQ?oc=5",
    "s": "Vietnam.vn",
+   "d": "2026-09-11",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hầm chui An Phú vẫn ngập sâu, huy động máy bơm để thoát nước",
+   "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcHRkWUd1bk41enNiYk9xUzJCbUF4UnJQVjNJWnJvWkUzRlhZR2c3WkxCTDhOZVVCS1B0VU1vT1JUZmxjbDUwVTlETWtfOWFJOHY0Wm91SUN5bTgzR0JBekVQQjlCRnFMZ0RXQmgzejE1Tm1aekdRX09NTFNYd0xuSWFFMmNHREtfc2tYM3psZU5ldDJkYkRLeVdjOHpwN3RyS3c?oc=5",
+   "s": "Báo Sài Gòn Đầu Tư Tài Chính",
    "d": "2026-09-11",
    "img": "",
    "c": "hcmc",
@@ -739,61 +794,6 @@ window.TIN_NGAP = {
    "t": "Nhiều tuyến đường tại TPHCM ngập sâu sau cơn mưa lớn",
    "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOc3BpYzhuZXNXWTk3UXo3Si1jTWRFYkYyd2l1SXlfdVByZ21OYk9PdE1vdE01VWM5YzN0ZWF6QTFMVTBzUHlGQWdvNDgxaUhidXBlbE9YaEVMYzMzZEZ1UC12UGd6YmZFam43Vnd6WWFOdnh4aF9NX0VFMmhNRUwwWUJfSnQ4TUt2LS1CWGxXcUNLYmJfSjdNYg?oc=5",
    "s": "Báo Sài Gòn Đầu Tư Tài Chính",
-   "d": "2026-09-10",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn giờ tan tầm khiến nhiều tuyến đường tại TP.HCM bị ngập, giao thông ùn ứ",
-   "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZEw1QXhFbnBydWVNUUhSR09ia3pEZTg3OHBFdkpnWkRxc3NmQXR5Q0h6cGI1UG55Y1F6MGd3U0kyaERkTGRZTWh1Sy1fZ1pXZ2NFb2NyVlJvYWxLdVRaYlh1eDBUV0lFZDFLbmFURTRsZ0Fwc0ExTk5rcjFScjlEYkJsZ0lMeF9aeVh0dEI4aGU3ZlBEUEd2OHdkTldtaVdkTExhdElySFhDaWV5UmFqelhvSzduZw?oc=5",
-   "s": "VOV.VN",
-   "d": "2026-09-10",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM chốt lộ trình 2026: Xóa sổ dứt điểm 3 'rốn ngập' nặng nhất",
-   "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOV0gtU0U2c2VsenQ1cV91SUVTQ1RnbW9SaWpaVG15d2NIZHR2c2YxOVJaM0FWcEFsY0VuVmpsNzJkOG8zTHFPQ2U0OUQtS18ycnVHT1dnY2JydjAyS1pXUG5DdUtzZFVJOU1vM2NZZlJmN2xYT2hNQS0yeWhMNUxMS3lJMDdKa2pYWlh3bUJHSTNsVjNFcHBDYnZmUy1aN0pRWm5vOFRSS1E?oc=5",
-   "s": "Báo Thanh Niên",
-   "d": "2026-09-10",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn ở TP HCM gây ngập nặng, giao thông hỗn loạn",
-   "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTkxHQ3hmRjlfcjNuai10VkItR2U3Wkc2eTJvZU9JQURyUERDcmFuRWZSbkEyWi1XOGFwMGR5MUN0TDROZGl2cDdMTC1MMWxrcnZudXJYT1BDNEFjMmpVTzh5OG5lZnVQbHdldGVrdzVGZ19NTlBFWmdpTDVUV19HNWl4NG9YSV96TjZacGpCR0hFNUpJMjFRYg?oc=5",
-   "s": "VnExpress",
-   "d": "2026-09-10",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM: Mưa lớn giờ tan tầm gây ngập, ùn ứ giao thông",
-   "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQM043YmdmaUFpYzBLV2s4MmFjMDR4V2s1MkRXdXAyMzFqMlpxOHdIdm5PaUlFZFJBT0ZjTzVCUHM4Rnl3MmljT1dGWEtGRTBMZ0x6R00zSk83Ul9Xa052b3RjeTJUVldTOXBBTlRaUFU3eExFUlFmb3dwLThKRE9QQ2dKSEFmaXJycDdIWlAxZFA5ZkE5bTM5SjVwWGlnQXM?oc=5",
-   "s": "Trung tâm Nội dung số và Truyền thông",
-   "d": "2026-09-10",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Trạm tin sáng 11/9: TP.HCM lên nhiều phương án thoát nước, chống ngập mùa mưa | Sắp diễn ra hội chợ ẩm thực tại Cần Thơ",
-   "u": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUl9OV3k3SUJ2Mlh6bGFCaksyRzhFTy0yNXc5amw5U3U4YlZwR0hBTDVJZFVpSlZibEtsazNkbl9kQ1lhSUszbUxIekNfWVd0Z3k1RnZkWUMzeVczWl9uT1J4b3Z6YVM1QWFaS05CX3lMVkNnSHppUXVRb09zRFhFRWdFakhTNXJpZmI1ODhKaVh0N1pXVm9lcDZaTS05OElXX2swcThsOUVLVHpGOTc4eDlmTktlTzdMeldGbEZDTjFfVW9TY0hDbnlyYUFRdHg1WVByT2NtNmJHRXZYM3RWUUtGaVc2b00?oc=5",
-   "s": "VOH",
    "d": "2026-09-10",
    "img": "",
    "c": "hcmc",
@@ -1881,6 +1881,17 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
+   "t": "Hà Nội duy trì vận hành 129 trạm bơm chống ngập",
+   "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdEliR2hvRGpvVTZkMHZ3RXF4ZnRmbVFnVG9qV21tSlZuYVEwLVdsbDNvQzhCY1dkYnN4dWx2UzhFczlvSGRwcXBxVEcta1VxX3hSdjZUckJ0TjhjcXF5YWV4cG5PX3FmQTlhcVQwLTJvQkxXVUVwdTJKOUR0Q3hmNHVvenNCU2s?oc=5",
+   "s": "Báo Hànộimới",
+   "d": "2026-08-27",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
    "t": "Hà Nội khánh thành đường Vành đai 1, khởi công 2 dự án đường sắt dịp Quốc khánh",
    "u": "https://vietnamnet.vn/ha-noi-khanh-thanh-duong-vanh-dai-1-khoi-cong-2-du-an-duong-sat-dip-quoc-khanh-2549229.html",
    "s": "VietnamNet",
@@ -2002,17 +2013,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 1
-  },
-  {
-   "t": "Hà Nội sẽ hồi sinh các dòng sông Nhuệ, sông Đáy, sông Cầu Bây",
-   "u": "https://2022.dantri.dev/thoi-su/ha-noi-se-hoi-sinh-cac-dong-song-nhue-song-day-song-cau-bay-20260514164142461.htm",
-   "s": "Dân Trí",
-   "d": "2026-05-14",
-   "img": "https://icdn.dantri.dev/2025/09/05/ha-noi-thong-tin-chinh-thuc-viec-hoi-sinh-song-to-lich-cropped-1757065694930.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
   }
  ]
 };
