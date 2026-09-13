@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-12T13:57:58.038Z",
+ "capNhat": "2026-09-13T00:46:21.597Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -57,6 +57,19 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
+   "t": "Triều cường dâng cao khiến đường ở TPHCM ngập lênh láng",
+   "u": "https://dantri.com.vn/thoi-su/trieu-cuong-dang-cao-khien-duong-o-tphcm-ngap-lenh-lang-20260912180304634.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-12",
+   "img": "https://icdn.dantri.com.vn/2026/09/12/tc12-1789210757528.jpg",
+   "c": "hcmc",
+   "fp": [
+    "Trần Xuân Soạn"
+   ],
+   "z": [],
+   "canh": 1
+  },
+  {
    "t": "Dự báo đỉnh triều sông Sài Gòn lên cao",
    "u": "https://lifestyle.zingnews.vn/du-bao-dinh-trieu-song-sai-gon-len-cao-post1682629.html",
    "s": "Znews",
@@ -104,17 +117,6 @@ window.TIN_NGAP = {
    "t": "7 lý do khiến TPHCM ngày càng ngập nặng",
    "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZmMxLXZzdkxhc3VOTHN5ZEdwUk92ZkhBRWlxb0hfb1hocDlqRkFaLUkwTFlaREpTb1RoU3BPWndwa1RLQ2hacGNYNlRLLTVOSmRQZUx2dm1zY1g5dDA4bzI2MDM3VTIzVTZ5WlM0TWdPbnYzdVVVYUM5Q2Ywc0tjY1Jaaw?oc=5",
    "s": "Laodong.vn",
-   "d": "2026-09-12",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường dâng cao khiến đường ở TPHCM ngập lênh láng",
-   "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTXNyeS11THlKNl9rYkxlVUY2eFV2eDJEU1ppMGRkcWJTdXFsUkpPYlRJMTkwYXVzQ2FrZk4yS1RPNE9WUXdZR0M3aHgtMGRVYUE5bjVHdFJ0R0FvQ1dDbG4wSklWT0N5QnI3cm9mUEJVckgyYVJuOFhZM2hRT0hLN2UzR25Xd3ZVbTR6MG9EZy1jVWRELW5fVGZEUUUxNDdUYk05dWNPVzdWX0k?oc=5",
-   "s": "Báo Dân trí",
    "d": "2026-09-12",
    "img": "",
    "c": "hcmc",
@@ -216,6 +218,28 @@ window.TIN_NGAP = {
    "t": "Triều cường dâng cao ở TPHCM, người dân lưu thông chật vật",
    "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRlJpNFlrdll6bVBpLXNNYUkyVU9YRUZfbEtqZzNWMHpRTjdlSWE0QXkxREx0RVNjYVVuQ3NQV2paMUhuX3ZkVkpiWEViTlNYNHRWMWN0djc5djk4d21WX3AtZkMxaDByQnFHQXJRckdVNE5KbjBmeDJOa1BPNGZ2U1pFSFF2bTJyeXFieGVCVUVJU3FkeGhfS2VDVFdnTE9IVEE?oc=5",
    "s": "Laodong.vn",
+   "d": "2026-09-12",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ tiếp tục mưa dông, cảnh báo ngập do triều cường",
+   "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVlFrbzY4Q2tRYjJYb09QaFFWTjFTRzRQcUxBb2M0S0NUb3RJXzZvZ1BlelJoSkNmTHVHTnp2dnVBaE9sZmVScFNQb0ptaGxyZ21PUHBUMEJXeDNLR0ZNZ0FKZkVqOW1YUWh0aHE3VmJfRTVER3ROMXhuTVF3ZFNNS0hwQjBnTGtHNzVjSGp0Z3VLQTZab01sNlJvbnY5VzN4OVpXMTI4VWZaQ2Uzb2RQMFI2NkI?oc=5",
+   "s": "Báo Dân trí",
+   "d": "2026-09-12",
+   "img": "",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM ứng dụng AI và dữ liệu vào bài toán chống ngập",
+   "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQcTBsaHlsRXloZ1RJVjJSQWF3dHVRTTA4cm15LTB1V2ZkQVhzZk95RHc1bWp3bXJwa0Z4ODRUeXNRMHliMkN4ZE1IcEZzdXNZYlUtN2QzbWVGYk04YXBOVXN2S2tfVlVVR3RZY0dBVXFqX3J5ZFQtX3ZuRnV6UWxOUHVoYndOOVpF?oc=5",
+   "s": "Tạp chí An ninh mạng Việt Nam",
    "d": "2026-09-12",
    "img": "",
    "c": "hcmc",
@@ -447,28 +471,6 @@ window.TIN_NGAP = {
    "t": "TPHCM triển khai nhiều giải pháp chống ngập mùa mưa bão",
    "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVmJua2I3WTV4RDQ1OXJrdWo2Z19kdTdoNkdIbF9PZ09CZTB0WG1iQXplcXZtTFhrZzY4ZjNRUDRDZHd3dmlCWEFmOXNfYzNDVjBUVU0xWDdvNVVkRDh2dmgydlhIUUtuNUQtRVd1QmZyMDBxV0dsd19xS3lDVFFFNDgwSEFVZm84bU1tN0VCOUNoUWhPcmtPVGJqNEFGcFBBWU1NMFBUejA?oc=5",
    "s": "VOH",
-   "d": "2026-09-11",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP Hồ Chí Minh: Mưa lớn gây ngập tại nhiều khu vực",
-   "u": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBQV2Zqc2pwa0hzeTMzV1Rld0tTZk40UHVRQWphNl9xWGtnYktyVzlOMVNaVnFzek1SZVNUR3YxVDlORU9FM3NiLWRvamJQNjhQZk8wMHllVzhqbXc4XzZQVzJKbTFlVzNXVlphcUM5VmVqNFFiSGNzNksyMWE?oc=5",
-   "s": "Vietnam.vn",
-   "d": "2026-09-11",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "18 GIỜ NGÀY 11-9: TPHCM lên phương án chống ngập trong mùa mưa",
-   "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOS1pjUjRtSUt0aFJsODFJcGMyV3VYTDNrUlc2NDVYSnpiZnZ3MG9NR0F0WW1mVjFpelZOZ0paOG5rMjZlV3gyV2piRDNCWmVuTDA4RUE3LUhpa1dCR3JjTWwtZFVuMWI3S0JMSEpGMk9Wc2dSclk1c1pZSy1OS1FlQUpBRGlPNkhndmlTOE5wdGVodWs5dkN1X00tR2FGMmt1c2U3Vg?oc=5",
-   "s": "dttc.sggp.org.vn",
    "d": "2026-09-11",
    "img": "",
    "c": "hcmc",
