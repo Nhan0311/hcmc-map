@@ -2,9 +2,199 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-14T00:52:46.208Z",
+ "capNhat": "2026-09-14T16:55:28.918Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Cống cao tốc đặt lệch dòng chảy khiến hơn 300 hộ dân ở Đồng Nai ngập sâu",
+   "u": "https://dantri.com.vn/thoi-su/cong-cao-toc-dat-lech-dong-chay-khien-hon-300-ho-dan-o-dong-nai-ngap-sau-20260914183654709.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-14",
+   "img": "https://icdn.dantri.com.vn/2026/09/14/phuoctuan-4-edited-1789385057364.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Vũng Tàu"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Cống qua cao tốc Biên Hòa - Vũng Tàu đặt lệch khiến khu dân cư ngập nặng",
+   "u": "https://vnexpress.net/cong-qua-cao-toc-bien-hoa-vung-tau-dat-lech-khien-khu-dan-cu-ngap-nang-5120209.html",
+   "s": "VnExpress",
+   "d": "2026-09-14",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/14/2aOboQyamTR4JpvnRDS1Cpfq79B5Ul-2149-8042-1789388486.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=z4fvqRL6gEa6q2facD0yXA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Vũng Tàu"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Bản tin thời sự ngày 14-9: Triều cường vượt báo động III, nhiều nơi ở Cần Thơ ngập sâu",
+   "u": "https://www.sggp.org.vn/ban-tin-thoi-su-ngay-14-9-trieu-cuong-vuot-bao-dong-iii-nhieu-noi-o-can-tho-ngap-sau-post871642.html",
+   "s": "SGGP",
+   "d": "2026-09-14",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/drkxraekxq/2026_09_14/trieu-cuong-vuot-bao-dong-iii-nhieu-noi-o-can-tho-ngap-sau-7087-7995.png.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Podcast tin thời sự ngày 14-9: Đồng đội và người dân đội mưa đến viếng Trung tá Trần Văn Tùng",
+   "u": "https://www.sggp.org.vn/podcast-tin-thoi-su-ngay-14-9-dong-doi-va-nguoi-dan-doi-mua-den-vieng-trung-ta-tran-van-tung-post871644.html",
+   "s": "SGGP",
+   "d": "2026-09-14",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/drkxraekxq/2026_09_14/dong-doi-va-nguoi-dan-doi-mua-den-vieng-trung-ta-tran-van-tung-3736-6481.png.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Cảnh báo triều cường ở ven biển Nam bộ",
+   "u": "https://www.sggp.org.vn/canh-bao-trieu-cuong-o-ven-bien-nam-bo-post871624.html",
+   "s": "SGGP",
+   "d": "2026-09-14",
+   "img": "https://image.sggp.org.vn/Uploaded/2026/drkxraekxq/2026_09_14/canh-bao-trieu-cuong-o-ven-bien-nam-bo-1978-3718.gif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "BD Thủ Dầu Một"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Chủ động ứng phó đợt mưa lớn kéo dài ở Bắc bộ và Bắc Trung bộ",
+   "u": "https://www.sggp.org.vn/chu-dong-ung-pho-dot-mua-lon-keo-dai-o-bac-bo-va-bac-trung-bo-post871604.html",
+   "s": "SGGP",
+   "d": "2026-09-14",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_09_14/img-1550-842-2145.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Phường Tân Khánh chủ động ứng phó mưa lớn và ngập úng",
+   "u": "https://www.sggp.org.vn/phuong-tan-khanh-chu-dong-ung-pho-mua-lon-va-ngap-ung-post871591.html",
+   "s": "SGGP",
+   "d": "2026-09-14",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/nphovhp/2026_09_14/6-3602-5481.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "BD Thủ Dầu Một"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Cần Thơ: Triều cường vượt báo động III gây vỡ đê, nhiều nơi ngập sâu",
+   "u": "https://www.sggp.org.vn/can-tho-trieu-cuong-vuot-bao-dong-iii-gay-vo-de-nhieu-noi-ngap-sau-post871600.html",
+   "s": "SGGP",
+   "d": "2026-09-14",
+   "img": "https://image.sggp.org.vn/Uploaded/2026/drkxraekxq/2026_09_14/can-tho-trieu-cuong-vuot-bao-dong-iii-gay-vo-de-nhieu-noi-ngap-sau-8341-1955.gif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "BD Thủ Dầu Một"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Lũ gây ngập ở Đồng Nai do cống qua cao tốc Biên Hòa - Vũng Tàu đặt lệch dòng chảy, khó tiêu thoát nước",
+   "u": "https://tuoitre.vn/lu-gay-ngap-o-dong-nai-do-cong-qua-cao-toc-bien-hoa-vung-tau-dat-lech-dong-chay-kho-tieu-thoat-nuoc-10026091417280309.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-14",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/14/cao-toc-ngap-17893789578411240958610-0-136-1440-2440-crop-178938045564056690223.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Vũng Tàu"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường dâng cao, người dân chật vật di chuyển sáng đầu tuần",
+   "u": "https://vtcnews.vn/trieu-cuong-dang-cao-nguoi-dan-chat-vat-di-chuyen-sang-dau-tuan-ar1039597.html",
+   "s": "VTC News",
+   "d": "2026-09-14",
+   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/14/trieu-cuong-dat-dinh-hoc-sinh-loi-nuoc-den-truong9-08451149.JPG",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nguyên nhân ban đầu khiến hơn 400 hộ dân cạnh cao tốc ở Đồng Nai bị ngập sâu",
+   "u": "https://vietnamnet.vn/nguyen-nhan-ban-dau-khien-hon-400-ho-dan-canh-cao-toc-o-dong-nai-bi-ngap-sau-2555061.html",
+   "s": "VietnamNet",
+   "d": "2026-09-14",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/14/nguyen-nhan-ban-dau-khien-hon-400-ho-dan-canh-cao-toc-o-dong-nai-bi-ngap-sau-1952.jpg?width=0&s=j3Wkov-JN0kPh8_git4LnA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Vũng Tàu"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Miền Bắc tiếp diễn mưa lớn dữ dội, Hà Nội có nơi vượt 250mm đến đêm 15/9",
+   "u": "https://vietnamnet.vn/mien-bac-tiep-dien-mua-lon-du-doi-ha-noi-co-noi-vuot-250mm-den-dem-15-9-2547645.html",
+   "s": "VietnamNet",
+   "d": "2026-09-14",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/14/mien-bac-tiep-dien-mua-lon-du-doi-ha-noi-co-noi-vuot-400mm-1940.jpg?width=0&s=ZmVT905s7FvFJv9u3Gp2BA",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội Chủ động phương án chống úng ngập do mưa lớn",
+   "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTzdtZXh4bnc4ZHNsOS1yRVNtQ1l2alBpU1hXeVB3WDNuZkNlVEFKVjFYczdEUG02aTlXVnhLU0RkeG5ncnJ2Q1ctUDhsb2N3YkhtSWo3bnBDTmYyUEYzSmJGd3h1RlZTV2dwNEt5bjhVN19Sb3BFNGJ0dmNzNDJyaFQyVWdqU1NpT3VNV3Bn?oc=5",
+   "s": "Tổng cục khí tượng thủy văn",
+   "d": "2026-09-14",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội: Từ nghị quyết thành hành động, từng bước xóa điểm nghẽn úng ngập",
+   "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQeXJYMUF0bzZDOTJPU0ZJRUlodXRWYWJNeERMNG1OZnFDUkp1ZUVxS19tWjRxQVo1QWVPZ0NNQmJUbGt2cFJSZmt5NExORTRSVTd6THdxdlluMkhYUlJmdm1JRW9EV3RPSWNpV0tsQXNZODNoZEFzYUo0dTNDT2ExeVp0YzdOVlE2VmlEMnk4VWgxdzVkeXhUU09RZ3FEWnVvMUN6NWM4RQ?oc=5",
+   "s": "Báo và Phát thanh Truyền hình Hà Nội",
+   "d": "2026-09-14",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội mưa lớn trong 3 giờ tới, cảnh báo nguy cơ ngập lụt",
+   "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSE5jQjBjVDNRQ0ZOTmFrOGZfVXc4b2ZmdUlFQUdfZEZoMk4wMWlYcVB3QVFhR2g3dHd4SGVQZVZCTU9xdWx0dzg2ckJ2T3AzUHFmdV9RY3BTZkF3Znkxd0FXX05MLUhrTGdSSFptU05BOTF4UG52dEFYZmQzSV9iRWxIRFhHV0lPLWdUajVDd2dMTUlWaVVPQ3pmY1BEd3pLUS13TDg1SmVLQQ?oc=5",
+   "s": "Laodong.vn",
+   "d": "2026-09-14",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa to Bắc bộ, trong đó có mưa to Hà Nội, cảnh báo ngập lụt mới nhất",
+   "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPR3B5SzNuN3dQRUVmaXZhU1dIdjgzYk96VjVlVU9lSF9vVXRHMmlaZS1rbk9Lb1ROamZPSW9VeVQyVUJYckx6ZDNka3dKWmpPRlVSVXdWV1hxZGlhXzJROXFDbEZVM3BSU2ZYcjR4QXd5Ry11VFJnNjY2bFR2eWE3Uy1XNmp6bXlnZmhMOTNnZlFzSFRjdXFjQ3hRSks1TXgy?oc=5",
+   "s": "Báo Dân Việt",
+   "d": "2026-09-14",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Mưa lớn gặp triều cường, người dân TPHCM “bì bõm” giữa đường ngập",
    "u": "https://dantri.com.vn/dt360/mua-lon-gap-trieu-cuong-nguoi-dan-tphcm-bi-bom-giua-duong-ngap-20260913192622903.htm",
@@ -168,20 +358,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 0
-  },
-  {
-   "t": "Mưa dông kết hợp triều cường gây ngập nhiều tuyến đường ở TPHCM",
-   "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcm5rd1Bua0ZnMGl2WGUwODVPTV9iaGR1OHk2b0x0cWhkOEJ5U1hQSkpGYUIzTlQyTkhnSVVZWjJ5WkdhY0EzT3NRRnVWSWtva1dSRzRJX0JveEU3WDY5bmJpZUNJcHVsVjV2ZEp6VFprM1RkcEtEUWtCM1RBeWFEQnpYRzFiTFJpMmU4am5YRUtNQ1dsRlRtdWNfMm9vd0VyX3hv?oc=5",
-   "s": "Laodong.vn",
-   "d": "2026-09-13",
-   "img": "",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Thủ Dầu Một",
-    "Thu Duc Old"
-   ],
-   "canh": 1
   },
   {
    "t": "Hà Nội đón mưa lớn, đề phòng ngập úng và dông lốc",
@@ -947,19 +1123,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Cận cảnh đường Ung Văn Khiêm trước ngày 'lột xác' với dự án gần 4.600 tỷ đồng",
-   "u": "https://vietnamnet.vn/can-canh-duong-ung-van-khiem-truoc-ngay-lot-xac-voi-du-an-gan-4-600-ty-dong-2553472.html",
-   "s": "VietnamNet",
-   "d": "2026-09-09",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/9/can-canh-duong-ung-van-khiem-truoc-ngay-lot-xac-voi-du-an-gan-4-2418.gif?width=0&s=XnTAvszbEWMUfQod7mrZnQ",
-   "c": "hcmc",
-   "fp": [
-    "Ung Văn Khiêm"
-   ],
-   "z": [],
-   "canh": 0
-  },
-  {
    "t": "Học sinh mắc kẹt giữa “biển nước” trên tuyến đường cứ mưa là ngập ở Hà Nội",
    "u": "https://dantri.com.vn/thoi-su/hoc-sinh-mac-ket-giua-bien-nuoc-tren-tuyen-duong-cu-mua-la-ngap-o-ha-noi-20260909182920332.htm",
    "s": "Dân Trí",
@@ -1094,17 +1257,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Tin tức sáng 7-9: Nữ tỉ phú Phạm Thu Hương lần đầu vào top 1.000 người giàu nhất thế giới",
-   "u": "https://tuoitre.vn/tin-tuc-sang-7-9-nu-ti-phu-pham-thu-huong-lan-dau-vao-top-1000-nguoi-giau-nhat-the-gioi-100260906194144019.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-07",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/6/pham-thu-huong-1787791842034759107319-55-157-517-896-crop-17887022578101863060784.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
    "t": "3 trạm bơm sắp hoàn thành, nâng cao năng lực chống ngập cho phía Bắc Hà Nội",
    "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPLXI1bTZsWEVyc254cmFwZTk4S1pwNEVOSFYtdlJBU2JCSllScXZYbElnMFhwaTM1M0VnLW9pNTE4VEFyY1hHNlVYaXRFYVd1TzFTV3lrS0U0dWwtWF9sS1Q5dTdrY0NBYXQ4SHF0WlVzTS1LeldwMTdrVE5zVDZ5b2tLNlhWNk04RndIdV9ralRVbDJtQlFrVUZXTlpJdw?oc=5",
    "s": "Vietnam.vn",
@@ -1160,50 +1312,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 1
-  },
-  {
-   "t": "Podcast tin thời sự ngày 6-9: Phụ huynh xếp hàng mua từng cuốn sách giáo khoa",
-   "u": "https://www.sggp.org.vn/podcast-tin-thoi-su-ngay-6-9-phu-huynh-xep-hang-mua-tung-cuon-sach-giao-khoa-post870458.html",
-   "s": "SGGP",
-   "d": "2026-09-06",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/cjvwpdhnw/2026_09_06/a-thulm-ytb-7-3356-9805.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Bản tin thời sự ngày 6-9: Khả năng xuất hiện áp thấp nhiệt đới hoặc bão vào tuần sau",
-   "u": "https://www.sggp.org.vn/ban-tin-thoi-su-ngay-6-9-kha-nang-xuat-hien-ap-thap-nhiet-doi-hoac-bao-vao-tuan-sau-post870456.html",
-   "s": "SGGP",
-   "d": "2026-09-06",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/cjvwpdhnw/2026_09_06/a-thulm-ytb-6-9916-2692.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Podcast bản tin trưa 6-9: Vé giường nằm xe lửa giảm tới 40%",
-   "u": "https://www.sggp.org.vn/podcast-ban-tin-trua-6-9-ve-giuong-nam-xe-lua-giam-toi-40-post870419.html",
-   "s": "SGGP",
-   "d": "2026-09-06",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/agesfjbfjpy/2026_09_06/tit-yt-sggp00-03-41-07still6233-218-3867.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Hiện trạng 2 khu “đất vàng” được đề xuất thanh toán cho dự án chống ngập 10.000 tỷ đồng",
-   "u": "https://batdongsan.baoxaydung.vn/hien-trang-2-khu-dat-vang-duoc-de-xuat-thanh-toan-cho-du-an-chong-ngap-10000-ty-dong-192260905142513491.htm",
-   "s": "Báo Giao thông",
-   "d": "2026-09-06",
-   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/9/6/anh-bia-17886871709231884517783-111-0-1361-2000-crop-1788687235548384604688.jpeg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
   },
   {
    "t": "Tìm lời giải chống ngập hiệu quả cho Hà Nội Bài 2: Nhận diện những “vật cản”",
@@ -1366,39 +1474,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Lăng kính xây dựng 2/9: Hình hài cầu Trần Hưng Đạo dần lộ diện dịp Quốc Khánh",
-   "u": "https://baoxaydung.vn/lang-kinh-xay-dung-2-9-hinh-hai-cau-tran-hung-dao-dan-lo-dien-dip-quoc-khanh-192260902130847013.htm",
-   "s": "Báo Giao thông",
-   "d": "2026-09-02",
-   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/9/2/w-dji-0806-17883292781891882062670-3-0-1253-2000-crop-17883292826481725809103.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Podcast bản tin thời sự ngày 1-9: Tất bật trên công trường đường kết nối sân bay Long Thành",
-   "u": "https://www.sggp.org.vn/podcast-ban-tin-thoi-su-ngay-1-9-tat-bat-tren-cong-truong-duong-ket-noi-san-bay-long-thanh-post869854.html",
-   "s": "SGGP",
-   "d": "2026-09-01",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/drkxrmrsoe/2026_09_01/8-9856-7961.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Bản tin thời sự ngày 1-9: Ngày lễ trực chiến tại khoa cấp cứu",
-   "u": "https://www.sggp.org.vn/ban-tin-thoi-su-ngay-1-9-ngay-le-truc-chien-tai-khoa-cap-cuu-post869851.html",
-   "s": "SGGP",
-   "d": "2026-09-01",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/vowkpqmc/2026_09_01/2aoboqvc96zqsuhbshs9x3ug7ei1lqwnlyncujuq-6522-6626.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
    "t": "Vẫn còn 97 nhà bị ngập ở Hà Nội và Lạng Sơn",
    "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1QaVRIZFpPTWEzLXRkWW9DaVlxV21JWW1UWFNMeFBrQVpvQ2NfZWJiVG9xYThjNTEyQS0wXzRzYTU3R01qWk9vSDB3dnpqTW1TVDRBYUhpb2tsS0JXRV9FeFZ1bUFfYldKMGFvSm8yVlpYUFlM?oc=5",
    "s": "Vietnam.vn",
@@ -1419,17 +1494,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 1
-  },
-  {
-   "t": "Khẩn trương ứng phó áp thấp nhiệt đới có nguy cơ mạnh lên thành bão",
-   "u": "https://www.sggp.org.vn/khan-truong-ung-pho-ap-thap-nhiet-doi-co-nguy-co-manh-len-thanh-bao-post869676.html",
-   "s": "SGGP",
-   "d": "2026-08-31",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_08_31/img-1346-9003-5535.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
   },
   {
    "t": "Diện mạo tuyến Vành đai 1 hơn 7.200 tỷ đồng trước ngày thông xe kỹ thuật",
@@ -1905,50 +1969,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Hà Nội: Sau trận mưa lớn diện rộng, 8 điểm ngập xuất hiện tối 27/8",
-   "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNajdIVGNjdllBMGl2ekFCblh3dnlSWXEzZ1JSZnZDY2trYmdJSzFTWXJXMHBUek5KN1BmRk81T0lqWnVMdXdpMDk1LUViZ1ljcjI4WlRVYUQ4Y3NxeDJYVmlhSnc5Wk9QZlBTRGh0QnFnUUlTWGlwb24tbVFtS19TWEFSYUdTS2RvV0ZXc01KYTBuaEluLWc?oc=5",
-   "s": "Báo Đại Đoàn Kết",
-   "d": "2026-08-27",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội: Khuyến cáo người dân hạn chế đi vào khu vực ngập sâu",
-   "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNGV4dWVJQzRib1kxWFdVbDdqd0cwZVl0TUhDZVk2MFNpOWZQT0M1WjJ3azVkQ3JqeVRJbGFBVGlvdG0yZmptNmdfNFpHQzlZWHp0Xy1uWVZUSnJxZ2hUYjI4YTBPRE5kOVAwYkpWUGU5RkVoS0pXYkxJQnM4LUdEbTBIN0c2TlhBbjRqdW81ejBWUzl2aVM2aTk0eUtFUWVoUnVSc0hXY3F6UQ?oc=5",
-   "s": "thethaovanhoa.vn",
-   "d": "2026-08-27",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hình ảnh các tuyến phố Hà Nội ngập nặng đúng giờ tan tầm",
-   "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPajVNYThySGtsbGYySEM5aXppWjl0WHZwcDl2aFUwUXhydEJqbFAtb0RoWWNVcU00SFdadV93MDNscWpUd1drVGExQ2tBenU2MWJ0eUgyTFdlQVF4YUVGOVhaUGgxdTBfVzg1TUU5bklxaVhldFpBZ1NIMVRfcXAwbnh5eHRjOUZCWHdFWk1ieEltWG16MXU4aVBsWk92aGVQZmMtcnJkR1Q?oc=5",
-   "s": "Báo Sức Khỏe và Đời Sống",
-   "d": "2026-08-27",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội duy trì vận hành 129 trạm bơm chống ngập",
-   "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdEliR2hvRGpvVTZkMHZ3RXF4ZnRmbVFnVG9qV21tSlZuYVEwLVdsbDNvQzhCY1dkYnN4dWx2UzhFczlvSGRwcXBxVEcta1VxX3hSdjZUckJ0TjhjcXF5YWV4cG5PX3FmQTlhcVQwLTJvQkxXVUVwdTJKOUR0Q3hmNHVvenNCU2s?oc=5",
-   "s": "Báo Hànộimới",
-   "d": "2026-08-27",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Hà Nội khánh thành đường Vành đai 1, khởi công 2 dự án đường sắt dịp Quốc khánh",
    "u": "https://vietnamnet.vn/ha-noi-khanh-thanh-duong-vanh-dai-1-khoi-cong-2-du-an-duong-sat-dip-quoc-khanh-2549229.html",
    "s": "VietnamNet",
@@ -1958,17 +1978,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 0
-  },
-  {
-   "t": "Lũ sông dâng cao sau bão số 4, nhiều khu dân cư ở Hà Nội ngập sâu",
-   "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTXBNMUZlSXpsTXlEVUE4c3Z6WUhUWkh5Y2JnWjFJNHA5T3NHSC1oeFZkbU1UWi1aTVpOSmItY19WOUZ5bEprdy1oTGs2LV9ZVHlZdUpCR0VOUlFJUjBoamp3d2N1UW9YcWJsTFlQWFA1cVRTc3dBMTJwV2lxYXJSS3c0R1B0V09IVWVaTk82SXN2cmFpUjEyaTY5d3VhZ0phMWlLWWFVTQ?oc=5",
-   "s": "Báo Đại biểu Nhân dân",
-   "d": "2026-08-26",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
   },
   {
    "t": "Hà Nội tính 'xoá' ngập úng bằng hồ điều hòa, bể ngầm trữ nước mưa",
