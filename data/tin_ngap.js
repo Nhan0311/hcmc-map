@@ -2,9 +2,53 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-15T15:30:41.471Z",
+ "capNhat": "2026-09-16T01:14:54.642Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Hà Nội và nhiều tỉnh tiếp tục mưa lớn",
+   "u": "https://vnexpress.net/ha-noi-va-nhieu-tinh-tiep-tuc-mua-lon-5120734.html",
+   "s": "VnExpress",
+   "d": "2026-09-16",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/16/screenshot-1789516174-6138-1789516182.png?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=nnXhFtlbChWkuwbXVSUbnA",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn trong đêm, sáng 16-9 Hà Nội ngập úng ở những điểm nào?",
+   "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWXFiYXp0b3lWV1poWkl0ZXJxUVdTZ01pOHhuYjVQWldSWkk0ajBtVkVjNWJONnBsblVmRG9VdTNMQmh2QmpmY0d6RUNXWVZ6RUk1Y3ltQ3RBSGlxRXJ2MTFfeklBUlVtdWlHY2ZMWU16MElJREdvN3dMMHE0aXJCWEdOa09VVlBPMk85TWJtaXRQSFJ1NmpOcjd2UmVaSUV0bjNVaA?oc=5",
+   "s": "tuoitre.vn",
+   "d": "2026-09-16",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn cả đêm, Hà Nội xuất hiện nhiều điểm úng ngập sáng 16/9",
+   "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZ0FLRzJDNVUzVHJqWXQzM1hmRW5wdENPVmR3WmFoZlMxclc4UkxmalVxaEVEVmFXNlNXQ09TTGF3VnRBb0ZDZGFZMFFSb0gxRHY5ZVhCSGNwUVdnSURkS3o3NzU1UUdoY1JlZnY0U202azhxZlA5QXVXWFRKSURCU3huU2RTb2gyYWQ3OFozQ2JfZw?oc=5",
+   "s": "Báo Đại Đoàn Kết",
+   "d": "2026-09-16",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội chưa ghi nhận điểm úng ngập lúc 22h, hàng loạt trạm bơm vận hành",
+   "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUGhnbUpNbjJhSHpTMXNhNGc0UWd2ek93LWtnM1FjV1BwTWNrdUN6NF9pX0lpQVdRTzdUN3U0dm9yNUM2TlVOT2R2REpxalhGWnRob3JKQk5mWjRyUUtYYkpJZnBjdGNDZjlXRUYxYmctU1pJVENGSDFHem9fUVNGeDhaMVBGYTBsdG8xVlBMcHJoSm82TnVlSG0yaGZmZw?oc=5",
+   "s": "Báo Đại Đoàn Kết",
+   "d": "2026-09-16",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Bắc Bộ mưa lớn, Nam Bộ sắp chuyển mưa diện rộng từ ngày 17-9",
    "u": "https://www.sggp.org.vn/bac-bo-mua-lon-nam-bo-sap-chuyen-mua-dien-rong-tu-ngay-17-9-post871669.html",
@@ -24,6 +68,17 @@ window.TIN_NGAP = {
    "s": "Tuổi Trẻ",
    "d": "2026-09-15",
    "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/15/178946481828967095526966561682026709552696656168202cd4f3c466efd640d58a402e1dd9ddeb1-178946506863052626702-331-130-1706-2331-crop-1789465331202563186268.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM sắp mưa lớn 4 ngày, có nơi trên 200 mm",
+   "u": "https://lifestyle.zingnews.vn/tphcm-sap-mua-lon-4-ngay-co-noi-tren-200-mm-post1683518.html",
+   "s": "Znews",
+   "d": "2026-09-15",
+   "img": "https://photo.znews.vn/w660/Uploaded/yrfjpyesfly/2026_09_14/Mua_SG_07_Znews.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -57,6 +112,28 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-09-15",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/uiqpcwvo/2026_09_15/editngap-9195-4195.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
+  {
+   "t": "6 hồ chứa ở TP.HCM giữ mực nước thấp để phòng lũ",
+   "u": "https://tuoitre.vn/6-ho-chua-o-tphcm-giu-muc-nuoc-thap-de-phong-lu-100260915185219622.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-15",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/15/dien-mat-troi-ho-chua-1784197915387499345386-1789472526928650792428-176-0-1363-1899-crop-17894890434821929060693-101-0-1186-1737-crop-17894890539991150387589.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
+  {
+   "t": "Dự án chống ngập 10.000 tỷ đồng và kỳ vọng của người dân sau nhiều năm chờ đợi",
+   "u": "https://vietnamnet.vn/du-an-chong-ngap-10-000-ty-dong-va-ky-vong-cua-nguoi-dan-sau-nhieu-nam-cho-doi-2555341.html",
+   "s": "VietnamNet",
+   "d": "2026-09-15",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/15/du-an-chong-ngap-10-2447.gif?width=0&s=BOt_bWfnO5JVAE_5L2PfPA",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -112,6 +189,28 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-09-15",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/15/mua-lon-o-ha-noi-nhieu-khu-vuc-xuat-hien-diem-ngap-358.jpg?width=0&s=nWUFxrmXG_NMpPcYEhogew",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Miền Bắc tiếp tục mưa lớn, Hà Nội có nơi dự báo mưa trên 250mm",
+   "u": "https://tienphong.vn/mien-bac-tiep-tuc-mua-lon-ha-noi-co-noi-du-bao-mua-tren-250mm-post1876686.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-15",
+   "img": "https://cdn.tienphong.vn/images/Cnj4WjvRBHYQoCoEhCPn8osWRbFryILayEI1B6qrXKd1K2m4YqAwxPkfThEyGHDj8Mp-qVYE8YAbWQhCfn8A_g/mua-lon.jpg.avif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Dự báo thời tiết ngày 16/9: Hà Nội và 5 tỉnh tiếp tục hứng mưa rất lớn",
+   "u": "https://vtcnews.vn/du-bao-thoi-tiet-ngay-16-9-ha-noi-va-5-tinh-tiep-tuc-hung-mua-rat-lon-ar1039936.html",
+   "s": "VTC News",
+   "d": "2026-09-15",
+   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/08/02/du-bao-thoi-tiet-3-8-22052232.jpg",
    "c": "hanoi",
    "fp": [],
    "z": [],
@@ -448,6 +547,61 @@ window.TIN_NGAP = {
    "t": "Hà Nội tích cực vận hành các trạm bơm chống ngập",
    "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5WUDI1bEFBcmFBb0hfRk56SEppZ1I2S0tIdThXMS01cFFsbEY0eWpDNnJnXzJRR2o4N0QxNzVPYTBDa2RCWE9KcnBWeTdXRVBPcU8xVGNITnBnWnlpVzJxNEV1a1RPMjlOVnBYR2k4amhOV3lydnVTRFNlaw?oc=5",
    "s": "Vietnam.vn",
+   "d": "2026-09-15",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Chống ngập Hà Nội: Hướng tới mô hình \"thành phố bọt biển\"",
+   "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOT2ctV2c0NFFTN2J6ZkVkOUdMcGR4emJIbHdwLUVVMmswM2J1cVQza3lVTno5QjlZa1BsRnQtd0FQbWQ0RjVGSkstVnVaMDRFSXdUaWxXdzZsdVJwYXlSTkUyb05FWC1EcnUwajNmYWl4NXV6Sm9kQ2pmTW5jQlFwQnIydGtVcDZoeXJKb3BUZC0xNk85RTZvUlphTGNBZUQtOVQ4TQ?oc=5",
+   "s": "vietnammedia.vnanet.vn",
+   "d": "2026-09-15",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội: Nhiều xã, phường nguy cơ ngập lụt do lũ sông Tích",
+   "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZmNaajR6eExhYmFfbXdSRnF6VDFZNHQ1Ty1BazJfZ2xhZ1pQWGJYc3VjSXAtenFXemJqUzJJd05wZkhJN3c4ZmdqalYwNmtzRFJoNlVmUlY1ZlRsWkZQTHhMczJIWEl4ZWxTc09RTXdhbGlkeGJwSE41M0RsZUxqSWZCOUlCbVlZcGZJN0tUR3VpUQ?oc=5",
+   "s": "hanoimoi.vn",
+   "d": "2026-09-15",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội và nhiều tỉnh miền Bắc chủ động ứng phó mưa to, ngập úng, lũ quét",
+   "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVTFLWWUxUUJ2cncyUU5NYUZxVzdYM1JaTnM1eV9YUTZ5THVOeDRWYWN5c0hYR1hkcVRWRTZfLUJPUVBHcExmX0NqTmFfaGZMUGwxaW42cUxfU0E3dE1oY2lWcTRTZjF1YUZrbEF3ckdiTmRlZEZlb0pCc2J1bE83d0VzT3hseVc5ek9lelZKTm5vaUxxLTRWNQ?oc=5",
+   "s": "vietnam.vn",
+   "d": "2026-09-15",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội tiếp tục mưa lớn đến sáng 17/9, cảnh báo ngập úng và lốc sét",
+   "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUUNVUno5Ym9rNVFYb294XzhwUTBQN1pnWllVOTEtUzVHMURkNk12TEg5aFQtSnI0UXItYWE1VnJhSjNhMEpadlZUaWJDLWw5WjRNb0ZhSkEzdFZ0Wk5sM005c3hLcWZHRHItcVlvb3Jwc19oMGhXWVgwdXc3MDNqRFJZdzVpYUJBOTZ6Uk1lYkxiRTFPTGIyYw?oc=5",
+   "s": "Báo Đại Đoàn Kết",
+   "d": "2026-09-15",
+   "img": "",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Thời tiết hôm nay 16/9: Hà Nội mưa triền miên cả ngày, nhiều nơi ngập úng",
+   "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTk5vdVc4TmhxRnJWc2RvNTZ0RzFHMVAycS0tdkNaYXBsR29MbVBDTGRmUzJsSUt6ellpWUVfMkhKOTF3LVRneUFIY1oyUDBTLXA4aDJzUkl6ZG1kNXdJREdIcW11THgtMWtJOXJJN1lvTkRURzRwVFFxM2VXR0d3VW40T09uTTJWSi1jSUVMLVo3NFhfMXgtYmNWUldKVVd2ZUZfYkZB?oc=5",
+   "s": "Một Thế Giới",
    "d": "2026-09-15",
    "img": "",
    "c": "hanoi",
@@ -940,28 +1094,6 @@ window.TIN_NGAP = {
    "canh": 0
   },
   {
-   "t": "Nghệ An: Khám sức khỏe, cấp thuốc và tặng sân bóng rổ cho người dân, học sinh vùng biên",
-   "u": "https://www.sggp.org.vn/nghe-an-kham-suc-khoe-cap-thuoc-va-tang-san-bong-ro-cho-nguoi-dan-hoc-sinh-vung-bien-post871366.html",
-   "s": "SGGP",
-   "d": "2026-09-12",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/divycivo/2026_09_12/khong-co-tieu-de-4403-1465.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Thông tin mới vụ hầm chui 340 tỷ đồng ở nút giao An Phú biến thành 'bể nước'",
-   "u": "https://vietnamnet.vn/thong-tin-moi-vu-ham-chui-340-ty-dong-o-nut-giao-an-phu-bien-thanh-be-nuoc-2554451.html",
-   "s": "VietnamNet",
-   "d": "2026-09-12",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/12/nguyen-nhan-ham-chui-an-phu-bien-thanh-be-nuoc-sau-mua-lon-230.jpg?width=0&s=12DywVCncebD7TwJo3rzvg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
    "t": "TPHCM: Lý do hầm chui nút giao An Phú ngập sâu",
    "u": "https://tienphong.vn/tphcm-ly-do-ham-chui-nut-giao-an-phu-ngap-sau-post1875473.tpo",
    "s": "Tiền Phong",
@@ -1125,17 +1257,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 1
-  },
-  {
-   "t": "Chuyên gia hiến kế TPHCM chia không gian ngầm thành 3 tầng, sâu dưới 40m",
-   "u": "https://dantri.com.vn/thoi-su/chuyen-gia-hien-ke-tphcm-chia-khong-gian-ngam-thanh-3-tang-sau-duoi-40m-20260911134840007.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-11",
-   "img": "https://icdn.dantri.com.vn/2026/09/11/z6962920493730e5bebc6ff32c55c8e702567b64cae7b1jpg-1756609207068-1789109020844.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
   },
   {
    "t": "Quốc lộ 6 qua Yên Nghĩa ùn ứ, người dân chật vật lưu thông",
@@ -1672,19 +1793,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Tìm lời giải chống ngập hiệu quả cho Hà Nội Bài 3: Nâng sức tiêu thoát của hệ thống",
-   "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbzFxZkdDYW9Fc1UzN1R1TUY4RUdaaUJkeWpmM0ZuMFpHVG45dVg1WnltenZJZkEzYk5KeW5QRGlIb19BWnRXQ1pORFZTMmk4eHY5OC1lU0UzbjFLYjdUeC1zeUN1c05kd1Z3c3lWd1Z0SFF5dzg2WnZ2Tm1JWFowdEprT2JPcGhTV2JiekRuRFhVYnZtcUV5NWRyeXBBY0dTaHhuUFBoWkhaMG1HX1FpMDVaZWY1QQ?oc=5",
-   "s": "Báo Hànộimới",
-   "d": "2026-09-07",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [
-    "Nội Bài"
-   ],
-   "canh": 1
-  },
-  {
    "t": "Bản tin trưa 6-9: Nam bộ mưa diện rộng từ ngày 9-9",
    "u": "https://www.sggp.org.vn/ban-tin-trua-6-9-nam-bo-mua-dien-rong-tu-ngay-9-9-post870417.html",
    "s": "SGGP",
@@ -1718,36 +1826,12 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Tìm lời giải chống ngập hiệu quả cho Hà Nội Bài 2: Nhận diện những “vật cản”",
-   "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaEViUFF4V0xQTFpOOF9TX0pKMXdWNmpKNy0wUkxoRE9CdnR0TXpWNGJvWDJuOFNLamtYSzZLVmRSQm56NTB6RXppZVU0eW1Td2VIZzU2ZW9lbktfNXlXQWt1SnFEYVEyYVVYMG5YYThzRThfVVhoNExfU3RQeEhaNGoxRmZqTDUyRDhzazZCajdhUi1uTkVzcXVRZjBSVzhHQURKZXF1NzMzUQ?oc=5",
-   "s": "hanoimoi.vn",
-   "d": "2026-09-06",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [
-    "Nội Bài"
-   ],
-   "canh": 1
-  },
-  {
    "t": "TPHCM và Nam Bộ sắp đón đợt mưa lớn trên diện rộng",
    "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-sap-don-dot-mua-lon-tren-dien-rong-20260905175242782.htm",
    "s": "Dân Trí",
    "d": "2026-09-05",
    "img": "https://icdn.dantri.com.vn/2026/06/02/c43f2257-dd25-4274-b2c5-babdaf19cab61201a-2-1780409405705.jpg",
    "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Tìm lời giải chống ngập hiệu quả cho Hà Nội",
-   "u": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOV2N3N19IcmFSaUs0YXdWcXRlZUJnQjNFRUFsaGNPbEpCTTExSXNwRnppWm9QWDJxMUhrZkxJeTd4NEpMN0dzZ2FDdDB0N1BmQzNmOWc1NTltaDRoaVBMSExmV3NnbVhaQVExV1JRSG41ckNSb01hdzhkaTdSc0dNYkFB?oc=5",
-   "s": "Báo Hànộimới",
-   "d": "2026-09-05",
-   "img": "",
-   "c": "hanoi",
    "fp": [],
    "z": [],
    "canh": 1
@@ -1775,17 +1859,6 @@ window.TIN_NGAP = {
     "Kiều Phú"
    ],
    "canh": 0
-  },
-  {
-   "t": "Hà Nội ra mắt Mini App 'Bản đồ mưa ngập' trên iHanoi, người dân có thể theo dõi mưa lớn, điểm ngập theo thời gian thực",
-   "u": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNSzlLOTJXR2RXSVBjTm56OFljVGdOSzRCWGRKaDQ3OVRvNFlPbXRid1ZwWDRDYk1hT0dtMWswa3BrVnZrOTQ5a2N5bEZkcmxPZ1VXR0JNZmtqWTJZbl9wZnRnZ25VdU5tRlpRNjZnenVhWXp2WmUzYU8teVRNMmh6N0I1eTg4cHQ0VHdPZWtVQU85WWowQWRoQUV0bXcteThKaWZPUWVkNEVFNGRRaGV0RWdXZFRQUGFlUHU4d0xrM3QyaU9yaGhCYVlBZm5rc1VEN0RHZjBFS3hkbXZ0V0tiaA?oc=5",
-   "s": "danviet.vn",
-   "d": "2026-09-04",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
   },
   {
    "t": "TPHCM và Nam Bộ tiếp tục mưa dông chiều tối",
@@ -1856,34 +1929,12 @@ window.TIN_NGAP = {
    "canh": 0
   },
   {
-   "t": "Người dân Hà Nội có thể nhận được thông báo về điểm ngập ngay trên điện thoại",
-   "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWFJNZkN3bUR3RkNWbUY1blR0VVNhay0tUEg0am51RHV0dlc4S3RKNzhuWVdZRUVJbTlKRUNuUkZhTy0yZEwxVHdDTlNMalFlWC05TFRYVm1BYXV5NXVBVjFURmdGWk1BN01vU0NwSWJuWkUycEcwS0FjZ3o2elFBbFplQnlIZlhrWk5CV3plUXRNU1Vyb09yYzlwUkJBN1NNNDRLOURFSm1SR255dGsxOTgtdW1jZw?oc=5",
-   "s": "Laodong.vn",
-   "d": "2026-09-03",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "TPHCM và Nam Bộ mưa dông nhiều hơn trong vài ngày tới",
    "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-mua-dong-nhieu-hon-trong-vai-ngay-toi-20260902205834641.htm",
    "s": "Dân Trí",
    "d": "2026-09-02",
    "img": "https://icdn.dantri.com.vn/2026/06/17/8f1e4a5e-a895-43c3-ab0a-c75cecae22621201a-1781700001436.jpg",
    "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Vẫn còn 97 nhà bị ngập ở Hà Nội và Lạng Sơn",
-   "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1QaVRIZFpPTWEzLXRkWW9DaVlxV21JWW1UWFNMeFBrQVpvQ2NfZWJiVG9xYThjNTEyQS0wXzRzYTU3R01qWk9vSDB3dnpqTW1TVDRBYUhpb2tsS0JXRV9FeFZ1bUFfYldKMGFvSm8yVlpYUFlM?oc=5",
-   "s": "Vietnam.vn",
-   "d": "2026-09-01",
-   "img": "",
-   "c": "hanoi",
    "fp": [],
    "z": [],
    "canh": 1
@@ -1909,61 +1960,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 0
-  },
-  {
-   "t": "Hà Nội chủ động các phương án phòng, chống ngập lụt trong mùa mưa bão ở khu vực ngoại thành",
-   "u": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQUVBCcXkwU3dJS1gxbmR4RFZVdGxnOUJmNl9OV0RtS3I4YWVuTGdGSWZweHBlVHhvVzkyYlRydWdWbWJvd1FSazM4VHNvaVpITXRYOXhxallzOEowQXN5TDRzbkY5TE5udnh4NFhScWFnT3E3Tkc1Nk5vNGo1V3dJc0lib2c5RXl0UndZU2FnTmpWdzBKWkVPMUsxTHJpb19yODFPbXV3ODIyNzVLOXg2cUI5MDJqbnJMNUhWOEM0cFBMdXU1R2l6WjZXU1lMR0J1dFY4?oc=5",
-   "s": "thethaovanhoa.vn",
-   "d": "2026-08-29",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội: Không còn ngập úng kéo dài sau mưa lớn diện rộng",
-   "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUEV6M2F0bko2WXBtUlg1MDA5dFMzY3Q4bG1sdFE2ekFHel9fdExNX0NVa1VyNmU0dGJGWm55b0NkU1RFNm1wbEEwYWlnV1FfX2Fyb3AtMlJIb1N1ZnpnSnRwTk42WjZtZ1ZFTDlYMXY1c0lGV2FZaWlGb0lvZ1hCMnUxbW9GbFhlZkFUcWpuLVQ3UUF0?oc=5",
-   "s": "Báo Nhân Dân điện tử",
-   "d": "2026-08-29",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Chủ tịch Hà Nội kiểm tra, động viên người dân 2 xã thường xuyên bị ngập úng",
-   "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTUVMYlJQMzYzeDRGQzdWZndEeUNEQ3Y4blBCeUZERmhNZGtsRnd0NjljNlBhV21uRVdFT2FqQkJRbjk3Z01kRGJRQ0Eyb3RydzFZZTZZOU10cHJmRXUtRjNsTC1zVXNSWmdyWUNDZE9keTh3MXE3ekw4NUluLVlZY3UzaVlkZ1l0dHQ0c1JraDdiLWZ2TFIyRzI1LUxuOVFxakYzWEc3NjJJeThzcXk4QUtyMVJEY2o5RzFXNjhvb3ZKZkxs?oc=5",
-   "s": "Báo Dân trí",
-   "d": "2026-08-29",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Dự báo thời tiết Hà Nội dịp nghỉ lễ 2/9: Cảnh báo mưa lớn và ngập úng đô thị",
-   "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOaGd5YWRtYkM2THhxNkVsNUxON2t1bURneV9Nd2hfelpTZmR0aFoxMFl4aFZVSmRobTZMZ3dDVXo4RUNOakVGRUR5NXhmdllvX3pZTW5KaURKc2FpLVJTdWlXRVVDcU4wNE1KSzV1YkFJaE45ZGh0b1hUekJfckl1UTBqRG5zcE9PUHdObWZWX1R4eXRjeDNTU29OSFpSWFYwc21ER2cxMzVGcDNOelZoVWtZUWpfNzFDajRWWlNxZUVRWWlWVFRN?oc=5",
-   "s": "thanglong.chinhphu.vn",
-   "d": "2026-08-29",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hiệu quả ban đầu các công trình chống ngập Hà Nội",
-   "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQVhIVWczVGFMaF85ODQ0TFRZUVZ3WUFjNm5ndHM2SzJhRWUzQ1I0LWVtc3QweUtLMmV2ZGJNaTJfLXlIUnNFdDlyQ3l5VkVRWS1DVDk1T0IzLUc0WjhvdDFGakF3U2pGQ0RwYTFrWlc3NWt0RUlkejZIVnllS2Zib3FoenpJV28teFQxdw?oc=5",
-   "s": "VTV.vn",
-   "d": "2026-08-29",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
   },
   {
    "t": "Mưa bất chợt, nhiều tuyến phố Hà Nội bị ngập nước",
