@@ -174,6 +174,8 @@ main{display:grid;grid-template-columns:1fr var(--side);height:100%;min-height:0
 .eye-key input{flex:1;padding:9px 10px;border:1px solid var(--line);border-radius:8px;font-size:11px;font-family:var(--mono,monospace)}
 .eye-key button{padding:9px 14px;border:none;border-radius:8px;background:var(--ink);color:#fff;font-size:11px;font-weight:700;cursor:pointer}
 .eye-note{font-size:10px;color:var(--muted);line-height:1.6;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.eye-windycam{min-height:40px;overflow:hidden;border-radius:9px}
+.eye-windycam img{max-width:100%}
 .eye-status{position:absolute;left:14px;bottom:14px;z-index:5;background:rgba(17,27,46,.92);color:#e8eef7;
   border-radius:9px;padding:9px 12px;font-size:11px;font-weight:600;max-width:min(420px,86vw);line-height:1.5}
 .eye-legend{position:absolute;right:14px;bottom:14px;z-index:5;background:rgba(17,27,46,.92);color:#e8eef7;
@@ -3027,12 +3029,18 @@ function eyeStartPhotos(){
 
 /* ---------------------------------------------------------------
    D. Camera giao thông công cộng
-   Cả hai cổng camera (TP.HCM & Hà Nội) đều là ứng dụng có phiên đăng nhập
-   riêng (ExtJS/app di động) — không có URL kèm toạ độ để nhúng thẳng khung
-   xem đúng vị trí, và không công bố API ảnh/luồng cho phép gắn trực tiếp
-   (nhúng ẩn danh thường xuyên bị chặn hoặc trả ảnh trống). Vì công cụ này
-   không có máy chủ riêng để làm cầu nối, cách trung thực nhất là dẫn thẳng
-   sang cổng chính chủ ở tab mới, thay vì giả vờ có khung xem trực tiếp.
+   Camera của Sở GTVT TP.HCM tự khoá theo cùng-nguồn-gốc (same-origin) ở tầng
+   mạng — đã thử trực tiếp (curl, <img> khác gốc, fetch() giả header trình
+   duyệt) và đều bị chặn, kể cả từ trình duyệt thật đã có phiên hợp lệ. Không
+   có cách phía máy khách nào vượt qua được việc này, và dựng máy chủ riêng
+   để "hoá trang" IP đi vòng qua khoá đó thì vượt khỏi phạm vi một trang tĩnh.
+   Thay vào đó, dùng tiện ích "Nhúng webcam" chính thức của Windy
+   (embed.windy.com/config/webcam) — sản phẩm họ làm sẵn để nhúng vào trang
+   khác, không cần khoá API, không dùng cookie, tự tìm camera gần một toạ độ
+   và tự báo khoảng cách. Đã kiểm chứng: hoạt động tốt ở TP.HCM (nhiều camera
+   rất gần trung tâm), nhưng Hà Nội hầu như chưa có camera nào trong mạng
+   lưới của Windy — họ tự hiện "No webcam found" khi vậy, nên vẫn giữ nút dẫn
+   sang app iHanoi làm phương án chính cho Hà Nội.
    --------------------------------------------------------------- */
 function eyeStartCamera(){
   eye.mode='camera';
@@ -3042,48 +3050,42 @@ function eyeStartCamera(){
   p.style.display='';
   const [lat,lng]=eye.ll;
   const gmTraffic=`https://www.google.com/maps/@${lat},${lng},17z/data=!5m1!1e1`;
+  const isHcmc=state.city==='hcmc';
+  const officialHtml=isHcmc
+    ?`<a class="eye-btn" href="https://giaothong.hochiminhcity.gov.vn/map.aspx" target="_blank" rel="noopener">
+        <b>🗺 Cổng Camera giao thông TP.HCM (đầy đủ)</b>
+        <span>Sở GTVT TP.HCM · toàn bộ camera trên bản đồ chính thức, không giới hạn theo bán kính</span></a>`
+    :`<a class="eye-btn primary" href="https://ihanoi.gov.vn/" target="_blank" rel="noopener">
+        <b>📱 Ứng dụng iHanoi</b>
+        <span>Camera giao thông Hà Nội chính thức chỉ xem được qua app này (cần đăng nhập)</span></a>`;
 
-  if(state.city==='hcmc'){
-    p.innerHTML=`<div class="eye-card">
-      <h4>📹 Camera giao thông công khai</h4>
-      <p>Sở Giao thông Vận tải TP.HCM công bố camera giao thông trực tuyến trên cổng chính thức —
-        miễn phí, không cần đăng nhập. Công cụ này <b>không có máy chủ riêng</b> nên không thể nhúng
-        thẳng luồng camera vào đây; bấm nút bên dưới để mở cổng chính chủ ở tab mới, rồi tìm theo
-        tên tuyến đường hoặc giao lộ gần <b>${esc(eye.label||'vị trí này')}</b>.</p>
-      <div class="eye-btns">
-        <a class="eye-btn primary" href="https://giaothong.hochiminhcity.gov.vn/map.aspx" target="_blank" rel="noopener">
-          <b>📹 Mở cổng Camera giao thông TP.HCM</b>
-          <span>Sở GTVT TP.HCM · chọn lớp "Camera giao thông" trên bản đồ, phóng to tới tuyến đường cần xem</span></a>
-        <a class="eye-btn" href="${gmTraffic}" target="_blank" rel="noopener">
-          <b>🚦 Tình trạng kẹt xe (Google Maps)</b>
-          <span>Không phải camera, nhưng thấy ngay đoạn nào đang ùn ứ theo thời gian thực</span></a>
-      </div>
-      <div class="eye-note">
-        Camera giao thông tập trung ở <b>trục đường lớn và giao lộ</b>, không phủ hết hẻm nhỏ — nếu
-        không thấy camera đúng vị trí, tìm camera trên trục đường gần nhất rồi ước lượng khoảng cách
-        tới nhà/mặt bằng đang xem.
-      </div>
-    </div>`;
-  }else{
-    p.innerHTML=`<div class="eye-card">
-      <h4>📹 Camera giao thông công khai</h4>
-      <p>Hà Nội chưa có cổng web công khai xem camera giao thông không cần đăng nhập — camera chính
-        thức chỉ xem được qua ứng dụng <b>iHanoi</b> (mục "Giao thông" → "Camera giao thông"), cần cài
-        app và đăng nhập tài khoản công dân số.</p>
-      <div class="eye-btns">
-        <a class="eye-btn primary" href="https://ihanoi.gov.vn/" target="_blank" rel="noopener">
-          <b>📱 Ứng dụng iHanoi</b>
-          <span>Tải app, đăng nhập, vào mục Giao thông → Camera giao thông để xem theo tuyến đường</span></a>
-        <a class="eye-btn" href="${gmTraffic}" target="_blank" rel="noopener">
-          <b>🚦 Tình trạng kẹt xe (Google Maps)</b>
-          <span>Không phải camera, nhưng thấy ngay đoạn nào đang ùn ứ theo thời gian thực</span></a>
-      </div>
-      <div class="eye-note">
-        Chưa xác nhận được cổng web chính thức nào của Hà Nội cho phép xem camera công khai không cần
-        tài khoản — nếu bạn biết nguồn khác, thông tin này sẽ được cập nhật.
-      </div>
-    </div>`;
-  }
+  p.innerHTML=`<div class="eye-card">
+    <h4>📹 Camera giao thông gần đây</h4>
+    <p>Camera công khai gần <b>${esc(eye.label||'vị trí này')}</b>, kèm khoảng cách — nguồn từ mạng lưới
+      webcam của Windy, xem trực tiếp ngay đây, không cần mở tab khác.</p>
+    <div id="eye-windycam" class="eye-windycam"></div>
+    <div class="eye-btns" style="margin-top:12px">
+      ${officialHtml}
+      <a class="eye-btn" href="${gmTraffic}" target="_blank" rel="noopener">
+        <b>🚦 Tình trạng kẹt xe (Google Maps)</b>
+        <span>Không phải camera, nhưng thấy ngay đoạn nào đang ùn ứ theo thời gian thực</span></a>
+    </div>
+    <div class="eye-note">
+      ${isHcmc
+        ?'Không thấy camera nào hiện ra ở trên? Khu vực này chưa nằm trong mạng lưới Windy — dùng cổng chính thức bên trên, tìm theo tên tuyến đường/giao lộ gần đây.'
+        :'Hà Nội hiện gần như chưa có camera nào trong mạng lưới Windy, nên khung trên thường sẽ trống — dùng app iHanoi để xem camera chính thức.'}
+    </div>
+  </div>`;
+
+  const mount=document.getElementById('eye-windycam');
+  const a=document.createElement('a');
+  a.setAttribute('name','windy-webcam-nearby-embed');
+  a.setAttribute('data-params',JSON.stringify({lat,lon:lng}));
+  mount.appendChild(a);
+  const s=document.createElement('script');
+  s.async=true;
+  s.src='https://webcams.windy.com/webcams/public/embed/v2/script/nearby.js?t='+Date.now();
+  mount.appendChild(s);
 }
 
 
