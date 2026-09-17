@@ -805,6 +805,8 @@ input,select,textarea,button{-webkit-tap-highlight-color:transparent}
         title="Cảnh 3D dựng từ ảnh vệ tinh">🧊<span>Cảnh 3D</span></button>
       <button class="eye-mode" type="button" data-mode="photo" onclick="eyeSetMode('photo')"
         title="Ảnh chụp thật cảnh ngập">📷<span>Ảnh ngập thật</span></button>
+      <button class="eye-mode" type="button" data-mode="camera" onclick="eyeSetMode('camera')"
+        title="Camera giao thông công cộng gần đây">📹<span>Camera giao thông</span></button>
       <button class="eye-mode" type="button" data-mode="more" onclick="eyeSetMode('more')"
         title="Các cách nhìn khác">⋯<span>Cách khác</span></button>
     </div>
@@ -2412,11 +2414,12 @@ function eyeInteractive(on){
   }
 }
 
-/* Ba chế độ xem: cảnh 3D dựng sẵn, ảnh chụp thật, và danh sách cách xem khác. */
+/* Bốn chế độ xem: cảnh 3D dựng sẵn, ảnh chụp thật, camera giao thông, và danh sách cách xem khác. */
 function eyeSetMode(m){
   document.querySelectorAll('#eye-modes .eye-mode')
     .forEach(b=>b.classList.toggle('active',b.dataset.mode===m));
   if(m==='photo'){eyeStartPhotos();return;}
+  if(m==='camera'){eyeStartCamera();return;}
   if(m==='more'){eyeDestroy();eyeStatus('');eyeLegend('');renderEyePanel();return;}
   if(gKey())eyeStart3D(); else eyeStartFree();
 }
@@ -3020,6 +3023,67 @@ function eyeStartPhotos(){
     ve(tin,undefined);
     loadOpenverse(ov=>ve(tin,ov));
   });
+}
+
+/* ---------------------------------------------------------------
+   D. Camera giao thông công cộng
+   Cả hai cổng camera (TP.HCM & Hà Nội) đều là ứng dụng có phiên đăng nhập
+   riêng (ExtJS/app di động) — không có URL kèm toạ độ để nhúng thẳng khung
+   xem đúng vị trí, và không công bố API ảnh/luồng cho phép gắn trực tiếp
+   (nhúng ẩn danh thường xuyên bị chặn hoặc trả ảnh trống). Vì công cụ này
+   không có máy chủ riêng để làm cầu nối, cách trung thực nhất là dẫn thẳng
+   sang cổng chính chủ ở tab mới, thay vì giả vờ có khung xem trực tiếp.
+   --------------------------------------------------------------- */
+function eyeStartCamera(){
+  eye.mode='camera';
+  eyeDestroy();
+  eyeStatus('');eyeLegend('');
+  const p=document.getElementById('eye-panel');
+  p.style.display='';
+  const [lat,lng]=eye.ll;
+  const gmTraffic=`https://www.google.com/maps/@${lat},${lng},17z/data=!5m1!1e1`;
+
+  if(state.city==='hcmc'){
+    p.innerHTML=`<div class="eye-card">
+      <h4>📹 Camera giao thông công khai</h4>
+      <p>Sở Giao thông Vận tải TP.HCM công bố camera giao thông trực tuyến trên cổng chính thức —
+        miễn phí, không cần đăng nhập. Công cụ này <b>không có máy chủ riêng</b> nên không thể nhúng
+        thẳng luồng camera vào đây; bấm nút bên dưới để mở cổng chính chủ ở tab mới, rồi tìm theo
+        tên tuyến đường hoặc giao lộ gần <b>${esc(eye.label||'vị trí này')}</b>.</p>
+      <div class="eye-btns">
+        <a class="eye-btn primary" href="https://giaothong.hochiminhcity.gov.vn/map.aspx" target="_blank" rel="noopener">
+          <b>📹 Mở cổng Camera giao thông TP.HCM</b>
+          <span>Sở GTVT TP.HCM · chọn lớp "Camera giao thông" trên bản đồ, phóng to tới tuyến đường cần xem</span></a>
+        <a class="eye-btn" href="${gmTraffic}" target="_blank" rel="noopener">
+          <b>🚦 Tình trạng kẹt xe (Google Maps)</b>
+          <span>Không phải camera, nhưng thấy ngay đoạn nào đang ùn ứ theo thời gian thực</span></a>
+      </div>
+      <div class="eye-note">
+        Camera giao thông tập trung ở <b>trục đường lớn và giao lộ</b>, không phủ hết hẻm nhỏ — nếu
+        không thấy camera đúng vị trí, tìm camera trên trục đường gần nhất rồi ước lượng khoảng cách
+        tới nhà/mặt bằng đang xem.
+      </div>
+    </div>`;
+  }else{
+    p.innerHTML=`<div class="eye-card">
+      <h4>📹 Camera giao thông công khai</h4>
+      <p>Hà Nội chưa có cổng web công khai xem camera giao thông không cần đăng nhập — camera chính
+        thức chỉ xem được qua ứng dụng <b>iHanoi</b> (mục "Giao thông" → "Camera giao thông"), cần cài
+        app và đăng nhập tài khoản công dân số.</p>
+      <div class="eye-btns">
+        <a class="eye-btn primary" href="https://ihanoi.gov.vn/" target="_blank" rel="noopener">
+          <b>📱 Ứng dụng iHanoi</b>
+          <span>Tải app, đăng nhập, vào mục Giao thông → Camera giao thông để xem theo tuyến đường</span></a>
+        <a class="eye-btn" href="${gmTraffic}" target="_blank" rel="noopener">
+          <b>🚦 Tình trạng kẹt xe (Google Maps)</b>
+          <span>Không phải camera, nhưng thấy ngay đoạn nào đang ùn ứ theo thời gian thực</span></a>
+      </div>
+      <div class="eye-note">
+        Chưa xác nhận được cổng web chính thức nào của Hà Nội cho phép xem camera công khai không cần
+        tài khoản — nếu bạn biết nguồn khác, thông tin này sẽ được cập nhật.
+      </div>
+    </div>`;
+  }
 }
 
 
