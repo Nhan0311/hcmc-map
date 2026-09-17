@@ -570,6 +570,15 @@ test('ảnh giấy phép mở hiện kèm tên giấy phép và tác giả, dẫ
 test('tin có ảnh vào lưới, tin không ảnh xuống danh sách gọn', async () => {
   const { page, ctx } = await open();
   await gaOpenverse(ctx, []);
+  // Kho tin thật (data/tin_ngap.js) đổi theo ngày — tự thêm một bài KHÔNG ảnh
+  // để bài kiểm tra không phụ thuộc việc hôm đó kho có sẵn bài thiếu ảnh hay không.
+  await page.evaluate(() => new Promise((ok) => loadNews(() => {
+    window.TIN_NGAP.items.push({
+      t: 'Bài không kèm ảnh (giả cho kiểm tra)', u: 'https://x.test/khong-anh', s: 'X', d: '2020-01-01',
+      img: '', c: 'hcmc', fp: [], z: [],
+    });
+    ok();
+  })));
   await page.evaluate(() => { openEye(10.7869, 106.7018, 'Bến Thành'); eyeSetMode('photo'); });
   await xongBangAnh(page);
   const r = await page.evaluate(() => {
