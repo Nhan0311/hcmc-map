@@ -2,9 +2,56 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-18T01:10:21.588Z",
+ "capNhat": "2026-09-18T14:53:51.411Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Mưa to kèm sấm chớp, người dân TP. HCM bì bõm vượt sóng nước về nhà",
+   "u": "https://tienphong.vn/mua-to-kem-sam-chop-nguoi-dan-tp-hcm-bi-bom-vuot-song-nuoc-ve-nha-post1877565.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-18",
+   "img": "https://cdn.tienphong.vn/images/X4qn3dTkkrIW2NI3joaFz4uL4jm14GNqbkDZ38Rv6Rbl2mft-x7qIydW-4-smdbxNU7cvnY5cl6ERbdedwGS7VGvTCUiY-3oSksxpRzSXbv9ogym83l8V6VObtMxon74/1789735113034-2004129892725998524-8270285379623501737-h.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM mưa như trút nước, nhiều tuyến đường biến thành sông",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-mua-nhu-trut-nuoc-nhieu-tuyen-duong-bien-thanh-song-20260918183408983.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-18",
+   "img": "https://icdn.dantri.com.vn/2026/09/18/1d1-1789733766344.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nhiều đường tại TP.HCM ngập sau trận mưa lớn, hầm chui nút giao An Phú không ngập",
+   "u": "https://tuoitre.vn/nhieu-duong-tai-tphcm-ngap-sau-tran-mua-lon-ham-chui-nut-giao-an-phu-khong-ngap-100260918194203271.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-18",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/18/17897343253604058309463270536765g1177423821652663096ee105bb1387135237cc20e82e0f17ce7-17897343784151390455979-187-0-1787-2560-crop-1789735278076154455602.jpg",
+   "c": "hcmc",
+   "fp": [
+    "Đặng Thị Rành (chợ Thủ Đức)",
+    "Nguyễn Văn Hưởng"
+   ],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Vùng đất lau sậy 'lột xác' cùng dự án chống ngập 10.000 tỷ đồng",
+   "u": "https://tienphong.vn/vung-dat-lau-say-lot-xac-cung-du-an-chong-ngap-10000-ty-dong-post1877532.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-18",
+   "img": "https://cdn.tienphong.vn/images/rKxAQ4QOt_t5utGxG_Wty3Utq1rOrK7dpXk4pt9TE155SueDZGZDG1T7dr9MhDFP/tp-phu-dinh-3251.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
   {
    "t": "Xuyên đêm tìm kiếm nam sinh nghi mất tích khi qua đường ngập, xe máy mắc miệng cống",
    "u": "https://tienphong.vn/xuyen-dem-tim-kiem-nam-sinh-nghi-mat-tich-khi-qua-duong-ngap-xe-may-mac-mieng-cong-post1877298.tpo",
@@ -19,6 +66,110 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
+   "t": "Hai lần chống ngập, chạy lụt của người dân vùng ven Hà Nội",
+   "u": "https://tienphong.vn/hai-lan-chong-ngap-chay-lut-cua-nguoi-dan-vung-ven-ha-noi-post1877409.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-18",
+   "img": "https://cdn.tienphong.vn/images/q124DdbDwaJXF9dTrDEPnmQGB8joAdVwznwfUR9MfkfCVmDyOsHHgT0ay-XRfqIf/tp_d38.jpg.avif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [
+    "Ngọc Hồi",
+    "Quảng Bị"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội: Ô tô rẽ sóng giữa nước ngập ở quốc lộ 32, xe chết máy la liệt",
+   "u": "https://dantri.com.vn/doi-song/ha-noi-o-to-re-song-giua-nuoc-ngap-o-quoc-lo-32-xe-chet-may-la-liet-20260918195525939.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-18",
+   "img": "https://icdn.dantri.com.vn/2026/09/18/ha-noi-o-to-re-song-giua-nuoc-ngap-o-quoc-lo-32-xe-chet-may-la-liet-2-edited-1789738572583.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Cô gái cưỡi ngựa qua điểm ngập ở Hà Nội gây tranh luận",
+   "u": "https://dantri.com.vn/doi-song/co-gai-cuoi-ngua-qua-diem-ngap-o-ha-noi-gay-tranh-luan-20260918183617028.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-18",
+   "img": "https://icdn.dantri.com.vn/2026/09/18/091821-ezgifcom-resize-1789728364186.gif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Khu đô thị ở Hà Nội ngập sâu, người dân dùng đệm chở xe máy, đi bè mua cơm",
+   "u": "https://dantri.com.vn/doi-song/khu-do-thi-o-ha-noi-ngap-sau-nguoi-dan-dung-dem-cho-xe-may-di-be-mua-com-20260918155539802.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-18",
+   "img": "https://icdn.dantri.com.vn/2026/09/18/khu-do-thi-o-ha-noi-ngap-sau-1789721521806.gif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [
+    "Sơn Đồng"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Xác minh thông tin nam sinh nghi bị nước cuốn mất tích khi đi qua đường ngập ở Hà Nội",
+   "u": "https://tuoitre.vn/xac-minh-thong-tin-nam-sinh-nghi-bi-nuoc-cuon-mat-tich-khi-di-qua-duong-ngap-o-ha-noi-100260918072555528.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-18",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/18/rgtynb-17896909895961163473087-209-0-809-960-crop-17896936657331776370228.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội: 5 ngày người dân Tứ Liên sống chật vật trong cảnh ngập lụt",
+   "u": "https://vtcnews.vn/ha-noi-5-ngay-nguoi-dan-tu-lien-song-chat-vat-trong-canh-ngap-lut-ar1040451.html",
+   "s": "VTC News",
+   "d": "2026-09-18",
+   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/18/ngo-39-tu-lien-ngap-5-ngay-35-13324239.JPG",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội: Nước ngập rút nhanh, chỉ còn vài điểm úng cục bộ",
+   "u": "https://vietnamnet.vn/ha-noi-nuoc-ngap-rut-nhanh-chi-con-vai-diem-ung-cuc-bo-2556363.html",
+   "s": "VietnamNet",
+   "d": "2026-09-18",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/18/ha-noi-nuoc-ngap-rut-nhanh-chi-con-vai-diem-ung-cuc-bo-552.jpg?width=0&s=W_TzwuPPObUNfVSb-87-mg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội còn điểm nào ngập úng sáng 18/9?",
+   "u": "https://lifestyle.zingnews.vn/ha-noi-con-diem-nao-ngap-ung-sang-189-post1683867.html",
+   "s": "Znews",
+   "d": "2026-09-18",
+   "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_09_15/ngap_lut.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội tiếp tục ứng trực, khắc phục hậu quả mưa lũ",
+   "u": "https://baoxaydung.vn/ha-noi-tiep-tuc-ung-truc-khac-phuc-hau-qua-mua-lu-192260918204537738.htm",
+   "s": "Báo Giao thông",
+   "d": "2026-09-18",
+   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/9/18/img1754-1789739072261840413859-0-0-1263-2021-crop-17897391043691227236168.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
    "t": "Vượt lũ đưa hài cốt về nhà",
    "u": "https://tienphong.vn/vuot-lu-dua-hai-cot-ve-nha-post1877256.tpo",
    "s": "Tiền Phong",
@@ -30,26 +181,52 @@ window.TIN_NGAP = {
    "canh": 0
   },
   {
-   "t": "Hà Nội nói gì về tình trạng úng ngập ngày 17/9?",
-   "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbkxTUHJBV0FoWi1HaGgzNDl2ZGpFemtmRlEyeDVKZXVlUmFBSlBaNC0xc0FYb2paUTN1SGFORm1vbldjdXY4WVZxWGJiSUlMU2t3bHRCZzBEeTdYX2N2YUFoaFVHMEtWSFhfLW4xOVUzaU11dVhrZUFvMVhRR085d0gta2lSRmg0V3VjUDR4WmFteTM2OU43OWhzQTRfempoZ0J4Wm5Kdk4?oc=5",
-   "s": "Tin tức 24h",
+   "t": "Ước mơ dang dở của nam sinh bị nước cuốn ở Hà Nội: 'Con muốn đi học để sau này đỡ đần mẹ'",
+   "u": "https://tienphong.vn/uoc-mo-dang-do-cua-nam-sinh-bi-nuoc-cuon-o-ha-noi-con-muon-di-hoc-de-sau-nay-do-dan-me-post1877478.tpo",
+   "s": "Tiền Phong",
    "d": "2026-09-18",
-   "img": "",
+   "img": "https://cdn.tienphong.vn/images/pAWKGOzT8BIc-M3GdeLjyS56uOs4rAFN9nvBNVAZVDgbYXPYt9wXBWUPGZkPaSYk/nam-sinh.jpg.avif",
    "c": "hanoi",
    "fp": [],
    "z": [],
-   "canh": 1
+   "canh": 0
   },
   {
-   "t": "Hà Nội: Hệ thống công trình chống ngập đồng bộ bước đầu phát huy hiệu quả",
-   "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaGdKalVJYmJpNU5qOGtFQnA0amFTUkdqVE5ISUdjMEJPSDNKM1FhWEZ0RGhIb0MzclliLUNTUFBkYjVzUVdwZW5kejc2UTJoRjRzWWhQU1hBZmhNajczNVJ1R0hoa21JVVB0NWhXZ2hFRDJ3cnVDMlBlOHJ1UEdmTUJfanhHX01oREZzUE9rOGlCRVMwQm51d3cyakY0NU1TUm11WkxsZGg?oc=5",
-   "s": "Báo Hànộimới",
+   "t": "Vụ nam sinh rơi xuống cống tử vong: Đơn vị duy trì thoát nước nói sẽ hỗ trợ tối đa cho gia đình nạn nhân",
+   "u": "https://tuoitre.vn/vu-nam-sinh-roi-xuong-cong-tu-vong-don-vi-duy-tri-thoat-nuoc-noi-ly-do-khong-co-nguoi-tuc-truc-tai-diem-ngap-100260918143818639.htm",
+   "s": "Tuổi Trẻ",
    "d": "2026-09-18",
-   "img": "",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/18/rhgbtb-17897167448531161695048-27-0-1627-2560-crop-17897171805221764689408-236-378-1250-2000-crop-17897230280361074020465.jpg",
    "c": "hanoi",
    "fp": [],
    "z": [],
-   "canh": 1
+   "canh": 0
+  },
+  {
+   "t": "Tìm thấy thi thể nam sinh nghi bị nước cuốn xuống cống ở Hà Nội",
+   "u": "https://lifestyle.zingnews.vn/tim-thay-thi-the-nam-sinh-nghi-bi-nuoc-cuon-xuong-cong-o-ha-noi-post1683865.html",
+   "s": "Znews",
+   "d": "2026-09-18",
+   "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_09_15/nam_sinh_mat_tich.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [
+    "Đông Ngạc"
+   ],
+   "canh": 0
+  },
+  {
+   "t": "Tìm kiếm nam sinh nghi bị nước cuốn mất tích ở Hà Nội",
+   "u": "https://lifestyle.zingnews.vn/tim-kiem-nam-sinh-nghi-bi-nuoc-cuon-mat-tich-o-ha-noi-post1683870.html",
+   "s": "Znews",
+   "d": "2026-09-18",
+   "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_09_15/sut_ho3.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [
+    "Đông Ngạc"
+   ],
+   "canh": 0
   },
   {
    "t": "Hà Nội mưa ngập, học sinh trường tư học trực tuyến, trường công chật vật đến trường",
@@ -529,50 +706,6 @@ window.TIN_NGAP = {
     "Cầu Giấy"
    ],
    "canh": 0
-  },
-  {
-   "t": "Hà Nội: Mưa lớn nhất trong 3 ngày, hàng chục điểm ngập khắp thành phố",
-   "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTV9jNGtXSlM1MG83NWVWZGNIR0o3Wkd3MFgweFFGb1RTNHB3ZDU5V3dRRExoV0FUZGlZMEdwZGhyWFhvanhpcUszc25IaG53N3N6aFFSdDJQZ0pjakh2Rjg5cDFNR0x0SFZyMG9zRldPMU9KejliMFNqTGtGcVFPYks4SmhwUUQ3TmxQWkpTaWc0WEZOZUY2VjNsNDFQSUJ4c0UweA?oc=5",
-   "s": "Báo Nhân Dân điện tử",
-   "d": "2026-09-17",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Sáng nay, người Hà Nội chật vật di chuyển trong mưa lớn và ngập sâu",
-   "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOanQzTkpWZFprb0lkN2d4R0dPMjBKaFlQY2l0Z2hGWnRjc1ZpS3c5RFlJSlB0NzBabDRYdHZ1SmxMSjAtTm1MREV2ZE1UbU5ybWwxa0JucFliT2pYSGFEXzJ0VDRnbmNiZUItTWNvYU1RaWZ4SmtUai1MWE51VU5COXo5Q1IxLW1HZDNVOWt5MmFlZWFJQWVGNklxc1Ztbll6dXpVT3M0Vm1GXzllVWlV?oc=5",
-   "s": "Báo Thanh Niên",
-   "d": "2026-09-17",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội: Mưa lớn đêm và sáng sớm 17/9, nhiều tuyến phố xuất hiện điểm úng ngập",
-   "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZjhFMUVZNmluY3pfeEpWcldPMUtUWjNKdlljRkM5TzJzWFhrTFZ1SDV4VHpnSkdGX2RMUFppSDhGd1dIQWhlVDhsWlk4RlBQSUJnSF9wYjc3SDhfZkNHMmZaSVJQaDJRQXdRT252RXgtVjRNajNFTUE5SzlQd2dhbC1NX2JUZ21lWmlWRldDd3QwRUUyQmE0YWtCV1FYQ09BSlJFMVgxOFlwd0NTTWRXYW1aTWdhTDc0R0JFNjFudnkxYi0wc0Y4?oc=5",
-   "s": "thanglong.chinhphu.vn",
-   "d": "2026-09-17",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội tăng cường ứng trực, xử lý các điểm úng ngập sau mưa lớn",
-   "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVWhVN0lTSEVsTjBlMVNoaW02ZDdmTVd1ZXp5d19IaGVpdGl3dm5sSGwxWTFOM1MtR21EQnVJaFZUdkl2ZGVzNmc2T0xkdFE3SDRnTWRhTTZEQWx1REpmc0M4MnBkTy04UlpyNFZKcVRPcVl2dDExVWQwb0JNcTRnV3FqV2dBX3QycXZRTWtONW1TTXNLTlMtazZkMA?oc=5",
-   "s": "Báo Hànộimới",
-   "d": "2026-09-17",
-   "img": "",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
   },
   {
    "t": "'Đường đi của nước' và câu chuyện quy hoạch TP.HCM",
@@ -1170,41 +1303,6 @@ window.TIN_NGAP = {
    "canh": 0
   },
   {
-   "t": "Áp thấp nhiệt đới bất ngờ mạnh lên",
-   "u": "https://tienphong.vn/ap-thap-nhiet-doi-bat-ngo-manh-len-post1875969.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-13",
-   "img": "https://cdn.tienphong.vn/images/ZCwedOKZjWXJ6w_5XKrxSBKzK1VfJ5CbdkSCFOkZck4m_tD8hasFFY8eKEot4SmJ/atnd-chieu.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Người dân mong cao tốc Biên Hòa - Vũng Tàu sớm làm đường thoát nước",
-   "u": "https://tienphong.vn/nguoi-dan-mong-cao-toc-bien-hoa-vung-tau-som-lam-duong-thoat-nuoc-post1876037.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-13",
-   "img": "https://cdn.tienphong.vn/images/PG9X9A60BOtQx70OjbKBJ5TkC6YQErXvOV4hqiWZ8Mds14AeysRTG6u8N7KeNyWw/09121.gif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "VT Vũng Tàu"
-   ],
-   "canh": 0
-  },
-  {
-   "t": "Chạy đua hoàn thiện dự án ngăn triều 10.000 tỷ đồng",
-   "u": "https://tienphong.vn/chay-dua-hoan-thien-du-an-ngan-trieu-10000-ty-dong-post1876026.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-13",
-   "img": "https://cdn.tienphong.vn/images/s6gT1YS1JSoky24pT-83_XIzyVhoU5_8zTYsOoicdgFxTvhaFZhuEuyGbFNmGgk9/5a.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
    "t": "Mưa lớn gây sạt lở tắc đường, sóng mạnh nhấn chìm tàu cá ở Huế",
    "u": "https://tienphong.vn/mua-lon-gay-sat-lo-tac-duong-song-manh-nhan-chim-tau-ca-o-hue-post1875800.tpo",
    "s": "Tiền Phong",
@@ -1267,17 +1365,6 @@ window.TIN_NGAP = {
    ],
    "z": [],
    "canh": 1
-  },
-  {
-   "t": "Dự báo đỉnh triều sông Sài Gòn lên cao",
-   "u": "https://lifestyle.zingnews.vn/du-bao-dinh-trieu-song-sai-gon-len-cao-post1682629.html",
-   "s": "Znews",
-   "d": "2026-09-12",
-   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_10/Mua_SG_03_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
   },
   {
    "t": "TPHCM: Lý do hầm chui nút giao An Phú ngập sâu",
@@ -1458,17 +1545,6 @@ window.TIN_NGAP = {
     "Yên Nghĩa",
     "Yên Sở"
    ],
-   "canh": 0
-  },
-  {
-   "t": "Ống nhựa EUROPIPE góp sức kiến tạo hạ tầng - nền tảng để Hà Nội bứt phá",
-   "u": "https://dantri.com.vn/kinh-doanh/ong-nhua-europipe-gop-suc-kien-tao-ha-tang-nen-tang-de-ha-noi-but-pha-20260911144954704.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-11",
-   "img": "https://icdn.dantri.com.vn/2026/09/11/anh-thumb-anh-6-cropped-1789112693571.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
    "canh": 0
   },
   {
@@ -1744,17 +1820,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Huế thử còi cảnh báo thiên tai, âm thanh lan xa 5 km",
-   "u": "https://tienphong.vn/hue-thu-coi-canh-bao-thien-tai-am-thanh-lan-xa-5-km-post1875271.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-10",
-   "img": "https://cdn.tienphong.vn/images/7nnhKt8M2ubXx8G9gp4PtG3Lm7TuH6HJWrwFysvJbjmFCqfbwFmv9TM4bdsxrMsG4epL05xpVzO1E6OYXf62Pw/coi-canh-bao-2.jpg.avif",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
    "t": "Cận cảnh 2 khu đất TP.HCM thanh to&aacute;n dự &aacute;n chống ngập 10.000 tỉ đồng",
    "u": "https://thanhnien.vn/can-canh-2-khu-dat-tphcm-thanh-toan-du-an-chong-ngap-10000-ti-dong-185260909000139408.htm",
    "s": "Thanh Niên",
@@ -1786,17 +1851,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 1
-  },
-  {
-   "t": "Bản tin Thời tiết Hà Nội (9 - 10/9): Khí lạnh tác động khu vực từ đêm nay",
-   "u": "https://tienphong.vn/ban-tin-thoi-tiet-ha-noi-9-109-khi-lanh-tac-dong-khu-vuc-tu-dem-nay-post1874731.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-08",
-   "img": "https://cdn.tienphong.vn/images/rwN0lHPym7CwCTZmSkMFYRW6UGNcP-Flq7rnYyZwXJRuCe4wdwbvfPcQp3mkcolL/11119.gif",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
   },
   {
    "t": "Thời tiết 8/9: Miền Bắc thời tiết tốt, TPHCM có mưa",
@@ -1865,19 +1919,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Thả cá \"ăn\" lúa chét: Mô hình sinh kế lạ ở ngoại thành Hà Nội",
-   "u": "https://tienphong.vn/tha-ca-an-lua-chet-mo-hinh-sinh-ke-la-o-ngoai-thanh-ha-noi-post1873656.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-04",
-   "img": "https://cdn.tienphong.vn/images/UJZuhj3KkaZ_tFa1DT_Bj1wQm5br_nMIc8quPo6Ewi8EMvw3FqgqExF9JmlShEF3/4-calua.jpg.avif",
-   "c": "hanoi",
-   "fp": [],
-   "z": [
-    "Kiều Phú"
-   ],
-   "canh": 0
-  },
-  {
    "t": "TPHCM và Nam Bộ tiếp tục mưa dông chiều tối",
    "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-dong-chieu-toi-20260903212222706.htm",
    "s": "Dân Trí",
@@ -1933,19 +1974,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Đường Vành đai 2,5 thi công xuyên lễ, xuyên ngày đêm",
-   "u": "https://tienphong.vn/duong-vanh-dai-25-thi-cong-xuyen-le-xuyen-ngay-dem-post1873138.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-03",
-   "img": "https://cdn.tienphong.vn/images/UJZuhj3KkaZ_tFa1DT_Bj95ipluh2KNrbIMILrm0erfuW3g-hoVaSQIUVlnK0Z2N/tp-vd-25-19.jpg.avif",
-   "c": "hanoi",
-   "fp": [
-    "Nguyễn Trãi"
-   ],
-   "z": [],
-   "canh": 0
-  },
-  {
    "t": "TPHCM và Nam Bộ mưa dông nhiều hơn trong vài ngày tới",
    "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-mua-dong-nhieu-hon-trong-vai-ngay-toi-20260902205834641.htm",
    "s": "Dân Trí",
@@ -1968,17 +1996,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Diện mạo tuyến Vành đai 1 hơn 7.200 tỷ đồng trước ngày thông xe kỹ thuật",
-   "u": "https://tienphong.vn/dien-mao-tuyen-vanh-dai-1-hon-7200-ty-dong-truoc-ngay-thong-xe-ky-thuat-post1872658.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-08-31",
-   "img": "https://cdn.tienphong.vn/images/59odGif1rHxTaSw3XAYsUpMc8Q_h_fQQjLGgq9n4idLh6kvTnGlXM7UTo5hd_rY_/tp-v7.jpg.avif",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
    "t": "Mưa bất chợt, nhiều tuyến phố Hà Nội bị ngập nước",
    "u": "https://vietnamnet.vn/mua-bat-chot-nhieu-tuyen-pho-ha-noi-bi-ngap-nuoc-2549876.html",
    "s": "VietnamNet",
@@ -1988,17 +2005,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 1
-  },
-  {
-   "t": "Hà Nội khánh thành đường Vành đai 1, khởi công 2 dự án đường sắt dịp Quốc khánh",
-   "u": "https://vietnamnet.vn/ha-noi-khanh-thanh-duong-vanh-dai-1-khoi-cong-2-du-an-duong-sat-dip-quoc-khanh-2549229.html",
-   "s": "VietnamNet",
-   "d": "2026-08-26",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/8/26/ha-noi-khanh-thanh-duong-vanh-dai-1-khoi-cong-2-du-an-duong-sat-dip-quoc-khanh-819.jpg?width=0&s=_iKRDqUJ92ePQ1WtwE8l5g",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
   },
   {
    "t": "Hà Nội tính 'xoá' ngập úng bằng hồ điều hòa, bể ngầm trữ nước mưa",
