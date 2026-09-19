@@ -2,9 +2,31 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-19T01:05:01.177Z",
+ "capNhat": "2026-09-19T14:17:47.657Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Mưa tầm tã ngày đêm, cảnh báo nguy cơ ngập lụt cục bộ tại Hà Tĩnh",
+   "u": "https://tienphong.vn/mua-tam-ta-ngay-dem-canh-bao-nguy-co-ngap-lut-cuc-bo-tai-ha-tinh-post1877769.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-19",
+   "img": "https://cdn.tienphong.vn/images/OXp6W7uCaM9Zc5Wf5f7wloOMYGyZlSPdijkQizgJ8SgI7r7GD6fRxr6A0IYyZUO3/tp-jshsjssk.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Điểm tên khu vực mưa lớn xối xả chiều tối 19/9, TPHCM nguy cơ ngập úng",
+   "u": "https://vietnamnet.vn/diem-ten-khu-vuc-mua-lon-xoi-xa-chieu-toi-19-9-tphcm-nguy-co-ngap-ung-2555524.html",
+   "s": "VietnamNet",
+   "d": "2026-09-19",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/19/9-tphcm-nguy-co-ngap-ung-1404.jpg?width=0&s=6Z1rKbhV52k-YzikH9usLQ",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Người Hà Nội trèo thang ra khỏi nơi ngập, không điện nước trong biệt thự",
    "u": "https://dantri.com.vn/doi-song/nguoi-ha-noi-treo-thang-ra-khoi-noi-ngap-khong-dien-nuoc-trong-biet-thu-20260919072118952.htm",
@@ -22,6 +44,28 @@ window.TIN_NGAP = {
    "s": "Tiền Phong",
    "d": "2026-09-19",
    "img": "https://cdn.tienphong.vn/images/msBMiK7ss-y2fDjo4SI4dX754MvODVdG2enfmme2FoeJzdPfaah6ySTB2PS5jWxL/img-3652.jpg.avif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
+  {
+   "t": "Người mẹ khóc ngất trước di ảnh con trai bị nước cuốn trôi xuống cống ở Hà Nội",
+   "u": "https://tienphong.vn/nguoi-me-khoc-ngat-truoc-di-anh-con-trai-bi-nuoc-cuon-troi-xuong-cong-o-ha-noi-post1877771.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-19",
+   "img": "https://cdn.tienphong.vn/images/3Ij1Bd2RCJqESucRGIS3OUzHvKq3QAu-oeD14oKHD5QnLIEThmUe9-fkDaLo_eHin1tYB6033i9gwmRRseVyJSf9dtl2B5Sf-Lo8PeWZYzU/tp-c_screen-shot-2026-09-19-at-164533.png.avif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
+  {
+   "t": "Bộ đội dùng thân mình chặn nước xiết, đắp đê ngăn lũ ở ngoại thành Hà Nội",
+   "u": "https://dantri.com.vn/thoi-su/bo-doi-dung-than-minh-chan-nuoc-xiet-dap-de-ngan-lu-o-ngoai-thanh-ha-noi-20260919152138664.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-19",
+   "img": "https://icdn.dantri.com.vn/2026/09/19/hailong00003-1789812008770.jpg",
    "c": "hanoi",
    "fp": [],
    "z": [],
@@ -773,43 +817,6 @@ window.TIN_NGAP = {
    "canh": 0
   },
   {
-   "t": "4 ngày 'kinh khủng khiếp' ở ngõ 39 Tứ Liên (Hà Nội)",
-   "u": "https://tienphong.vn/4-ngay-kinh-khung-khiep-o-ngo-39-tu-lien-ha-noi-post1877204.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-17",
-   "img": "https://cdn.tienphong.vn/images/FfcwadV7fQ2A9tggbBYztsgOuwD4HoN2axUkgG-bwiKVghnCogss4wzzROSxRgDV/gif-thumb.gif",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Hà Nội: Nước tràn vào phòng trọ, nam sinh viên nửa đêm phải thuê nhà nghỉ",
-   "u": "https://vietnamnet.vn/ha-noi-nuoc-tran-vao-phong-tro-nam-sinh-vien-nua-dem-phai-ra-nha-nghi-2556049.html",
-   "s": "VietnamNet",
-   "d": "2026-09-17",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/17/ha-noi-nuoc-tran-vao-phong-tro-nam-sinh-vien-nua-dem-phai-ra-nha-nghi-1798.jpg?width=0&s=-gotPjfzBepBqIM9t8Mz5w",
-   "c": "hanoi",
-   "fp": [
-    "Hoa Bằng (số 91–97 và 54–56)"
-   ],
-   "z": [
-    "Cầu Giấy"
-   ],
-   "canh": 0
-  },
-  {
-   "t": "'Đường đi của nước' và câu chuyện quy hoạch TP.HCM",
-   "u": "https://lifestyle.zingnews.vn/duong-di-cua-nuoc-va-cau-chuyen-quy-hoach-tphcm-post1683573.html",
-   "s": "Znews",
-   "d": "2026-09-16",
-   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_06_23/29tet_znews_1_1.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
    "t": "Hà Nội và nhiều tỉnh tiếp tục mưa lớn",
    "u": "https://vnexpress.net/ha-noi-va-nhieu-tinh-tiep-tuc-mua-lon-5120734.html",
    "s": "VnExpress",
@@ -939,17 +946,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 1
-  },
-  {
-   "t": "Chủ đầu tư dự án A&T Saigon Riverside ở TPHCM lại dời hạn sửa đường",
-   "u": "https://dantri.com.vn/thoi-su/chu-dau-tu-du-an-at-saigon-riverside-o-tphcm-lai-doi-han-sua-duong-20260915084751801.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-15",
-   "img": "https://icdn.dantri.com.vn/2026/09/15/img7761-1789436485789.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
   },
   {
    "t": "Dự báo thời tiết Hà Nội hôm nay 15/9: Mưa rất lớn, đề phòng ngập úng",
