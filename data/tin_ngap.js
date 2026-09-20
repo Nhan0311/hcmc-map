@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-19T14:17:47.657Z",
+ "capNhat": "2026-09-20T00:54:38.711Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -36,6 +36,31 @@ window.TIN_NGAP = {
    "c": "hanoi",
    "fp": [],
    "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nước vẫn bủa vây khu đô thị Vân Canh nhiều ngày sau mưa",
+   "u": "https://tienphong.vn/nuoc-van-bua-vay-khu-do-thi-van-canh-nhieu-ngay-sau-mua-post1877818.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-19",
+   "img": "https://cdn.tienphong.vn/images/59odGif1rHxTaSw3XAYsUmmPG1KDkZ5z9omK3griOWNRoOpOERxm1peXQuhmQSId/ngap-van-canh-2426.jpg.avif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Vật lộn sinh hoạt trong biển nước lũ ở vùng ven Hà Nội",
+   "u": "https://tienphong.vn/vat-lon-sinh-hoat-trong-bien-nuoc-lu-o-vung-ven-ha-noi-post1877740.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-19",
+   "img": "https://cdn.tienphong.vn/images/q124DdbDwaJXF9dTrDEPnmQGB8joAdVwznwfUR9MfkdJki92xfJ5Ga3G5Yz1uZwY/tp_d40.jpg.avif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [
+    "Trần Phú",
+    "Xuân Mai"
+   ],
    "canh": 1
   },
   {
@@ -343,19 +368,6 @@ window.TIN_NGAP = {
    "s": "Znews",
    "d": "2026-09-18",
    "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_09_15/nam_sinh_mat_tich.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [
-    "Đông Ngạc"
-   ],
-   "canh": 0
-  },
-  {
-   "t": "Tìm kiếm nam sinh nghi bị nước cuốn mất tích ở Hà Nội",
-   "u": "https://lifestyle.zingnews.vn/tim-kiem-nam-sinh-nghi-bi-nuoc-cuon-mat-tich-o-ha-noi-post1683870.html",
-   "s": "Znews",
-   "d": "2026-09-18",
-   "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_09_15/sut_ho3.jpg",
    "c": "hanoi",
    "fp": [],
    "z": [
@@ -804,17 +816,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 1
-  },
-  {
-   "t": "Nước hồ điều hòa Hà Nội tràn đường",
-   "u": "https://tienphong.vn/nuoc-ho-dieu-hoa-ha-noi-tran-duong-post1877242.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-17",
-   "img": "https://cdn.tienphong.vn/images/59odGif1rHxTaSw3XAYsUpgyOPuTeFd12qUTeN8ZTndtbjgmzDLhMKp3VJblY0fESXmj4YMhed0KIKRRLhnrfg/tp_ho-dieu-hoa-ngap-sau-6721.jpg.avif",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
   },
   {
    "t": "Hà Nội và nhiều tỉnh tiếp tục mưa lớn",
