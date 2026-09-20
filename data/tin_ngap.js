@@ -2,9 +2,92 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-20T00:54:38.711Z",
+ "capNhat": "2026-09-20T14:38:19.415Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Gara sửa xe kiếm bộn tiền sau trận mưa to nhất 41 năm tại Vinh",
+   "u": "https://tienphong.vn/gara-sua-xe-kiem-bon-tien-sau-tran-mua-to-nhat-41-nam-tai-vinh-post1878014.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-20",
+   "img": "https://cdn.tienphong.vn/images/k_1MH2mBvMx1N4uilHIH9GhLuuehO-bedhA6p0S3JdXkk1Q_7iFnLHm22jnYATOa/1000084894.gif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "\"Rốn lũ\" Hà Nội ngập sâu, học sinh vẫn lội nước, ngồi xe kéo đến trường",
+   "u": "https://dantri.com.vn/thoi-su/ron-lu-ha-noi-ngap-sau-hoc-sinh-van-loi-nuoc-ngoi-xe-keo-den-truong-20260920095014443.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-20",
+   "img": "https://icdn.dantri.com.vn/2026/09/20/hocsinhluhailong00013-1789869150581.jpg?watermark=v1",
+   "c": "hanoi",
+   "fp": [],
+   "z": [
+    "Xuân Mai"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội: Đàn cá bơi tung tăng khắp đường làng ngày ngập lụt gây sốt",
+   "u": "https://dantri.com.vn/doi-song/ha-noi-dan-ca-boi-tung-tang-khap-duong-lang-ngay-ngap-lut-gay-sot-20260920094203616.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-20",
+   "img": "https://icdn.dantri.com.vn/2026/09/20/dan-ca-12-1789871503369.gif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Vụ nam sinh viên ngã xuống cống tử vong: Chủ tịch Hà Nội chỉ đạo làm rõ trách nhiệm",
+   "u": "https://dantri.com.vn/thoi-su/vu-nam-sinh-vien-nga-xuong-cong-tu-vong-chu-tich-ha-noi-chi-dao-lam-ro-trach-nhiem-20260920095102833.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-20",
+   "img": "https://icdn.dantri.com.vn/2026/09/20/nam-sinh-tu-vong-1789871755006.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
+  {
+   "t": "Vụ nam sinh ngã xuống cống tử vong: Chủ tịch Hà Nội chỉ đạo làm rõ trách nhiệm",
+   "u": "https://vtcnews.vn/vu-nam-sinh-nga-xuong-cong-tu-vong-chu-tich-ha-noi-chi-dao-lam-ro-trach-nhiem-ar1040777.html",
+   "s": "VTC News",
+   "d": "2026-09-20",
+   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/20/20260918-130632-10045782.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 0
+  },
+  {
+   "t": "Chủ tịch Hà Nội yêu cầu làm rõ trách nhiệm tổ chức, cá nhân vụ nam sinh ngã xuống cống tử vong",
+   "u": "https://tuoitre.vn/chu-tich-ha-noi-yeu-cau-lam-ro-trach-nhiem-to-chuc-ca-nhan-vu-nam-sinh-nga-xuong-cong-tu-vong-100260920092020717.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-20",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/20/ehgrtb-17898706187601819094113-320-0-1920-2560-crop-17898708495142098001749.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [
+    "Đông Ngạc"
+   ],
+   "canh": 0
+  },
+  {
+   "t": "Chủ tịch Hà Nội yêu cầu làm rõ trách nhiệm liên quan vụ nam sinh ngã xuống cống tử vong",
+   "u": "https://vietnamnet.vn/chu-tich-ha-noi-yeu-cau-lam-ro-trach-nhiem-vu-nam-sinh-nga-xuong-cong-tu-vong-2557010.html",
+   "s": "VietnamNet",
+   "d": "2026-09-20",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/20/yeu-cau-lam-ro-trach-nhiem-vu-nam-sinh-nga-xuong-cong-tu-vong-o-ha-noi-354.jpg?width=0&s=XsNBx5JctB0p60pJ_NRc-A",
+   "c": "hanoi",
+   "fp": [],
+   "z": [
+    "Đông Ngạc"
+   ],
+   "canh": 0
+  },
   {
    "t": "Mưa tầm tã ngày đêm, cảnh báo nguy cơ ngập lụt cục bộ tại Hà Tĩnh",
    "u": "https://tienphong.vn/mua-tam-ta-ngay-dem-canh-bao-nguy-co-ngap-lut-cuc-bo-tai-ha-tinh-post1877769.tpo",
@@ -62,39 +145,6 @@ window.TIN_NGAP = {
     "Xuân Mai"
    ],
    "canh": 1
-  },
-  {
-   "t": "Hơn 300 hộ dân ở Quảng Trị bị nước lũ chia cắt, bộ đội dùng thuyền đưa giáo viên đến trường",
-   "u": "https://tienphong.vn/hon-300-ho-dan-o-quang-tri-bi-nuoc-lu-chia-cat-bo-doi-dung-thuyen-dua-giao-vien-den-truong-post1877544.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-19",
-   "img": "https://cdn.tienphong.vn/images/msBMiK7ss-y2fDjo4SI4dX754MvODVdG2enfmme2FoeJzdPfaah6ySTB2PS5jWxL/img-3652.jpg.avif",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Người mẹ khóc ngất trước di ảnh con trai bị nước cuốn trôi xuống cống ở Hà Nội",
-   "u": "https://tienphong.vn/nguoi-me-khoc-ngat-truoc-di-anh-con-trai-bi-nuoc-cuon-troi-xuong-cong-o-ha-noi-post1877771.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-19",
-   "img": "https://cdn.tienphong.vn/images/3Ij1Bd2RCJqESucRGIS3OUzHvKq3QAu-oeD14oKHD5QnLIEThmUe9-fkDaLo_eHin1tYB6033i9gwmRRseVyJSf9dtl2B5Sf-Lo8PeWZYzU/tp-c_screen-shot-2026-09-19-at-164533.png.avif",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Bộ đội dùng thân mình chặn nước xiết, đắp đê ngăn lũ ở ngoại thành Hà Nội",
-   "u": "https://dantri.com.vn/thoi-su/bo-doi-dung-than-minh-chan-nuoc-xiet-dap-de-ngan-lu-o-ngoai-thanh-ha-noi-20260919152138664.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-19",
-   "img": "https://icdn.dantri.com.vn/2026/09/19/hailong00003-1789812008770.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
   },
   {
    "t": "Mưa to kèm sấm chớp, người dân TP. HCM bì bõm vượt sóng nước về nhà",
@@ -328,52 +378,6 @@ window.TIN_NGAP = {
     "Xuân Mai"
    ],
    "canh": 1
-  },
-  {
-   "t": "Vượt lũ đưa hài cốt về nhà",
-   "u": "https://tienphong.vn/vuot-lu-dua-hai-cot-ve-nha-post1877256.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-18",
-   "img": "https://cdn.tienphong.vn/images/nJo0ky-Hz6Ps363LGLSGaq4Jld63_96L72dC17OfstzL4i8GO0YfgEnaoXjZl23gkcOVqqlJPlza80nK09ShXg/1000032118.jpg.avif",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Ước mơ dang dở của nam sinh bị nước cuốn ở Hà Nội: 'Con muốn đi học để sau này đỡ đần mẹ'",
-   "u": "https://tienphong.vn/uoc-mo-dang-do-cua-nam-sinh-bi-nuoc-cuon-o-ha-noi-con-muon-di-hoc-de-sau-nay-do-dan-me-post1877478.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-18",
-   "img": "https://cdn.tienphong.vn/images/pAWKGOzT8BIc-M3GdeLjyS56uOs4rAFN9nvBNVAZVDgbYXPYt9wXBWUPGZkPaSYk/nam-sinh.jpg.avif",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Vụ nam sinh rơi xuống cống tử vong: Đơn vị duy trì thoát nước nói sẽ hỗ trợ tối đa cho gia đình nạn nhân",
-   "u": "https://tuoitre.vn/vu-nam-sinh-roi-xuong-cong-tu-vong-don-vi-duy-tri-thoat-nuoc-noi-ly-do-khong-co-nguoi-tuc-truc-tai-diem-ngap-100260918143818639.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-18",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/18/rhgbtb-17897167448531161695048-27-0-1627-2560-crop-17897171805221764689408-236-378-1250-2000-crop-17897230280361074020465.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Tìm thấy thi thể nam sinh nghi bị nước cuốn xuống cống ở Hà Nội",
-   "u": "https://lifestyle.zingnews.vn/tim-thay-thi-the-nam-sinh-nghi-bi-nuoc-cuon-xuong-cong-o-ha-noi-post1683865.html",
-   "s": "Znews",
-   "d": "2026-09-18",
-   "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_09_15/nam_sinh_mat_tich.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [
-    "Đông Ngạc"
-   ],
-   "canh": 0
   },
   {
    "t": "Hà Nội mưa ngập, học sinh trường tư học trực tuyến, trường công chật vật đến trường",
