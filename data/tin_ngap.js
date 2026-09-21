@@ -2,9 +2,26 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-20T14:38:19.415Z",
+ "capNhat": "2026-09-21T00:57:47.145Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Dự báo TP.HCM mưa 4 ngày liên tiếp, có nơi vượt 150 mm",
+   "u": "https://lifestyle.zingnews.vn/du-bao-tphcm-mua-4-ngay-lien-tiep-co-noi-vuot-150-mm-post1684515.html",
+   "s": "Znews",
+   "d": "2026-09-20",
+   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_10/Mua_SG_10_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "Binh Thanh District",
+    "BD Dĩ An",
+    "Go Vap District",
+    "Thu Duc Old",
+    "VT Vũng Tàu"
+   ],
+   "canh": 1
+  },
   {
    "t": "Gara sửa xe kiếm bộn tiền sau trận mưa to nhất 41 năm tại Vinh",
    "u": "https://tienphong.vn/gara-sua-xe-kiem-bon-tien-sau-tran-mua-to-nhat-41-nam-tai-vinh-post1878014.tpo",
@@ -236,17 +253,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 1
-  },
-  {
-   "t": "Vùng đất lau sậy 'lột xác' cùng dự án chống ngập 10.000 tỷ đồng",
-   "u": "https://tienphong.vn/vung-dat-lau-say-lot-xac-cung-du-an-chong-ngap-10000-ty-dong-post1877532.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-18",
-   "img": "https://cdn.tienphong.vn/images/rKxAQ4QOt_t5utGxG_Wty3Utq1rOrK7dpXk4pt9TE155SueDZGZDG1T7dr9MhDFP/tp-phu-dinh-3251.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 0
   },
   {
    "t": "Xuyên đêm tìm kiếm nam sinh nghi mất tích khi qua đường ngập, xe máy mắc miệng cống",
