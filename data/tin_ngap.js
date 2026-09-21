@@ -2,9 +2,132 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-21T00:57:47.145Z",
+ "capNhat": "2026-09-21T16:56:23.057Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "El Nino sẽ khiến mưa ít và mùa mưa có thể kết thúc sớm",
+   "u": "https://www.sggp.org.vn/el-nino-se-khien-mua-it-va-mua-mua-co-the-ket-thuc-som-post872714.html",
+   "s": "SGGP",
+   "d": "2026-09-21",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_09_15/img-1579-8160-1450.png.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nhiều cầu dân sinh chìm nghỉm giữa lòng sông sau lũ ngập",
+   "u": "https://tienphong.vn/nhieu-cau-dan-sinh-chim-nghim-giua-long-song-sau-lu-ngap-post1878224.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-21",
+   "img": "https://cdn.tienphong.vn/images/AZtiUCyg1ZvswM4UnNc7L8kdRAcNL5zOQQYRriKO0CXATwzGrKFk463PF3du78SF/tp-nuoc-dang-anh-4.jpg.avif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội phân luồng giao thông trên Đại lộ Thăng Long do ngập úng",
+   "u": "https://dantri.com.vn/thoi-su/ha-noi-phan-luong-giao-thong-tren-dai-lo-thang-long-do-ngap-ung-20260921150220966.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-21",
+   "img": "https://icdn.dantri.com.vn/2026/09/21/phan-luong-dai-lo-tl-cropped-1789978111198.jpg",
+   "c": "hanoi",
+   "fp": [
+    "Đại lộ Thăng Long — hầm chui số 3, 5, 6",
+    "Đại lộ Thăng Long — nút giao An Khánh, km 9+656",
+    "Đại lộ Thăng Long × Lê Trọng Tấn"
+   ],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hơn 5.000 ngôi nhà ở Hà Nội, Ninh Bình vẫn đang bị ngập nước",
+   "u": "https://dantri.com.vn/thoi-su/hon-5000-ngoi-nha-o-ha-noi-ninh-binh-van-dang-bi-ngap-nuoc-20260921145525855.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-21",
+   "img": "https://icdn.dantri.com.vn/2026/09/21/denh-nuoc-5-1785132268290-1789977047723.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Công an điều tra vụ nam sinh ngã xuống cống tử vong trên đường ngập nước",
+   "u": "https://tuoitre.vn/cong-an-dieu-tra-vu-nam-sinh-nga-xuong-cong-tu-vong-tren-duong-ngap-nuoc-100260921173321788.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-21",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/21/cong-nam-sinh-vien-roi-1789972175470890861272-320-0-1920-2560-crop-17899722315251429369818.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [
+    "Đông Ngạc"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Đường gom Đại lộ Thăng Long ngập sâu 1m, Hà Nội cấm xe đi qua",
+   "u": "https://vtcnews.vn/duong-gom-dai-lo-thang-long-ngap-sau-1m-ha-noi-cam-xe-di-qua-ar1040906.html",
+   "s": "VTC News",
+   "d": "2026-09-21",
+   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/21/1789960685392-7012843716629392167-7012843716629392167-cb260ffa45f5a0b9afcd4eda64198c9f-10225778.jpg",
+   "c": "hanoi",
+   "fp": [
+    "Đại lộ Thăng Long — hầm chui số 3, 5, 6",
+    "Đại lộ Thăng Long — nút giao An Khánh, km 9+656",
+    "Đại lộ Thăng Long × Lê Trọng Tấn"
+   ],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Làng hoa Tây Tựu thiệt hại nặng do ngập úng",
+   "u": "https://vietnamnet.vn/lang-hoa-tay-tuu-thiet-hai-nang-do-ngap-ung-2557438.html",
+   "s": "VietnamNet",
+   "d": "2026-09-21",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/21/lang-hoa-tay-tuu-thiet-hai-nang-do-ngap-ung-2914.jpg?width=0&s=-QbEDf-t7n7QEfAsfdzUMA",
+   "c": "hanoi",
+   "fp": [],
+   "z": [
+    "Hòa Phú",
+    "Tây Tựu"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Đường gom đại lộ Thăng Long ngập sâu, xe máy rẽ sóng qua 'biển nước'",
+   "u": "https://vietnamnet.vn/duong-gom-dai-lo-thang-long-ngap-sau-xe-may-re-song-qua-bien-nuoc-2557388.html",
+   "s": "VietnamNet",
+   "d": "2026-09-21",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/21/duong-gom-dai-lo-thang-long-ngap-sau-xe-may-re-song-qua-bien-nuoc-2449.gif?width=0&s=1IqFiggcXdyJktGyey5rvg",
+   "c": "hanoi",
+   "fp": [
+    "Đại lộ Thăng Long — hầm chui số 3, 5, 6",
+    "Đại lộ Thăng Long — nút giao An Khánh, km 9+656",
+    "Đại lộ Thăng Long × Lê Trọng Tấn"
+   ],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Đại lộ Thăng Long ngập sâu, cấm phương tiện qua đoạn đường gom dài 2km",
+   "u": "https://vietnamnet.vn/dai-lo-thang-long-ngap-sau-cam-phuong-tien-qua-doan-duong-gom-dai-2km-2557268.html",
+   "s": "VietnamNet",
+   "d": "2026-09-21",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/21/dai-lo-thang-long-ngap-sau-cam-phuong-tien-qua-doan-duong-gom-dai-2km-1295.jpg?width=0&s=qPIi39wbUUcFNTlI2cBPIw",
+   "c": "hanoi",
+   "fp": [
+    "Đại lộ Thăng Long — hầm chui số 3, 5, 6",
+    "Đại lộ Thăng Long — nút giao An Khánh, km 9+656",
+    "Đại lộ Thăng Long × Lê Trọng Tấn"
+   ],
+   "z": [
+    "Hòa Lạc",
+    "Hạ Bằng"
+   ],
+   "canh": 1
+  },
   {
    "t": "Dự báo TP.HCM mưa 4 ngày liên tiếp, có nơi vượt 150 mm",
    "u": "https://lifestyle.zingnews.vn/du-bao-tphcm-mua-4-ngay-lien-tiep-co-noi-vuot-150-mm-post1684515.html",
@@ -40,7 +163,11 @@ window.TIN_NGAP = {
    "d": "2026-09-20",
    "img": "https://icdn.dantri.com.vn/2026/09/20/hocsinhluhailong00013-1789869150581.jpg?watermark=v1",
    "c": "hanoi",
-   "fp": [],
+   "fp": [
+    "Đại lộ Thăng Long — hầm chui số 3, 5, 6",
+    "Đại lộ Thăng Long — nút giao An Khánh, km 9+656",
+    "Đại lộ Thăng Long × Lê Trọng Tấn"
+   ],
    "z": [
     "Xuân Mai"
    ],
@@ -56,54 +183,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [],
    "canh": 1
-  },
-  {
-   "t": "Vụ nam sinh viên ngã xuống cống tử vong: Chủ tịch Hà Nội chỉ đạo làm rõ trách nhiệm",
-   "u": "https://dantri.com.vn/thoi-su/vu-nam-sinh-vien-nga-xuong-cong-tu-vong-chu-tich-ha-noi-chi-dao-lam-ro-trach-nhiem-20260920095102833.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-20",
-   "img": "https://icdn.dantri.com.vn/2026/09/20/nam-sinh-tu-vong-1789871755006.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Vụ nam sinh ngã xuống cống tử vong: Chủ tịch Hà Nội chỉ đạo làm rõ trách nhiệm",
-   "u": "https://vtcnews.vn/vu-nam-sinh-nga-xuong-cong-tu-vong-chu-tich-ha-noi-chi-dao-lam-ro-trach-nhiem-ar1040777.html",
-   "s": "VTC News",
-   "d": "2026-09-20",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/20/20260918-130632-10045782.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 0
-  },
-  {
-   "t": "Chủ tịch Hà Nội yêu cầu làm rõ trách nhiệm tổ chức, cá nhân vụ nam sinh ngã xuống cống tử vong",
-   "u": "https://tuoitre.vn/chu-tich-ha-noi-yeu-cau-lam-ro-trach-nhiem-to-chuc-ca-nhan-vu-nam-sinh-nga-xuong-cong-tu-vong-100260920092020717.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-20",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/20/ehgrtb-17898706187601819094113-320-0-1920-2560-crop-17898708495142098001749.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [
-    "Đông Ngạc"
-   ],
-   "canh": 0
-  },
-  {
-   "t": "Chủ tịch Hà Nội yêu cầu làm rõ trách nhiệm liên quan vụ nam sinh ngã xuống cống tử vong",
-   "u": "https://vietnamnet.vn/chu-tich-ha-noi-yeu-cau-lam-ro-trach-nhiem-vu-nam-sinh-nga-xuong-cong-tu-vong-2557010.html",
-   "s": "VietnamNet",
-   "d": "2026-09-20",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/20/yeu-cau-lam-ro-trach-nhiem-vu-nam-sinh-nga-xuong-cong-tu-vong-o-ha-noi-354.jpg?width=0&s=XsNBx5JctB0p60pJ_NRc-A",
-   "c": "hanoi",
-   "fp": [],
-   "z": [
-    "Đông Ngạc"
-   ],
-   "canh": 0
   },
   {
    "t": "Mưa tầm tã ngày đêm, cảnh báo nguy cơ ngập lụt cục bộ tại Hà Tĩnh",
@@ -1986,17 +2065,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "TPHCM và Nam Bộ tiếp tục mưa dông, cảnh báo triều cường",
-   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-dong-canh-bao-trieu-cuong-20260831190024200.htm",
-   "s": "Dân Trí",
-   "d": "2026-08-31",
-   "img": "https://icdn.dantri.com.vn/2026/05/08/9cdf96ec-a7c5-4562-97f0-f8a52190fa60-cropped-1778250605434.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Mưa bất chợt, nhiều tuyến phố Hà Nội bị ngập nước",
    "u": "https://vietnamnet.vn/mua-bat-chot-nhieu-tuyen-pho-ha-noi-bi-ngap-nuoc-2549876.html",
    "s": "VietnamNet",
@@ -2024,52 +2092,6 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-08-24",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/8/24/ha-noi-mua-lon-nhieu-diem-den-khong-con-ngap-keo-dai-1198.jpg?width=0&s=mMx3MptdQbOPjBWY0JtzWg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội có 220 điểm ngập, hệ thống thoát nước mới đáp ứng 20%",
-   "u": "https://vietnamnet.vn/ha-noi-co-220-diem-ngap-vi-sao-chong-ngap-van-la-diem-nghen-lon-2547979.html",
-   "s": "VietnamNet",
-   "d": "2026-08-23",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/8/23/ha-noi-co-220-diem-ngap-he-thong-thoat-nuoc-moi-dap-ung-20-372.jpg?width=0&s=0sBTsIgIaBUGF5P6iBL76A",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội từng bước áp dụng mô hình 'thành phố bọt biển' chống ngập",
-   "u": "https://vietnamnet.vn/ha-noi-tung-buoc-ap-dung-mo-hinh-thanh-pho-bot-bien-2541010.html",
-   "s": "VietnamNet",
-   "d": "2026-08-11",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/7/31/ha-noi-tung-buoc-ap-dung-mo-hinh-thanh-pho-bot-bien-chong-ngap-2210.jpg?width=0&s=w5ZfEgb7_1aq5a0hAXcr3A",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa xối xả cuối giờ chiều ở Hà Nội, nhiều xe chết máy giữa đường ngập sâu",
-   "u": "https://vietnamnet.vn/mua-xoi-xa-cuoi-gio-chieu-o-ha-noi-nhieu-xe-chet-may-giua-duong-ngap-sau-2541009.html",
-   "s": "VietnamNet",
-   "d": "2026-08-11",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/7/31/mua-xoi-xa-cuoi-gio-chieu-nhieu-xe-chet-may-giua-pho-ha-noi-2166.jpg?width=0&s=LB5oNjzSse4YpQAQKlwisg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [
-    "Long Biên"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Chủ tịch Hà Nội yêu cầu chấm dứt tình trạng bị động trong chống úng ngập",
-   "u": "https://vietnamnet.vn/chu-tich-ha-noi-yeu-cau-cham-dut-tinh-trang-bi-dong-trong-chong-ung-ngap-2541935.html",
-   "s": "VietnamNet",
-   "d": "2026-08-04",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/8/4/chu-tich-ha-noi-yeu-cau-cham-dut-tinh-trang-bi-dong-trong-chong-ung-ngap-1403.jpg?width=0&s=WHuYcFgCu3DtFAuXZUbtEA",
    "c": "hanoi",
    "fp": [],
    "z": [],
