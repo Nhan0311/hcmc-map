@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-21T16:56:23.057Z",
+ "capNhat": "2026-09-22T01:32:43.026Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -126,6 +126,45 @@ window.TIN_NGAP = {
     "Hòa Lạc",
     "Hạ Bằng"
    ],
+   "canh": 1
+  },
+  {
+   "t": "Sau 5 ngày, ‘rốn lũ’ Hà Nội vẫn mênh mông nước",
+   "u": "https://tienphong.vn/sau-5-ngay-ron-lu-ha-noi-van-menh-mong-nuoc-post1878322.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-21",
+   "img": "https://cdn.tienphong.vn/images/59odGif1rHxTaSw3XAYsUiYl99TzjvLUSbT9-e3kulJ353hsrTRM_dyZT_F4zRlS/tp-c_ddt-1947.jpg.avif",
+   "c": "hanoi",
+   "fp": [
+    "Đại lộ Thăng Long — hầm chui số 3, 5, 6",
+    "Đại lộ Thăng Long — nút giao An Khánh, km 9+656",
+    "Đại lộ Thăng Long × Lê Trọng Tấn"
+   ],
+   "z": [
+    "Trần Phú"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Lũ rút chậm, 3 trường ở Thanh Hóa ngập sâu, hơn 1.800 học sinh nghỉ học",
+   "u": "https://tienphong.vn/lu-rut-cham-3-truong-o-thanh-hoa-ngap-sau-hon-1800-hoc-sinh-nghi-hoc-post1878355.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-21",
+   "img": "https://cdn.tienphong.vn/images/nJo0ky-Hz6Ps363LGLSGaq4Jld63_96L72dC17OfstzupT3QjJVPcoPQkv8wOGIn/tp_1.jpg.avif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội: Ở nhà gần 20 tỷ đồng/căn, cư dân vỡ mộng vì bì bõm lội nước",
+   "u": "https://dantri.com.vn/doi-song/ha-noi-o-nha-gan-20-ty-dongcan-cu-dan-vo-mong-vi-bi-bom-loi-nuoc-20260921191648087.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-21",
+   "img": "https://icdn.dantri.com.vn/2026/09/21/mey4501-edited-cropped-1789993412168.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
    "canh": 1
   },
   {
@@ -2060,39 +2099,6 @@ window.TIN_NGAP = {
    "d": "2026-09-02",
    "img": "https://icdn.dantri.com.vn/2026/06/17/8f1e4a5e-a895-43c3-ab0a-c75cecae22621201a-1781700001436.jpg",
    "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa bất chợt, nhiều tuyến phố Hà Nội bị ngập nước",
-   "u": "https://vietnamnet.vn/mua-bat-chot-nhieu-tuyen-pho-ha-noi-bi-ngap-nuoc-2549876.html",
-   "s": "VietnamNet",
-   "d": "2026-08-27",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/8/27/mua-bat-chot-nhieu-tuyen-pho-ha-noi-bi-ngap-nuoc-2978.gif?width=0&s=dMKchuOh7-137mZ4CQOsSA",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội tính 'xoá' ngập úng bằng hồ điều hòa, bể ngầm trữ nước mưa",
-   "u": "https://vietnamnet.vn/ha-noi-tinh-xoa-ngap-ung-bang-ho-dieu-hoa-be-ngam-tru-nuoc-mua-2548743.html",
-   "s": "VietnamNet",
-   "d": "2026-08-24",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/8/24/ha-noi-tinh-xoa-ngap-ung-bang-ho-dieu-hoa-be-ngam-tru-nuoc-mua-2949.jpg?width=0&s=CqLYPsbK3pV3sb5QwzaSyw",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội mưa lớn, nhiều ‘điểm đen’ không còn ngập kéo dài",
-   "u": "https://vietnamnet.vn/ha-noi-mua-lon-nhieu-diem-den-khong-con-ngap-keo-dai-2548494.html",
-   "s": "VietnamNet",
-   "d": "2026-08-24",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/8/24/ha-noi-mua-lon-nhieu-diem-den-khong-con-ngap-keo-dai-1198.jpg?width=0&s=mMx3MptdQbOPjBWY0JtzWg",
-   "c": "hanoi",
    "fp": [],
    "z": [],
    "canh": 1
