@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-23T01:22:20.396Z",
+ "capNhat": "2026-09-23T15:23:29.169Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -25,6 +25,228 @@ window.TIN_NGAP = {
    "d": "2026-09-23",
    "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/23/du-bao-thoi-tiet-tphcm-thumb-06444886.jpg",
    "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Trung tâm TPHCM ngập sâu",
+   "u": "https://tienphong.vn/trung-tam-tphcm-ngap-sau-post1878954.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-23",
+   "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshkBM-mzfN4D2c8zOI8Xazgr_5cyn98X07JtOVcgiDW188Dy3M5xJBjRiZPUTvmwUEfhqmsfPZGyAnuN2AoyQV11LREaAiEJx9BLDhUL21rGJOV1juY5DUjD4T_d0JbwVPw4P8BdBXSdI-jOnu5oyjh4/tp-c_1790154467434-5346627881428964615-5346627881428964615-d28334dad8d22110e50e76b04fe3a880.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn, nhiều tuyến đường trung tâm TPHCM ngập sâu",
+   "u": "https://tienphong.vn/mua-lon-nhieu-tuyen-duong-trung-tam-tphcm-ngap-sau-post1878961.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-23",
+   "img": "https://cdn.tienphong.vn/images/AHsu0WetIg3QIF4V2I7ZaPGIj1__Ds79JCYfrkMNVrklplb0y7jtSVzUHQXExVb6sZD0-ESjOvSnNFsZrDSaMgJfkBLTtVcZJJIWrwqYAP4/2aobor0bumtc935fwvc9ushe5plv7pln5p3jjvlc.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn, phố Tây Bùi Viện và nhiều tuyến đường ở TPHCM mênh mông nước",
+   "u": "https://dantri.com.vn/dt360/mua-lon-pho-tay-bui-vien-va-nhieu-tuyen-duong-o-tphcm-menh-mong-nuoc-20260923163558990.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-23",
+   "img": "https://icdn.dantri.com.vn/2026/09/23/bui-vien-1790156049689.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Phố Tây Bùi Viện \"chìm\" trong biển nước sau mưa lớn ở TPHCM",
+   "u": "https://dantri.com.vn/thoi-su/pho-tay-bui-vien-chim-trong-bien-nuoc-sau-mua-lon-o-tphcm-20260923150743916.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-23",
+   "img": "https://icdn.dantri.com.vn/2026/09/23/17901511820728103881764191774150810388176419177415025b910bca88bfca851365dea4e77e004-1790151387519.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Trung tâm TP HCM ngập sâu sau mưa lớn",
+   "u": "https://vnexpress.net/trung-tam-tp-hcm-ngap-sau-sau-mua-lon-5123776.html",
+   "s": "VnExpress",
+   "d": "2026-09-23",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/23/wm1-1790155663874cb654a58ac1045a6bd02b382efa0-1790155715.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=Enm-ZPqCbNHNGn2K3tThVw",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP HCM tiếp tục mưa lớn giữa đợt triều cường",
+   "u": "https://vnexpress.net/tp-hcm-tiep-tuc-mua-lon-giua-dot-trieu-cuong-5123665.html",
+   "s": "VnExpress",
+   "d": "2026-09-23",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/23/2aobor0pd5vswjt37wsaaknfnj5cfo-2078-2467-1790135372.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=4Tiyt357eLPNkWQGJsHB_Q",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Bản tin thời sự ngày 23-9: Mưa lớn, nhiều tuyến đường TPHCM ngập nặng",
+   "u": "https://www.sggp.org.vn/ban-tin-thoi-su-ngay-23-9-mua-lon-nhieu-tuyen-duong-tphcm-ngap-nang-post873069.html",
+   "s": "SGGP",
+   "d": "2026-09-23",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/drkxraekxq/2026_09_23/mua-lon-nhieu-tuyen-duong-tphcm-ngap-nang-5283-775.png.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn, nhiều tuyến đường TPHCM ngập nặng",
+   "u": "https://www.sggp.org.vn/mua-lon-nhieu-tuyen-duong-tphcm-ngap-nang-post873055.html",
+   "s": "SGGP",
+   "d": "2026-09-23",
+   "img": "https://image.sggp.org.vn/Uploaded/2026/drkxraekxq/2026_09_23/nhieu-tuyen-duong-tphcm-ngap-nang-8246-1671.gif",
+   "c": "hcmc",
+   "fp": [
+    "Võ Văn Kiệt × Hồ Học Lãm"
+   ],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn gây thiệt hại nặng tại phường Tân Hải",
+   "u": "https://www.sggp.org.vn/mua-lon-gay-thiet-hai-nang-tai-phuong-tan-hai-post873053.html",
+   "s": "SGGP",
+   "d": "2026-09-23",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/tpuoaht/2026_09_23/tan-hai-sat-lo-650-2929.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Quốc lộ 28, đèo Prenn lại sạt lở sau các đợt mưa lớn",
+   "u": "https://www.sggp.org.vn/quoc-lo-28-deo-prenn-lai-sat-lo-sau-cac-dot-mua-lon-post873018.html",
+   "s": "SGGP",
+   "d": "2026-09-23",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/churplu/2026_09_23/img-2921-copy-1929-4133.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Giải mã 'rốn ngập' ở khu vực đường Lý Tế Xuyên - Linh Đông, TP.HCM",
+   "u": "https://tuoitre.vn/giai-ma-ron-ngap-o-khu-vuc-duong-ly-te-xuyen-linh-dong-tphcm-100260923145424925.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-23",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/23/gifnew1-1790147367951557880909-9-29-291-480-crop-17901510523361100927714.gif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nước chưa kịp rút, mưa lại đổ xuống, đường Lương Định Của, TP.HCM tiếp tục ngập",
+   "u": "https://tuoitre.vn/nuoc-chua-kip-rut-mua-lai-do-xuong-duong-luong-dinh-cua-tphcm-tiep-tuc-ngap-100260923140107314.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-23",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/23/mua-lu-17901562652401347422574-31-274-1460-2560-crop-17901563234941963769635.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Trung tâm TP HCM ngập sâu giữa trưa",
+   "u": "https://vnexpress.net/trung-tam-tp-hcm-ngap-sau-giua-trua-5123776.html",
+   "s": "VnExpress",
+   "d": "2026-09-23",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/23/2aobor0bvuadbiyyaxj6iv5bmelc0kyecydlbfvk42-1790152196.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=QSjS1Kyz4jbpMa2MIIu5ow",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nhiều tuyến đường trung tâm TP.HCM ngập sâu sau mưa lớn",
+   "u": "https://vtcnews.vn/nhieu-tuyen-duong-trung-tam-tp-hcm-ngap-sau-sau-mua-lon-ar1041443.html",
+   "s": "VTC News",
+   "d": "2026-09-23",
+   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/23/mua-3-ngay-lien-tuc-duong-trung-tam-tp-hcm-ngap-sau7-17472801.JPG",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Thủy điện Trị An xả lũ, v&ugrave;ng hạ du Đồng Nai v&agrave; TP.HCM liệu c&oacute; bị ngập?",
+   "u": "https://thanhnien.vn/thuy-dien-tri-an-xa-lu-vung-ha-du-dong-nai-va-tphcm-lieu-co-bi-ngap-185260923124434145.htm",
+   "s": "Thanh Niên",
+   "d": "2026-09-23",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/9/23/tnw-dji0789-17901426939031278850673-1790143113894122797311-0-237-1440-2541-crop-17901442042601702376498.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM: Cảnh đường 'ngập như sông', nghìn xe nhích từng mét qua 'nút thắt cổ chai'",
+   "u": "https://vietnamnet.vn/tphcm-duong-ngap-nhu-song-nghin-xe-nhich-tung-met-qua-nut-that-co-chai-2558079.html",
+   "s": "VietnamNet",
+   "d": "2026-09-23",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/23/tphcm-canh-duong-ngap-nhu-song-nghin-xe-nhich-tung-met-qua-nut-that-co-chai-2437.gif?width=0&s=RmktEmSg8U15_xSXrUPXOA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Phó Bí thư Thanh Hóa chỉ đạo xử lý việc trường ngập, gần 2.000 học sinh phải nghỉ học",
+   "u": "https://tienphong.vn/pho-bi-thu-thanh-hoa-chi-dao-xu-ly-viec-truong-ngap-gan-2000-hoc-sinh-phai-nghi-hoc-post1879020.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-23",
+   "img": "https://cdn.tienphong.vn/images/nJo0ky-Hz6Ps363LGLSGaq4Jld63_96L72dC17Ofstx0vIyik4S775eI_tDqEiSnkcOVqqlJPlza80nK09ShXg/1000032372.jpg.avif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Chủ tịch Hà Nội: Ngập úng ở phía tây Hà Nội không khắc phục thì khó xây công trình ngầm, metro",
+   "u": "https://tuoitre.vn/chu-tich-ha-noi-ngap-ung-o-phia-tay-ha-noi-khong-khac-phuc-thi-kho-xay-cong-trinh-ngam-metro-100260923164507525.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-23",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/23/grb-179015653334196893486-72-47-1099-1690-crop-17901567486991246369605-70-422-713-1452-crop-1790158269616977997138.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội bàn giải pháp căn cơ chống ngập khu vực phía tây thành phố",
+   "u": "https://baoxaydung.vn/ha-noi-ban-giai-phap-can-co-chong-ngap-khu-vuc-phia-tay-thanh-pho-192260923135736873.htm",
+   "s": "Báo Giao thông",
+   "d": "2026-09-23",
+   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/9/23/dai-lo-thang-long-17901462413351390833620-0-126-941-1632-crop-17901462491341866206552.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Vì sao khu vực phía Tây Hà Nội liên tục ngập sâu sau mưa lớn?",
+   "u": "https://lifestyle.zingnews.vn/vi-sao-khu-vuc-phia-tay-ha-noi-lien-tuc-ngap-sau-sau-mua-lon-post1684006.html",
+   "s": "Znews",
+   "d": "2026-09-23",
+   "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_09_15/ha_noi_ngap3.jpg",
+   "c": "hanoi",
    "fp": [],
    "z": [],
    "canh": 1
@@ -1420,28 +1642,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Miền Bắc tiếp tục mưa lớn, Hà Nội có nơi dự báo mưa trên 250mm",
-   "u": "https://tienphong.vn/mien-bac-tiep-tuc-mua-lon-ha-noi-co-noi-du-bao-mua-tren-250mm-post1876686.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-15",
-   "img": "https://cdn.tienphong.vn/images/Cnj4WjvRBHYQoCoEhCPn8osWRbFryILayEI1B6qrXKd1K2m4YqAwxPkfThEyGHDj8Mp-qVYE8YAbWQhCfn8A_g/mua-lon.jpg.avif",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Dự báo thời tiết ngày 16/9: Hà Nội và 5 tỉnh tiếp tục hứng mưa rất lớn",
-   "u": "https://vtcnews.vn/du-bao-thoi-tiet-ngay-16-9-ha-noi-va-5-tinh-tiep-tuc-hung-mua-rat-lon-ar1039936.html",
-   "s": "VTC News",
-   "d": "2026-09-15",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/08/02/du-bao-thoi-tiet-3-8-22052232.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Cống cao tốc đặt lệch dòng chảy khiến hơn 300 hộ dân ở Đồng Nai ngập sâu",
    "u": "https://dantri.com.vn/thoi-su/cong-cao-toc-dat-lech-dong-chay-khien-hon-300-ho-dan-o-dong-nai-ngap-sau-20260914183654709.htm",
    "s": "Dân Trí",
@@ -1583,28 +1783,6 @@ window.TIN_NGAP = {
    "d": "2026-09-14",
    "img": "https://photo.znews.vn/w660/Uploaded/anqyy/2026_09_13/Mua_SG_12_Znews.jpg",
    "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Miền Bắc tiếp diễn mưa lớn dữ dội, Hà Nội có nơi vượt 250mm đến đêm 15/9",
-   "u": "https://vietnamnet.vn/mien-bac-tiep-dien-mua-lon-du-doi-ha-noi-co-noi-vuot-250mm-den-dem-15-9-2547645.html",
-   "s": "VietnamNet",
-   "d": "2026-09-14",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/14/mien-bac-tiep-dien-mua-lon-du-doi-ha-noi-co-noi-vuot-400mm-1940.jpg?width=0&s=ZmVT905s7FvFJv9u3Gp2BA",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội mưa rất to, miền Bắc nhiều nơi nguy cơ ngập lụt",
-   "u": "https://dantri.com.vn/thoi-tiet/ha-noi-mua-rat-to-mien-bac-nhieu-noi-nguy-co-ngap-lut-20260914204901455.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-14",
-   "img": "https://icdn.dantri.com.vn/2026/09/14/dsc0038-1789393484347.jpg",
-   "c": "hanoi",
    "fp": [],
    "z": [],
    "canh": 1
@@ -1938,188 +2116,6 @@ window.TIN_NGAP = {
    "s": "VTC News",
    "d": "2026-09-11",
    "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/12/thoi-tiet-06375620.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nguyên nhân hầm chui An Phú ngập nặng sau mưa lớn",
-   "u": "https://lifestyle.zingnews.vn/nguyen-nhan-ham-chui-an-phu-ngap-nang-sau-mua-lon-post1682624.html",
-   "s": "Znews",
-   "d": "2026-09-11",
-   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_11/Ngap_nuoc_05_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM đặt mục tiêu xóa sổ 3 điểm ngập nặng",
-   "u": "https://tienphong.vn/tphcm-dat-muc-tieu-xoa-so-3-diem-ngap-nang-post1875333.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-10",
-   "img": "https://cdn.tienphong.vn/images/AHsu0WetIg3QIF4V2I7ZaK8Ky_epD1C-xZvBiVXIECW4GC8PR-RJRaXNO4GIW7owFXylsq1l-Cw1oVpH95sUM_nguDL8jcc-jXgO5QVCiS4/2aoboqxfdds2ws8622muh6gk3ydcsdkude2o5ek4.jpg.avif",
-   "c": "hcmc",
-   "fp": [
-    "Phan Văn Hớn"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM mưa 'tối trời', đường biến thành sông, người dân vật vã về nhà giờ tan tầm",
-   "u": "https://tienphong.vn/tphcm-mua-toi-troi-duong-bien-thanh-song-nguoi-dan-vat-va-ve-nha-gio-tan-tam-post1875328.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-10",
-   "img": "https://cdn.tienphong.vn/images/AHsu0WetIg3QIF4V2I7ZaK8Ky_epD1C-xZvBiVXIECWqV5IwxhzMBYsMbfMp0ejV_dY5x5sLjw9jq--b8yplXkR1B6v3cUOnAMuwp86XR3E/2aoboqxfdcphtnuoxuvbskb5thzmgintv4ogjndq.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Khu vực gần chợ Thủ Đức ngập sâu, xe chết máy hàng loạt",
-   "u": "https://dantri.com.vn/dt360/khu-vuc-gan-cho-thu-duc-ngap-sau-xe-chet-may-hang-loat-20260910200931901.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-10",
-   "img": "https://icdn.dantri.com.vn/2026/09/10/ezgif-53eeb3b7c468feea-1789045187121.gif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "Thu Duc Old"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "“Phố bỗng là dòng sông uốn quanh” sau hơn 2 giờ mưa lớn ở TPHCM",
-   "u": "https://dantri.com.vn/thoi-su/pho-bong-la-dong-song-uon-quanh-sau-hon-2-gio-mua-lon-o-tphcm-20260910195512371.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-10",
-   "img": "https://icdn.dantri.com.vn/2026/09/10/ngap-ungvankiem-tphcmnamanha67i5549-1789043618524.jpg?watermark=true",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nhiều đường TP HCM ngập sâu, giao thông rối loạn trong mưa lớn",
-   "u": "https://vnexpress.net/nhieu-duong-tp-hcm-ngap-sau-giao-thong-roi-loan-trong-mua-lon-5118934.html",
-   "s": "VnExpress",
-   "d": "2026-09-10",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/10/top2-1789046601.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=mpnWv6acu6fr3f6dCN76Hw",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Người dân TP HCM chật vật lội nước, đẩy xe giờ tan tầm",
-   "u": "https://vnexpress.net/nguoi-dan-tp-hcm-chat-vat-loi-nuoc-day-xe-gio-tan-tam-5118944.html",
-   "s": "VnExpress",
-   "d": "2026-09-10",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/10/Sequence041-1789044123-8351-1789044126.gif?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=T-Zmd7dMK4natBxdFOJIQQ&amp;t=image",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn, nhiều tuyến đường TP.HCM ngập nặng, người dân chật vật về nhà",
-   "u": "https://tuoitre.vn/mua-lon-nhieu-tuyen-duong-tphcm-ngap-nang-nguoi-dan-chat-vat-ve-nha-100260910184001121.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-10",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/10/1789039641623-1831893610630190924-1831893610630190924-fd5117729ed17851ba463a5f94117360-1789040189592927285263-126-0-1376-2000-crop-17890401971071776912212.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM xử lý dứt điểm 3 điểm ngập nặng nào trong 50 điểm ngập năm 2026?",
-   "u": "https://tuoitre.vn/tphcm-xu-ly-dut-diem-3-diem-ngap-nang-nao-trong-50-diem-ngap-nam-2026-100260910174159773.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-10",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/10/img20251028104559-17890364166011418158074-328-355-1381-2040-crop-17890368909281237200479.jpg",
-   "c": "hcmc",
-   "fp": [
-    "Phan Văn Hớn"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM có mưa lớn vào giờ tan tầm, nhiều người vất vả trên đường về nhà",
-   "u": "https://www.sggp.org.vn/tphcm-co-mua-lon-vao-gio-tan-tam-nhieu-nguoi-vat-va-tren-duong-ve-nha-post871075.html",
-   "s": "SGGP",
-   "d": "2026-09-10",
-   "img": "https://image.sggp.org.vn/Uploaded/2026/drkxraekxq/2026_09_10/tphcm-co-mua-lon-vao-gio-tan-tam-nhieu-nguoi-vat-va-tren-duong-ve-nha-1515-8605.gif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM: Mưa lớn gây ngập cục bộ, nhiều người vất vả trên đường về nhà",
-   "u": "https://www.sggp.org.vn/tphcm-mua-lon-gay-ngap-cuc-bo-nhieu-nguoi-vat-va-tren-duong-ve-nha-post871074.html",
-   "s": "SGGP",
-   "d": "2026-09-10",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/duxredwsxr/2026_09_10/avatar-of-video-1821608-2047-3868.png.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM: Mưa lớn, nhiều tuyến đường bị ngập sâu",
-   "u": "https://www.sggp.org.vn/tphcm-mua-lon-nhieu-tuyen-duong-bi-ngap-sau-post871071.html",
-   "s": "SGGP",
-   "d": "2026-09-10",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/dureixrxkw/2026_09_10/mua-lon-nhieu-tuyen-duong-bien-thanh-song-6-4162-7172.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Cảnh báo đợt mưa lớn kéo dài nhiều ngày ở Trung bộ",
-   "u": "https://www.sggp.org.vn/canh-bao-dot-mua-lon-keo-dai-nhieu-ngay-o-trung-bo-post871049.html",
-   "s": "SGGP",
-   "d": "2026-09-10",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/sengtm/2026_09_10/mua-4785-8657.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM lên nhiều phương án thoát nước, chống ngập trong mùa mưa",
-   "u": "https://www.sggp.org.vn/tphcm-len-nhieu-phuong-an-thoat-nuoc-chong-ngap-trong-mua-mua-post871042.html",
-   "s": "SGGP",
-   "d": "2026-09-10",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/kiubcgmb/2026_09_10/img-1113-7628-4545.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Dự báo: Nam bộ có mưa dông, cục bộ có mưa rất to trên 100mm",
-   "u": "https://www.sggp.org.vn/du-bao-nam-bo-co-mua-dong-cuc-bo-co-mua-rat-to-tren-100mm-post871044.html",
-   "s": "SGGP",
-   "d": "2026-09-10",
-   "img": "https://image.sggp.org.vn/Uploaded/2026/drkxraekxq/2026_09_10/nam-bo-co-mua-dong-cuc-bo-co-mua-rat-to-tren-100mm-1277-5050.gif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM ưu ti&ecirc;n x&oacute;a 3 điểm ngập nặng, 47 điểm c&ograve;n lại ra sao?",
-   "u": "https://thanhnien.vn/tphcm-uu-tien-xoa-3-diem-ngap-nang-47-diem-con-lai-ra-sao-185260910183201705.htm",
-   "s": "Thanh Niên",
-   "d": "2026-09-10",
-   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/9/10/edit-diem-ngap-nang-tphcm-1789039691051122519369-0-0-1206-1930-crop-1789039862116890206714.jpeg",
    "c": "hcmc",
    "fp": [],
    "z": [],
