@@ -2,9 +2,42 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-24T01:16:40.198Z",
+ "capNhat": "2026-09-24T15:46:31.284Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Huy động máy bơm nhiều giờ chống ngập khu dân cư ở xã Vĩnh Lộc, TP.HCM",
+   "u": "https://tuoitre.vn/huy-dong-may-bom-nhieu-gio-chong-ngap-khu-dan-cu-o-xa-vinh-loc-tphcm-100260924182030327.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-24",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/24/ngap-5-1790243576640366842731-0-0-1480-2367-crop-1790243627915783267221.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Suối Linh Tây thay đổi thế nào để giảm ngập khu vực Linh Đông - Lý Tế Xuyên?",
+   "u": "https://tuoitre.vn/suoi-linh-tay-thay-doi-the-nao-de-giam-ngap-khu-vuc-linh-dong-ly-te-xuyen-100260924140337652.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-24",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/24/screenshot-2026-09-24-125344-17902319948471211965317-167-58-1043-1460-crop-17902322644262080888631.png",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM duyệt dự &aacute;n chống ngập gần 7.700 tỉ đồng khu vực ph&iacute;a t&acirc;y",
+   "u": "https://thanhnien.vn/tphcm-duyet-du-an-chong-ngap-gan-7700-ti-dong-khu-vuc-phia-tay-185260924123732928.htm",
+   "s": "Thanh Niên",
+   "d": "2026-09-24",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/9/24/tnw-nt01782-1761638146023368546073-17902278993031160157694-0-0-1600-2560-crop-17902279744361993926902-17902280006181654385758.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Hôm nay 23-9, dự báo Nam bộ mưa lớn, TPHCM đề phòng ngập",
    "u": "https://www.sggp.org.vn/hom-nay-23-9-du-bao-nam-bo-mua-lon-tphcm-de-phong-ngap-post872922.html",
@@ -2083,39 +2116,6 @@ window.TIN_NGAP = {
    "s": "Znews",
    "d": "2026-09-11",
    "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_11/Ngap_nuoc_07_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Cảnh nút giao An Phú hỗn loạn vì hầm chui ngập sâu, nghìn ô tô nối đuôi ở cửa ngõ TPHCM",
-   "u": "https://vietnamnet.vn/nut-giao-an-phu-roi-loan-vi-ham-chui-ngap-sau-o-to-noi-duoi-o-cua-ngo-tphcm-2554115.html",
-   "s": "VietnamNet",
-   "d": "2026-09-11",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/11/canh-nut-giao-an-phu-roi-loan-vi-ham-chui-ngap-sau-nghin-o-to-noi-duoi-o-cua-ngo-tphcm-1000.jpg?width=0&s=QiIEBMIcND7X_A-tlneWIw",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM sau trận mưa lớn hiếm gặp: Ngập cả đêm, người dân đeo ủng bì bõm dọn nhà",
-   "u": "https://vietnamnet.vn/tphcm-sau-tran-mua-lon-hiem-gap-ngap-ca-dem-nguoi-dan-deo-ung-bi-bom-don-nha-2554307.html",
-   "s": "VietnamNet",
-   "d": "2026-09-11",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/11/sau-mot-dem-ngap-nguoi-dan-tphcm-deo-ung-bi-bom-don-nha-2301.jpg?width=0&s=INfHHRJ2bHoDK4VZc3m0aA",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường tại TPHCM và Nam Bộ đạt đỉnh, khả năng vượt báo động 3",
-   "u": "https://dantri.com.vn/thoi-tiet/trieu-cuong-tai-tphcm-va-nam-bo-dat-dinh-kha-nang-vuot-bao-dong-3-20260911190947484.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-11",
-   "img": "https://icdn.dantri.com.vn/2026/09/11/mua111-1789128522105.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
