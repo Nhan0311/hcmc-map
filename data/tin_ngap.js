@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-23T15:23:29.169Z",
+ "capNhat": "2026-09-24T01:16:40.198Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -202,6 +202,17 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-09-23",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/23/tphcm-canh-duong-ngap-nhu-song-nghin-xe-nhich-tung-met-qua-nut-that-co-chai-2437.gif?width=0&s=RmktEmSg8U15_xSXrUPXOA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ tiếp tục mưa lớn, triều cường có thể vượt báo động 3",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-lon-trieu-cuong-co-the-vuot-bao-dong-3-20260923211952863.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-23",
+   "img": "https://icdn.dantri.com.vn/2026/09/22/1m2-1790073315012.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -2105,17 +2116,6 @@ window.TIN_NGAP = {
    "s": "Dân Trí",
    "d": "2026-09-11",
    "img": "https://icdn.dantri.com.vn/2026/09/11/mua111-1789128522105.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Dự báo thời tiết TP.HCM hôm nay 12/9: Tiếp tục mưa to, đề phòng ngập úng",
-   "u": "https://vtcnews.vn/du-bao-thoi-tiet-tp-hcm-hom-nay-12-9-tiep-tuc-mua-to-de-phong-ngap-ung-ar1039318.html",
-   "s": "VTC News",
-   "d": "2026-09-11",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/12/thoi-tiet-06375620.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
