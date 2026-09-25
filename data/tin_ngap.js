@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-24T15:46:31.284Z",
+ "capNhat": "2026-09-25T01:20:37.953Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -33,6 +33,17 @@ window.TIN_NGAP = {
    "s": "Thanh Niên",
    "d": "2026-09-24",
    "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/9/24/tnw-nt01782-1761638146023368546073-17902278993031160157694-0-0-1600-2560-crop-17902279744361993926902-17902280006181654385758.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Thời tiết TPHCM ngày 25/9: Mưa dông diện rộng, đề phòng ngập úng",
+   "u": "https://dantri.com.vn/thoi-tiet/thoi-tiet-tphcm-ngay-259-mua-dong-dien-rong-de-phong-ngap-ung-20260924210732881.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-24",
+   "img": "https://icdn.dantri.com.vn/2026/09/23/ng1-1790152217437.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -2012,6 +2023,17 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
+   "t": "TPHCM sau trận mưa lớn hiếm gặp: Ngập cả đêm, người dân đeo ủng bì bõm dọn nhà",
+   "u": "https://vietnamnet.vn/tphcm-sau-tran-mua-lon-hiem-gap-ngap-ca-dem-nguoi-dan-deo-ung-bi-bom-don-nha-2554307.html",
+   "s": "VietnamNet",
+   "d": "2026-09-12",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/11/sau-mot-dem-ngap-nguoi-dan-tphcm-deo-ung-bi-bom-don-nha-2301.jpg?width=0&s=INfHHRJ2bHoDK4VZc3m0aA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
    "t": "TPHCM: Lý do hầm chui nút giao An Phú ngập sâu",
    "u": "https://tienphong.vn/tphcm-ly-do-ham-chui-nut-giao-an-phu-ngap-sau-post1875473.tpo",
    "s": "Tiền Phong",
@@ -2094,28 +2116,6 @@ window.TIN_NGAP = {
    "s": "Tuổi Trẻ",
    "d": "2026-09-11",
    "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/11/2aoboqxprxj9iwc34bfdcuuul88ylc0hdqjeav2u-1789105424307647030213.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "V&igrave; sao hầm chui n&uacute;t giao An Ph&uacute; mới th&ocirc;ng xe lại bị ngập?",
-   "u": "https://thanhnien.vn/vi-sao-ham-chui-nut-giao-an-phu-moi-thong-xe-lai-bi-ngap-185260911143237794.htm",
-   "s": "Thanh Niên",
-   "d": "2026-09-11",
-   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/9/11/tnw-ham-chui-nut-giao-an-phu-1789111657057830742852-283-0-1883-2560-crop-1789111893291147708203.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Thông xe hầm chui lớn nhất TP.HCM sau trận ngập sâu từ tối qua",
-   "u": "https://lifestyle.zingnews.vn/thong-xe-ham-chui-lon-nhat-tphcm-sau-tran-ngap-sau-tu-toi-qua-post1682530.html",
-   "s": "Znews",
-   "d": "2026-09-11",
-   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_11/Ngap_nuoc_07_Znews.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
