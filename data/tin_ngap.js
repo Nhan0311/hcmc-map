@@ -2,9 +2,46 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-26T01:23:13.115Z",
+ "capNhat": "2026-09-26T14:56:37.296Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Ngập sâu ở Đồng Nai: Tháo dỡ cầu tạm phục vụ làm cao tốc Biên Hoà - Vũng Tàu",
+   "u": "https://tienphong.vn/ngap-sau-o-dong-nai-thao-do-cau-tam-phuc-vu-lam-cao-toc-bien-hoa-vung-tau-post1879884.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-26",
+   "img": "https://cdn.tienphong.vn/images/leCA4OT2qM2MZ0hXzCNIbB2LmCh8h6dVv7q-NPae2mHDxvD4WWmrSI41pS1iIpI_/1000035299.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Vũng Tàu"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Người dân TPHCM vất vả vì đường ngập 3 ngày chưa rút",
+   "u": "https://dantri.com.vn/dt360/nguoi-dan-tphcm-vat-va-vi-duong-ngap-3-ngay-chua-rut-20260926101421213.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-26",
+   "img": "https://icdn.dantri.com.vn/2026/09/26/thumb-1790392261082.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Lý giải nguyên nhân gây ngập ở khu dân cư ven cao tốc Biên Hòa - Vũng Tàu",
+   "u": "https://baoxaydung.vn/ly-giai-nguyen-nhan-gay-ngap-o-khu-dan-cu-ven-cao-toc-bien-hoa-vung-tau-192260926092057121.htm",
+   "s": "Báo Giao thông",
+   "d": "2026-09-26",
+   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/9/26/img1023-17903890212841089042857-0-0-1440-2304-crop-17903891774671884289874.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Vũng Tàu"
+   ],
+   "canh": 1
+  },
   {
    "t": "TPHCM: Sau cơn mưa lớn, ô tô cũng ‘chết lịm’ giữa đường ngập sâu",
    "u": "https://tienphong.vn/tphcm-sau-con-mua-lon-o-to-cung-chet-lim-giua-duong-ngap-sau-post1879635.tpo",
@@ -2081,46 +2118,6 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn gây sạt lở tắc đường, sóng mạnh nhấn chìm tàu cá ở Huế",
-   "u": "https://tienphong.vn/mua-lon-gay-sat-lo-tac-duong-song-manh-nhan-chim-tau-ca-o-hue-post1875800.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-12",
-   "img": "https://cdn.tienphong.vn/images/7nnhKt8M2ubXx8G9gp4PtM4EVZHxepwwRkhF1V93gkYOx2aiEqmkwOJjrl6zmPNtGVxf5tUgmE6wnOhvmxwfuw/tp-c_sat-lo-ql-49.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Thuận An"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Mưa không lớn nhưng triều cường dâng cao, nhiều đường TP.HCM ngập lênh láng",
-   "u": "https://tuoitre.vn/mua-khong-lon-nhung-trieu-cuong-dang-cao-nhieu-duong-tphcm-ngap-lenh-lang-100260912181740556.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-12",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/12/01866d03a354230a7a45-17892108932691051983517-72-0-1672-2560-crop-1789211888571121300534.jpg",
-   "c": "hcmc",
-   "fp": [
-    "Trần Xuân Soạn",
-    "Nguyễn Văn Hưởng"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn là đường Tô Ngọc Vân, chợ Thủ Đức thành sông: Ngóng dự án hơn 5.000 tỉ",
-   "u": "https://tuoitre.vn/mua-lon-la-duong-to-ngoc-van-cho-thu-duc-thanh-song-ngong-du-an-hon-5000-ti-100260912164509047.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-12",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/12/rachthuduc-1789205560344714712835-0-0-407-652-crop-17892060847712011384129.gif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "Thu Duc Old"
-   ],
    "canh": 1
   }
  ]
