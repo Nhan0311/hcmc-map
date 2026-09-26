@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-25T15:46:53.167Z",
+ "capNhat": "2026-09-26T01:23:13.115Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -57,6 +57,74 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-09-25",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/25/tphcm-dua-con-di-choi-trung-thu-gap-duong-ngap-lenh-lang-me-be-con-gai-tim-cho-kho-3339.jpg?width=0&s=JJi9dR2332_5g4sLp1XJ3A",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Miền Bắc nắng thu đẹp trước khi đón mưa rào",
+   "u": "https://tienphong.vn/mien-bac-nang-thu-dep-truoc-khi-don-mua-rao-post1879733.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-25",
+   "img": "https://cdn.tienphong.vn/images/Cnj4WjvRBHYQoCoEhCPn8osWRbFryILayEI1B6qrXKdu6gLdnXKk9Nvb4baOutQ3kcOVqqlJPlza80nK09ShXg/nang-thu.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Đường ngập sâu ở TPHCM sau mưa lớn",
+   "u": "https://tienphong.vn/duong-ngap-sau-o-tphcm-sau-mua-lon-post1879635.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-25",
+   "img": "https://cdn.tienphong.vn/images/AHsu0WetIg3QIF4V2I7ZaGzvj7I9-v9wZb6p4fUnA_H-mHigJNysdMHGrWUqmouVkVPvw7a0ZCYSUkCLn2Ch6AHe3y_aItjmzJsfYvp2OnY/2aobor15aoyb3invjfziikcv6dflmgqgvreo822y.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ tiếp tục mưa dông vào cuối tuần",
+   "u": "https://dantri.com.vn/thoi-su/tphcm-va-nam-bo-tiep-tuc-mua-dong-vao-cuoi-tuan-20260925210526192.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-25",
+   "img": "https://icdn.dantri.com.vn/2026/09/25/tt1-1790345047099.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Chủ động phòng tránh và bảo đảm an toàn khi mưa lớn",
+   "u": "https://www.sggp.org.vn/chu-dong-phong-tranh-va-bao-dam-an-toan-khi-mua-lon-post873497.html",
+   "s": "SGGP",
+   "d": "2026-09-25",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/dureixrxkw/2026_09_26/mualon-tphcm-5964-184.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM: Mưa lớn, nước tràn vào nhà, người dân Thuận An chủ động sơ tán",
+   "u": "https://tuoitre.vn/tphcm-mua-lon-nuoc-tran-vao-nha-nguoi-dan-thuan-an-chu-dong-so-tan-10026092523083598.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-25",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/25/01-vi-tri-ngap-sau-02-179035147785465014729-0-0-1440-2304-crop-1790353104816376024448-65-142-1135-1853-crop-179035372899249804021.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "BD Thuận An"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Đề phòng thời tiết TP.HCM chiều tối, triều cường sắp đạt đỉnh",
+   "u": "https://lifestyle.zingnews.vn/de-phong-thoi-tiet-tphcm-chieu-toi-trieu-cuong-sap-dat-dinh-post1685582.html",
+   "s": "Znews",
+   "d": "2026-09-25",
+   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_10/Mua_SG_07_Znews.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -2053,74 +2121,6 @@ window.TIN_NGAP = {
    "z": [
     "Thu Duc Old"
    ],
-   "canh": 1
-  },
-  {
-   "t": "Đỉnh triều sông Sài Gòn sẽ lên cao, đề phòng mưa lớn gây ngập",
-   "u": "https://lifestyle.zingnews.vn/dinh-trieu-song-sai-gon-se-len-cao-de-phong-mua-lon-gay-ngap-post1682629.html",
-   "s": "Znews",
-   "d": "2026-09-12",
-   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_10/Mua_SG_03_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường dâng cao khiến đường ở TPHCM ngập lênh láng",
-   "u": "https://dantri.com.vn/thoi-su/trieu-cuong-dang-cao-khien-duong-o-tphcm-ngap-lenh-lang-20260912180304634.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-12",
-   "img": "https://icdn.dantri.com.vn/2026/09/12/tc12-1789210757528.jpg",
-   "c": "hcmc",
-   "fp": [
-    "Trần Xuân Soạn"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM sau trận mưa lớn hiếm gặp: Ngập cả đêm, người dân đeo ủng bì bõm dọn nhà",
-   "u": "https://vietnamnet.vn/tphcm-sau-tran-mua-lon-hiem-gap-ngap-ca-dem-nguoi-dan-deo-ung-bi-bom-don-nha-2554307.html",
-   "s": "VietnamNet",
-   "d": "2026-09-12",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/11/sau-mot-dem-ngap-nguoi-dan-tphcm-deo-ung-bi-bom-don-nha-2301.jpg?width=0&s=INfHHRJ2bHoDK4VZc3m0aA",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM: Lý do hầm chui nút giao An Phú ngập sâu",
-   "u": "https://tienphong.vn/tphcm-ly-do-ham-chui-nut-giao-an-phu-ngap-sau-post1875473.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-11",
-   "img": "https://cdn.tienphong.vn/images/rKxAQ4QOt_t5utGxG_Wty5AksTjPL4khY1Z1SBHPnfI/1.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Thông xe hầm chui An Phú sau gần một ngày đóng do ngập nước",
-   "u": "https://vnexpress.net/thong-xe-ham-chui-an-phu-sau-gan-mot-ngay-dong-do-ngap-nuoc-5119244.html",
-   "s": "VnExpress",
-   "d": "2026-09-11",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/11/178911220406455526348345159653-6702-1691-1789113574.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=LQfXWZqyq0TgvjzaKFgnGA",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP HCM tiếp tục mưa lớn ba ngày tới",
-   "u": "https://vnexpress.net/tp-hcm-tiep-tuc-mua-lon-ba-ngay-toi-5119191.html",
-   "s": "VnExpress",
-   "d": "2026-09-11",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/11/1789041003615-g481044484190770-3300-8298-1789110606.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=-yyaJIuIJbwk1ss_BhHZ_A",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   }
  ]
