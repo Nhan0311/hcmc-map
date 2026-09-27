@@ -2,9 +2,33 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-27T01:16:19.290Z",
+ "capNhat": "2026-09-27T15:35:39.703Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Đồng Nai 'lệnh' dỡ gấp cầu tạm sông Buông vì gây ngập",
+   "u": "https://tienphong.vn/dong-nai-lenh-do-gap-cau-tam-song-buong-vi-gay-ngap-post1880047.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-27",
+   "img": "https://cdn.tienphong.vn/images/leCA4OT2qM2MZ0hXzCNIbB2LmCh8h6dVv7q-NPae2mE0tRZzEpzmG-hj3ds9gXSx/1000035296.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Vũng Tàu"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Combo 'mưa lớn lúc triều cường' tại TP.HCM khiến nhiều người dân mệt mỏi",
+   "u": "https://tuoitre.vn/combo-mua-lon-luc-trieu-cuong-tai-tphcm-khien-nhieu-nguoi-dan-met-moi-100260927174643838.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-27",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/27/1790504546523911354859207930859691135485920793085967a28c28b41258a3632e23b197aff54e5-179050529061316400630-0-0-1010-1616-crop-17905058193511000844467.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Ngập sâu ở Đồng Nai: Tháo dỡ cầu tạm phục vụ làm cao tốc Biên Hoà - Vũng Tàu",
    "u": "https://tienphong.vn/ngap-sau-o-dong-nai-thao-do-cau-tam-phuc-vu-lam-cao-toc-bien-hoa-vung-tau-post1879884.tpo",
@@ -2094,30 +2118,6 @@ window.TIN_NGAP = {
    "z": [
     "BD Thủ Dầu Một"
    ],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lũ, áp thấp nhiệt đới làm ngập hơn 400 nhà ở Quảng Trị và TP Huế",
-   "u": "https://www.sggp.org.vn/mua-lu-ap-thap-nhiet-doi-lam-ngap-hon-400-nha-o-quang-tri-va-tp-hue-post871495.html",
-   "s": "SGGP",
-   "d": "2026-09-13",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/evesfnbfjpy/2026_09_13/1789301467676-7905471608494410844-7905471608494410844-fcec77b8f37568a952cfa1cc433f4363-7654-9010jpg-9797-4779.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Thuận An"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn gặp triều cường, đường phố TPHCM thành 'sông', ô tô chết máy",
-   "u": "https://vietnamnet.vn/trieu-cuong-cong-mua-lon-o-to-chet-may-giua-trung-tam-tphcm-2554828.html",
-   "s": "VietnamNet",
-   "d": "2026-09-13",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/13/trieu-cuong-dang-cao-o-to-chet-may-giua-duong-o-tphcm-1851.jpg?width=0&s=NgvAZH0p3lKXMPQZvNbi3Q",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   }
  ]
