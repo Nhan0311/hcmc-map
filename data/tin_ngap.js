@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-26T14:56:37.296Z",
+ "capNhat": "2026-09-27T01:16:19.290Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -40,6 +40,39 @@ window.TIN_NGAP = {
    "z": [
     "VT Vũng Tàu"
    ],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường Nam Bộ lên cao, ĐBSCL đề phòng ngập úng",
+   "u": "https://dantri.com.vn/dt360/trieu-cuong-nam-bo-len-cao-dbscl-de-phong-ngap-ung-20260927055127215.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-26",
+   "img": "https://icdn.dantri.com.vn/2026/09/27/trieu-cuong-1790462885930.png",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Khu dân cư ở Bình Trị Đông mới mưa đã ngập, 2 tiếng chưa rút hết",
+   "u": "https://tuoitre.vn/khu-dan-cu-o-binh-tri-dong-moi-mua-da-ngap-2-tieng-chua-rut-het-100260926184405689.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-26",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/26/489-17904289393121862284214-123-0-1948-2920-crop-17904289589221303491044.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường TP.HCM lên đỉnh 1,65 m trong những ngày tới",
+   "u": "https://lifestyle.zingnews.vn/trieu-cuong-tphcm-len-dinh-1-65-m-trong-nhung-ngay-toi-post1685773.html",
+   "s": "Znews",
+   "d": "2026-09-26",
+   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_09_27/Mua_to_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
    "canh": 1
   },
   {
@@ -2082,39 +2115,6 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-09-13",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/13/trieu-cuong-dang-cao-o-to-chet-may-giua-duong-o-tphcm-1851.jpg?width=0&s=NgvAZH0p3lKXMPQZvNbi3Q",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nhiều đoạn đường ở phía tây TP Huế tiếp tục sạt lở taluy, ngập cục bộ",
-   "u": "https://baoxaydung.vn/nhieu-doan-duong-o-phia-tay-tp-hue-tiep-tuc-sat-lo-taluy-ngap-cuc-bo-192260913151122563.htm",
-   "s": "Báo Giao thông",
-   "d": "2026-09-13",
-   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/9/13/1789277800645-7932820611116692883-7932820611116692883-d49898adeb6fba07067a6ec5c6ff3398-1789286279670555958798-21-0-821-1280-crop-17892862893712138320081.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hạ tầng chắp vá úng ngập triền miên",
-   "u": "https://tienphong.vn/ha-tang-chap-va-ung-ngap-trien-mien-post1876024.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-13",
-   "img": "https://cdn.tienphong.vn/images/x-htLSVwMI_7d1M_8Q71GCUr-JVuGn_ReRwtbqroTVQ/4b.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Thời tiết 14/9: Áp thấp nhiệt đới suy yếu, miền Bắc tăng nắng giảm mưa",
-   "u": "https://dantri.com.vn/dt360/thoi-tiet-149-ap-thap-nhiet-doi-suy-yeu-mien-bac-tang-nang-giam-mua-20260913232515405.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-13",
-   "img": "https://icdn.dantri.com.vn/2026/09/13/1789313026944573807608628732044257380760862873204425a72d21c4df3ffad182d5ba9a9eb62de-1789316550961.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
