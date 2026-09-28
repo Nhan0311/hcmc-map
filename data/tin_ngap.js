@@ -2,9 +2,134 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-28T01:30:24.677Z",
+ "capNhat": "2026-09-28T18:33:26.181Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Nhiều tuyến đường ở TPHCM ngập sâu do triều cường",
+   "u": "https://tienphong.vn/nhieu-tuyen-duong-o-tphcm-ngap-sau-do-trieu-cuong-post1880444.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-28",
+   "img": "https://cdn.tienphong.vn/images/wnjfmiZmUSZU2ycIM5XKmLYvzjnmazZBxhXXRlq9FgwQypa0ryGBeBCM4i-INcyznisIvrRr1TltflCDXNogPSE8jOIuD0Q7PR5YK7G1a5GArMGisuLR47Q1cI8j49jnaqPibmt3CKybugVsgzdjejc735fPu1AR5eHNA9ydsxI/tp-c_1790593247342-5346627881428964615-5346627881428964615-a0d36e4adda31c283bfbc70513693700.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường đạt đỉnh, người dân bì bõm ngay trong nhà",
+   "u": "https://dantri.com.vn/dt360/trieu-cuong-dat-dinh-nguoi-dan-bi-bom-ngay-trong-nha-20260928202548359.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-28",
+   "img": "https://icdn.dantri.com.vn/2026/09/28/trieu-cuong-dat-dinh-nguoi-dan-bi-bom-ngay-trong-nha-cropped-1790601180418.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Đường phố TPHCM mênh mông nước trong ngày triều cường đạt đỉnh",
+   "u": "https://dantri.com.vn/thoi-su/duong-pho-tphcm-menh-mong-nuoc-trong-ngay-trieu-cuong-dat-dinh-20260928154503353.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-28",
+   "img": "https://icdn.dantri.com.vn/2026/09/28/trieucuong-thang9namanh0d7a0911-1790595727348.jpg?watermark=v1",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường gây ngập, người dân TPHCM bì bõm dắt xe về nhà",
+   "u": "https://dantri.com.vn/dt360/trieu-cuong-gay-ngap-nguoi-dan-tphcm-bi-bom-dat-xe-ve-nha-20260928184430913.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-28",
+   "img": "https://icdn.dantri.com.vn/2026/09/28/ngap-nb-1790595637216.gif",
+   "c": "hcmc",
+   "fp": [
+    "Nguyễn Bình"
+   ],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường đạt đỉnh đúng giờ tan tầm, người dân TP.HCM vất vả di chuyển về nhà",
+   "u": "https://vtcnews.vn/trieu-cuong-dat-dinh-dung-gio-tan-tam-nguoi-dan-tp-hcm-vat-va-di-chuyen-ve-nha-ar1042323.html",
+   "s": "VTC News",
+   "d": "2026-09-28",
+   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/28/trieu-cuong-dat-dinh-nguoi-dan-tp-hcm-lai-bi-bom-ve-nha20-19252918.JPG",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường đạt đỉnh sáng đầu tuần, người dân TP.HCM đi đường vòng, học sinh xắn quần đi học",
+   "u": "https://tuoitre.vn/trieu-cuong-dat-dinh-sang-dau-tuan-nguoi-dan-tphcm-di-duong-vong-hoc-sinh-xan-quan-di-hoc-1002609280705406.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-28",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/28/thd00420-1790553035068961025815-107-0-1707-2560-crop-17905607948881900593188.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Huy động lực lượng gia cố bờ bao, ứng phó triều cường",
+   "u": "https://www.sggp.org.vn/huy-dong-luc-luong-gia-co-bo-bao-ung-pho-trieu-cuong-post873889.html",
+   "s": "SGGP",
+   "d": "2026-09-28",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/xdlqvplc/2026_09_28/img-e9063-5062-9424.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "BD Thuận An"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Đường thành sông, nhà thành điểm ngập trong ngày triều cường ở TPHCM",
+   "u": "https://vietnamnet.vn/duong-thanh-song-nha-thanh-diem-ngap-trong-ngay-trieu-cuong-o-tphcm-2559715.html",
+   "s": "VietnamNet",
+   "d": "2026-09-28",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/28/duong-thanh-song-nha-thanh-diem-ngap-trong-ngay-trieu-cuong-o-tphcm-3190.jpg?width=0&s=qyX2YB743sMDXtXu4J-V9g",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Thủ đô Bangkok biến thành 'chợ nổi' sau mưa lũ",
+   "u": "https://tienphong.vn/thu-do-bangkok-bien-thanh-cho-noi-sau-mua-lu-post1880464.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-28",
+   "img": "https://cdn.tienphong.vn/images/rwou7SrcwsmIbuxOVDE9udOjEdg2cXybno0A9Drwf7ej_mH6yoLYmFUMF1pFIHlswynFZljtOeVswchs4dtQIg/ezgif-4f890a8661d4eff9.gif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn gần 2 tuần gây lũ lụt nghiêm trọng, Thái Lan thiệt hại nặng nề",
+   "u": "https://dantri.com.vn/the-gioi/mua-lon-gan-2-tuan-gay-lu-lut-nghiem-trong-thai-lan-thiet-hai-nang-ne-20260928180716297.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-28",
+   "img": "https://icdn.dantri.com.vn/2026/09/28/thai-1790593087567.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "\"Chợ nổi\" xuất hiện giữa thủ đô Bangkok trong đợt ngập lụt",
+   "u": "https://dantri.com.vn/dt360/cho-noi-xuat-hien-giua-thu-do-bangkok-trong-dot-ngap-lut-20260928171738134.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-28",
+   "img": "https://icdn.dantri.com.vn/2026/09/28/cho-noi-xuat-hien-giua-thu-do-bangkok-ngap-lut-1790590039736.gif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Đồng Nai 'lệnh' dỡ gấp cầu tạm sông Buông vì gây ngập",
    "u": "https://tienphong.vn/dong-nai-lenh-do-gap-cau-tam-song-buong-vi-gay-ngap-post1880047.tpo",
@@ -1916,39 +2041,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Mưa lớn, trường ngập sâu, bộ đội dùng thuyền thúng sơ tán giáo viên và học sinh",
-   "u": "https://tienphong.vn/mua-lon-truong-ngap-sau-bo-doi-dung-thuyen-thung-so-tan-giao-vien-va-hoc-sinh-post1876599.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-15",
-   "img": "https://cdn.tienphong.vn/images/OXp6W7uCaM9Zc5Wf5f7wlhwk6hoYChwYyXyx68Ivmpz76OgsL81Hrt_4ur6m_1ANJwd7kAzuZPgEYz-ZnH4ddinIpoDxOiEZbjZF-zSxSBQ/2aoboqynrxcvbviuz7eexxsm8kw9v4gt2eoil4xe.jpg.avif",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội có thể mưa lớn giờ tan tầm chiều nay",
-   "u": "https://dantri.com.vn/thoi-tiet/ha-noi-co-the-mua-lon-gio-tan-tam-chieu-nay-20260915153833699.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-15",
-   "img": "https://icdn.dantri.com.vn/2026/09/14/dsc0327-1789393516333.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Dự báo Hà Nội mưa lớn giờ tan tầm",
-   "u": "https://vnexpress.net/du-bao-ha-noi-mua-lon-gio-tan-tam-5120531.html",
-   "s": "VnExpress",
-   "d": "2026-09-15",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/15/img-jpg-1789456874-6732-1789456926.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=DRFX6ZnwVTg1JIysjtxTSA",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Cống cao tốc đặt lệch dòng chảy khiến hơn 300 hộ dân ở Đồng Nai ngập sâu",
    "u": "https://dantri.com.vn/thoi-su/cong-cao-toc-dat-lech-dong-chay-khien-hon-300-ho-dan-o-dong-nai-ngap-sau-20260914183654709.htm",
    "s": "Dân Trí",
@@ -2015,102 +2107,6 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-09-14",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_09_14/img-1550-842-2145.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Phường Tân Khánh chủ động ứng phó mưa lớn và ngập úng",
-   "u": "https://www.sggp.org.vn/phuong-tan-khanh-chu-dong-ung-pho-mua-lon-va-ngap-ung-post871591.html",
-   "s": "SGGP",
-   "d": "2026-09-14",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/nphovhp/2026_09_14/6-3602-5481.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Thủ Dầu Một"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Cần Thơ: Triều cường vượt báo động III gây vỡ đê, nhiều nơi ngập sâu",
-   "u": "https://www.sggp.org.vn/can-tho-trieu-cuong-vuot-bao-dong-iii-gay-vo-de-nhieu-noi-ngap-sau-post871600.html",
-   "s": "SGGP",
-   "d": "2026-09-14",
-   "img": "https://image.sggp.org.vn/Uploaded/2026/drkxraekxq/2026_09_14/can-tho-trieu-cuong-vuot-bao-dong-iii-gay-vo-de-nhieu-noi-ngap-sau-8341-1955.gif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Thủ Dầu Một"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Lũ gây ngập ở Đồng Nai do cống qua cao tốc Biên Hòa - Vũng Tàu đặt lệch dòng chảy, khó tiêu thoát nước",
-   "u": "https://tuoitre.vn/lu-gay-ngap-o-dong-nai-do-cong-qua-cao-toc-bien-hoa-vung-tau-dat-lech-dong-chay-kho-tieu-thoat-nuoc-10026091417280309.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-14",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/14/cao-toc-ngap-17893789578411240958610-0-136-1440-2440-crop-178938045564056690223.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "VT Vũng Tàu"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường dâng cao, người dân chật vật di chuyển sáng đầu tuần",
-   "u": "https://vtcnews.vn/trieu-cuong-dang-cao-nguoi-dan-chat-vat-di-chuyen-sang-dau-tuan-ar1039597.html",
-   "s": "VTC News",
-   "d": "2026-09-14",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/14/trieu-cuong-dat-dinh-hoc-sinh-loi-nuoc-den-truong9-08451149.JPG",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nguyên nhân ban đầu khiến hơn 400 hộ dân cạnh cao tốc ở Đồng Nai bị ngập sâu",
-   "u": "https://vietnamnet.vn/nguyen-nhan-ban-dau-khien-hon-400-ho-dan-canh-cao-toc-o-dong-nai-bi-ngap-sau-2555061.html",
-   "s": "VietnamNet",
-   "d": "2026-09-14",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/14/nguyen-nhan-ban-dau-khien-hon-400-ho-dan-canh-cao-toc-o-dong-nai-bi-ngap-sau-1952.jpg?width=0&s=j3Wkov-JN0kPh8_git4LnA",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "VT Vũng Tàu"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM sắp đón đợt mưa lớn ngày 17 đến 22/9",
-   "u": "https://lifestyle.zingnews.vn/tphcm-sap-don-dot-mua-lon-ngay-17-den-229-post1683227.html",
-   "s": "Znews",
-   "d": "2026-09-14",
-   "img": "https://photo.znews.vn/w660/Uploaded/anqyy/2026_09_13/Mua_SG_12_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn gặp triều cường, người dân TPHCM “bì bõm” giữa đường ngập",
-   "u": "https://dantri.com.vn/dt360/mua-lon-gap-trieu-cuong-nguoi-dan-tphcm-bi-bom-giua-duong-ngap-20260913192622903.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-13",
-   "img": "https://icdn.dantri.com.vn/2026/09/13/ngap-13-1789302147487.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn kết hợp triều cường, người dân một số nơi khó nhọc trên đường về nhà",
-   "u": "https://tuoitre.vn/mua-lon-ket-hop-trieu-cuong-nguoi-dan-mot-so-noi-kho-nhoc-tren-duong-ve-nha-10026091318545799.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-13",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/13/thd00324-17892996851831781665895-81-0-1681-2560-crop-17893001956341036184938.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
