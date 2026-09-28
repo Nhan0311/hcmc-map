@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-27T15:35:39.703Z",
+ "capNhat": "2026-09-28T01:30:24.677Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -24,6 +24,39 @@ window.TIN_NGAP = {
    "s": "Tuổi Trẻ",
    "d": "2026-09-27",
    "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/27/1790504546523911354859207930859691135485920793085967a28c28b41258a3632e23b197aff54e5-179050529061316400630-0-0-1010-1616-crop-17905058193511000844467.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM đón đỉnh triều cường vượt báo động 3 từ hôm nay, cảnh báo ngập sâu",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-don-dinh-trieu-cuong-vuot-bao-dong-3-tu-hom-nay-canh-bao-ngap-sau-20260927192313560.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-27",
+   "img": "https://icdn.dantri.com.vn/2026/08/03/034a717a-c106-4e63-9ea0-88e3882d2197-1785758022995.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Thời tiết hôm nay 28-9: Bắc Bộ nắng nóng, TP.HCM triều cường đạt đỉnh",
+   "u": "https://tuoitre.vn/thoi-tiet-hom-nay-28-9-bac-bo-nang-nong-tphcm-trieu-cuong-dat-dinh-100260927162635727.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-27",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/27/trieucuong-lphan-3-16961573904541066379328-0-85-1079-1811-crop-1790501091818395782565.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hôm nay, triều cường ở TP.HCM lên cao 1,85 m, cần chú ý hai khung giờ",
+   "u": "https://lifestyle.zingnews.vn/hom-nay-trieu-cuong-o-tphcm-len-cao-1-85-m-can-chu-y-hai-khung-gio-post1686010.html",
+   "s": "Znews",
+   "d": "2026-09-27",
+   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_10/Mua_SG_03_Znews.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -2081,43 +2114,6 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn kết hợp triều cường đạt đỉnh, người dân TP.HCM bì bõm lội nước về nhà",
-   "u": "https://vtcnews.vn/mua-lon-ket-hop-trieu-cuong-dat-dinh-nguoi-dan-tp-hcm-bi-bom-loi-nuoc-ve-nha-ar1039560.html",
-   "s": "VTC News",
-   "d": "2026-09-13",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/13/trieu-cuong-dat-dinh21-18471693.JPG",
-   "c": "hcmc",
-   "fp": [
-    "Trần Xuân Soạn"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Vì sao hầm chui nào ở TP.HCM cũng từng 'ít nhất một lần' chìm trong biển nước?",
-   "u": "https://vtcnews.vn/vi-sao-ham-chui-nao-o-tp-hcm-cung-tung-it-nhat-mot-lan-chim-trong-bien-nuoc-ar1039412.html",
-   "s": "VTC News",
-   "d": "2026-09-13",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/12/ngaphamchuianphu-19190739.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn kết hợp triều cường, nhiều tuyến đường ở Thủ Dầu Một ngập sâu",
-   "u": "https://www.sggp.org.vn/mua-lon-ket-hop-trieu-cuong-nhieu-tuyen-duong-o-thu-dau-mot-ngap-sau-post871500.html",
-   "s": "SGGP",
-   "d": "2026-09-13",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/tpuokbf/2026_09_13/duy04723-7463-3105.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Thủ Dầu Một"
-   ],
    "canh": 1
   }
  ]
