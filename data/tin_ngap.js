@@ -2,9 +2,55 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-29T02:32:27.924Z",
+ "capNhat": "2026-09-29T16:51:05.486Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Cà Mau: Bến xe ngập sâu, nhiều tuyến đường nội ô mênh mông nước",
+   "u": "https://tienphong.vn/ca-mau-ben-xe-ngap-sau-nhieu-tuyen-duong-noi-o-menh-mong-nuoc-post1880714.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-29",
+   "img": "https://cdn.tienphong.vn/images/cUfL7fgrU5Sn6arHJuaIjAoLTzrfdAEQ28GdvyQWTeI/5.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Chuyên gia nêu lý do Phú Mỹ Hưng ít ngập dù nằm ở khu Nam TPHCM",
+   "u": "https://dantri.com.vn/thoi-su/chuyen-gia-neu-ly-do-phu-my-hung-it-ngap-du-nam-o-khu-nam-tphcm-20260929153258603.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-29",
+   "img": "https://icdn.dantri.com.vn/2026/09/29/phumyhung-1492651519066-1790670057911.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Phú Mỹ"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường dâng, người đi xe máy dò đường tránh ổ gà ở TP.HCM",
+   "u": "https://tuoitre.vn/trieu-cuong-dang-nguoi-di-xe-may-do-duong-tranh-o-ga-o-tphcm-100260929192714794.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-29",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/29/1b14e545822e02705b3f-17906843031971405214934-651-374-1412-1591-crop-17906870265571557170241.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa gây ngập khu vực tìm kiếm, phát hiện thêm 6 bộ hài cốt liệt sĩ tại Công viên Lê Thị Riêng",
+   "u": "https://www.sggp.org.vn/mua-gay-ngap-khu-vuc-tim-kiem-phat-hien-them-6-bo-hai-cot-liet-si-tai-cong-vien-le-thi-rieng-post874057.html",
+   "s": "SGGP",
+   "d": "2026-09-29",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/dudbexqdre/2026_09_29/1790676302551-5089444651203917330-5089444651203917330-d09424b347329f78fb7fb2ba093eb648-8725-9639.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Nhiều tuyến đường ở TPHCM ngập sâu do triều cường",
    "u": "https://tienphong.vn/nhieu-tuyen-duong-o-tphcm-ngap-sau-do-trieu-cuong-post1880444.tpo",
@@ -2059,41 +2105,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Bắc Bộ mưa lớn, Nam Bộ sắp chuyển mưa diện rộng từ ngày 17-9",
-   "u": "https://www.sggp.org.vn/bac-bo-mua-lon-nam-bo-sap-chuyen-mua-dien-rong-tu-ngay-17-9-post871669.html",
-   "s": "SGGP",
-   "d": "2026-09-15",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/ohpohuo/2026_09_15/1k2h6fqic-70aq71-4979-3034.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Thủ Dầu Một"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Tổng lãnh sự Hà Lan: TP.HCM cần tăng không gian thoát nước, tạo dòng chảy chống ngập",
-   "u": "https://tuoitre.vn/tong-lanh-su-ha-lan-tphcm-can-tang-khong-gian-thoat-nuoc-tao-dong-chay-chong-ngap-100260915164600892.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-15",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/15/178946481828967095526966561682026709552696656168202cd4f3c466efd640d58a402e1dd9ddeb1-178946506863052626702-331-130-1706-2331-crop-1789465331202563186268.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM sắp mưa lớn 4 ngày, có nơi trên 200 mm",
-   "u": "https://lifestyle.zingnews.vn/tphcm-sap-mua-lon-4-ngay-co-noi-tren-200-mm-post1683518.html",
-   "s": "Znews",
-   "d": "2026-09-15",
-   "img": "https://photo.znews.vn/w660/Uploaded/yrfjpyesfly/2026_09_14/Mua_SG_07_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Dự báo thời tiết Hà Nội hôm nay 15/9: Mưa rất lớn, đề phòng ngập úng",
    "u": "https://vtcnews.vn/du-bao-thoi-tiet-ha-noi-hom-nay-15-9-mua-rat-lon-de-phong-ngap-ung-ar1039768.html",
    "s": "VTC News",
@@ -2102,19 +2113,6 @@ window.TIN_NGAP = {
    "c": "hanoi",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Cống cao tốc đặt lệch dòng chảy khiến hơn 300 hộ dân ở Đồng Nai ngập sâu",
-   "u": "https://dantri.com.vn/thoi-su/cong-cao-toc-dat-lech-dong-chay-khien-hon-300-ho-dan-o-dong-nai-ngap-sau-20260914183654709.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-14",
-   "img": "https://icdn.dantri.com.vn/2026/09/14/phuoctuan-4-edited-1789385057364.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "VT Vũng Tàu"
-   ],
    "canh": 1
   }
  ]
