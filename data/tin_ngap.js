@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-28T18:33:26.181Z",
+ "capNhat": "2026-09-29T02:32:27.924Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -95,6 +95,70 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Miền Bắc nắng nóng, TPHCM triều cường vượt báo động 3",
+   "u": "https://dantri.com.vn/dt360/mien-bac-nang-nong-tphcm-trieu-cuong-vuot-bao-dong-3-20260928222615873.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-28",
+   "img": "https://icdn.dantri.com.vn/2026/09/28/179061453840621305391328634011464327133637762183462ac9102114241fda25473799ca6c9316a-1790614598292.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "Nha Be District"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường tại TPHCM và Nam Bộ tiếp tục dâng cao",
+   "u": "https://dantri.com.vn/thoi-tiet/trieu-cuong-tai-tphcm-va-nam-bo-tiep-tuc-dang-cao-20260928210410278.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-28",
+   "img": "https://icdn.dantri.com.vn/2026/09/28/trc1-1790603821286.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường TP.HCM chạm đỉnh 1,67 m, người dân cần chú ý giờ tan tầm",
+   "u": "https://lifestyle.zingnews.vn/trieu-cuong-tphcm-cham-dinh-1-67-m-nguoi-dan-can-chu-y-gio-tan-tam-post1686245.html",
+   "s": "Znews",
+   "d": "2026-09-28",
+   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_09_29/Mua_ngay_28.9_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "Nha Be District",
+    "VT Vũng Tàu"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Đường Ung Văn Khiêm sắp mở rộng 30 m, xóa sổ 'rốn' kẹt xe, ngập nước",
+   "u": "https://lifestyle.zingnews.vn/duong-ung-van-khiem-sap-mo-rong-30-m-xoa-so-ron-ket-xe-ngap-nuoc-post1683091.html",
+   "s": "Znews",
+   "d": "2026-09-28",
+   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_14/thumb_ungvankhiem.jpg",
+   "c": "hcmc",
+   "fp": [
+    "Ung Văn Khiêm"
+   ],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nguyên nhân ban đầu khiến hơn 400 hộ dân cạnh cao tốc ở Đồng Nai bị ngập sâu",
+   "u": "https://vietnamnet.vn/nguyen-nhan-ban-dau-khien-hon-400-ho-dan-canh-cao-toc-o-dong-nai-bi-ngap-sau-2555061.html",
+   "s": "VietnamNet",
+   "d": "2026-09-28",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/14/nguyen-nhan-ban-dau-khien-hon-400-ho-dan-canh-cao-toc-o-dong-nai-bi-ngap-sau-1952.jpg?width=0&s=j3Wkov-JN0kPh8_git4LnA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Vũng Tàu"
+   ],
    "canh": 1
   },
   {
@@ -2051,65 +2115,6 @@ window.TIN_NGAP = {
    "z": [
     "VT Vũng Tàu"
    ],
-   "canh": 1
-  },
-  {
-   "t": "Cống qua cao tốc Biên Hòa - Vũng Tàu đặt lệch khiến khu dân cư ngập nặng",
-   "u": "https://vnexpress.net/cong-qua-cao-toc-bien-hoa-vung-tau-dat-lech-khien-khu-dan-cu-ngap-nang-5120209.html",
-   "s": "VnExpress",
-   "d": "2026-09-14",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/14/2aOboQyamTR4JpvnRDS1Cpfq79B5Ul-2149-8042-1789388486.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=z4fvqRL6gEa6q2facD0yXA",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "VT Vũng Tàu"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Bản tin thời sự ngày 14-9: Triều cường vượt báo động III, nhiều nơi ở Cần Thơ ngập sâu",
-   "u": "https://www.sggp.org.vn/ban-tin-thoi-su-ngay-14-9-trieu-cuong-vuot-bao-dong-iii-nhieu-noi-o-can-tho-ngap-sau-post871642.html",
-   "s": "SGGP",
-   "d": "2026-09-14",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/drkxraekxq/2026_09_14/trieu-cuong-vuot-bao-dong-iii-nhieu-noi-o-can-tho-ngap-sau-7087-7995.png.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Podcast tin thời sự ngày 14-9: Đồng đội và người dân đội mưa đến viếng Trung tá Trần Văn Tùng",
-   "u": "https://www.sggp.org.vn/podcast-tin-thoi-su-ngay-14-9-dong-doi-va-nguoi-dan-doi-mua-den-vieng-trung-ta-tran-van-tung-post871644.html",
-   "s": "SGGP",
-   "d": "2026-09-14",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/drkxraekxq/2026_09_14/dong-doi-va-nguoi-dan-doi-mua-den-vieng-trung-ta-tran-van-tung-3736-6481.png.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Cảnh báo triều cường ở ven biển Nam bộ",
-   "u": "https://www.sggp.org.vn/canh-bao-trieu-cuong-o-ven-bien-nam-bo-post871624.html",
-   "s": "SGGP",
-   "d": "2026-09-14",
-   "img": "https://image.sggp.org.vn/Uploaded/2026/drkxraekxq/2026_09_14/canh-bao-trieu-cuong-o-ven-bien-nam-bo-1978-3718.gif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Thủ Dầu Một"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Chủ động ứng phó đợt mưa lớn kéo dài ở Bắc bộ và Bắc Trung bộ",
-   "u": "https://www.sggp.org.vn/chu-dong-ung-pho-dot-mua-lon-keo-dai-o-bac-bo-va-bac-trung-bo-post871604.html",
-   "s": "SGGP",
-   "d": "2026-09-14",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_09_14/img-1550-842-2145.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   }
  ]
