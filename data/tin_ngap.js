@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-29T16:51:05.486Z",
+ "capNhat": "2026-09-30T01:56:38.974Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Mưa lớn kết hợp triều cường ở TPHCM, cơ quan khí tượng cảnh báo khẩn",
+   "u": "https://tienphong.vn/mua-lon-ket-hop-trieu-cuong-o-tphcm-co-quan-khi-tuong-canh-bao-khan-post1880837.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-09-30",
+   "img": "https://cdn.tienphong.vn/images/AHsu0WetIg3QIF4V2I7ZaFiSSeG27ldc6tygIt-2MNMWx8gSHyGwYoxnJe1CB9xe8WAmzGqsObZMsr-EfedzgDejdFfNpwSO1q4g2hlFyao/2aobor15aowfr2ew459wme39w1w6p0clhmhe5xck.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Cà Mau: Bến xe ngập sâu, nhiều tuyến đường nội ô mênh mông nước",
    "u": "https://tienphong.vn/ca-mau-ben-xe-ngap-sau-nhieu-tuyen-duong-noi-o-menh-mong-nuoc-post1880714.tpo",
@@ -46,6 +57,17 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-09-29",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/dudbexqdre/2026_09_29/1790676302551-5089444651203917330-5089444651203917330-d09424b347329f78fb7fb2ba093eb648-8725-9639.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường ở TP.HCM còn tiếp tục hôm nay và ngày mai",
+   "u": "https://lifestyle.zingnews.vn/trieu-cuong-o-tphcm-con-tiep-tuc-hom-nay-va-ngay-mai-post1686443.html",
+   "s": "Znews",
+   "d": "2026-09-29",
+   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_07_14/Trieu_Nha_Be_Znews.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1408,28 +1430,6 @@ window.TIN_NGAP = {
    "s": "Dân Trí",
    "d": "2026-09-18",
    "img": "https://icdn.dantri.com.vn/2026/09/18/1d2-1789733767832.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Người dân TPHCM bì bõm trên đường ngập trong đêm để về nhà",
-   "u": "https://dantri.com.vn/dt360/nguoi-dan-tphcm-bi-bom-tren-duong-ngap-trong-dem-de-ve-nha-20260918214203419.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-18",
-   "img": "https://icdn.dantri.com.vn/2026/09/18/gifn-ezgifcom-video-to-gif-converter-1789744602210.gif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Cảnh đường ‘ngập như sông’, ô tô bất động, xe máy bị nước xô ngã ở TPHCM",
-   "u": "https://vietnamnet.vn/tphcm-duong-ngap-nhu-song-o-to-bat-dong-xe-may-bi-nuoc-xo-nga-2556668.html",
-   "s": "VietnamNet",
-   "d": "2026-09-18",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/18/tphcm-duong-ngap-nhu-song-o-to-bat-dong-xe-may-bi-nuoc-xo-nga-3292.jpg?width=0&s=k1rCZ0Ohtcv5dV5bt9he3A",
    "c": "hcmc",
    "fp": [],
    "z": [],
