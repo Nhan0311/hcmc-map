@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-09-30T16:45:51.028Z",
+ "capNhat": "2026-10-01T01:57:16.172Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM và Nam bộ tiếp tục mưa lớn về chiều tối",
+   "u": "https://www.sggp.org.vn/tphcm-va-nam-bo-tiep-tuc-mua-lon-ve-chieu-toi-post874298.html",
+   "s": "SGGP",
+   "d": "2026-10-01",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/sengtm/2026_10_01/mua-lon-2135-5798.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Mưa lớn kết hợp triều cường ở TPHCM, cơ quan khí tượng cảnh báo khẩn",
    "u": "https://tienphong.vn/mua-lon-ket-hop-trieu-cuong-o-tphcm-co-quan-khi-tuong-canh-bao-khan-post1880837.tpo",
@@ -244,6 +255,85 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-09-30",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/30/mua-lon-gay-ngap-ket-xe-khap-tphcm-dong-nguoi-nhich-tung-chut-1781.jpg?width=0&s=vm91BhXrPEWQZ5XUQ0yviA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Tiệm sửa xe đông nghịt sau trận mưa ngập ở TPHCM",
+   "u": "https://dantri.com.vn/dt360/tiem-sua-xe-dong-nghit-sau-tran-mua-ngap-o-tphcm-20260930232847087.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-30",
+   "img": "https://icdn.dantri.com.vn/2026/09/30/bo-text-dan-tri-cropped-1790785666899.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Người dân TPHCM trắng đêm kê đồ, canh nước ngập",
+   "u": "https://dantri.com.vn/dt360/nguoi-dan-tphcm-trang-dem-ke-do-canh-nuoc-ngap-20261001021152665.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-30",
+   "img": "https://icdn.dantri.com.vn/2026/10/01/0930-1-edited-1790795347564.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ tiếp tục mưa diện rộng vài ngày tới",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-dien-rong-vai-ngay-toi-20260930211349025.htm",
+   "s": "Dân Trí",
+   "d": "2026-09-30",
+   "img": "https://icdn.dantri.com.vn/2026/09/30/hi12-1790777453036.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nước từ rạch bất ngờ ùa vào, nửa đêm hàng trăm nhà dân phường Thủ Đức ngập sâu",
+   "u": "https://tuoitre.vn/nuoc-tu-rach-bat-ngo-ua-vao-nua-dem-hang-tram-nha-dan-phuong-thu-duc-ngap-sau-100260930234418494.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-09-30",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/30/179078365596320794810739200667479101402013434393390e0f2a8193fb074289634c47b5b55f5a0-17907859430742071029994-167-0-1767-2560-crop-1790787275041306082648.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "Thu Duc Old"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn kết hợp triều cường, nhiều tuyến đường ở TPHCM lại ngập sâu",
+   "u": "https://www.sggp.org.vn/mua-lon-ket-hop-trieu-cuong-nhieu-tuyen-duong-o-tphcm-lai-ngap-sau-post874282.html",
+   "s": "SGGP",
+   "d": "2026-09-30",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/xdlqvplc/2026_09_30/3c565185ffef7fb126fe-6987-2810.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM lại ngập vì mưa, triều cường tối 30-9",
+   "u": "https://www.sggp.org.vn/tphcm-lai-ngap-vi-mua-trieu-cuong-toi-30-9-post874288.html",
+   "s": "SGGP",
+   "d": "2026-09-30",
+   "img": "https://image.sggp.org.vn/Uploaded/2026/zfdrereyxq/2026_09_30/ngap-9896-3620.gif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Bản tin thời sự ngày 30-9: TPHCM và Nam bộ mưa dông kéo dài, triều cường cao",
+   "u": "https://www.sggp.org.vn/ban-tin-thoi-su-ngay-30-9-tphcm-va-nam-bo-mua-dong-keo-dai-trieu-cuong-cao-post874274.html",
+   "s": "SGGP",
+   "d": "2026-09-30",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/zfdrereyxq/2026_09_30/btin-thoi-su-30-9-1041-1860.png.webp",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -983,28 +1073,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "TPHCM: Cảnh đường 'ngập như sông', nghìn xe nhích từng mét qua 'nút thắt cổ chai'",
-   "u": "https://vietnamnet.vn/tphcm-duong-ngap-nhu-song-nghin-xe-nhich-tung-met-qua-nut-that-co-chai-2558079.html",
-   "s": "VietnamNet",
-   "d": "2026-09-23",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/23/tphcm-canh-duong-ngap-nhu-song-nghin-xe-nhich-tung-met-qua-nut-that-co-chai-2437.gif?width=0&s=RmktEmSg8U15_xSXrUPXOA",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM và Nam Bộ tiếp tục mưa lớn, triều cường có thể vượt báo động 3",
-   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-lon-trieu-cuong-co-the-vuot-bao-dong-3-20260923211952863.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-23",
-   "img": "https://icdn.dantri.com.vn/2026/09/22/1m2-1790073315012.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Phó Bí thư Thanh Hóa chỉ đạo xử lý việc trường ngập, gần 2.000 học sinh phải nghỉ học",
    "u": "https://tienphong.vn/pho-bi-thu-thanh-hoa-chi-dao-xu-ly-viec-truong-ngap-gan-2000-hoc-sinh-phai-nghi-hoc-post1879020.tpo",
    "s": "Tiền Phong",
@@ -1055,76 +1123,6 @@ window.TIN_NGAP = {
    "d": "2026-09-23",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/25/ha-noi-chuyen-tu-chong-ngap-cuc-bo-sang-quan-ly-toan-luu-vuc-1152.jpg?width=0&s=AoA3wu_eD-IcVigRPEXs1A",
    "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa như trút nước, nhiều tuyến đường khu Đông TPHCM ngập sâu",
-   "u": "https://tienphong.vn/mua-nhu-trut-nuoc-nhieu-tuyen-duong-khu-dong-tphcm-ngap-sau-post1878674.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-22",
-   "img": "https://cdn.tienphong.vn/images/wAbZN0m8Lox5qlUOi5ClACDFwELi1YtCXZmcbh9bSlKvOwzzRjIRAY877u_1-Zz7/07172.gif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa tầm tã chiều 22/9, nhiều tuyến đường ở TPHCM biến thành sông",
-   "u": "https://tienphong.vn/mua-tam-ta-chieu-229-nhieu-tuyen-duong-o-tphcm-bien-thanh-song-post1878650.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-22",
-   "img": "https://cdn.tienphong.vn/images/AHsu0WetIg3QIF4V2I7ZaBWwlRvuHrIZmlhsA4YaXqUQbU18lONJSUWjbGZHk11xPPXDrFEV0BZAx2iwjUvyhazTZ9oJft84-gDPdYIDJEg/2aobor0p14nr9jxzqyfzkdj3aehl8bg59elqpa8m.jpg.avif",
-   "c": "hcmc",
-   "fp": [
-    "Võ Văn Kiệt × Hồ Học Lãm"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn giờ tan tầm, nhiều tuyến đường TPHCM chìm trong nước",
-   "u": "https://dantri.com.vn/dt360/mua-lon-gio-tan-tam-nhieu-tuyen-duong-tphcm-chim-trong-nuoc-20260922185127508.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-22",
-   "img": "https://icdn.dantri.com.vn/2026/09/22/ngap-22-1790077794692.gif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM mưa lớn giờ tan tầm, nhiều đường ngập lênh láng",
-   "u": "https://dantri.com.vn/thoi-su/tphcm-mua-lon-gio-tan-tam-nhieu-duong-ngap-lenh-lang-20260922174236049.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-22",
-   "img": "https://icdn.dantri.com.vn/2026/09/22/1m3-1790073316098.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM: Mưa lớn, có nơi ngập sâu, nhiều người dắt bộ vì xe chết máy",
-   "u": "https://www.sggp.org.vn/tphcm-mua-lon-co-noi-ngap-sau-nhieu-nguoi-dat-bo-vi-xe-chet-may-post872906.html",
-   "s": "SGGP",
-   "d": "2026-09-22",
-   "img": "https://image.sggp.org.vn/Uploaded/2026/cjvwpdhnw/2026_09_22/tin-tuc1-ngap-lam-904-9233.gif",
-   "c": "hcmc",
-   "fp": [
-    "Võ Văn Kiệt × Hồ Học Lãm"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn đúng giờ tan tầm, nhiều tuyến đường ở TPHCM ngập và ùn tắc",
-   "u": "https://www.sggp.org.vn/mua-lon-dung-gio-tan-tam-nhieu-tuyen-duong-o-tphcm-ngap-va-un-tac-post872902.html",
-   "s": "SGGP",
-   "d": "2026-09-22",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/mrwqldxwp/2026_09_22/ngap-1-5675-5427.jpg.webp",
-   "c": "hcmc",
    "fp": [],
    "z": [],
    "canh": 1
