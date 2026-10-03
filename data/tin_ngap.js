@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-02T16:34:58.881Z",
+ "capNhat": "2026-10-03T01:50:40.707Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Hẻm ở TPHCM ngập sâu cả tuần, tạnh mưa 24 giờ nước vẫn mênh mông",
+   "u": "https://vietnamnet.vn/hem-o-tphcm-ngap-sau-ca-tuan-tanh-mua-24-gio-nuoc-van-menh-mong-2561261.html",
+   "s": "VietnamNet",
+   "d": "2026-10-03",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/3/hem-o-tphcm-ngap-sau-ca-tuan-tanh-mua-24-gio-nuoc-van-menh-mong-182.jpg?width=0&s=LHEK4yArPIEGQkdUSIe3Zg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Nam bộ tiếp tục mưa dông chiều tối, miền Bắc sắp đón không khí lạnh",
    "u": "https://www.sggp.org.vn/nam-bo-tiep-tuc-mua-dong-chieu-toi-mien-bac-sap-don-khong-khi-lanh-post874503.html",
@@ -182,6 +193,28 @@ window.TIN_NGAP = {
    "s": "Znews",
    "d": "2026-10-02",
    "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_09_28/Mua_Sai_Gon_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nhóm sinh viên ở TPHCM hỗ trợ sửa xe, chở người về nhà trong cơn mưa",
+   "u": "https://dantri.com.vn/thoi-su/nhom-sinh-vien-o-tphcm-ho-tro-sua-xe-cho-nguoi-ve-nha-trong-con-mua-20261002195729301.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-02",
+   "img": "https://icdn.dantri.com.vn/2026/10/02/179094343967315973454543946384921597345454394638492e65fe6d7e32388b90fe1f64f971e0648-edited-1790944916804.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa tạnh hơn một ngày, hẻm ở TPHCM vẫn ngập sâu, dân dùng thuyền đưa con đi học",
+   "u": "https://vietnamnet.vn/mua-tanh-hon-mot-ngay-hem-o-tphcm-van-ngap-sau-dan-dung-thuyen-dua-con-di-hoc-2561277.html",
+   "s": "VietnamNet",
+   "d": "2026-10-02",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/3/mua-tanh-hon-mot-ngay-hem-o-tphcm-van-ngap-sau-dan-dung-thuyen-dua-con-di-hoc-95.gif?width=0&s=CEJ_6bSU2AqWhujdnVrm3A",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1038,41 +1071,6 @@ window.TIN_NGAP = {
    "s": "Tuổi Trẻ",
    "d": "2026-09-27",
    "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/27/trieucuong-lphan-3-16961573904541066379328-0-85-1079-1811-crop-1790501091818395782565.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hôm nay, triều cường ở TP.HCM lên cao 1,85 m, cần chú ý hai khung giờ",
-   "u": "https://lifestyle.zingnews.vn/hom-nay-trieu-cuong-o-tphcm-len-cao-1-85-m-can-chu-y-hai-khung-gio-post1686010.html",
-   "s": "Znews",
-   "d": "2026-09-27",
-   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_10/Mua_SG_03_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Ngập sâu ở Đồng Nai: Tháo dỡ cầu tạm phục vụ làm cao tốc Biên Hoà - Vũng Tàu",
-   "u": "https://tienphong.vn/ngap-sau-o-dong-nai-thao-do-cau-tam-phuc-vu-lam-cao-toc-bien-hoa-vung-tau-post1879884.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-09-26",
-   "img": "https://cdn.tienphong.vn/images/leCA4OT2qM2MZ0hXzCNIbB2LmCh8h6dVv7q-NPae2mHDxvD4WWmrSI41pS1iIpI_/1000035299.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "VT Vũng Tàu"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Người dân TPHCM vất vả vì đường ngập 3 ngày chưa rút",
-   "u": "https://dantri.com.vn/dt360/nguoi-dan-tphcm-vat-va-vi-duong-ngap-3-ngay-chua-rut-20260926101421213.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-26",
-   "img": "https://icdn.dantri.com.vn/2026/09/26/thumb-1790392261082.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
