@@ -2,9 +2,31 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-03T15:06:17.850Z",
+ "capNhat": "2026-10-04T02:29:51.872Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Mưa ở TPHCM và Nam bộ gia tăng từ ngày 7-10",
+   "u": "https://www.sggp.org.vn/mua-o-tphcm-va-nam-bo-gia-tang-tu-ngay-7-10-post874826.html",
+   "s": "SGGP",
+   "d": "2026-10-04",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_04/img-2278-4756-6844.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Từ hôm nay, TP.HCM hứng đợt mưa lớn đến 6 ngày, có nơi trên 250 mm",
+   "u": "https://lifestyle.zingnews.vn/tu-hom-nay-tphcm-hung-dot-mua-lon-den-6-ngay-co-noi-tren-250-mm-post1687344.html",
+   "s": "Znews",
+   "d": "2026-10-04",
+   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_10_04/Mua_o_TP.HCM_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Hẻm ở TPHCM ngập sâu cả tuần, tạnh mưa 24 giờ nước vẫn mênh mông",
    "u": "https://vietnamnet.vn/hem-o-tphcm-ngap-sau-ca-tuan-tanh-mua-24-gio-nuoc-van-menh-mong-2561261.html",
@@ -123,6 +145,17 @@ window.TIN_NGAP = {
    "s": "Báo Giao thông",
    "d": "2026-10-03",
    "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/10/3/csgt-14-17910125777691921194077-0-2-824-1320-crop-1791012792901736458203.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Khắc phục hậu quả mưa lũ Thái Nguyên theo hướng tăng cường chống chịu",
+   "u": "https://tienphong.vn/khac-phuc-hau-qua-mua-lu-thai-nguyen-theo-huong-tang-cuong-chong-chiu-post1881939.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-10-03",
+   "img": "https://cdn.tienphong.vn/images/Cnj4WjvRBHYQoCoEhCPn8q-Jxkp-tDwmmjWsVa987OI2O9RvFCueWKgdxU0oar74kcUUBmrrRQRgYvKntQSSgQ/mua-lu-thai-nguyen.jpg.avif",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -997,41 +1030,6 @@ window.TIN_NGAP = {
     "Nguyễn Bình"
    ],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường đạt đỉnh đúng giờ tan tầm, người dân TP.HCM vất vả di chuyển về nhà",
-   "u": "https://vtcnews.vn/trieu-cuong-dat-dinh-dung-gio-tan-tam-nguoi-dan-tp-hcm-vat-va-di-chuyen-ve-nha-ar1042323.html",
-   "s": "VTC News",
-   "d": "2026-09-28",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/28/trieu-cuong-dat-dinh-nguoi-dan-tp-hcm-lai-bi-bom-ve-nha20-19252918.JPG",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường đạt đỉnh sáng đầu tuần, người dân TP.HCM đi đường vòng, học sinh xắn quần đi học",
-   "u": "https://tuoitre.vn/trieu-cuong-dat-dinh-sang-dau-tuan-nguoi-dan-tphcm-di-duong-vong-hoc-sinh-xan-quan-di-hoc-1002609280705406.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-28",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/28/thd00420-1790553035068961025815-107-0-1707-2560-crop-17905607948881900593188.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Huy động lực lượng gia cố bờ bao, ứng phó triều cường",
-   "u": "https://www.sggp.org.vn/huy-dong-luc-luong-gia-co-bo-bao-ung-pho-trieu-cuong-post873889.html",
-   "s": "SGGP",
-   "d": "2026-09-28",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/xdlqvplc/2026_09_28/img-e9063-5062-9424.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Thuận An"
-   ],
    "canh": 1
   },
   {
