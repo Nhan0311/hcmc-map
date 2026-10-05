@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-05T01:46:56.064Z",
+ "capNhat": "2026-10-05T21:32:23.234Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -11,6 +11,50 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-10-05",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/4/thumb-tin-thoi-su-5102026-1498.jpg?width=0&s=h44FhClTR0VeRAoJxlW3Pg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn 30 phút, đường Mã Lò ở TP.HCM ngập, người dân bì bõm về nhà trong đêm",
+   "u": "https://tuoitre.vn/mua-lon-30-phut-duong-ma-lo-o-tphcm-ngap-nguoi-dan-bi-bom-ve-nha-trong-dem-100261005232515705.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-10-05",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/5/edit-ngap-2-1791216457896882245987-105-0-1705-2560-crop-17912167868771215749979.jpeg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Đường gần chợ Thông Dụng, TP.HCM ngập sau mưa lớn, người dân sụp ổ gà té nhào",
+   "u": "https://tuoitre.vn/duong-gan-cho-thong-dung-tphcm-ngap-sau-mua-lon-nguoi-dan-sup-o-ga-te-nhao-100261005210723572.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-10-05",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/5/2aobor3qtfuks2sjdyx5iombzuwc93zwalsc5due-1791208891950582100907-325-813-1175-2173-crop-17912091602642021104109.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "X&atilde; v&ugrave;ng ven TP.HCM đưa m&aacute;y bơm chống ngập đường C&ocirc;ng Nghệ Mới",
+   "u": "https://thanhnien.vn/xa-vung-ven-tphcm-dua-may-bom-chong-ngap-duong-cong-nghe-moi-185261005125926929.htm",
+   "s": "Thanh Niên",
+   "d": "2026-10-05",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/5/may-bom-chong-ngap-duong-cong-nghe-moi-ctv-1791179837765735233327-6-0-527-833-crop-17911801493151274122004.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Những tuyến đường n&agrave;o ở TP.HCM hễ mưa lớn l&agrave; ngập?",
+   "u": "https://thanhnien.vn/nhung-tuyen-duong-nao-o-tphcm-he-mua-lon-la-ngap-185261004175107092.htm",
+   "s": "Thanh Niên",
+   "d": "2026-10-05",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/4/tnw-dsc03290-17911105357151126538630-105-0-1705-2560-crop-1791110985855422866781.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -244,6 +288,35 @@ window.TIN_NGAP = {
    "s": "Thanh Niên",
    "d": "2026-10-04",
    "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/4/tnw-1-1791128263366911582360-16-0-1207-1906-crop-17911282877712129860836.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Tra cứu 159 điểm ngập thường xuyên tại TP HCM",
+   "u": "https://vnexpress.net/tra-cuu-159-diem-ngap-thuong-xuyen-tai-tp-hcm-5127780.html",
+   "s": "VnExpress",
+   "d": "2026-10-04",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/03/20261003150424-1791014696-9970-1791019017.png?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=tqaZNV73jkfjFditIqPYUg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Bà Rịa",
+    "Binh Thanh District",
+    "Binh Tan District",
+    "Go Vap District",
+    "Thu Duc Old",
+    "VT Vũng Tàu"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Xe ba gác chở người qua đoạn ngập sâu sau mưa ở TP HCM",
+   "u": "https://vnexpress.net/xe-ba-gac-cho-nguoi-qua-doan-ngap-sau-sau-mua-o-tp-hcm-5128264.html",
+   "s": "VnExpress",
+   "d": "2026-10-04",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/04/Pi7GIFCMP-1791113745-1594-1791113751.gif?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=2e91e7cAuAICHc7W1DE93w&amp;t=image",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -963,78 +1036,6 @@ window.TIN_NGAP = {
     "Phan Huy Ích"
    ],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Gần 300 nhà dân ở Đồng Nai ngập cả mét khi nước tràn về",
-   "u": "https://vnexpress.net/gan-300-nha-dan-o-dong-nai-ngap-ca-met-khi-nuoc-tran-ve-5126619.html",
-   "s": "VnExpress",
-   "d": "2026-09-30",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/30/wm1-anh-jpg-1790754903.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=Y8-T8dO13EITLzAjcV6Exw",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "VT Vũng Tàu"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn gây ngập, kẹt xe khắp TP HCM",
-   "u": "https://vnexpress.net/mua-lon-gay-ngap-ket-xe-khap-tp-hcm-5126477.html",
-   "s": "VnExpress",
-   "d": "2026-09-30",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/30/m-ua-ngap-o-TP-HCM-1790736508.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=SGXoWPiu7RZykVWkCoCGSw",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "CSGT TP.HCM dầm mưa phân luồng, lội nước giúp dân đưa xe máy qua điểm ngập",
-   "u": "https://tuoitre.vn/csgt-tphcm-dam-mua-phan-luong-loi-nuoc-giup-dan-dua-xe-may-qua-diem-ngap-100260930211032708.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-30",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/30/nuoc-ngap-1-8-1790776953426791733991-166-179-676-995-crop-179077813246350330012.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Bơm nước giải cứu nhiều vườn bưởi bị ngập ở xã Tân Vĩnh Lộc, TP.HCM",
-   "u": "https://tuoitre.vn/bom-nuoc-giai-cuu-nhieu-vuon-buoi-bi-ngap-o-xa-tan-vinh-loc-tphcm-100260930200240856.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-30",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/30/edit-buoi-17907717978171874448763-341-588-1295-2115-crop-17907747857761826143643.jpeg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mới 16h, toàn trung tâm TP.HCM mưa xối xả, ngập khắp nơi",
-   "u": "https://tuoitre.vn/moi-16h-toan-trung-tam-tphcm-mua-xoi-xa-ngap-khap-noi-100260930180545202.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-30",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/30/1790765777287360388713150010897336038871315001089733f0b5bbcf1bb6226706aee02a4fcfb76-17907658602201857317805-169-0-1769-2560-crop-1790766274004507030729.jpg",
-   "c": "hcmc",
-   "fp": [
-    "Phan Huy Ích"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Lũ lại tràn về, khu dân cư cạnh cao tốc ở Đồng Nai thấp thỏm đón trận ngập thứ 3",
-   "u": "https://tuoitre.vn/lu-lai-tran-ve-khu-dan-cu-canh-cao-toc-o-dong-nai-thap-thom-don-tran-ngap-thu-3-100260930164755491.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-09-30",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/9/30/2aobor2ecymkgqmgd0ny6ugrgq0vbc1wnvzigmzs-1790761534651348659750-50-0-988-1500-crop-17907615394901227519131.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "VT Vũng Tàu"
-   ],
    "canh": 1
   },
   {
