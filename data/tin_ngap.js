@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-04T15:43:35.679Z",
+ "capNhat": "2026-10-05T01:46:56.064Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Thời sự sáng 5/10: Danh tính nam thanh niên mặc áo mưa, bịt kín mặt cướp tiệm vàng",
+   "u": "https://vietnamnet.vn/thoi-su-sang-5-10-chay-xuong-ghe-o-tphcm-cuop-tiem-vang-o-lam-dong-2561606.html",
+   "s": "VietnamNet",
+   "d": "2026-10-05",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/4/thumb-tin-thoi-su-5102026-1498.jpg?width=0&s=h44FhClTR0VeRAoJxlW3Pg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Mưa ở TPHCM và Nam bộ gia tăng từ ngày 7-10",
    "u": "https://www.sggp.org.vn/mua-o-tphcm-va-nam-bo-gia-tang-tu-ngay-7-10-post874826.html",
@@ -171,6 +182,68 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-10-04",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/4/tphcm-va-nam-bo-lai-buoc-vao-dot-mua-lon-sam-set-don-dap-835.jpg?width=0&s=3FIKCdi4-CtY-tgxCvDXkQ",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Miền Trung đón mưa rất lớn",
+   "u": "https://tienphong.vn/mien-trung-don-mua-rat-lon-post1882241.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-10-04",
+   "img": "https://cdn.tienphong.vn/images/pAWKGOzT8BIc-M3GdeLjyRe1QhlPrV1E2Luj2_rLC9o28eTp-NsAapvcXN6dY3p1eepJi-Vkq2E6MWxiClRe6g/anh-2-mua-ha-tinh-7009.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM bao giờ hết ngập?",
+   "u": "https://tienphong.vn/tphcm-bao-gio-het-ngap-post1882168.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-10-04",
+   "img": "https://cdn.tienphong.vn/images/s6gT1YS1JSoky24pT-83_RtPH5XjrDtVLi4J5U0jOMH1X01M8pHhDDgwPFyXO6Mr/1.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "159 điểm ngập thường xuyên tại TP HCM nằm ở đâu?",
+   "u": "https://vnexpress.net/159-diem-ngap-thuong-xuyen-tai-tp-hcm-nam-o-dau-5127780.html",
+   "s": "VnExpress",
+   "d": "2026-10-04",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/03/20261003150424-1791014696-9970-1791019017.png?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=tqaZNV73jkfjFditIqPYUg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Bà Rịa",
+    "Binh Thanh District",
+    "Binh Tan District",
+    "Go Vap District",
+    "Thu Duc Old",
+    "VT Vũng Tàu"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Chủ động máy bơm, ứng phó ngập úng tại TPHCM",
+   "u": "https://www.sggp.org.vn/chu-dong-may-bom-ung-pho-ngap-ung-tai-tphcm-post874930.html",
+   "s": "SGGP",
+   "d": "2026-10-04",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/dureixrxkw/2026_10_04/may-bom-nuoc-6672-7262.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM l&ecirc;n kế hoạch giải quyết 50 điểm ngập nặng",
+   "u": "https://thanhnien.vn/tphcm-len-ke-hoach-giai-quyet-50-diem-ngap-nang-185261004224119279.htm",
+   "s": "Thanh Niên",
+   "d": "2026-10-04",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/4/tnw-1-1791128263366911582360-16-0-1207-1906-crop-17911282877712129860836.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -962,74 +1035,6 @@ window.TIN_NGAP = {
    "z": [
     "VT Vũng Tàu"
    ],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường dâng cao, nhiều tuyến đường phía Nam TP.HCM ngập sâu",
-   "u": "https://baoxaydung.vn/trieu-cuong-dang-cao-nhieu-tuyen-duong-phia-nam-tphcm-ngap-sau-192260930190416682.htm",
-   "s": "Báo Giao thông",
-   "d": "2026-09-30",
-   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/9/30/trieu-cuong-6-17907689186761638614869-106-0-1706-2560-crop-1790769804145503685167.jpg",
-   "c": "hcmc",
-   "fp": [
-    "Trần Xuân Soạn"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Cảnh mưa lớn giờ tan tầm ở TPHCM, người dân bì bõm dắt xe về nhà",
-   "u": "https://vietnamnet.vn/mua-lon-gio-tan-tam-o-tphcm-nguoi-dan-bi-bom-dat-xe-ve-nha-2560418.html",
-   "s": "VietnamNet",
-   "d": "2026-09-30",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/30/canh-mua-lon-gio-tan-tam-o-tphcm-nguoi-dan-bi-bom-dat-xe-ve-nha-3002.gif?width=0&s=3aTiy1gXf1CDKSeOAJKzxQ",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn gây ngập, kẹt xe khắp TPHCM, dòng người nhích từng chút",
-   "u": "https://vietnamnet.vn/mua-lon-gay-ngap-ket-xe-khap-tphcm-dong-nguoi-nhich-tung-chut-2560206.html",
-   "s": "VietnamNet",
-   "d": "2026-09-30",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/30/mua-lon-gay-ngap-ket-xe-khap-tphcm-dong-nguoi-nhich-tung-chut-1781.jpg?width=0&s=vm91BhXrPEWQZ5XUQ0yviA",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Tiệm sửa xe đông nghịt sau trận mưa ngập ở TPHCM",
-   "u": "https://dantri.com.vn/dt360/tiem-sua-xe-dong-nghit-sau-tran-mua-ngap-o-tphcm-20260930232847087.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-30",
-   "img": "https://icdn.dantri.com.vn/2026/09/30/bo-text-dan-tri-cropped-1790785666899.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Người dân TPHCM trắng đêm kê đồ, canh nước ngập",
-   "u": "https://dantri.com.vn/dt360/nguoi-dan-tphcm-trang-dem-ke-do-canh-nuoc-ngap-20261001021152665.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-30",
-   "img": "https://icdn.dantri.com.vn/2026/10/01/0930-1-edited-1790795347564.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM và Nam Bộ tiếp tục mưa diện rộng vài ngày tới",
-   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-dien-rong-vai-ngay-toi-20260930211349025.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-30",
-   "img": "https://icdn.dantri.com.vn/2026/09/30/hi12-1790777453036.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   },
   {
