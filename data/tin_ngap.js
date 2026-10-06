@@ -2,9 +2,42 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-05T21:32:23.234Z",
+ "capNhat": "2026-10-06T02:50:33.309Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Miền Trung mưa lớn dài ngày, có nơi vượt 600mm",
+   "u": "https://tienphong.vn/mien-trung-mua-lon-dai-ngay-co-noi-vuot-600mm-post1882559.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-10-06",
+   "img": "https://cdn.tienphong.vn/images/Cnj4WjvRBHYQoCoEhCPn8q-Jxkp-tDwmmjWsVa987OK9FhVi4X34un3cZDaAto5qpV4pk9SLkVLWQKMdnBMKwA/ban-sao-mua-mientrung.png.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hôm nay 6-10, Trung bộ và Nam bộ mưa lớn",
+   "u": "https://www.sggp.org.vn/hom-nay-6-10-trung-bo-va-nam-bo-mua-lon-post875089.html",
+   "s": "SGGP",
+   "d": "2026-10-06",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_06/img-2368-1510-5834.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM giải cứu 12 người dân khỏi vùng nước ngập",
+   "u": "https://tuoitre.vn/tphcm-giai-cuu-12-nguoi-dan-khoi-vung-nuoc-ngap-10026100608555182.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-10-06",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/6/12-nguoi-giai-cuu-17912530042181084002143-381-252-1700-2363-crop-17912530662041282250378.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Thời sự sáng 5/10: Danh tính nam thanh niên mặc áo mưa, bịt kín mặt cướp tiệm vàng",
    "u": "https://vietnamnet.vn/thoi-su-sang-5-10-chay-xuong-ghe-o-tphcm-cuop-tiem-vang-o-lam-dong-2561606.html",
@@ -55,6 +88,17 @@ window.TIN_NGAP = {
    "s": "Thanh Niên",
    "d": "2026-10-05",
    "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/4/tnw-dsc03290-17911105357151126538630-105-0-1705-2560-crop-1791110985855422866781.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM tiếp tục mưa to đến ngày 9/10, triều cường đang lên",
+   "u": "https://lifestyle.zingnews.vn/tphcm-tiep-tuc-mua-to-den-ngay-910-trieu-cuong-dang-len-post1687748.html",
+   "s": "Znews",
+   "d": "2026-10-05",
+   "img": "https://photo.znews.vn/w660/Uploaded/anqyy/2026_09_28/ngap_znews1790766749719_967987444177146464_g5490766119873646141_a5deabdb0115def15f89a278b4681f12.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -989,52 +1033,6 @@ window.TIN_NGAP = {
    "img": "https://icdn.dantri.com.vn/2026/09/30/gif1-ezgifcom-video-to-gif-converter-1790770479025.gif",
    "c": "hcmc",
    "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nước chảy xiết, người dân TPHCM giúp nhau đẩy xe về nhà",
-   "u": "https://dantri.com.vn/dt360/nuoc-chay-xiet-nguoi-dan-tphcm-giup-nhau-day-xe-ve-nha-20260930191552004.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-30",
-   "img": "https://icdn.dantri.com.vn/2026/09/30/nguoi-dan-tphcm-muon-ve-nha-phai-lieu-minh-qua-dong-nuoc-xiet-edited-1790770429878.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Đường biến thành sông, nước ngập ngang yên xe máy trong cơn mưa lớn ở TPHCM",
-   "u": "https://dantri.com.vn/thoi-tiet/duong-bien-thanh-song-nuoc-ngap-ngang-yen-xe-may-trong-con-mua-lon-o-tphcm-20260930184946211.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-30",
-   "img": "https://icdn.dantri.com.vn/2026/09/30/1g3-1790768742450.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn khiến đường ngập sâu, người đi đường ngã nhào giữa dòng nước xiết",
-   "u": "https://dantri.com.vn/thoi-su/mua-lon-khien-duong-ngap-sau-nguoi-di-duong-nga-nhao-giua-dong-nuoc-xiet-20260930181627859.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-30",
-   "img": "https://icdn.dantri.com.vn/2026/09/30/nganhao-tphcmnamanh0d7a1217-1790765811960.jpg?watermark=v1",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nước tràn vào xe buýt, hàng quán sau mưa lớn ở TP HCM",
-   "u": "https://vnexpress.net/nuoc-tran-vao-xe-buyt-hang-quan-sau-mua-lon-o-tp-hcm-5126823.html",
-   "s": "VnExpress",
-   "d": "2026-09-30",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/30/2aobor2gspgtlup4wdkvctpy1v2cwhqwtwwlt7a430-1790775562-1790775586-1790781399.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=iKtxrMR8FegXzVZ7Mw_WDQ",
-   "c": "hcmc",
-   "fp": [
-    "Phan Huy Ích"
-   ],
    "z": [],
    "canh": 1
   },
