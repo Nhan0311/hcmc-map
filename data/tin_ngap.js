@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-06T17:07:01.741Z",
+ "capNhat": "2026-10-07T02:12:02.627Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "CSGT TPHCM cảnh báo 122 điểm có nguy cơ ngập do mưa lớn và triều cường",
+   "u": "https://dantri.com.vn/thoi-su/csgt-tphcm-canh-bao-122-diem-co-nguy-co-ngap-do-mua-lon-va-trieu-cuong-20261006184300949.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-07",
+   "img": "https://icdn.dantri.com.vn/2026/10/06/1d1-cropped-cropped-1791286658840.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Miền Trung mưa lớn dài ngày, có nơi vượt 600mm",
    "u": "https://tienphong.vn/mien-trung-mua-lon-dai-ngay-co-noi-vuot-600mm-post1882559.tpo",
@@ -189,6 +200,61 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-10-06",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/6/khong-khi-lanh-tran-vao-quang-ngai-tphcm-va-nam-bo-nguy-co-mua-lon-kem-sam-set-1129.jpg?width=0&s=bgBEqUKlmNWUKI-Q1t_U0A",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Miền Trung mưa lớn đỉnh điểm, Huế - Đà Nẵng rủi ro cấp 2",
+   "u": "https://tienphong.vn/mien-trung-mua-lon-dinh-diem-hue-da-nang-rui-ro-cap-2-post1882854.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-10-06",
+   "img": "https://cdn.tienphong.vn/images/x-htLSVwMI_7d1M_8Q71GIJrLVic3EgU9ADF4GFghXV3_7z0pPE4kaXREighQenf/mua-da-nang.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP HCM đang chống ngập đến đâu?",
+   "u": "https://vnexpress.net/tp-hcm-dang-chong-ngap-den-dau-5128671.html",
+   "s": "VnExpress",
+   "d": "2026-10-06",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/06/2aobor0bwhwywigujifbr5i7yjwwrp-5224-4983-1791300299.webp?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=nLTqz3iSjXcuTelyiUzJ_w",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM chống ngập theo lưu vực",
+   "u": "https://thanhnien.vn/tphcm-chong-ngap-theo-luu-vuc-185261006182416906.htm",
+   "s": "Thanh Niên",
+   "d": "2026-10-06",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/6/tnw-anh-1-online-1791285599880704182682-0-79-576-1001-crop-17912857100031783348350.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mới đạt hơn 50% tiến độ mở rộng, tuyến đường tại TPHCM đã giảm kẹt xe, ngập nước",
+   "u": "https://vietnamnet.vn/moi-dat-hon-50-tien-do-mo-rong-tuyen-duong-tai-tphcm-da-giam-ket-xe-ngap-nuoc-2562164.html",
+   "s": "VietnamNet",
+   "d": "2026-10-06",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/6/moi-dat-hon-50-tien-do-mo-rong-tuyen-duong-tai-tphcm-da-giam-ket-xe-ngap-nuoc-3359.gif?width=0&s=A5YZE6kmdk2my22dXEu2-w",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ tiếp tục mưa lớn, triều cường dâng cao",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-lon-trieu-cuong-dang-cao-20261006192352431.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-06",
+   "img": "https://icdn.dantri.com.vn/2026/10/06/gi1-1791289321518.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -861,6 +927,17 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
+   "t": "Mưa trắng trời, người dân TPHCM mắc kẹt hàng giờ trên đường về nhà",
+   "u": "https://vietnamnet.vn/mua-lon-nguoi-dan-tphcm-mac-ket-2-3-gio-tren-duong-ve-nha-2560852.html",
+   "s": "VietnamNet",
+   "d": "2026-10-02",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/1/mua-trang-troi-nguoi-dan-tphcm-mac-ket-hang-gio-tren-duong-ve-nha-2918.jpg?width=0&s=JWchIMp1G0n0z-FB2U9FEw",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
    "t": "TPHCM và Nam bộ tiếp tục mưa lớn về chiều tối",
    "u": "https://www.sggp.org.vn/tphcm-va-nam-bo-tiep-tuc-mua-lon-ve-chieu-toi-post874298.html",
    "s": "SGGP",
@@ -949,87 +1026,6 @@ window.TIN_NGAP = {
    "s": "Dân Trí",
    "d": "2026-10-01",
    "img": "https://icdn.dantri.com.vn/2026/10/01/17908542437138848679452874741116884867945287474111623b56413817db2d92221565bf1632d97-1790854387117.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP HCM tiếp tục mưa lớn đến ngày 6/10",
-   "u": "https://vnexpress.net/tp-hcm-tiep-tuc-mua-lon-den-ngay-6-10-5127044.html",
-   "s": "VnExpress",
-   "d": "2026-10-01",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/01/2hgb6fdmm7qunijv0rmew9ctipenon-5232-1799-1790828979.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=tFDrAOB6t-qL4wg-aCSFJQ",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Khu dân cư TP HCM vẫn ngập sâu sau 15 tiếng",
-   "u": "https://vnexpress.net/khu-dan-cu-tp-hcm-van-ngap-sau-sau-15-tieng-5126949.html",
-   "s": "VnExpress",
-   "d": "2026-10-01",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/01/233a7722-1790824485.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=JahyJpcXxapYUhtefz7rHg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "Thu Duc Old"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Tối 1-10, kẹt xe, ngập nước, giao thông tại nhiều tuyến đường TPHCM gặp khó khăn",
-   "u": "https://www.sggp.org.vn/toi-1-10-ket-xe-ngap-nuoc-giao-thong-tai-nhieu-tuyen-duong-tphcm-gap-kho-khan-post874477.html",
-   "s": "SGGP",
-   "d": "2026-10-01",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/duxredwsxr/2026_10_01/avatar-of-video-1838274-1298-4779.png.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM: Mưa lớn giờ tan tầm kết hợp triều cường gây ngập, kẹt xe",
-   "u": "https://www.sggp.org.vn/tphcm-mua-lon-gio-tan-tam-ket-hop-trieu-cuong-gay-ngap-ket-xe-post874473.html",
-   "s": "SGGP",
-   "d": "2026-10-01",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/ohpohuo/2026_10_01/2aobor2ujwu6sqowsxepxeqgkrln9pcvkpoestsm-8911-1138.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Chuyên gia dự báo TP.HCM vẫn còn đợt mưa diện rộng vào đầu tháng 10",
-   "u": "https://vtcnews.vn/chuyen-gia-du-bao-tp-hcm-van-con-dot-mua-dien-rong-vao-dau-thang-10-ar1042793.html",
-   "s": "VTC News",
-   "d": "2026-10-01",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/10/01/mua-ngap-10054805.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Vì sao 12 tuyến đường TPHCM ngập sâu hơn 1m sau trận mưa lớn chiều 30/9?",
-   "u": "https://vietnamnet.vn/vi-sao-duong-tphcm-ngap-sau-hon-1m-sau-tran-mua-lon-chieu-30-9-2560679.html",
-   "s": "VietnamNet",
-   "d": "2026-10-01",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/1/9-1437.jpg?width=0&s=eeMHrcv80YKhMGFIDp8jjg",
-   "c": "hcmc",
-   "fp": [
-    "Phan Huy Ích"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Chuyên gia dự báo TP.HCM còn đợt mưa diện rộng đầu tháng 10",
-   "u": "https://lifestyle.zingnews.vn/chuyen-gia-du-bao-tphcm-con-dot-mua-dien-rong-dau-thang-10-post1686613.html",
-   "s": "Znews",
-   "d": "2026-10-01",
-   "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_09_30/mua_ngap1_1.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
