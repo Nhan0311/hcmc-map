@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-08T17:48:20.563Z",
+ "capNhat": "2026-10-09T02:52:55.366Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM: Mưa lớn tiếp diễn, triều cường có thể trên báo động 3",
+   "u": "https://www.sggp.org.vn/tphcm-mua-lon-tiep-dien-trieu-cuong-co-the-tren-bao-dong-3-post875646.html",
+   "s": "SGGP",
+   "d": "2026-10-09",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_09/img-2535-8034-4761.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Mưa chưa dứt ở TPHCM, triều cường tiếp tục dâng cao",
    "u": "https://tienphong.vn/mua-chua-dut-o-tphcm-trieu-cuong-tiep-tuc-dang-cao-post1883207.tpo",
@@ -252,6 +263,28 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-10-08",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/8/vi-sao-he-thong-thoat-nuoc-tphcm-lien-tuc-qua-tai-khi-mua-lon-1738.jpg?width=0&s=TKjjRneVsHEnTe02smGs4Q",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ tiếp tục mưa lớn, sắp đón triều cường vượt báo động 3",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-lon-sap-don-trieu-cuong-vuot-bao-dong-3-20261008192644946.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-08",
+   "img": "https://icdn.dantri.com.vn/2026/09/18/m111-1789731053790.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Thi c&ocirc;ng dự &aacute;n hạ tầng c&oacute; l&agrave;m ph&aacute;t sinh điểm ngập mới ở TP.HCM?",
+   "u": "https://thanhnien.vn/thi-cong-du-an-ha-tang-co-lam-phat-sinh-diem-ngap-moi-o-tphcm-185261008182328151.htm",
+   "s": "Thanh Niên",
+   "d": "2026-10-08",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/8/dau-thang-10-nguoi-dan-tphcm-doi-mat-voi-tinh-trang-mua-lon-va-trieu-cuong-cao-gay-ngap-sauanh-nhat-thinh-copy-1791385002964-0-35-610-1011-crop-1791458373790573258955.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -996,41 +1029,6 @@ window.TIN_NGAP = {
     "Thu Duc Old",
     "VT Vũng Tàu"
    ],
-   "canh": 1
-  },
-  {
-   "t": "Xe ba gác chở người qua đoạn ngập sâu sau mưa ở TP HCM",
-   "u": "https://vnexpress.net/xe-ba-gac-cho-nguoi-qua-doan-ngap-sau-sau-mua-o-tp-hcm-5128264.html",
-   "s": "VnExpress",
-   "d": "2026-10-04",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/04/Pi7GIFCMP-1791113745-1594-1791113751.gif?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=2e91e7cAuAICHc7W1DE93w&amp;t=image",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hẻm ở TPHCM ngập sâu cả tuần, tạnh mưa 24 giờ nước vẫn mênh mông",
-   "u": "https://vietnamnet.vn/hem-o-tphcm-ngap-sau-ca-tuan-tanh-mua-24-gio-nuoc-van-menh-mong-2561261.html",
-   "s": "VietnamNet",
-   "d": "2026-10-03",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/3/hem-o-tphcm-ngap-sau-ca-tuan-tanh-mua-24-gio-nuoc-van-menh-mong-182.jpg?width=0&s=LHEK4yArPIEGQkdUSIe3Zg",
-   "c": "hcmc",
-   "fp": [
-    "Phan Huy Ích"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Sống khổ trong con hẻm bị nước ngập bủa vây hơn 1 tuần ở TPHCM",
-   "u": "https://tienphong.vn/song-kho-trong-con-hem-bi-nuoc-ngap-bua-vay-hon-1-tuan-o-tphcm-post1881929.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-03",
-   "img": "https://cdn.tienphong.vn/images/EfQGVTCKI40X1VMmSyXaXRhlLKEl9OE3_b1OMU7P-9481ex-mJ8ZPJalKS6VpEBZ2I8bwZnupvKUwvubdZDGLfFN3mdVTgGLp8laQt-4uvK8Jk6sFIaDjNs3xwEU9I0j03gBKbXGlmrca6tBEk0U6M6wY6D2DTOhd6f16PNkefg/1790927145187-2748432056065961488-2748432056065961488-a2a062906fa455fed30ab74fad077f6a.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   },
   {
