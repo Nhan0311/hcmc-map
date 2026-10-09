@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-09T02:52:55.366Z",
+ "capNhat": "2026-10-09T17:23:56.017Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -12,6 +12,41 @@ window.TIN_NGAP = {
    "d": "2026-10-09",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_09/img-2535-8034-4761.jpeg.webp",
    "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Duyệt dự &aacute;n chống ngập chợ Thủ Đức hơn 5.100 tỉ đồng cuối năm 2026",
+   "u": "https://thanhnien.vn/duyet-du-an-chong-ngap-cho-thu-duc-hon-5100-ti-dong-cuoi-nam-2026-185261009185216392.htm",
+   "s": "Thanh Niên",
+   "d": "2026-10-09",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/9/tnw-rach-thu-duc-tphcm-nguyen-vu-17915462147471306001499-167-0-1767-2560-crop-17915467781032086711939.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "Thu Duc Old"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Khi nào TP.HCM hết ngập?",
+   "u": "https://vtcnews.vn/khi-nao-tp-hcm-het-ngap-ar1041573.html",
+   "s": "VTC News",
+   "d": "2026-10-09",
+   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/10/09/ngap-1-20123189.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn gây lũ quét ở Chile, cuốn trôi hàng trăm ô tô",
+   "u": "https://tienphong.vn/mua-lon-gay-lu-quet-o-chile-cuon-troi-hang-tram-o-to-post1883747.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-10-09",
+   "img": "https://cdn.tienphong.vn/images/rwou7SrcwsmIbuxOVDE9uTHRn23bnsCW3H4E_GfMJI9TeSUlDu9xAOOTCoWrb0ODkhpZwQtfxuKi7bsW7UBYFw/ezgif-750ad0f81d701f24.gif",
+   "c": "hanoi",
    "fp": [],
    "z": [],
    "canh": 1
@@ -1000,35 +1035,6 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM l&ecirc;n kế hoạch giải quyết 50 điểm ngập nặng",
-   "u": "https://thanhnien.vn/tphcm-len-ke-hoach-giai-quyet-50-diem-ngap-nang-185261004224119279.htm",
-   "s": "Thanh Niên",
-   "d": "2026-10-04",
-   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/4/tnw-1-1791128263366911582360-16-0-1207-1906-crop-17911282877712129860836.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Tra cứu 159 điểm ngập thường xuyên tại TP HCM",
-   "u": "https://vnexpress.net/tra-cuu-159-diem-ngap-thuong-xuyen-tai-tp-hcm-5127780.html",
-   "s": "VnExpress",
-   "d": "2026-10-04",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/03/20261003150424-1791014696-9970-1791019017.png?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=tqaZNV73jkfjFditIqPYUg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "VT Bà Rịa",
-    "Binh Thanh District",
-    "Binh Tan District",
-    "Go Vap District",
-    "Thu Duc Old",
-    "VT Vũng Tàu"
-   ],
    "canh": 1
   },
   {
@@ -2083,17 +2089,6 @@ window.TIN_NGAP = {
    "s": "VnExpress",
    "d": "2026-09-16",
    "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/17/wm1-wm1-anh-set-1789624869-3180-1789624879.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=hp3Qd2yLM4uLhmAdI2653A",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Dự báo thời tiết Hà Nội hôm nay 15/9: Mưa rất lớn, đề phòng ngập úng",
-   "u": "https://vtcnews.vn/du-bao-thoi-tiet-ha-noi-hom-nay-15-9-mua-rat-lon-de-phong-ngap-ung-ar1039768.html",
-   "s": "VTC News",
-   "d": "2026-09-15",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2025/10/06/ha-noi-mua-to-06343798.jpg",
    "c": "hanoi",
    "fp": [],
    "z": [],
