@@ -2,9 +2,57 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-09T17:23:56.017Z",
+ "capNhat": "2026-10-10T02:13:42.505Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM tiếp tục mưa lớn vào chiều và đêm, có nơi vượt 140 mm",
+   "u": "https://tienphong.vn/tphcm-tiep-tuc-mua-lon-vao-chieu-va-dem-co-noi-vuot-140-mm-post1883888.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-10-10",
+   "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshqi_PUHhWI1bualHkF1Z73LDxoaVXz70B2gqVwPIFmO38znvYMnmShSxfbLg_PLLKeOz0p-ED8TU84gT0VU8DKXVvKg1BzkqcONLUpigmC4WlMxjGzRKyHry6Tj0phPT8z4x0xal54tneBnRNQGK7HM/tp-c_1791381753442-2651055997892346622-2651055997892346622-5c0099386dca185a237212c8275c5e93.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "BD Phú Giáo",
+    "Thu Duc Old",
+    "VT Xuyên Mộc"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường dâng cao lúc rạng sáng, hàng loạt ô tô ở TP.HCM chìm trong biển nước",
+   "u": "https://vtcnews.vn/trieu-cuong-dang-cao-luc-rang-sang-hang-loat-o-to-o-tp-hcm-chim-trong-bien-nuoc-ar1044403.html",
+   "s": "VTC News",
+   "d": "2026-10-10",
+   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/10/10/1791589743120-1941494893735581629-209429476981282468-b8c6d1bc71e3cfe8f3f46dba57bfe20b-07041248.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Sáng nay Nam Bộ đang mưa, chiều nhiều nơi ngập do triều cường",
+   "u": "https://tuoitre.vn/sang-nay-nam-bo-dang-mua-chieu-nhieu-noi-ngap-do-trieu-cuong-100261010074427373.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-10-10",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/10/anh-man-hinh-2026-10-10-luc-074138-17915929332231521391124-10-0-980-1552-crop-1791592990572731698628.png",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM triều cường dâng cao rạng sáng, hàng loạt ôtô chìm trong nước",
+   "u": "https://lifestyle.zingnews.vn/tphcm-trieu-cuong-dang-cao-rang-sang-hang-loat-oto-chim-trong-nuoc-post1688706.html",
+   "s": "Znews",
+   "d": "2026-10-10",
+   "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_10_08/Trieu_cuong.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TPHCM: Mưa lớn tiếp diễn, triều cường có thể trên báo động 3",
    "u": "https://www.sggp.org.vn/tphcm-mua-lon-tiep-dien-trieu-cuong-co-the-tren-bao-dong-3-post875646.html",
@@ -35,6 +83,17 @@ window.TIN_NGAP = {
    "s": "VTC News",
    "d": "2026-10-09",
    "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/10/09/ngap-1-20123189.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ mưa lớn có xu hướng giảm, nhưng có thể ngập do triều cường",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-mua-lon-co-xu-huong-giam-nhung-co-the-ngap-do-trieu-cuong-20261009211006559.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-09",
+   "img": "https://icdn.dantri.com.vn/2026/08/11/642598ba-00d4-4cbd-bd63-83f6fecf3f221105c-1786453584510.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -973,68 +1032,6 @@ window.TIN_NGAP = {
    "z": [
     "Thu Duc Old"
    ],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM và Nam Bộ lại bước vào đợt mưa lớn, sấm sét dồn dập",
-   "u": "https://vietnamnet.vn/tphcm-va-nam-bo-lai-buoc-vao-dot-mua-lon-sam-set-don-dap-2555491.html",
-   "s": "VietnamNet",
-   "d": "2026-10-04",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/4/tphcm-va-nam-bo-lai-buoc-vao-dot-mua-lon-sam-set-don-dap-835.jpg?width=0&s=3FIKCdi4-CtY-tgxCvDXkQ",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Miền Trung đón mưa rất lớn",
-   "u": "https://tienphong.vn/mien-trung-don-mua-rat-lon-post1882241.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-04",
-   "img": "https://cdn.tienphong.vn/images/pAWKGOzT8BIc-M3GdeLjyRe1QhlPrV1E2Luj2_rLC9o28eTp-NsAapvcXN6dY3p1eepJi-Vkq2E6MWxiClRe6g/anh-2-mua-ha-tinh-7009.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM bao giờ hết ngập?",
-   "u": "https://tienphong.vn/tphcm-bao-gio-het-ngap-post1882168.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-04",
-   "img": "https://cdn.tienphong.vn/images/s6gT1YS1JSoky24pT-83_RtPH5XjrDtVLi4J5U0jOMH1X01M8pHhDDgwPFyXO6Mr/1.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "159 điểm ngập thường xuyên tại TP HCM nằm ở đâu?",
-   "u": "https://vnexpress.net/159-diem-ngap-thuong-xuyen-tai-tp-hcm-nam-o-dau-5127780.html",
-   "s": "VnExpress",
-   "d": "2026-10-04",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/03/20261003150424-1791014696-9970-1791019017.png?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=tqaZNV73jkfjFditIqPYUg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "VT Bà Rịa",
-    "Binh Thanh District",
-    "Binh Tan District",
-    "Go Vap District",
-    "Thu Duc Old",
-    "VT Vũng Tàu"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Chủ động máy bơm, ứng phó ngập úng tại TPHCM",
-   "u": "https://www.sggp.org.vn/chu-dong-may-bom-ung-pho-ngap-ung-tai-tphcm-post874930.html",
-   "s": "SGGP",
-   "d": "2026-10-04",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/dureixrxkw/2026_10_04/may-bom-nuoc-6672-7262.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   },
   {
