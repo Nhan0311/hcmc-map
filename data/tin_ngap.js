@@ -2,9 +2,31 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-10T16:09:37.803Z",
+ "capNhat": "2026-10-11T01:45:28.648Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Miền Bắc nắng trở lại, TPHCM triều cường vượt báo động 3",
+   "u": "https://dantri.com.vn/dt360/mien-bac-nang-tro-lai-tphcm-trieu-cuong-vuot-bao-dong-3-20261011011302654.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-11",
+   "img": "https://icdn.dantri.com.vn/2026/10/11/831103219289123076517883418803920467830939438n-edited-1791677705065.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường đạt đỉnh sáng cuối tuần, người dân thức từ 4h sáng để tát nước",
+   "u": "https://tuoitre.vn/trieu-cuong-dat-dinh-sang-cuoi-tuan-nguoi-dan-thuc-tu-4h-sang-de-tat-nuoc-100261011064408103.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-10-11",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/11/img4239-17916745522991729116644-106-0-1706-2560-crop-1791677277991135217792.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TPHCM tiếp tục mưa lớn vào chiều và đêm, có nơi vượt 140 mm",
    "u": "https://tienphong.vn/tphcm-tiep-tuc-mua-lon-vao-chieu-va-dem-co-noi-vuot-140-mm-post1883888.tpo",
@@ -169,6 +191,31 @@ window.TIN_NGAP = {
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/10/nang-tren-troi-nuoc-ngap-duoi-duong-o-tphcm-2145.jpg?width=0&s=wc43YdoAEVg6UrsRBXXSrQ",
    "c": "hcmc",
    "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn kết hợp triều cường vượt báo động 3, TPHCM đối mặt nguy cơ ngập sâu",
+   "u": "https://dantri.com.vn/thoi-tiet/mua-lon-ket-hop-trieu-cuong-vuot-bao-dong-3-tphcm-doi-mat-nguy-co-ngap-sau-20261010211447095.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-10",
+   "img": "https://icdn.dantri.com.vn/2026/10/10/nhh3676-1791641598180.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường TP.HCM lên nhanh, nguy cơ ngập sâu đến 60 cm",
+   "u": "https://lifestyle.zingnews.vn/trieu-cuong-tphcm-len-nhanh-nguy-co-ngap-sau-den-60-cm-post1688832.html",
+   "s": "Znews",
+   "d": "2026-10-10",
+   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2024_02_22/Trieu_cuong_Znews.jpg",
+   "c": "hcmc",
+   "fp": [
+    "Trần Xuân Soạn",
+    "Huỳnh Tấn Phát"
+   ],
    "z": [],
    "canh": 1
   },
@@ -990,52 +1037,6 @@ window.TIN_NGAP = {
    "img": "https://photo.znews.vn/w660/Uploaded/anqyy/2026_09_28/ngap_znews1790766749719_967987444177146464_g5490766119873646141_a5deabdb0115def15f89a278b4681f12.jpg",
    "c": "hcmc",
    "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa ở TPHCM và Nam bộ gia tăng từ ngày 7-10",
-   "u": "https://www.sggp.org.vn/mua-o-tphcm-va-nam-bo-gia-tang-tu-ngay-7-10-post874826.html",
-   "s": "SGGP",
-   "d": "2026-10-04",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_04/img-2278-4756-6844.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Từ hôm nay, TP.HCM hứng đợt mưa lớn đến 6 ngày, có nơi trên 250 mm",
-   "u": "https://lifestyle.zingnews.vn/tu-hom-nay-tphcm-hung-dot-mua-lon-den-6-ngay-co-noi-tren-250-mm-post1687344.html",
-   "s": "Znews",
-   "d": "2026-10-04",
-   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_10_04/Mua_o_TP.HCM_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa chiều cuối tuần, nhiều tuyến đường TPHCM lại ngập",
-   "u": "https://tienphong.vn/mua-chieu-cuoi-tuan-nhieu-tuyen-duong-tphcm-lai-ngap-post1882164.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-04",
-   "img": "https://cdn.tienphong.vn/images/x-htLSVwMI_7d1M_8Q71GO2mGyAS0OqVI50UQIp1mDNg2bQNNGVdnC5pp13nHPzWh7BfQz2iEh8O7FIFT7v5SNnWGJup8HWJkLFbsN9JRSQ/2aobor3a1eweofznvvjlhgzztkz40jrjsgjdease-7684.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Cảnh báo hố sâu nguy hiểm tại con đường ngập nặng nhất ở TPHCM",
-   "u": "https://tienphong.vn/canh-bao-ho-sau-nguy-hiem-tai-con-duong-ngap-nang-nhat-o-tphcm-post1882138.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-04",
-   "img": "https://cdn.tienphong.vn/images/SdKzdntpvrqScxyEFJopo6mN71iuwrf26Bi8cYLui8blBMw4mXGbPpAxZT7uXPCH4ETUMB9Aa_3dsOeoBMkQwBP58ATuC57Q-8lg09RT_GwskiqXxACV9-83eJax4Cm2bOLBAksKZtEu36n3spUGk73bavw8JFjEgOPTfDmqOFo/1791100383272-1479384462887951411-6554996558784376140-d40b439078d6f27edba170ccb77421b5.jpg.avif",
-   "c": "hcmc",
-   "fp": [
-    "Phan Huy Ích"
-   ],
    "z": [],
    "canh": 1
   },
