@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-13T03:27:23.392Z",
+ "capNhat": "2026-10-13T18:04:53.914Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -25,6 +25,31 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Bản tin thời sự ngày 13-10: Dự báo mưa tăng trở lại tại Nam bộ, kéo dài đến 21-10",
+   "u": "https://www.sggp.org.vn/ban-tin-thoi-su-ngay-13-10-du-bao-mua-tang-tro-lai-tai-nam-bo-keo-dai-den-21-10-post876426.html",
+   "s": "SGGP",
+   "d": "2026-10-13",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/agesfjbfjpy/2026_10_13/tit-yt-sggp00-00-10-16still6280-3325-5312.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nhiều nơi trũng thấp tại TPHCM tiếp tục ngập do triều cường",
+   "u": "https://www.sggp.org.vn/nhieu-noi-trung-thap-tai-tphcm-tiep-tuc-ngap-do-trieu-cuong-post876410.html",
+   "s": "SGGP",
+   "d": "2026-10-13",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/xdlqvplc/2026_10_13/4c26365f6a54ea0ab345-7680-7776.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "Nha Be District",
+    "BD Thủ Dầu Một"
+   ],
    "canh": 1
   },
   {
@@ -1019,28 +1044,6 @@ window.TIN_NGAP = {
    "s": "VnExpress",
    "d": "2026-10-07",
    "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/07/wm1-ngap-1791377542.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=LzjGLcjvsTr-OnIcET2DSQ",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM: Mưa lớn, đường ngập, kẹt xe giờ tan tầm",
-   "u": "https://www.sggp.org.vn/tphcm-mua-lon-duong-ngap-ket-xe-gio-tan-tam-post875392.html",
-   "s": "SGGP",
-   "d": "2026-10-07",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/xdlqvplc/2026_10_07/da441a5cb42634786d37-9339-536.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Xã Xuân Sơn chủ động phòng chống nguy cơ ngập lụt",
-   "u": "https://www.sggp.org.vn/xa-xuan-son-chu-dong-phong-chong-nguy-co-ngap-lut-post875365.html",
-   "s": "SGGP",
-   "d": "2026-10-07",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/nphovhp/2026_10_07/7-5030-213.jpg.webp",
    "c": "hcmc",
    "fp": [],
    "z": [],
