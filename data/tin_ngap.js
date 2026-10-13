@@ -2,9 +2,31 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-12T20:12:19.379Z",
+ "capNhat": "2026-10-13T03:27:23.392Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Triều cường tại TPHCM đang xuống nhưng vẫn ở mức trên dưới báo động 3",
+   "u": "https://www.sggp.org.vn/trieu-cuong-tai-tphcm-dang-xuong-nhung-van-o-muc-tren-duoi-bao-dong-3-post876294.html",
+   "s": "SGGP",
+   "d": "2026-10-13",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/agesfjbfjpy/2026_10_13/s-mua00-00-03-09still001-6790-3686.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nam bộ mưa tăng trở lại, nguy cơ ngập do kết hợp triều cường",
+   "u": "https://www.sggp.org.vn/nam-bo-mua-tang-tro-lai-nguy-co-ngap-do-ket-hop-trieu-cuong-post876277.html",
+   "s": "SGGP",
+   "d": "2026-10-13",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/nphovhp/2026_10_13/1-8659-7658.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Độc lạ quán cà phê ngập nước ở TPHCM",
    "u": "https://tienphong.vn/doc-la-quan-ca-phe-ngap-nuoc-o-tphcm-post1884337.tpo",
@@ -194,6 +216,17 @@ window.TIN_NGAP = {
    "s": "Znews",
    "d": "2026-10-12",
    "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_09_28/Mua_Sai_Gon_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ tiếp tục mưa dông, triều cường rút dần",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-dong-trieu-cuong-rut-dan-20261012224321504.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-12",
+   "img": "https://icdn.dantri.com.vn/2026/10/12/tc11-1791819684309.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1008,39 +1041,6 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-10-07",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/nphovhp/2026_10_07/7-5030-213.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Danh sách 122 điểm ngập do mưa lớn, triều cường tại TP.HCM",
-   "u": "https://tuoitre.vn/danh-sach-122-diem-ngap-do-mua-lon-trieu-cuong-tai-tphcm-100261007160246997.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-10-07",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/7/base64-17908658822751834399667-1791379113548194685402-0-0-868-1388-crop-17913791422761028201202.jpeg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Trung tâm TP.HCM mưa to rồi lan rộng, nhiều tuyến đường ngập nước, kẹt xe",
-   "u": "https://tuoitre.vn/dung-gio-tan-tam-7-10-trung-tam-tphcm-mua-to-roi-lan-ra-khap-cac-phuong-xa-100261007173452622.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-10-07",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/7/mua-1-17913769531361252237176-70-0-1080-1616-crop-17913769669111598445527.jpeg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM lại mưa ngập, người dân chật vật dắt xe giữa dòng nước",
-   "u": "https://vtcnews.vn/tp-hcm-lai-mua-ngap-nguoi-dan-chat-vat-dat-xe-giua-dong-nuoc-ar1043926.html",
-   "s": "VTC News",
-   "d": "2026-10-07",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/10/07/img-3323-18390731.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
