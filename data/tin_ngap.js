@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-13T18:04:53.914Z",
+ "capNhat": "2026-10-14T01:45:11.504Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -49,6 +49,30 @@ window.TIN_NGAP = {
    "z": [
     "Nha Be District",
     "BD Thủ Dầu Một"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Miền Trung mưa lớn, TPHCM nguy cơ ngập do triều cường",
+   "u": "https://dantri.com.vn/dt360/mien-trung-mua-lon-tphcm-nguy-co-ngap-do-trieu-cuong-20261013223619578.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-13",
+   "img": "https://icdn.dantri.com.vn/2026/10/13/thumb-1-1791905574497.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM chiều tối có nơi mưa to, ven biển đề phòng ngập",
+   "u": "https://lifestyle.zingnews.vn/tphcm-chieu-toi-co-noi-mua-to-ven-bien-de-phong-ngap-post1689476.html",
+   "s": "Znews",
+   "d": "2026-10-13",
+   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_09_27/Mua_to_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "VT Vũng Tàu"
    ],
    "canh": 1
   },
@@ -1022,28 +1046,6 @@ window.TIN_NGAP = {
    "s": "Dân Trí",
    "d": "2026-10-07",
    "img": "https://icdn.dantri.com.vn/2026/10/07/sequence02-ezgifcom-video-to-gif-converter-1791379657894.gif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa xối xả, người dân TPHCM nhích từng chút trên đường về nhà",
-   "u": "https://dantri.com.vn/thoi-su/mua-xoi-xa-nguoi-dan-tphcm-nhich-tung-chut-tren-duong-ve-nha-20261007193731725.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-07",
-   "img": "https://icdn.dantri.com.vn/2026/10/07/179137851178788486794528747411168848679452874741116431780f5c97933b8830df734ffc95ea6-edited-1791378829572.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn giờ tan tầm, giao thông TP HCM rối loạn",
-   "u": "https://vnexpress.net/mua-lon-gio-tan-tam-giao-thong-tp-hcm-roi-loan-5129632.html",
-   "s": "VnExpress",
-   "d": "2026-10-07",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/07/wm1-ngap-1791377542.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=LzjGLcjvsTr-OnIcET2DSQ",
    "c": "hcmc",
    "fp": [],
    "z": [],
