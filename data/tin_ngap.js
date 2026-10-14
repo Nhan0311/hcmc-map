@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-14T01:45:11.504Z",
+ "capNhat": "2026-10-14T15:45:52.378Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Nam bộ vẫn mưa những ngày tới, tập trung vào chiều tối",
+   "u": "https://www.sggp.org.vn/nam-bo-van-mua-nhung-ngay-toi-tap-trung-vao-chieu-toi-post876550.html",
+   "s": "SGGP",
+   "d": "2026-10-14",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_14/img-2749-9106-153.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Triều cường tại TPHCM đang xuống nhưng vẫn ở mức trên dưới báo động 3",
    "u": "https://www.sggp.org.vn/trieu-cuong-tai-tphcm-dang-xuong-nhung-van-o-muc-tren-duoi-bao-dong-3-post876294.html",
@@ -1035,17 +1046,6 @@ window.TIN_NGAP = {
    "s": "Tiền Phong",
    "d": "2026-10-07",
    "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshhdfrbXKf0ETMQibKfHeeM9cERmamMNkjfGN_V1NNHiu0jhFlD_XfZS6SmOY4szxA6ojcKB4s182X2YmgAmVlbPINheiTjVhlsiSnLluA4Os3-NjMReN_2R-3NsZ5B0HP2Aazg1UaAz17zbCfgOFa3fwyn6pVgTxgBtZCEJ-fwD-/tp-c_1791377441281-8698057872782516609-g4894198475941774559-6da4d9a10019153e9bf3890739ed8263.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Người dân TPHCM hơn 2 giờ vẫn chưa thể về nhà vì mưa ngập",
-   "u": "https://dantri.com.vn/dt360/nguoi-dan-tphcm-hon-2-gio-van-chua-the-ve-nha-vi-mua-ngap-20261007202754503.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-07",
-   "img": "https://icdn.dantri.com.vn/2026/10/07/sequence02-ezgifcom-video-to-gif-converter-1791379657894.gif",
    "c": "hcmc",
    "fp": [],
    "z": [],
