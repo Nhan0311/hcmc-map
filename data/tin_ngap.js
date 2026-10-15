@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-14T15:45:52.378Z",
+ "capNhat": "2026-10-15T01:21:28.122Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -11,6 +11,50 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-10-14",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_14/img-2749-9106-153.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Vừa khai trương, nhà hàng ở TPHCM ngập sâu phải dùng thuyền đón khách",
+   "u": "https://dantri.com.vn/du-lich/vua-khai-truong-nha-hang-o-tphcm-ngap-sau-phai-dung-thuyen-don-khach-20261013211033429.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-14",
+   "img": "https://icdn.dantri.com.vn/2026/10/13/nha-hang-bi-ngap23-1791897317978.jpg?watermark=v1",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ mưa gia tăng vào cuối tuần",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-mua-gia-tang-vao-cuoi-tuan-20261014195947170.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-14",
+   "img": "https://icdn.dantri.com.vn/2026/09/19/mmuuu-1789821216857.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Bé trai bán vé số nằm tử vong trong hẻm ngập nước ở TPHCM",
+   "u": "https://dantri.com.vn/thoi-su/be-trai-ban-ve-so-nam-tu-vong-trong-hem-ngap-nuoc-o-tphcm-20261014220856775.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-14",
+   "img": "https://icdn.dantri.com.vn/2026/10/14/ae20a2b5-7b6e-403f-bbbc-416a1b27c396-1791989981678.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Thời tiết TP.HCM ngày 15/10: Sáng tạnh ráo, chiều mưa to",
+   "u": "https://lifestyle.zingnews.vn/thoi-tiet-tphcm-ngay-1510-sang-tanh-rao-chieu-mua-to-post1689668.html",
+   "s": "Znews",
+   "d": "2026-10-14",
+   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2019_11_24/Trieu_SG_Znews.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1002,50 +1046,6 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-10-08",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/8/vi-sao-he-thong-thoat-nuoc-tphcm-lien-tuc-qua-tai-khi-mua-lon-1738.jpg?width=0&s=TKjjRneVsHEnTe02smGs4Q",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM và Nam Bộ tiếp tục mưa lớn, sắp đón triều cường vượt báo động 3",
-   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-lon-sap-don-trieu-cuong-vuot-bao-dong-3-20261008192644946.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-08",
-   "img": "https://icdn.dantri.com.vn/2026/09/18/m111-1789731053790.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Thi c&ocirc;ng dự &aacute;n hạ tầng c&oacute; l&agrave;m ph&aacute;t sinh điểm ngập mới ở TP.HCM?",
-   "u": "https://thanhnien.vn/thi-cong-du-an-ha-tang-co-lam-phat-sinh-diem-ngap-moi-o-tphcm-185261008182328151.htm",
-   "s": "Thanh Niên",
-   "d": "2026-10-08",
-   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/8/dau-thang-10-nguoi-dan-tphcm-doi-mat-voi-tinh-trang-mua-lon-va-trieu-cuong-cao-gay-ngap-sauanh-nhat-thinh-copy-1791385002964-0-35-610-1011-crop-1791458373790573258955.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "CSGT TPHCM cảnh báo 122 điểm có nguy cơ ngập do mưa lớn và triều cường",
-   "u": "https://dantri.com.vn/thoi-su/csgt-tphcm-canh-bao-122-diem-co-nguy-co-ngap-do-mua-lon-va-trieu-cuong-20261006184300949.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-07",
-   "img": "https://icdn.dantri.com.vn/2026/10/06/1d1-cropped-cropped-1791286658840.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Đường phố ngập sâu, giao thông TPHCM rối loạn trong cơn mưa lớn giờ tan tầm",
-   "u": "https://tienphong.vn/duong-pho-ngap-sau-giao-thong-tphcm-roi-loan-trong-con-mua-lon-gio-tan-tam-post1883158.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-07",
-   "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshhdfrbXKf0ETMQibKfHeeM9cERmamMNkjfGN_V1NNHiu0jhFlD_XfZS6SmOY4szxA6ojcKB4s182X2YmgAmVlbPINheiTjVhlsiSnLluA4Os3-NjMReN_2R-3NsZ5B0HP2Aazg1UaAz17zbCfgOFa3fwyn6pVgTxgBtZCEJ-fwD-/tp-c_1791377441281-8698057872782516609-g4894198475941774559-6da4d9a10019153e9bf3890739ed8263.jpg.avif",
    "c": "hcmc",
    "fp": [],
    "z": [],
