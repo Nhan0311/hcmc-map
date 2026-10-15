@@ -2,9 +2,42 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-15T01:21:28.122Z",
+ "capNhat": "2026-10-15T15:33:00.837Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TP.HCM ngập ở đ&acirc;u v&agrave; lộ tr&igrave;nh khắc phục ra sao?",
+   "u": "https://thanhnien.vn/tphcm-ngap-o-dau-va-lo-trinh-khac-phuc-ra-sao-185261013100305337.htm",
+   "s": "Thanh Niên",
+   "d": "2026-10-15",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/13/0d0e5f7b-f14a-4d0b-9a9d-766943360d61-17918608301901664844300.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Mưa dông ập xuống, nhiều tuyến đường TP.HCM lại biến thành sông",
+   "u": "https://lifestyle.zingnews.vn/mua-dong-ap-xuong-nhieu-tuyen-duong-tphcm-lai-bien-thanh-song-post1689309.html",
+   "s": "Znews",
+   "d": "2026-10-15",
+   "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_10_08/tp_mua_lon_3173_1.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội tập trung gỡ hai điểm nghẽn lớn: Ùn tắc giao thông và úng ngập",
+   "u": "https://baoxaydung.vn/ha-noi-tap-trung-go-hai-diem-nghen-lon-un-tac-giao-thong-va-ung-ngap-192261015161258849.htm",
+   "s": "Báo Giao thông",
+   "d": "2026-10-15",
+   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/10/15/cdb0f29bd98d59d3009c-179205546419896875121-0-0-1600-2560-crop-17920555032351990768772.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Nam bộ vẫn mưa những ngày tới, tập trung vào chiều tối",
    "u": "https://www.sggp.org.vn/nam-bo-van-mua-nhung-ngay-toi-tap-trung-vao-chieu-toi-post876550.html",
@@ -1022,30 +1055,6 @@ window.TIN_NGAP = {
    "s": "Báo Giao thông",
    "d": "2026-10-08",
    "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/10/8/ngap-4-17914597781162052971742-58-0-1658-2560-crop-17914598778561562046468.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Sở Xây dựng TP.HCM nêu nguyên nhân đường Phan Huy Ích, Thảo Điền ngập sâu",
-   "u": "https://lifestyle.zingnews.vn/so-xay-dung-tphcm-neu-nguyen-nhan-duong-phan-huy-ich-thao-dien-ngap-sau-post1688409.html",
-   "s": "Znews",
-   "d": "2026-10-08",
-   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_10_08/Ngap_Znews.jpg",
-   "c": "hcmc",
-   "fp": [
-    "Phan Huy Ích"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Vì sao hệ thống thoát nước TPHCM liên tục quá tải khi mưa lớn?",
-   "u": "https://vietnamnet.vn/vi-sao-he-thong-thoat-nuoc-tphcm-lien-tuc-qua-tai-khi-mua-lon-2562945.html",
-   "s": "VietnamNet",
-   "d": "2026-10-08",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/8/vi-sao-he-thong-thoat-nuoc-tphcm-lien-tuc-qua-tai-khi-mua-lon-1738.jpg?width=0&s=TKjjRneVsHEnTe02smGs4Q",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -2092,17 +2101,6 @@ window.TIN_NGAP = {
    "s": "VTC News",
    "d": "2026-09-16",
    "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/16/du-bao-thoi-tiet-ngay-17-9-22034529.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội mưa trên 150 mm gây ngập diện rộng",
-   "u": "https://vnexpress.net/ha-noi-nhieu-noi-mua-vuot-150-mm-5121155.html",
-   "s": "VnExpress",
-   "d": "2026-09-16",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/17/wm1-wm1-anh-set-1789624869-3180-1789624879.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=hp3Qd2yLM4uLhmAdI2653A",
    "c": "hanoi",
    "fp": [],
    "z": [],
