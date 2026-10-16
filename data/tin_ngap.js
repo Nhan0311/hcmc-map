@@ -2,9 +2,31 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-16T01:07:12.906Z",
+ "capNhat": "2026-10-16T15:19:32.590Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "D&ugrave;ng cảm biến mưa v&agrave; AI c&oacute; thể cảnh b&aacute;o sớm ngập nước ở TP.HCM",
+   "u": "https://thanhnien.vn/dung-cam-bien-mua-va-ai-co-the-canh-bao-som-ngap-nuoc-o-tphcm-185261016115143871.htm",
+   "s": "Thanh Niên",
+   "d": "2026-10-16",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/16/tnw-dsc06745-17921256714852146505854-45-0-1645-2560-crop-1792125979521701552095.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Chống ngập TP.HCM: Cần đồng bộ hạ tầng và dành không gian cho nước",
+   "u": "https://baoxaydung.vn/chong-ngap-tphcm-can-dong-bo-ha-tang-va-danh-khong-gian-cho-nuoc-192261016150235143.htm",
+   "s": "Báo Giao thông",
+   "d": "2026-10-16",
+   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/10/16/photo-1792136823843-1792136824958330920473-40-0-832-1267-crop-1792136953702697346825.jpeg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TP.HCM ngập ở đ&acirc;u v&agrave; lộ tr&igrave;nh khắc phục ra sao?",
    "u": "https://thanhnien.vn/tphcm-ngap-o-dau-va-lo-trinh-khac-phuc-ra-sao-185261013100305337.htm",
@@ -1031,28 +1053,6 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-10-08",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/kiubcgmb/2026_10_08/img-1675-4794-1025.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Vì sao nhiều khu vực ở TP.HCM ngập kéo dài, nước chậm rút?",
-   "u": "https://vtcnews.vn/vi-sao-nhieu-khu-vuc-o-tp-hcm-ngap-keo-dai-nuoc-cham-rut-ar1044115.html",
-   "s": "VTC News",
-   "d": "2026-10-08",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/10/08/ngap-3-16443384.png",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nhà cửa chìm trong nước, khu biệt thự ở TP.HCM dùng máy bơm vẫn chưa thoát ngập",
-   "u": "https://vtcnews.vn/nha-cua-chim-trong-nuoc-khu-biet-thu-o-tp-hcm-dung-may-bom-van-chua-thoat-ngap-ar1044094.html",
-   "s": "VTC News",
-   "d": "2026-10-08",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/10/08/33-15451174.JPG",
    "c": "hcmc",
    "fp": [],
    "z": [],
