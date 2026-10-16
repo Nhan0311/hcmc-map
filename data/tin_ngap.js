@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-15T15:33:00.837Z",
+ "capNhat": "2026-10-16T01:07:12.906Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -22,6 +22,28 @@ window.TIN_NGAP = {
    "s": "Znews",
    "d": "2026-10-15",
    "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_10_08/tp_mua_lon_3173_1.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ có mưa dông diện rộng vào cuối tuần",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-co-mua-dong-dien-rong-vao-cuoi-tuan-20261015181408024.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-15",
+   "img": "https://icdn.dantri.com.vn/2026/08/07/0004c574-b7c8-43d5-9cf6-4e06109c4cba1201a-1786110765878.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Miền Bắc nắng ráo, Nam Bộ tiếp tục mưa lớn",
+   "u": "https://tienphong.vn/mien-bac-nang-rao-nam-bo-tiep-tuc-mua-lon-post1885674.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-10-15",
+   "img": "https://cdn.tienphong.vn/images/Cnj4WjvRBHYQoCoEhCPn8q-Jxkp-tDwmmjWsVa987OJIjgbFpz3bCRBx5k0vAASgYTZ2A2SDTPc4FV1cVd5TrA/mua-tphcm-1371.jpg.avif",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1031,30 +1053,6 @@ window.TIN_NGAP = {
    "s": "VTC News",
    "d": "2026-10-08",
    "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/10/08/33-15451174.JPG",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Xác minh thông tin có người tử vong nghi do điện giật lúc ngập nước ở TP.HCM",
-   "u": "https://vtcnews.vn/xac-minh-thong-tin-co-nguoi-tu-vong-nghi-do-dien-giat-luc-ngap-nuoc-o-tp-hcm-ar1044041.html",
-   "s": "VTC News",
-   "d": "2026-10-08",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/10/08/img-3352-12132639.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "Thu Duc Old"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM chỉ ra nguyên nhân nhiều tuyến đường ngập sâu, rút nước chậm",
-   "u": "https://baoxaydung.vn/tphcm-chi-ra-nguyen-nhan-nhieu-tuyen-duong-ngap-sau-rut-nuoc-cham-192261008184511587.htm",
-   "s": "Báo Giao thông",
-   "d": "2026-10-08",
-   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/10/8/ngap-4-17914597781162052971742-58-0-1658-2560-crop-17914598778561562046468.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
