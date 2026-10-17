@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-16T15:19:32.590Z",
+ "capNhat": "2026-10-17T01:12:50.368Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Nam bộ có thể mưa diện rộng cuối tuần, có nơi mưa to",
+   "u": "https://www.sggp.org.vn/nam-bo-co-the-mua-dien-rong-cuoi-tuan-co-noi-mua-to-post876973.html",
+   "s": "SGGP",
+   "d": "2026-10-17",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/dudbexqdre/2026_10_17/mua-1490-4282.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "D&ugrave;ng cảm biến mưa v&agrave; AI c&oacute; thể cảnh b&aacute;o sớm ngập nước ở TP.HCM",
    "u": "https://thanhnien.vn/dung-cam-bien-mua-va-ai-co-the-canh-bao-som-ngap-nuoc-o-tphcm-185261016115143871.htm",
@@ -22,6 +33,28 @@ window.TIN_NGAP = {
    "s": "Báo Giao thông",
    "d": "2026-10-16",
    "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/10/16/photo-1792136823843-1792136824958330920473-40-0-832-1267-crop-1792136953702697346825.jpeg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ có nơi mưa trên 100mm, đề phòng ngập",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-co-noi-mua-tren-100mm-de-phong-ngap-20261016194116747.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-16",
+   "img": "https://icdn.dantri.com.vn/2026/10/16/mo1-1792154386092.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Xe gửi trong chung cư bị ngập nước, hỏng: Chủ xe có được bồi thường?",
+   "u": "https://www.sggp.org.vn/xe-gui-trong-chung-cu-bi-ngap-nuoc-hong-chu-xe-co-duoc-boi-thuong-post876976.html",
+   "s": "SGGP",
+   "d": "2026-10-16",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/vocgmvbg/2026_10_07/hoi-dap-1535-5990.jpg.webp",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1020,39 +1053,6 @@ window.TIN_NGAP = {
    "s": "Tuổi Trẻ",
    "d": "2026-10-08",
    "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/8/gif-nuoc-ngap-1791432090598577758772-0-0-236-378-crop-1791451314976301072937.gif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Podcast tin thời sự ngày 8-10: TPHCM nhiều nơi ngập nặng sau một ngày, dự báo tiếp tục mưa",
-   "u": "https://www.sggp.org.vn/podcast-tin-thoi-su-ngay-8-10-tphcm-nhieu-noi-ngap-nang-sau-mot-ngay-du-bao-tiep-tuc-mua-post875627.html",
-   "s": "SGGP",
-   "d": "2026-10-08",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/cjvwpdhnw/2026_10_08/a-thulm-ytb-3-8054-8561.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Bản tin thời sự ngày 8-10: Nam bộ tiếp tục mưa lớn, cảnh báo ngập do triều cường dâng cao",
-   "u": "https://www.sggp.org.vn/ban-tin-thoi-su-ngay-8-10-nam-bo-tiep-tuc-mua-lon-canh-bao-ngap-do-trieu-cuong-dang-cao-post875620.html",
-   "s": "SGGP",
-   "d": "2026-10-08",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/cjvwpdhnw/2026_10_08/a-thulm-ytb-2-3858-5822.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nguyên nhân nhiều tuyến đường tại TPHCM ngập sâu, nước rút chậm",
-   "u": "https://www.sggp.org.vn/nguyen-nhan-nhieu-tuyen-duong-tai-tphcm-ngap-sau-nuoc-rut-cham-post875594.html",
-   "s": "SGGP",
-   "d": "2026-10-08",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/kiubcgmb/2026_10_08/img-1675-4794-1025.jpg.webp",
    "c": "hcmc",
    "fp": [],
    "z": [],
