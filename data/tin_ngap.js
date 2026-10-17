@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-17T01:12:50.368Z",
+ "capNhat": "2026-10-17T14:08:19.238Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -11,6 +11,17 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-10-17",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/dudbexqdre/2026_10_17/mua-1490-4282.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM sắp ra mắt bản đồ số cảnh báo điểm ngập",
+   "u": "https://lifestyle.zingnews.vn/tphcm-sap-ra-mat-ban-do-so-canh-bao-diem-ngap-post1690219.html",
+   "s": "Znews",
+   "d": "2026-10-17",
+   "img": "https://photo.znews.vn/w660/Uploaded/kbfoplb/2026_10_07/nguyenvankhoi_ngap_znews_15.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1042,17 +1053,6 @@ window.TIN_NGAP = {
    "s": "Thanh Niên",
    "d": "2026-10-08",
    "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/8/tnw-2aobor43spb4flyg56e9tlkm3ow3tnkd9whfb2gq-1791451829538972072911-107-0-1707-2560-crop-179145189110382771313.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Vì sao nhiều điểm ngập ở TP.HCM nay ngập lâu, nước rút chậm?",
-   "u": "https://tuoitre.vn/vi-sao-nhieu-diem-ngap-o-tphcm-nay-ngap-lau-nuoc-rut-cham-100261008161043584.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-10-08",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/8/gif-nuoc-ngap-1791432090598577758772-0-0-236-378-crop-1791451314976301072937.gif",
    "c": "hcmc",
    "fp": [],
    "z": [],
