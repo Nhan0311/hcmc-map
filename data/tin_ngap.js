@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-17T14:08:19.238Z",
+ "capNhat": "2026-10-18T00:47:54.660Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -22,6 +22,17 @@ window.TIN_NGAP = {
    "s": "Znews",
    "d": "2026-10-17",
    "img": "https://photo.znews.vn/w660/Uploaded/kbfoplb/2026_10_07/nguyenvankhoi_ngap_znews_15.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hôm nay TP.HCM tiếp tục có mưa, người dân lưu ý hai khung giờ",
+   "u": "https://lifestyle.zingnews.vn/hom-nay-tphcm-tiep-tuc-co-mua-nguoi-dan-luu-y-hai-khung-gio-post1690359.html",
+   "s": "Znews",
+   "d": "2026-10-17",
+   "img": "https://photo.znews.vn/w660/Uploaded/uohusah/2022_10_10/trieu_cuong.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1042,17 +1053,6 @@ window.TIN_NGAP = {
    "s": "Thanh Niên",
    "d": "2026-10-08",
    "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/8/tnw-1wupukpx4ri9hjw2yg60h9zsimgovqn859x6zwh4frmkdxoj8rl0nqshbyoujgc1kzu-1791454112784986397592-72-0-1672-2560-crop-17914543602511235811907.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nước ngập ph&ograve;ng trọ l&uacute;c rạng s&aacute;ng, người đ&agrave;n &ocirc;ng ở TP.HCM bị điện giật tử vong",
-   "u": "https://thanhnien.vn/nuoc-ngap-phong-tro-luc-rang-sang-nguoi-dan-ong-o-tphcm-bi-dien-giat-tu-vong-185261008160027702.htm",
-   "s": "Thanh Niên",
-   "d": "2026-10-08",
-   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/8/tnw-2aobor43spb4flyg56e9tlkm3ow3tnkd9whfb2gq-1791451829538972072911-107-0-1707-2560-crop-179145189110382771313.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
