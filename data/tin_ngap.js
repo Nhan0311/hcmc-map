@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-19T01:00:37.257Z",
+ "capNhat": "2026-10-19T17:23:56.137Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM: Cảnh đường 'ngập như sông', nghìn xe nhích từng mét qua 'nút thắt cổ chai'",
+   "u": "https://vietnamnet.vn/tphcm-duong-ngap-nhu-song-nghin-xe-nhich-tung-met-qua-nut-that-co-chai-2558079.html",
+   "s": "VietnamNet",
+   "d": "2026-10-19",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/23/tphcm-canh-duong-ngap-nhu-song-nghin-xe-nhich-tung-met-qua-nut-that-co-chai-2437.gif?width=0&s=RmktEmSg8U15_xSXrUPXOA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TPHCM và Nam Bộ giảm mưa từ giữa tuần này",
    "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-giam-mua-tu-giua-tuan-nay-20261018171224975.htm",
@@ -1049,19 +1060,6 @@ window.TIN_NGAP = {
    "fp": [],
    "z": [
     "Thu Duc Old"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Cuộc sống đảo lộn trong khu dân cư ngập suốt 20 tiếng ở TP HCM",
-   "u": "https://vnexpress.net/cuoc-song-dao-lon-trong-khu-dan-cu-ngap-suot-20-tieng-o-tp-hcm-5129807.html",
-   "s": "VnExpress",
-   "d": "2026-10-08",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/08/2aobor40vjtk694515qp9blrtbl5vuixuacloclw104-1791429598.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=4HRK3uEO6Kd4qiQvR9aQJg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "Go Vap District"
    ],
    "canh": 1
   },
