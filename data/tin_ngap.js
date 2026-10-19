@@ -2,9 +2,38 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-18T14:26:08.137Z",
+ "capNhat": "2026-10-19T01:00:37.257Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM và Nam Bộ giảm mưa từ giữa tuần này",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-giam-mua-tu-giua-tuan-nay-20261018171224975.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-18",
+   "img": "https://icdn.dantri.com.vn/2026/10/18/mua1-1792318237944.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM có thể mưa đến 22/10, Thủ Đức, Bình Dương tới 130 mm",
+   "u": "https://lifestyle.zingnews.vn/tphcm-co-the-mua-den-2210-thu-duc-binh-duong-toi-130-mm-post1690532.html",
+   "s": "Znews",
+   "d": "2026-10-18",
+   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_09_09/Mua_TP.HCM.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "BD Bàu Bàng",
+    "BD Bắc Tân Uyên",
+    "Cu Chi District",
+    "Hoc Mon District",
+    "BD Thuận An",
+    "Thu Duc Old"
+   ],
+   "canh": 1
+  },
   {
    "t": "Nam bộ có thể mưa diện rộng cuối tuần, có nơi mưa to",
    "u": "https://www.sggp.org.vn/nam-bo-co-the-mua-dien-rong-cuoi-tuan-co-noi-mua-to-post876973.html",
@@ -1034,28 +1063,6 @@ window.TIN_NGAP = {
    "z": [
     "Go Vap District"
    ],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM khởi c&ocirc;ng dự &aacute;n chống ngập đường M&atilde; L&ograve; trong th&aacute;ng 11",
-   "u": "https://thanhnien.vn/tphcm-khoi-cong-du-an-chong-ngap-duong-ma-lo-trong-thang-11-185261008165207595.htm",
-   "s": "Thanh Niên",
-   "d": "2026-10-08",
-   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/8/tnw-tnw-ngap-duong-ma-lo-cao-an-bien-1791113526605573970301-1791453435077657239328-0-269-1032-1920-crop-17914535506691700569640-17914538525532126999975.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Bao giờ đường Phan Huy &Iacute;ch, khu Thảo Điền hết ngập? Sở X&acirc;y dựng TP.HCM trả lời",
-   "u": "https://thanhnien.vn/bao-gio-duong-phan-huy-ich-khu-thao-dien-het-ngap-so-xay-dung-tphcm-tra-loi-185261008164938974.htm",
-   "s": "Thanh Niên",
-   "d": "2026-10-08",
-   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/8/tnw-1wupukpx4ri9hjw2yg60h9zsimgovqn859x6zwh4frmkdxoj8rl0nqshbyoujgc1kzu-1791454112784986397592-72-0-1672-2560-crop-17914543602511235811907.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   },
   {
