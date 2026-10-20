@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-19T17:23:56.137Z",
+ "capNhat": "2026-10-20T01:40:03.466Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Rãnh áp thấp đi qua, Nam bộ tiếp tục có mưa vào chiều tối",
+   "u": "https://www.sggp.org.vn/ranh-ap-thap-di-qua-nam-bo-tiep-tuc-co-mua-vao-chieu-toi-post877413.html",
+   "s": "SGGP",
+   "d": "2026-10-20",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_14/img-2744-7235-8004.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TPHCM: Cảnh đường 'ngập như sông', nghìn xe nhích từng mét qua 'nút thắt cổ chai'",
    "u": "https://vietnamnet.vn/tphcm-duong-ngap-nhu-song-nghin-xe-nhich-tung-met-qua-nut-that-co-chai-2558079.html",
@@ -14,6 +25,19 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM tiếp tục mưa to đến 22/10, triều cường sắp lên lại",
+   "u": "https://lifestyle.zingnews.vn/tphcm-tiep-tuc-mua-to-den-2210-trieu-cuong-sap-len-lai-post1690767.html",
+   "s": "Znews",
+   "d": "2026-10-19",
+   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_10/Mua_SG_07_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "BD Thủ Dầu Một"
+   ],
    "canh": 1
   },
   {
@@ -1032,30 +1056,6 @@ window.TIN_NGAP = {
    "s": "Tiền Phong",
    "d": "2026-10-08",
    "img": "https://cdn.tienphong.vn/images/7rigJUP8UzOm2Hj7Z3jG-3sBBeelwDjMYfQ_wiuTKtcVWdGLmzc1gWDHxrYw1yqW/img-0392.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "Thu Duc Old"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Sở Xây dựng TPHCM nói gì về hàng loạt điểm ngập sau mưa lớn, triều cường?",
-   "u": "https://tienphong.vn/so-xay-dung-tphcm-noi-gi-ve-hang-loat-diem-ngap-sau-mua-lon-trieu-cuong-post1883467.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-08",
-   "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshqi_PUHhWI1bualHkF1Z73LDxoaVXz70B2gqVwPIFmO38znvYMnmShSxfbLg_PLLKeOz0p-ED8TU84gT0VU8DKXVvKg1BzkqcONLUpigmC4WlMxjGzRKyHry6Tj0phPT8z4x0xal54tneBnRNQGK7HM/tp-c_1791381753442-2651055997892346622-2651055997892346622-5c0099386dca185a237212c8275c5e93.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM kiểm tra vụ điện giật một người tử vong trong khu nhà trọ ngập nước",
-   "u": "https://dantri.com.vn/thoi-su/tphcm-kiem-tra-vu-dien-giat-mot-nguoi-tu-vong-trong-khu-nha-tro-ngap-nuoc-20261008165058710.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-08",
-   "img": "https://icdn.dantri.com.vn/2026/10/08/ngapphuongthuducductphcmxuandoan-cropped-1791452768705.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [
