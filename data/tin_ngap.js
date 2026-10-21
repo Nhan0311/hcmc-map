@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-20T15:36:16.977Z",
+ "capNhat": "2026-10-21T01:25:47.254Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -11,6 +11,17 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-10-20",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_14/img-2744-7235-8004.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ tiếp tục có mưa dông diện rộng",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-co-mua-dong-dien-rong-20261020205550204.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-20",
+   "img": "https://icdn.dantri.com.vn/2026/07/29/e2bac658-3c43-4ea5-a5d4-0b3979708f061201a-1785335178890.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1048,19 +1059,6 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Người đàn ông tử vong do điện giật trong phòng trọ ngập nước ở TPHCM",
-   "u": "https://tienphong.vn/nguoi-dan-ong-tu-vong-do-dien-giat-trong-phong-tro-ngap-nuoc-o-tphcm-post1883443.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-08",
-   "img": "https://cdn.tienphong.vn/images/7rigJUP8UzOm2Hj7Z3jG-3sBBeelwDjMYfQ_wiuTKtcVWdGLmzc1gWDHxrYw1yqW/img-0392.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "Thu Duc Old"
-   ],
    "canh": 1
   },
   {
