@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-22T01:23:44.923Z",
+ "capNhat": "2026-10-22T15:50:37.407Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -11,6 +11,17 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-10-22",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_22/img-2356-3647-7226.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM sẽ giảm mưa, tăng nắng",
+   "u": "https://www.sggp.org.vn/tphcm-se-giam-mua-tang-nang-post877920.html",
+   "s": "SGGP",
+   "d": "2026-10-22",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/uiqpcwvo/2026_10_22/img-2649-4826-5956.jpeg.webp",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1048,17 +1059,6 @@ window.TIN_NGAP = {
    "s": "Tiền Phong",
    "d": "2026-10-08",
    "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshqi_PUHhWI1bualHkF1Z73LDxoaVXz70B2gqVwPIFmO38znvYMnmShSxfbLg_PLLKeOz0p-ED8TU84gT0VU8DKXVvKg1BzkqcONLUpigmC4WlMxjGzRKyHry6Tj0phPT8z4x0xal54tneBnRNQGK7HM/tp-c_1791381753442-2651055997892346622-2651055997892346622-5c0099386dca185a237212c8275c5e93.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hàng quán TPHCM đóng cửa vì mưa lớn, đường ngập sâu",
-   "u": "https://tienphong.vn/hang-quan-tphcm-dong-cua-vi-mua-lon-duong-ngap-sau-post1883192.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-08",
-   "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshqi_PUHhWI1bualHkF1Z73IjfXR4WmjEX4_GRrFkK6l-e8-aQ_EOfDlInpTbbo6OYfhqmsfPZGyAnuN2AoyQV10bsRVamGqzPHhbY2N6oCN3mghF8uD9K_vJRhs0yN6btOSeN0Hctt9AKGBN6smtA0s/tp-c_1791394342279-5346627881428964615-5346627881428964615-d19a9ad2fc24d957c881cdfdf390e8cf.jpg.avif",
    "c": "hcmc",
    "fp": [],
    "z": [],
