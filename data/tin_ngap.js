@@ -2,9 +2,45 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-21T15:54:28.020Z",
+ "capNhat": "2026-10-22T01:23:44.923Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Hôm nay, TPHCM tiếp tục có mưa, triều cường sắp lên lại",
+   "u": "https://www.sggp.org.vn/hom-nay-tphcm-tiep-tuc-co-mua-trieu-cuong-sap-len-lai-post877770.html",
+   "s": "SGGP",
+   "d": "2026-10-22",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_22/img-2356-3647-7226.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ đề phòng mưa lớn kết hợp triều cường",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-de-phong-mua-lon-ket-hop-trieu-cuong-20261021211616312.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-21",
+   "img": "https://icdn.dantri.com.vn/2026/09/15/m21-1789481474616.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM còn mưa, triều cường trạm Thủ Dầu Một có thể vượt báo động 3",
+   "u": "https://lifestyle.zingnews.vn/tphcm-con-mua-trieu-cuong-tram-thu-dau-mot-co-the-vuot-bao-dong-3-post1691134.html",
+   "s": "Znews",
+   "d": "2026-10-21",
+   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2024_02_22/Trieu_cuong_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "BD Thủ Dầu Một",
+    "Nha Be District"
+   ],
+   "canh": 1
+  },
   {
    "t": "Rãnh áp thấp đi qua, Nam bộ tiếp tục có mưa vào chiều tối",
    "u": "https://www.sggp.org.vn/ranh-ap-thap-di-qua-nam-bo-tiep-tuc-co-mua-vao-chieu-toi-post877413.html",
@@ -1023,39 +1059,6 @@ window.TIN_NGAP = {
    "s": "Tiền Phong",
    "d": "2026-10-08",
    "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshqi_PUHhWI1bualHkF1Z73IjfXR4WmjEX4_GRrFkK6l-e8-aQ_EOfDlInpTbbo6OYfhqmsfPZGyAnuN2AoyQV10bsRVamGqzPHhbY2N6oCN3mghF8uD9K_vJRhs0yN6btOSeN0Hctt9AKGBN6smtA0s/tp-c_1791394342279-5346627881428964615-5346627881428964615-d19a9ad2fc24d957c881cdfdf390e8cf.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Chiều tối nay, TPHCM và Nam bộ tiếp tục có mưa dông",
-   "u": "https://www.sggp.org.vn/chieu-toi-nay-tphcm-va-nam-bo-tiep-tuc-co-mua-dong-post875420.html",
-   "s": "SGGP",
-   "d": "2026-10-08",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_08/img-2444-5938-6454.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn ở TP.HCM, đường D5 th&agrave;nh &#039;biển nước&#039;",
-   "u": "https://thanhnien.vn/mua-lon-o-tphcm-duong-d5-thanh-bien-nuoc-185261007213153569.htm",
-   "s": "Thanh Niên",
-   "d": "2026-10-08",
-   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/7/tnw-mua-ngap-binh-thanh-4-1791383345825699013410-64-0-1664-2560-crop-17913854523191907868004-1791385462834309873859.jpeg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "[CLIP] Đồng Nai mưa lớn, nước chảy như lũ trên nhiều tuyến đường trung tâm",
-   "u": "https://tienphong.vn/clip-dong-nai-mua-lon-nuoc-chay-nhu-lu-tren-nhieu-tuyen-duong-trung-tam-post1883468.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-08",
-   "img": "https://cdn.tienphong.vn/images/PG9X9A60BOtQx70OjbKBJ7HedCuGabdgDEmp9C0qco9s14AeysRTG6u8N7KeNyWw/10081.gif",
    "c": "hcmc",
    "fp": [],
    "z": [],
