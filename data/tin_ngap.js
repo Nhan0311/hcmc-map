@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-22T15:50:37.407Z",
+ "capNhat": "2026-10-23T01:22:03.651Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -22,6 +22,28 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-10-22",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/uiqpcwvo/2026_10_22/img-2649-4826-5956.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Thời tiết cả nước nắng nhiều, TPHCM sắp đón triều cường cao",
+   "u": "https://dantri.com.vn/dt360/thoi-tiet-ca-nuoc-nang-nhieu-tphcm-sap-don-trieu-cuong-cao-20261022232909370.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-22",
+   "img": "https://icdn.dantri.com.vn/2026/09/28/trieucuong-thang9namanh0d7a0911-1790595727348.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường ở TPHCM có thể vượt báo động 3 vào cuối tháng",
+   "u": "https://dantri.com.vn/thoi-su/trieu-cuong-o-tphcm-co-the-vuot-bao-dong-3-vao-cuoi-thang-20261022185328166.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-22",
+   "img": "https://icdn.dantri.com.vn/2026/10/12/tc11-1791819684309.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1032,34 +1054,12 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "TPHCM và Nam Bộ mưa lớn có xu hướng giảm, nhưng có thể ngập do triều cường",
-   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-mua-lon-co-xu-huong-giam-nhung-co-the-ngap-do-trieu-cuong-20261009211006559.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-09",
-   "img": "https://icdn.dantri.com.vn/2026/08/11/642598ba-00d4-4cbd-bd63-83f6fecf3f221105c-1786453584510.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Mưa lớn gây lũ quét ở Chile, cuốn trôi hàng trăm ô tô",
    "u": "https://tienphong.vn/mua-lon-gay-lu-quet-o-chile-cuon-troi-hang-tram-o-to-post1883747.tpo",
    "s": "Tiền Phong",
    "d": "2026-10-09",
    "img": "https://cdn.tienphong.vn/images/rwou7SrcwsmIbuxOVDE9uTHRn23bnsCW3H4E_GfMJI9TeSUlDu9xAOOTCoWrb0ODkhpZwQtfxuKi7bsW7UBYFw/ezgif-750ad0f81d701f24.gif",
    "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa chưa dứt ở TPHCM, triều cường tiếp tục dâng cao",
-   "u": "https://tienphong.vn/mua-chua-dut-o-tphcm-trieu-cuong-tiep-tuc-dang-cao-post1883207.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-08",
-   "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshqi_PUHhWI1bualHkF1Z73LDxoaVXz70B2gqVwPIFmO38znvYMnmShSxfbLg_PLLKeOz0p-ED8TU84gT0VU8DKXVvKg1BzkqcONLUpigmC4WlMxjGzRKyHry6Tj0phPT8z4x0xal54tneBnRNQGK7HM/tp-c_1791381753442-2651055997892346622-2651055997892346622-5c0099386dca185a237212c8275c5e93.jpg.avif",
-   "c": "hcmc",
    "fp": [],
    "z": [],
    "canh": 1
