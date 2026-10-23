@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-23T01:22:03.651Z",
+ "capNhat": "2026-10-23T15:41:35.122Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -118,6 +118,17 @@ window.TIN_NGAP = {
    "z": [
     "BD Thủ Dầu Một"
    ],
+   "canh": 1
+  },
+  {
+   "t": "Mưa lớn gây ngập, kẹt xe khắp TPHCM, dòng người nhích từng chút",
+   "u": "https://vietnamnet.vn/mua-lon-gay-ngap-ket-xe-khap-tphcm-dong-nguoi-nhich-tung-chut-2560206.html",
+   "s": "VietnamNet",
+   "d": "2026-10-19",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/30/mua-lon-gay-ngap-ket-xe-khap-tphcm-dong-nguoi-nhich-tung-chut-1781.jpg?width=0&s=vm91BhXrPEWQZ5XUQ0yviA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
    "canh": 1
   },
   {
@@ -1040,17 +1051,6 @@ window.TIN_NGAP = {
    "z": [
     "Thu Duc Old"
    ],
-   "canh": 1
-  },
-  {
-   "t": "Khi nào TP.HCM hết ngập?",
-   "u": "https://vtcnews.vn/khi-nao-tp-hcm-het-ngap-ar1041573.html",
-   "s": "VTC News",
-   "d": "2026-10-09",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/10/09/ngap-1-20123189.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   },
   {
