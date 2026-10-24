@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-24T01:27:53.077Z",
+ "capNhat": "2026-10-24T14:23:54.041Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TP.HCM nghiên cứu làm ga metro có khả năng ứng phó ngập nước",
+   "u": "https://tuoitre.vn/tphcm-nghien-cuu-lam-ga-metro-ung-pho-ngap-nuoc-100261024111800723.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-10-24",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/24/ga-metro-ben-thanh-17565557556522048235255-346-90-1570-2048-crop-17928153324341199413757.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Thời tiết TP.HCM ngày 24/10: Hết mưa, triều cường sắp đạt đỉnh",
    "u": "https://lifestyle.zingnews.vn/thoi-tiet-tphcm-ngay-2410-het-mua-trieu-cuong-sap-dat-dinh-post1691630.html",
@@ -1037,17 +1048,6 @@ window.TIN_NGAP = {
     "Trần Xuân Soạn",
     "Huỳnh Tấn Phát"
    ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM: Mưa lớn tiếp diễn, triều cường có thể trên báo động 3",
-   "u": "https://www.sggp.org.vn/tphcm-mua-lon-tiep-dien-trieu-cuong-co-the-tren-bao-dong-3-post875646.html",
-   "s": "SGGP",
-   "d": "2026-10-09",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_09/img-2535-8034-4761.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
    "z": [],
    "canh": 1
   },
