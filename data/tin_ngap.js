@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-23T15:41:35.122Z",
+ "capNhat": "2026-10-24T01:27:53.077Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Thời tiết TP.HCM ngày 24/10: Hết mưa, triều cường sắp đạt đỉnh",
+   "u": "https://lifestyle.zingnews.vn/thoi-tiet-tphcm-ngay-2410-het-mua-trieu-cuong-sap-dat-dinh-post1691630.html",
+   "s": "Znews",
+   "d": "2026-10-23",
+   "img": "https://photo.znews.vn/w660/Uploaded/oplukaa/2025_12_13/TP.HCM.JPG",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Hôm nay, TPHCM tiếp tục có mưa, triều cường sắp lên lại",
    "u": "https://www.sggp.org.vn/hom-nay-tphcm-tiep-tuc-co-mua-trieu-cuong-sap-len-lai-post877770.html",
@@ -1038,19 +1049,6 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Duyệt dự &aacute;n chống ngập chợ Thủ Đức hơn 5.100 tỉ đồng cuối năm 2026",
-   "u": "https://thanhnien.vn/duyet-du-an-chong-ngap-cho-thu-duc-hon-5100-ti-dong-cuoi-nam-2026-185261009185216392.htm",
-   "s": "Thanh Niên",
-   "d": "2026-10-09",
-   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/9/tnw-rach-thu-duc-tphcm-nguyen-vu-17915462147471306001499-167-0-1767-2560-crop-17915467781032086711939.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "Thu Duc Old"
-   ],
    "canh": 1
   },
   {
