@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-24T14:23:54.041Z",
+ "capNhat": "2026-10-25T00:58:10.487Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -11,6 +11,17 @@ window.TIN_NGAP = {
    "s": "Tuổi Trẻ",
    "d": "2026-10-24",
    "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/24/ga-metro-ben-thanh-17565557556522048235255-346-90-1570-2048-crop-17928153324341199413757.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM sắp đón triều cường vượt báo động 3",
+   "u": "https://dantri.com.vn/thoi-su/tphcm-sap-don-trieu-cuong-vuot-bao-dong-3-20261024182516269.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-24",
+   "img": "https://icdn.dantri.com.vn/2026/08/11/642598ba-00d4-4cbd-bd63-83f6fecf3f221105c-1786453584510.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1034,20 +1045,6 @@ window.TIN_NGAP = {
    "img": "https://icdn.dantri.com.vn/2026/10/10/nhh3676-1791641598180.jpg",
    "c": "hcmc",
    "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường TP.HCM lên nhanh, nguy cơ ngập sâu đến 60 cm",
-   "u": "https://lifestyle.zingnews.vn/trieu-cuong-tphcm-len-nhanh-nguy-co-ngap-sau-den-60-cm-post1688832.html",
-   "s": "Znews",
-   "d": "2026-10-10",
-   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2024_02_22/Trieu_cuong_Znews.jpg",
-   "c": "hcmc",
-   "fp": [
-    "Trần Xuân Soạn",
-    "Huỳnh Tấn Phát"
-   ],
    "z": [],
    "canh": 1
   },
