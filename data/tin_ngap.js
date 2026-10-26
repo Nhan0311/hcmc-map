@@ -2,9 +2,42 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-25T14:54:57.611Z",
+ "capNhat": "2026-10-26T01:04:53.019Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM và Nam Bộ ngày nắng, đề phòng ngập do triều cường đạt đỉnh",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-ngay-nang-de-phong-ngap-do-trieu-cuong-dat-dinh-20261025184338583.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-25",
+   "img": "https://icdn.dantri.com.vn/2026/09/10/e00d5195-fdca-48d1-a2ba-abd19f8062d31201a-1789054256254.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Không khí lạnh áp sát miền Bắc, Nam Bộ triều cường dâng cao",
+   "u": "https://dantri.com.vn/dt360/khong-khi-lanh-ap-sat-mien-bac-nam-bo-trieu-cuong-dang-cao-20261025224517018.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-25",
+   "img": "https://icdn.dantri.com.vn/2025/02/09/ha-noi-troi-lanhthanh-dong-12-1739065515835.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường TP.HCM vượt báo động 3, đề phòng ngập giờ tan tầm",
+   "u": "https://lifestyle.zingnews.vn/trieu-cuong-tphcm-vuot-bao-dong-3-de-phong-ngap-gio-tan-tam-post1692052.html",
+   "s": "Znews",
+   "d": "2026-10-25",
+   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2019_11_24/Trieu_SG_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TP.HCM nghiên cứu làm ga metro có khả năng ứng phó ngập nước",
    "u": "https://tuoitre.vn/tphcm-nghien-cuu-lam-ga-metro-ung-pho-ngap-nuoc-100261024111800723.htm",
@@ -1008,41 +1041,6 @@ window.TIN_NGAP = {
    "s": "Thanh Niên",
    "d": "2026-10-10",
    "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/10/tnw-2aobor404hbnnwwfhf5ge3bnehzgmp1levxr20mi-1791425065942261557738-1791625390971502984960-40-0-1640-2560-crop-179162542460450680969.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường đạt đỉnh 'nuốt chửng' nửa xe ô tô, người dân lại bì bõm lội nước",
-   "u": "https://vtcnews.vn/trieu-cuong-dat-dinh-nuot-chung-nua-xe-o-to-nguoi-dan-lai-bi-bom-loi-nuoc-ar1044506.html",
-   "s": "VTC News",
-   "d": "2026-10-10",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/10/10/trieu-cuong-dat-dinh13-18302934.JPG",
-   "c": "hcmc",
-   "fp": [
-    "Nguyễn Bình"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nắng trên trời, nước ngập dưới đường ở TPHCM",
-   "u": "https://vietnamnet.vn/duong-pho-tphcm-ngap-sau-do-trieu-cuong-nguoi-dan-tat-ta-loi-nuoc-ve-nha-2563570.html",
-   "s": "VietnamNet",
-   "d": "2026-10-10",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/10/nang-tren-troi-nuoc-ngap-duoi-duong-o-tphcm-2145.jpg?width=0&s=wc43YdoAEVg6UrsRBXXSrQ",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn kết hợp triều cường vượt báo động 3, TPHCM đối mặt nguy cơ ngập sâu",
-   "u": "https://dantri.com.vn/thoi-tiet/mua-lon-ket-hop-trieu-cuong-vuot-bao-dong-3-tphcm-doi-mat-nguy-co-ngap-sau-20261010211447095.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-10",
-   "img": "https://icdn.dantri.com.vn/2026/10/10/nhh3676-1791641598180.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
