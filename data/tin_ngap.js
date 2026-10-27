@@ -2,9 +2,31 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-26T17:14:28.807Z",
+ "capNhat": "2026-10-27T01:57:01.999Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Chiều nay, 27-10, triều cường tại TPHCM tiếp tục vượt mức báo động 3",
+   "u": "https://www.sggp.org.vn/chieu-nay-27-10-trieu-cuong-tai-tphcm-tiep-tuc-vuot-muc-bao-dong-3-post878594.html",
+   "s": "SGGP",
+   "d": "2026-10-27",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_27/img-3137-9046-7195.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM: Hai khung giờ cần lưu ý triều cường có thể đạt đỉnh",
+   "u": "https://lifestyle.zingnews.vn/tphcm-hai-khung-gio-can-luu-y-trieu-cuong-co-the-dat-dinh-post1692263.html",
+   "s": "Znews",
+   "d": "2026-10-27",
+   "img": "https://photo.znews.vn/w660/Uploaded/uohusah/2023_04_18/trieu_cuong.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Triều cường dâng cao giờ tan tầm gây đảo lộn cuộc sống, sinh hoạt người dân TPHCM",
    "u": "https://tienphong.vn/trieu-cuong-dang-cao-gio-tan-tam-gay-dao-lon-cuoc-song-sinh-hoat-nguoi-dan-tphcm-post1888807.tpo",
@@ -100,11 +122,33 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
+   "t": "TPHCM và Nam Bộ mưa tăng nhẹ, triều cường tiếp tục dâng cao",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-mua-tang-nhe-trieu-cuong-tiep-tuc-dang-cao-20261026175904117.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-26",
+   "img": "https://icdn.dantri.com.vn/2026/10/26/ng3-1793009900354.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
    "t": "Hà Nội đẩy nhanh xử lý ùn tắc, úng ngập, siết trật tự đô thị",
    "u": "https://baoxaydung.vn/ha-noi-day-nhanh-xu-ly-un-tac-ung-ngap-siet-trat-tu-do-thi-192261026122213741.htm",
    "s": "Báo Giao thông",
    "d": "2026-10-26",
    "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/10/26/f3105f85e6ac66f23fbd-1-17929919038171237396484-139-0-1739-2560-crop-17929920548831963124459.jpg",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Không khí lạnh tràn về, miền Trung mưa lớn nhiều ngày",
+   "u": "https://dantri.com.vn/dt360/khong-khi-lanh-tran-ve-mien-trung-mua-lon-nhieu-ngay-20261027043437897.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-26",
+   "img": "https://icdn.dantri.com.vn/2026/10/27/khongkhilanhhailong00009-edited-edited-1793056011992.jpg",
    "c": "hanoi",
    "fp": [],
    "z": [],
@@ -1021,39 +1065,6 @@ window.TIN_NGAP = {
     "Thu Duc Old",
     "VT Xuyên Mộc"
    ],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường dâng cao lúc rạng sáng, hàng loạt ô tô ở TP.HCM chìm trong biển nước",
-   "u": "https://vtcnews.vn/trieu-cuong-dang-cao-luc-rang-sang-hang-loat-o-to-o-tp-hcm-chim-trong-bien-nuoc-ar1044403.html",
-   "s": "VTC News",
-   "d": "2026-10-10",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/10/10/1791589743120-1941494893735581629-209429476981282468-b8c6d1bc71e3cfe8f3f46dba57bfe20b-07041248.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Sáng nay Nam Bộ đang mưa, chiều nhiều nơi ngập do triều cường",
-   "u": "https://tuoitre.vn/sang-nay-nam-bo-dang-mua-chieu-nhieu-noi-ngap-do-trieu-cuong-100261010074427373.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-10-10",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/10/anh-man-hinh-2026-10-10-luc-074138-17915929332231521391124-10-0-980-1552-crop-1791592990572731698628.png",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM triều cường dâng cao rạng sáng, hàng loạt ôtô chìm trong nước",
-   "u": "https://lifestyle.zingnews.vn/tphcm-trieu-cuong-dang-cao-rang-sang-hang-loat-oto-chim-trong-nuoc-post1688706.html",
-   "s": "Znews",
-   "d": "2026-10-10",
-   "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_10_08/Trieu_cuong.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   },
   {
@@ -2089,17 +2100,6 @@ window.TIN_NGAP = {
    "z": [
     "Hồng Hà"
    ],
-   "canh": 1
-  },
-  {
-   "t": "Dự báo thời tiết Hà Nội hôm nay 17/9: Mưa lớn tiếp diễn, đề phòng ngập lụt",
-   "u": "https://vtcnews.vn/du-bao-thoi-tiet-ha-noi-hom-nay-17-9-mua-lon-tiep-dien-de-phong-ngap-lut-ar1040150.html",
-   "s": "VTC News",
-   "d": "2026-09-16",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/09/17/du-bao-thoi-tiet-ha-noi-thumbjpg-05471215.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
    "canh": 1
   }
  ]
