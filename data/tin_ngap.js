@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-27T01:57:01.999Z",
+ "capNhat": "2026-10-27T16:21:14.608Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -22,6 +22,76 @@ window.TIN_NGAP = {
    "s": "Znews",
    "d": "2026-10-27",
    "img": "https://photo.znews.vn/w660/Uploaded/uohusah/2023_04_18/trieu_cuong.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nước tràn vào nhà, người dân TPHCM tất tả đắp bao cát 'chạy' ngập",
+   "u": "https://tienphong.vn/nuoc-tran-vao-nha-nguoi-dan-tphcm-tat-ta-dap-bao-cat-chay-ngap-post1889152.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-10-27",
+   "img": "https://cdn.tienphong.vn/images/nsgp9dvlAamgUjJTw8t8VQ_o56JBY3nlcLjwxxzCaOrGjKq5FWWH95706ehVL4Lq/tp-ngap.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nước dâng nửa mét tràn vào nhà dân ở TP HCM",
+   "u": "https://tienphong.vn/nuoc-dang-nua-met-tran-vao-nha-dan-o-tp-hcm-post1889151.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-10-27",
+   "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshpOv5O_NVhbSDBNwLIGqFiUOGJcf-dTxx70YJ46tzxyNhCLCjKFhyUKCDt_WK1L0O1pjEGVxP17rD3kmLbMC4NCCsBaiLA2ebrj18eNIOrIY-09_3NjGMHPh_VL6-R9nawpVywrqMptRBHo5aE_O5BI/1793101742070-8698057872782516609-8698057872782516609-0234f5022e236417585b4459120c7cdb-7153.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Chợ đầu mối Thủ Đức hóa “chợ nổi miền Tây” giữa triều cường",
+   "u": "https://dantri.com.vn/thoi-su/cho-dau-moi-thu-duc-hoa-cho-noi-mien-tay-giua-trieu-cuong-20261027203652411.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-27",
+   "img": "https://icdn.dantri.com.vn/2026/10/27/akasl-edited-1793110237452.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "Thu Duc Old"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường ngập nửa bánh xe, người dân TPHCM lội bì bõm về nhà",
+   "u": "https://dantri.com.vn/thoi-su/trieu-cuong-ngap-nua-banh-xe-nguoi-dan-tphcm-loi-bi-bom-ve-nha-20261027194903809.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-27",
+   "img": "https://icdn.dantri.com.vn/2026/10/27/1793104374255149931244664441694768382599798549103632ec2e92d3760bb435df19afd1fc28465-1793104482782.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường nhấn chìm nhiều tuyến đường ở TP HCM",
+   "u": "https://vnexpress.net/trieu-cuong-nhan-chim-nhieu-tuyen-duong-o-tp-hcm-5137591.html",
+   "s": "VnExpress",
+   "d": "2026-10-27",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/27/wm1-2aobor8rsohxdedvlgpksiggagkhgaqhvdh3ayto-1793103809.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=jUfsVTT0zOJS5BuzwIINZg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "District 7"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường gây ngập sâu, trường học giăng dây cảnh báo, người dân dắt xe lội nước về nhà",
+   "u": "https://tuoitre.vn/trieu-cuong-gay-ngap-sau-truong-hoc-giang-day-canh-bao-nguoi-dan-dat-xe-loi-nuoc-ve-nha-100261027184308737.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-10-27",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/27/img5692-1793099741998123831069-0-0-1600-2560-crop-17931008844661764922203.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -995,76 +1065,6 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM triều cường đạt đỉnh, miền Bắc nắng nhiều",
-   "u": "https://dantri.com.vn/dt360/tphcm-trieu-cuong-dat-dinh-mien-bac-nang-nhieu-20261012004008431.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-11",
-   "img": "https://icdn.dantri.com.vn/2026/10/12/trieucuongtphcmbaoquyen-cropped-edited-1791762327205.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường ở TPHCM tiếp tục đạt đỉnh, nhiều trạm vượt báo động 3",
-   "u": "https://dantri.com.vn/thoi-tiet/trieu-cuong-o-tphcm-tiep-tuc-dat-dinh-nhieu-tram-vuot-bao-dong-3-20261011204445869.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-11",
-   "img": "https://icdn.dantri.com.vn/2026/10/11/tc-1791726212608.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Bản tin thời sự ngày 11-10: TPHCM vào cao điểm triều cường",
-   "u": "https://www.sggp.org.vn/ban-tin-thoi-su-ngay-11-10-tphcm-vao-cao-diem-trieu-cuong-post876093.html",
-   "s": "SGGP",
-   "d": "2026-10-11",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/zfdrereyxq/2026_10_11/btin-thoi-su-11-10-3818-3294.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Chiều nay 11-10, triều cường tại TPHCM đạt đỉnh",
-   "u": "https://www.sggp.org.vn/chieu-nay-11-10-trieu-cuong-tai-tphcm-dat-dinh-post876086.html",
-   "s": "SGGP",
-   "d": "2026-10-11",
-   "img": "https://image.sggp.org.vn/Uploaded/2026/zfdrereyxq/2026_10_11/trieu-cuong-1-3406.gif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM: Triều cường vượt báo động 3, nhiều tuyến đường ngập sâu",
-   "u": "https://www.sggp.org.vn/tphcm-trieu-cuong-vuot-bao-dong-3-nhieu-tuyen-duong-ngap-sau-post876084.html",
-   "s": "SGGP",
-   "d": "2026-10-11",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/xdlqvplc/2026_10_11/img-e0770-596-5674.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM tiếp tục mưa lớn vào chiều và đêm, có nơi vượt 140 mm",
-   "u": "https://tienphong.vn/tphcm-tiep-tuc-mua-lon-vao-chieu-va-dem-co-noi-vuot-140-mm-post1883888.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-10",
-   "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshqi_PUHhWI1bualHkF1Z73LDxoaVXz70B2gqVwPIFmO38znvYMnmShSxfbLg_PLLKeOz0p-ED8TU84gT0VU8DKXVvKg1BzkqcONLUpigmC4WlMxjGzRKyHry6Tj0phPT8z4x0xal54tneBnRNQGK7HM/tp-c_1791381753442-2651055997892346622-2651055997892346622-5c0099386dca185a237212c8275c5e93.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Phú Giáo",
-    "Thu Duc Old",
-    "VT Xuyên Mộc"
-   ],
    "canh": 1
   },
   {
