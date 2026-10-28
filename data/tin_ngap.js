@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-27T16:21:14.608Z",
+ "capNhat": "2026-10-28T02:05:32.863Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -92,6 +92,28 @@ window.TIN_NGAP = {
    "s": "Tuổi Trẻ",
    "d": "2026-10-27",
    "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/27/img5692-1793099741998123831069-0-0-1600-2560-crop-17931008844661764922203.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường ở TPHCM tiếp tục dâng cao, đề phòng ngập vào chiều tối",
+   "u": "https://dantri.com.vn/thoi-tiet/trieu-cuong-o-tphcm-tiep-tuc-dang-cao-de-phong-ngap-vao-chieu-toi-20261027202448977.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-27",
+   "img": "https://icdn.dantri.com.vn/2026/10/26/ng4-1793009900935.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Thời tiết và triều cường TP.HCM ngày 28/10",
+   "u": "https://lifestyle.zingnews.vn/thoi-tiet-va-trieu-cuong-tphcm-ngay-2810-post1692566.html",
+   "s": "Znews",
+   "d": "2026-10-27",
+   "img": "https://photo.znews.vn/w660/Uploaded/anqyy/2026_10_27/trieu_cuong_znews_1793099361895_8623136932028132773_g3052018840513642836_3857ec3dde949c24a034a55b8da127aa.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1040,28 +1062,6 @@ window.TIN_NGAP = {
    "s": "Thanh Niên",
    "d": "2026-10-11",
    "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/10/tnw-tnw-kenh-tham-luong-ben-cat-sy-dong-1790929898201438352205-1791648421791969265782-0-63-1524-2501-crop-17916489254761269093155-17916489545901999023703.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Tuyến đường ở TP.HCM ngập nửa mét suốt 3 giờ vì triều cường",
-   "u": "https://lifestyle.zingnews.vn/tuyen-duong-o-tphcm-ngap-nua-met-suot-3-gio-vi-trieu-cuong-post1689038.html",
-   "s": "Znews",
-   "d": "2026-10-11",
-   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_10_11/Rach_Cung_20_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Thời tiết TPHCM và Nam Bộ 10 ngày tới: Mưa lớn kèm sấm sét dồn dập còn tiếp diễn?",
-   "u": "https://vietnamnet.vn/thoi-tiet-tphcm-va-nam-bo-10-ngay-toi-mua-lon-kem-sam-set-don-dap-tiep-dien-2555475.html",
-   "s": "VietnamNet",
-   "d": "2026-10-11",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/11/thoi-tiet-tphcm-va-nam-bo-10-ngay-toi-mua-lon-kem-sam-set-don-dap-con-tiep-dien-1024.jpg?width=0&s=Lb1aO8OGfsxTDtyUuashxQ",
    "c": "hcmc",
    "fp": [],
    "z": [],
