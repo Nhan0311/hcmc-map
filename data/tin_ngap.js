@@ -2,9 +2,53 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-28T02:05:32.863Z",
+ "capNhat": "2026-10-28T17:04:57.542Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM: Đường vào nhà hàng ngập sâu, khách phải đi thuyền tự chế",
+   "u": "https://tienphong.vn/tphcm-duong-vao-nha-hang-ngap-sau-khach-phai-di-thuyen-tu-che-post1889459.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-10-28",
+   "img": "https://cdn.tienphong.vn/images/wAbZN0m8Lox5qlUOi5ClAM_qkdodPREJFGqENXP3XY1BHwAV2JvQzXLgGZJk5nss/100825.gif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Người dân TP.HCM ứng phó triều cường, không để bị động hư đồ đạc",
+   "u": "https://tuoitre.vn/nguoi-dan-tphcm-ung-pho-trieu-cuong-khong-de-bi-dong-hu-do-dac-100261028192446612.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-10-28",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/28/sua-xe-trieu-cuong-edit-17931919066511028834196-106-0-1706-2560-crop-17931919350927555375.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường gây ngập nhiều tuyến đường ven sông Sài Gòn",
+   "u": "https://www.sggp.org.vn/trieu-cuong-gay-ngap-nhieu-tuyen-duong-ven-song-sai-gon-post878940.html",
+   "s": "SGGP",
+   "d": "2026-10-28",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/tpuokbf/2026_10_28/img-4935-5203-7884.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Shipper lội nước giao hàng giữa triều cường ở TPHCM",
+   "u": "https://vietnamnet.vn/shipper-loi-nuoc-giao-hang-giua-trieu-cuong-o-tphcm-2569359.html",
+   "s": "VietnamNet",
+   "d": "2026-10-28",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/28/shipper-loi-nuoc-giao-hang-giua-trieu-cuong-o-tphcm-2641.jpg?width=0&s=oRBf7JDPVjacDN2mhnKzHA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Chiều nay, 27-10, triều cường tại TPHCM tiếp tục vượt mức báo động 3",
    "u": "https://www.sggp.org.vn/chieu-nay-27-10-trieu-cuong-tai-tphcm-tiep-tuc-vuot-muc-bao-dong-3-post878594.html",
@@ -1016,52 +1060,6 @@ window.TIN_NGAP = {
    "s": "VnExpress",
    "d": "2026-10-11",
    "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/11/wm1-2aobor4lqyafkdl0krzlsbfuw9r7zpt1fkcbj8fc-1791719949.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=NeZgzpgvc69hnbXAAbJfVA",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường sông Sài Gòn vượt đỉnh lịch sử, nhiều tuyến phố ngập sâu",
-   "u": "https://vtcnews.vn/trieu-cuong-song-sai-gon-vuot-dinh-lich-su-nhieu-tuyen-pho-ngap-sau-ar1044639.html",
-   "s": "VTC News",
-   "d": "2026-10-11",
-   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/10/11/trieu-cuong-vuot-moc-lich-su29-18422882-1-19365044.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Thủ Dầu Một"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Người dân đắp ‘đê’ trước cửa nhà, trẻ em bơi giữa dòng triều cường đạt đỉnh tại TP.HCM",
-   "u": "https://tuoitre.vn/nguoi-dan-dap-de-truoc-cua-nha-tre-em-boi-giua-dong-trieu-cuong-dat-dinh-tai-tphcm-10026101119084517.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-10-11",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/11/img4476-1791718692672242668758-0-0-1600-2560-crop-17917204325851510069912.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nhiều tuyến đường ở TP.HCM ngập vì triều cường đạt đỉnh",
-   "u": "https://tuoitre.vn/nhieu-tuyen-duong-o-tphcm-ngap-vi-trieu-cuong-dat-dinh-100261011145716767.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-10-11",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/11/ngap-2-1791720015848698226064-125-116-1062-1616-crop-17917200379771551220070.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Chống ngập TP.HCM: Cần &#039;kh&aacute;m sức khỏe&#039; to&agrave;n hệ thống tho&aacute;t nước",
-   "u": "https://thanhnien.vn/chong-ngap-tphcm-can-kham-suc-khoe-toan-he-thong-thoat-nuoc-185261010230453813.htm",
-   "s": "Thanh Niên",
-   "d": "2026-10-11",
-   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/10/tnw-tnw-kenh-tham-luong-ben-cat-sy-dong-1790929898201438352205-1791648421791969265782-0-63-1524-2501-crop-17916489254761269093155-17916489545901999023703.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
