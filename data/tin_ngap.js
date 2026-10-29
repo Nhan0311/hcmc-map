@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-29T02:16:02.954Z",
+ "capNhat": "2026-10-29T17:22:21.896Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -11,6 +11,28 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-10-29",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_29/img-3189-2766-7385.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Gi&aacute;m đốc Sở X&acirc;y dựng TP.HCM n&ecirc;u giải ph&aacute;p xử l&yacute; kẹt xe, ngập nước",
+   "u": "https://thanhnien.vn/dai-bieu-hdnd-tphcm-ban-giai-phap-go-diem-nghen-ket-xe-ngap-nuoc-185261029161021082.htm",
+   "s": "Thanh Niên",
+   "d": "2026-10-29",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/29/tnw-1000102765-17932830893261174764940-0-146-1080-1874-crop-1793283122141713922475.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM t&iacute;nh ph&aacute;t h&agrave;nh tr&aacute;i phiếu huy động vốn l&agrave;m metro, chống ngập",
+   "u": "https://thanhnien.vn/tphcm-tinh-phat-hanh-trai-phieu-huy-dong-von-lam-metro-chong-ngap-185261029110252552.htm",
+   "s": "Thanh Niên",
+   "d": "2026-10-29",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/29/tnw-phoi-canh-metro-ben-thanh-can-gio-17867849442231380609259-13-0-413-640-crop-17932463952141048042641.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1037,28 +1059,6 @@ window.TIN_NGAP = {
    "s": "Tuổi Trẻ",
    "d": "2026-10-11",
    "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/11/img4239-17916745522991729116644-106-0-1706-2560-crop-1791677277991135217792.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường vượt 1,7 m, khu dân cư TPHCM chìm trong nước",
-   "u": "https://tienphong.vn/trieu-cuong-vuot-17-m-khu-dan-cu-tphcm-chim-trong-nuoc-post1884325.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-11",
-   "img": "https://cdn.tienphong.vn/images/rKxAQ4QOt_t5utGxG_Wty6t34FtyNck4qikeXvjpmvD6xc_-6cHVtnB9GKPHx7K-/tp-ngap-3771.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường dâng cao, trẻ em TPHCM thỏa thích bơi lội trên đường phố",
-   "u": "https://tienphong.vn/trieu-cuong-dang-cao-tre-em-tphcm-thoa-thich-boi-loi-tren-duong-pho-post1884317.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-11",
-   "img": "https://cdn.tienphong.vn/images/rKxAQ4QOt_t5utGxG_Wty6t34FtyNck4qikeXvjpmvCPqdQpUH2yzJwrJSYAXXwY/tp-ngap-228.jpg.avif",
    "c": "hcmc",
    "fp": [],
    "z": [],
