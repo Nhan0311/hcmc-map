@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-28T17:04:57.542Z",
+ "capNhat": "2026-10-29T02:16:02.954Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Nam bộ nắng nóng, triều cường tại TPHCM vượt báo động 3",
+   "u": "https://www.sggp.org.vn/nam-bo-nang-nong-trieu-cuong-tai-tphcm-vuot-bao-dong-3-post878959.html",
+   "s": "SGGP",
+   "d": "2026-10-29",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_29/img-3189-2766-7385.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TPHCM: Đường vào nhà hàng ngập sâu, khách phải đi thuyền tự chế",
    "u": "https://tienphong.vn/tphcm-duong-vao-nha-hang-ngap-sau-khach-phai-di-thuyen-tu-che-post1889459.tpo",
@@ -44,6 +55,41 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-10-28",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/28/shipper-loi-nuoc-giao-hang-giua-trieu-cuong-o-tphcm-2641.jpg?width=0&s=oRBf7JDPVjacDN2mhnKzHA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ có mưa gia tăng, đề phòng ngập úng",
+   "u": "https://dantri.com.vn/thoi-su/tphcm-va-nam-bo-co-mua-gia-tang-de-phong-ngap-ung-20261028221725247.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-28",
+   "img": "https://icdn.dantri.com.vn/2026/10/26/ng1-1793009898336.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Xe ba gác “giải cứu” người và xe máy giữa dòng triều cường ở TPHCM",
+   "u": "https://dantri.com.vn/dt360/xe-ba-gac-giai-cuu-nguoi-va-xe-may-giua-dong-trieu-cuong-o-tphcm-20261028212527162.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-28",
+   "img": "https://icdn.dantri.com.vn/2026/10/28/xebagac-1793197416636.gif",
+   "c": "hcmc",
+   "fp": [
+    "Phạm Hữu Lầu"
+   ],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TP.HCM có nơi mưa to chiều tối, triều cường cao hết ngày 31/10",
+   "u": "https://lifestyle.zingnews.vn/tphcm-co-noi-mua-to-chieu-toi-trieu-cuong-cao-het-ngay-3110-post1692774.html",
+   "s": "Znews",
+   "d": "2026-10-28",
+   "img": "https://photo.znews.vn/w660/Uploaded/anqyy/2026_10_23/ngap_3_znews.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1013,53 +1059,6 @@ window.TIN_NGAP = {
    "s": "Tiền Phong",
    "d": "2026-10-11",
    "img": "https://cdn.tienphong.vn/images/rKxAQ4QOt_t5utGxG_Wty6t34FtyNck4qikeXvjpmvCPqdQpUH2yzJwrJSYAXXwY/tp-ngap-228.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Người dân TPHCM lội nước ăn cơm tối trong mùa triều cường",
-   "u": "https://dantri.com.vn/dt360/nguoi-dan-tphcm-loi-nuoc-an-com-toi-trong-mua-trieu-cuong-20261011195031242.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-11",
-   "img": "https://icdn.dantri.com.vn/2026/10/11/trieu-cuong-1110-1791725612000.gif",
-   "c": "hcmc",
-   "fp": [
-    "Phạm Hữu Lầu",
-    "Nguyễn Bình"
-   ],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường đạt đỉnh, người dân TPHCM nghỉ bán, kê đồ tránh ngập",
-   "u": "https://dantri.com.vn/thoi-su/trieu-cuong-dat-dinh-nguoi-dan-tphcm-nghi-ban-ke-do-tranh-ngap-20261011191304575.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-11",
-   "img": "https://icdn.dantri.com.vn/2026/10/11/trieucuong-thang10-tphcmnamanha67i6462-edited-1791721081905.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường dâng cao, người dân TPHCM bì bõm lội nước chiều cuối tuần",
-   "u": "https://dantri.com.vn/thoi-su/trieu-cuong-dang-cao-nguoi-dan-tphcm-bi-bom-loi-nuoc-chieu-cuoi-tuan-20261011180428712.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-11",
-   "img": "https://icdn.dantri.com.vn/2026/10/11/1000103362-1791715993790.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hàng quán ế ẩm, người dân đảo lộn sinh hoạt ngày triều cường đạt đỉnh",
-   "u": "https://vnexpress.net/hang-quan-e-am-nguoi-dan-dao-lon-sinh-hoat-ngay-trieu-cuong-dat-dinh-5130987.html",
-   "s": "VnExpress",
-   "d": "2026-10-11",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/11/wm1-2aobor4lqyafkdl0krzlsbfuw9r7zpt1fkcbj8fc-1791719949.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=NeZgzpgvc69hnbXAAbJfVA",
    "c": "hcmc",
    "fp": [],
    "z": [],
