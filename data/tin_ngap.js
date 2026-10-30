@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-29T17:22:21.896Z",
+ "capNhat": "2026-10-30T02:29:21.309Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Dự &aacute;n chống ngập 10.000 tỉ đồng sắp hoạt động, mưa lớn c&ograve;n g&acirc;y ngập TP.HCM?",
+   "u": "https://thanhnien.vn/du-an-chong-ngap-10000-ti-dong-sap-hoat-dong-mua-lon-con-gay-ngap-tphcm-185261030081943848.htm",
+   "s": "Thanh Niên",
+   "d": "2026-10-30",
+   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/30/photo-1790945000019-17909450017461281964507-1793322684963207011282-35-0-675-1024-crop-1793322908263533772622.jpeg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Nam bộ nắng nóng, triều cường tại TPHCM vượt báo động 3",
    "u": "https://www.sggp.org.vn/nam-bo-nang-nong-trieu-cuong-tai-tphcm-vuot-bao-dong-3-post878959.html",
@@ -34,6 +45,39 @@ window.TIN_NGAP = {
    "d": "2026-10-29",
    "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/29/tnw-phoi-canh-metro-ben-thanh-can-gio-17867849442231380609259-13-0-413-640-crop-17932463952141048042641.jpg",
    "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ tiếp tục xuất hiện triều cường",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-xuat-hien-trieu-cuong-20261029171514161.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-29",
+   "img": "https://icdn.dantri.com.vn/2026/10/29/1000110777-cropped-1793284232737.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Thời tiết và triều cường TP.HCM ngày 30/10",
+   "u": "https://lifestyle.zingnews.vn/thoi-tiet-va-trieu-cuong-tphcm-ngay-3010-post1692988.html",
+   "s": "Znews",
+   "d": "2026-10-29",
+   "img": "https://photo.znews.vn/w660/Uploaded/anqyy/2026_10_23/ngap_4_znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Không khí lạnh lệch đông, Hà Nội mưa dông, miền Trung giảm mưa",
+   "u": "https://dantri.com.vn/dt360/khong-khi-lanh-lech-dong-ha-noi-mua-dong-mien-trung-giam-mua-20261029225655500.htm",
+   "s": "Dân Trí",
+   "d": "2026-10-29",
+   "img": "https://icdn.dantri.com.vn/2026/10/29/179328845983821305391328634011464327133637762183462d1134afa2583d9f480e6fee8d687896d-1793289229717.jpg",
+   "c": "hanoi",
    "fp": [],
    "z": [],
    "canh": 1
@@ -1026,39 +1070,6 @@ window.TIN_NGAP = {
    "s": "Znews",
    "d": "2026-10-12",
    "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_09_28/Mua_Sai_Gon_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM và Nam Bộ tiếp tục mưa dông, triều cường rút dần",
-   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-dong-trieu-cuong-rut-dan-20261012224321504.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-12",
-   "img": "https://icdn.dantri.com.vn/2026/10/12/tc11-1791819684309.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Miền Bắc nắng trở lại, TPHCM triều cường vượt báo động 3",
-   "u": "https://dantri.com.vn/dt360/mien-bac-nang-tro-lai-tphcm-trieu-cuong-vuot-bao-dong-3-20261011011302654.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-11",
-   "img": "https://icdn.dantri.com.vn/2026/10/11/831103219289123076517883418803920467830939438n-edited-1791677705065.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường đạt đỉnh sáng cuối tuần, người dân thức từ 4h sáng để tát nước",
-   "u": "https://tuoitre.vn/trieu-cuong-dat-dinh-sang-cuoi-tuan-nguoi-dan-thuc-tu-4h-sang-de-tat-nuoc-100261011064408103.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-10-11",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/11/img4239-17916745522991729116644-106-0-1706-2560-crop-1791677277991135217792.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -2083,19 +2094,6 @@ window.TIN_NGAP = {
     "Cầu Giấy",
     "Hai Bà Trưng",
     "Từ Liêm"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Khu dân cư ngập nước suốt 3 ngày ở Thủ đô",
-   "u": "https://vnexpress.net/khu-dan-cu-ngap-nuoc-suot-3-ngay-o-thu-do-5121127.html",
-   "s": "VnExpress",
-   "d": "2026-09-16",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/16/6-1789575261.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=xTHV_MbtjvV59p1sfAsTeQ",
-   "c": "hanoi",
-   "fp": [],
-   "z": [
-    "Hồng Hà"
    ],
    "canh": 1
   }
