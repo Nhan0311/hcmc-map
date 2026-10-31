@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-10-31T02:12:20.020Z",
+ "capNhat": "2026-10-31T16:00:02.221Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TP.HCM: Thêm tuyến đường chật hẹp, ngập nước được mở rộng lên 30m",
+   "u": "https://baoxaydung.vn/tphcm-them-tuyen-duong-chat-hep-ngap-nuoc-duoc-mo-rong-len-30m-192261031105501138.htm",
+   "s": "Báo Giao thông",
+   "d": "2026-10-31",
+   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/10/31/17934158387626522247206130853157652224720613085315761f2cd23d44c5c820ed4c18a4254ca12-17934308451591682267242-140-0-965-1320-crop-17934309126392145806906.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Dự &aacute;n chống ngập 10.000 tỉ đồng sắp hoạt động, mưa lớn c&ograve;n g&acirc;y ngập TP.HCM?",
    "u": "https://thanhnien.vn/du-an-chong-ngap-10000-ti-dong-sap-hoat-dong-mua-lon-con-gay-ngap-tphcm-185261030081943848.htm",
@@ -1059,17 +1070,6 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-10-12",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/12/canh-tuong-la-ben-trong-nha-nguoi-dan-tphcm-mua-trieu-cuong-2658.jpg?width=0&s=9cU9tZWE0KM5HxwK_ufudw",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM chuyển tư duy từ chống ngập sang quản lý nước",
-   "u": "https://lifestyle.zingnews.vn/tphcm-chuyen-tu-duy-tu-chong-ngap-sang-quan-ly-nuoc-post1689229.html",
-   "s": "Znews",
-   "d": "2026-10-12",
-   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_09_28/Mua_Sai_Gon_Znews.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
