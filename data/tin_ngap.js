@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-01T17:03:44.162Z",
+ "capNhat": "2026-11-02T02:16:27.961Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Miền Bắc đón mưa dông diện rộng",
+   "u": "https://tienphong.vn/mien-bac-don-mua-dong-dien-rong-post1890644.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-11-01",
+   "img": "https://cdn.tienphong.vn/images/Cnj4WjvRBHYQoCoEhCPn8osWRbFryILayEI1B6qrXKffGJ4RJxMkSrU7yPqTuINhkcOVqqlJPlza80nK09ShXg/dua09523.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TP.HCM: Thêm tuyến đường chật hẹp, ngập nước được mở rộng lên 30m",
    "u": "https://baoxaydung.vn/tphcm-them-tuyen-duong-chat-hep-ngap-nuoc-duoc-mo-rong-len-30m-192261031105501138.htm",
@@ -1059,17 +1070,6 @@ window.TIN_NGAP = {
    "s": "Báo Giao thông",
    "d": "2026-10-12",
    "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/10/12/trieu-cuong-6-1765790132848611019541-0-256-1440-2560-crop-1791803886937313766240.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Cảnh tượng 'lạ' ở TPHCM: Người dân tự đào rãnh trong nhà để chống chọi mùa triều cường",
-   "u": "https://vietnamnet.vn/canh-tuong-la-ben-trong-nha-nguoi-dan-tphcm-mua-trieu-cuong-2564125.html",
-   "s": "VietnamNet",
-   "d": "2026-10-12",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/12/canh-tuong-la-ben-trong-nha-nguoi-dan-tphcm-mua-trieu-cuong-2658.jpg?width=0&s=9cU9tZWE0KM5HxwK_ufudw",
    "c": "hcmc",
    "fp": [],
    "z": [],
