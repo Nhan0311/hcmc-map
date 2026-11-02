@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-02T02:16:27.961Z",
+ "capNhat": "2026-11-02T20:42:16.855Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Thời tiết TPHCM và Nam Bộ 10 ngày tới: Mưa lớn kèm sấm sét dồn dập còn tiếp diễn?",
+   "u": "https://vietnamnet.vn/thoi-tiet-tphcm-va-nam-bo-10-ngay-toi-mua-lon-kem-sam-set-don-dap-tiep-dien-2555475.html",
+   "s": "VietnamNet",
+   "d": "2026-11-02",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/11/thoi-tiet-tphcm-va-nam-bo-10-ngay-toi-mua-lon-kem-sam-set-don-dap-con-tiep-dien-1024.jpg?width=0&s=Lb1aO8OGfsxTDtyUuashxQ",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Miền Bắc đón mưa dông diện rộng",
    "u": "https://tienphong.vn/mien-bac-don-mua-dong-dien-rong-post1890644.tpo",
@@ -1059,17 +1070,6 @@ window.TIN_NGAP = {
    "s": "VnExpress",
    "d": "2026-10-12",
    "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/12/wm1-wm1-2aobor4wbr90xyjsli7bph10ww-9515-5039-1791780398.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=b7nib6AA-R4A8sTeWrj_5g",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM rà soát điểm ngập, xử lý công trình xung yếu trước mùa mưa lũ",
-   "u": "https://baoxaydung.vn/tphcm-ra-soat-diem-ngap-xu-ly-cong-trinh-xung-yeu-truoc-mua-mua-lu-192261012181854882.htm",
-   "s": "Báo Giao thông",
-   "d": "2026-10-12",
-   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/10/12/trieu-cuong-6-1765790132848611019541-0-256-1440-2560-crop-1791803886937313766240.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
