@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-03T03:53:20.499Z",
+ "capNhat": "2026-11-03T18:20:03.170Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TP.HCM chỉ đạo xử lý hàng loạt vấn đề dân sinh: Ngập nước, giá gom rác",
+   "u": "https://tuoitre.vn/tphcm-chi-dao-xu-ly-hang-loat-van-de-dan-sinh-ngap-nuoc-gia-gom-rac-100261103114353142.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-11-03",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/3/t62a0188-17936803194091297063570-220-229-1581-2407-crop-1793680609810220841305.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Thời tiết TPHCM và Nam Bộ 10 ngày tới: Mưa lớn kèm sấm sét dồn dập còn tiếp diễn?",
    "u": "https://vietnamnet.vn/thoi-tiet-tphcm-va-nam-bo-10-ngay-toi-mua-lon-kem-sam-set-don-dap-tiep-dien-2555475.html",
@@ -1060,19 +1071,6 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường vượt đỉnh lịch sử, TPHCM cấp bách chống ngập",
-   "u": "https://www.sggp.org.vn/trieu-cuong-vuot-dinh-lich-su-tphcm-cap-bach-chong-ngap-post876214.html",
-   "s": "SGGP",
-   "d": "2026-10-12",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/mrwqldxwp/2026_10_12/buiminhthanh-6458-6070.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Thủ Dầu Một"
-   ],
    "canh": 1
   },
   {
