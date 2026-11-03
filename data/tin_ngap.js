@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-02T20:42:16.855Z",
+ "capNhat": "2026-11-03T03:53:20.499Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -915,6 +915,17 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
+   "t": "Cảnh tượng 'lạ' ở TPHCM: Người dân tự đào rãnh trong nhà để chống chọi mùa triều cường",
+   "u": "https://vietnamnet.vn/canh-tuong-la-ben-trong-nha-nguoi-dan-tphcm-mua-trieu-cuong-2564125.html",
+   "s": "VietnamNet",
+   "d": "2026-10-13",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/12/canh-tuong-la-ben-trong-nha-nguoi-dan-tphcm-mua-trieu-cuong-2658.jpg?width=0&s=9cU9tZWE0KM5HxwK_ufudw",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
    "t": "Độc lạ quán cà phê ngập nước ở TPHCM",
    "u": "https://tienphong.vn/doc-la-quan-ca-phe-ngap-nuoc-o-tphcm-post1884337.tpo",
    "s": "Tiền Phong",
@@ -1062,17 +1073,6 @@ window.TIN_NGAP = {
    "z": [
     "BD Thủ Dầu Một"
    ],
-   "canh": 1
-  },
-  {
-   "t": "Nhiều trường ở TP HCM cho học sinh về sớm, tránh triều cường",
-   "u": "https://vnexpress.net/nhieu-truong-o-tp-hcm-cho-hoc-sinh-ve-som-tranh-trieu-cuong-5131253.html",
-   "s": "VnExpress",
-   "d": "2026-10-12",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/10/12/wm1-wm1-2aobor4wbr90xyjsli7bph10ww-9515-5039-1791780398.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=b7nib6AA-R4A8sTeWrj_5g",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   },
   {
