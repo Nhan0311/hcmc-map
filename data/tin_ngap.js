@@ -2,9 +2,67 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-04T02:58:04.354Z",
+ "capNhat": "2026-11-04T18:32:38.522Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Mưa lớn hơn một giờ, nhiều tuyến đường cửa ngõ phía Đông TPHCM ngập sâu",
+   "u": "https://tienphong.vn/mua-lon-hon-mot-gio-nhieu-tuyen-duong-cua-ngo-phia-dong-tphcm-ngap-sau-post1891531.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-11-04",
+   "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshihCWUjEAc2bpmxvZFtLLVtDEU5fGmCkGLEsnYNklyNleX-D_ZkZWuywD2zcORC1YUo0_qcL3OINRKYQnLwi5VCd_3yjOYM_m_UlFD2qFvmhaspZhA6EoCy3G9AMmZlSFAxWRkPzigNU8MXtv981fnQ/tp-c_1793800277784-704188066673451249-704188066673451249-87138eda6af7ca321e3d78d52cee2867.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nắng nhiều trên cả nước, TPHCM chuẩn bị đón đợt triều cường mới",
+   "u": "https://dantri.com.vn/dt360/nang-nhieu-tren-ca-nuoc-tphcm-chuan-bi-don-dot-trieu-cuong-moi-20261104224401577.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-04",
+   "img": "https://icdn.dantri.com.vn/2026/11/04/trieucuong-thang9namanh0d7a0819-edited-edited-1793809826286.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Đường ngập lênh láng, xe cộ ùn ứ trong đêm mưa lớn ở TPHCM",
+   "u": "https://dantri.com.vn/thoi-su/duong-ngap-lenh-lang-xe-co-un-u-trong-dem-mua-lon-o-tphcm-20261104195752035.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-04",
+   "img": "https://icdn.dantri.com.vn/2026/11/04/003-1793796890531.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nước cuồn cuộn sau mưa lớn ở TP HCM",
+   "u": "https://vnexpress.net/nuoc-cuon-cuon-sau-mua-lon-o-tp-hcm-5140854.html",
+   "s": "VnExpress",
+   "d": "2026-11-04",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/11/04/2aoboraixzk2ngfqwm7ojkxl4i4e7x28zwdaxum8-1793798083.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=l0S9rO4qMNbCqWgzdyOh2A",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "Go Vap District",
+    "Thu Duc Old"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội hướng tới giải pháp đồng bộ, bền vững trong chống ngập",
+   "u": "https://baoxaydung.vn/ha-noi-huong-toi-giai-phap-dong-bo-ben-vung-trong-chong-ngap-192261103200408152.htm",
+   "s": "Báo Giao thông",
+   "d": "2026-11-04",
+   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/11/3/photo-1793710774615-1793710776963415681764-163-0-1413-2000-crop-17937108802871823941002.png",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TP.HCM chỉ đạo xử lý hàng loạt vấn đề dân sinh: Ngập nước, giá gom rác",
    "u": "https://tuoitre.vn/tphcm-chi-dao-xu-ly-hang-loat-van-de-dan-sinh-ngap-nuoc-gia-gom-rac-100261103114353142.htm",
@@ -1030,50 +1088,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Dự báo triều cường vượt đỉnh, nhiều trường ở TPHCM cho học sinh về sớm",
-   "u": "https://dantri.com.vn/giao-duc/du-bao-trieu-cuong-vuot-dinh-nhieu-truong-o-tphcm-cho-hoc-sinh-ve-som-20261012155023266.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-12",
-   "img": "https://icdn.dantri.com.vn/2025/12/06/duong-pho-o-tphcm-ngap-sau-khi-trieu-cuong-len-dinh-1765028425066.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường gây ngập nhiều nơi tại TP.HCM, những tuyến đường nào cần tránh?",
-   "u": "https://tuoitre.vn/trieu-cuong-lai-dang-len-tai-nhieu-noi-o-tphcm-nhung-tuyen-duong-nao-can-tranh-100261012171852914.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-10-12",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/12/bui-van-ba-1791807465097144564919-180-229-1488-2322-crop-179180747882311538562.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Chiều 12-10, triều cường tiếp tục dâng cao tại TPHCM, người chật vật tát nước, người thích thú bắt lươn",
-   "u": "https://www.sggp.org.vn/chieu-12-10-trieu-cuong-tiep-tuc-dang-cao-tai-tphcm-nguoi-chat-vat-tat-nuoc-nguoi-thich-thu-bat-luon-post876262.html",
-   "s": "SGGP",
-   "d": "2026-10-12",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/duxredwsxr/2026_10_12/avatar-of-video-1846317-1480-5886.png.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường dâng cao, nhiều tuyến đường ở TPHCM ngập nước",
-   "u": "https://www.sggp.org.vn/trieu-cuong-dang-cao-nhieu-tuyen-duong-o-tphcm-ngap-nuoc-post876249.html",
-   "s": "SGGP",
-   "d": "2026-10-12",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/xdlqvplc/2026_10_12/2ff96e166318e346ba09-5762-8644.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Mưa lớn gây lũ quét ở Chile, cuốn trôi hàng trăm ô tô",
    "u": "https://tienphong.vn/mua-lon-gay-lu-quet-o-chile-cuon-troi-hang-tram-o-to-post1883747.tpo",
    "s": "Tiền Phong",
@@ -2078,21 +2092,6 @@ window.TIN_NGAP = {
    "c": "hanoi",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội mưa vượt 150 mm, xuất hiện hàng loạt điểm ngập",
-   "u": "https://vnexpress.net/ha-noi-mua-vuot-150-mm-xuat-hien-hang-loat-diem-ngap-5121155.html",
-   "s": "VnExpress",
-   "d": "2026-09-16",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/17/ngap4-1789607117-4560-1789607120.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=QyT-1AzUKP0EpvEUP0GUvw",
-   "c": "hanoi",
-   "fp": [],
-   "z": [
-    "Cầu Giấy",
-    "Hai Bà Trưng",
-    "Từ Liêm"
-   ],
    "canh": 1
   }
  ]
