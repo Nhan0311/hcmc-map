@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-05T03:22:38.889Z",
+ "capNhat": "2026-11-05T18:38:45.963Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TP.HCM không thể cứ nâng đường để chống ngập",
+   "u": "https://znews.vn/tphcm-khong-the-cu-nang-duong-de-chong-ngap-post1694419.html",
+   "s": "Znews",
+   "d": "2026-11-05",
+   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_10_08/Ngap_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Mưa lớn hơn một giờ, nhiều tuyến đường cửa ngõ phía Đông TPHCM ngập sâu",
    "u": "https://tienphong.vn/mua-lon-hon-mot-gio-nhieu-tuyen-duong-cua-ngo-phia-dong-tphcm-ngap-sau-post1891531.tpo",
@@ -1074,17 +1085,6 @@ window.TIN_NGAP = {
    "z": [
     "Nha Be District"
    ],
-   "canh": 1
-  },
-  {
-   "t": "Lãnh đạo TPHCM yêu cầu rà soát những điểm thường xuyên ngập",
-   "u": "https://dantri.com.vn/thoi-su/lanh-dao-tphcm-yeu-cau-ra-soat-nhung-diem-thuong-xuyen-ngap-20261012161951083.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-12",
-   "img": "https://icdn.dantri.com.vn/2026/10/12/trieucuong-thang10-tphcmnamanha67i6400-1791719178769-1791796722948.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   },
   {
