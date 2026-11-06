@@ -2,15 +2,48 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-05T18:38:45.963Z",
+ "capNhat": "2026-11-06T03:19:47.380Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM và Nam Bộ đề phòng triều cường dâng cao, gây ngập",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-de-phong-trieu-cuong-dang-cao-gay-ngap-20261105201117867.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-06",
+   "img": "https://icdn.dantri.com.vn/2026/11/05/m1-1793884170079.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nam bộ chiều có mưa dông, Bắc bộ chưa rét, không khí lạnh đang áp sát",
+   "u": "https://www.sggp.org.vn/nam-bo-chieu-co-mua-dong-bac-bo-chua-ret-khong-khi-lanh-dang-ap-sat-post880285.html",
+   "s": "SGGP",
+   "d": "2026-11-06",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_11_06/1k6n1mn9l-8s14a0-1654-8602.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TP.HCM không thể cứ nâng đường để chống ngập",
    "u": "https://znews.vn/tphcm-khong-the-cu-nang-duong-de-chong-ngap-post1694419.html",
    "s": "Znews",
    "d": "2026-11-05",
    "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_10_08/Ngap_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Dự báo Nam bộ mưa to cuối tuần, TPHCM đề phòng ngập do triều cường",
+   "u": "https://www.sggp.org.vn/du-bao-nam-bo-mua-to-cuoi-tuan-tphcm-de-phong-ngap-do-trieu-cuong-post880233.html",
+   "s": "SGGP",
+   "d": "2026-11-05",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_11_05/img-3341-2077-6188.jpeg.webp",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1050,41 +1083,6 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Lãnh đạo UBND TPHCM: Thay đổi tư duy, từ chống ngập sang quản lý nước",
-   "u": "https://tienphong.vn/lanh-dao-ubnd-tphcm-thay-doi-tu-duy-tu-chong-ngap-sang-quan-ly-nuoc-post1884572.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-12",
-   "img": "https://cdn.tienphong.vn/images/X4qn3dTkkrIW2NI3joaFz5cgxqVbB0q_lSQMzxWkOdPsrZxfqh8kCYwQDknxHxi0YlQDXrvLxqz1mtmsfhxpBryGW_ylPjPq-DO8U-f-t3EnhwlB6a8tREUBHR65QvCp/1791797480872-9174812750339679295-9174812750339679295-h.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường đạt đỉnh, những đêm dài không ngủ ở khu Nam TPHCM",
-   "u": "https://dantri.com.vn/thoi-su/trieu-cuong-dat-dinh-nhung-dem-dai-khong-ngu-o-khu-nam-tphcm-20261012200435100.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-12",
-   "img": "https://icdn.dantri.com.vn/2026/10/12/ngh3-1791810215637.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Tan ca chưa kịp nấu cơm, công nhân lại vật lộn với triều cường",
-   "u": "https://dantri.com.vn/thoi-su/tan-ca-chua-kip-nau-com-cong-nhan-lai-vat-lon-voi-trieu-cuong-20261012201205531.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-12",
-   "img": "https://icdn.dantri.com.vn/2026/10/12/anh-11-1791806617683.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "Nha Be District"
-   ],
    "canh": 1
   },
   {
