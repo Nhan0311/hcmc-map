@@ -2,9 +2,31 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-06T17:52:12.503Z",
+ "capNhat": "2026-11-07T02:38:49.481Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Mưa lớn gây ngập nhà dân, chia cắt giao thông ở xã vùng cao Lào Cai",
+   "u": "https://tienphong.vn/mua-lon-gay-ngap-nha-dan-chia-cat-giao-thong-o-xa-vung-cao-lao-cai-post1892187.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-11-07",
+   "img": "https://cdn.tienphong.vn/images/PsfG3AKp__A0U5QK_H6Z-0yeAiz0BdXBRL1YOaexCcoo-K5EpQfIV1sECU_vNwTt/48129-9973.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "8 tỉnh, thành phố được yêu cầu ứng phó mưa lớn",
+   "u": "https://www.sggp.org.vn/8-tinh-thanh-pho-duoc-yeu-cau-ung-pho-mua-lon-post880463.html",
+   "s": "SGGP",
+   "d": "2026-11-07",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/dudbexqdre/2026_11_07/img-3363-8538-7964.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TPHCM và Nam Bộ đề phòng triều cường dâng cao, gây ngập",
    "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-de-phong-trieu-cuong-dang-cao-gay-ngap-20261105201117867.htm",
@@ -1055,31 +1077,6 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-10-12",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_12/img-2585-3376-8074.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Dự báo triều cường ở TP.HCM đạt đỉnh hôm nay, đề phòng hai khung giờ",
-   "u": "https://lifestyle.zingnews.vn/du-bao-trieu-cuong-o-tphcm-dat-dinh-hom-nay-de-phong-hai-khung-gio-post1689056.html",
-   "s": "Znews",
-   "d": "2026-10-12",
-   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_10_12/Mua_SG_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "Nha Be District",
-    "BD Thủ Dầu Một"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Chuỗi ngày mưa ngập, kẹt xe bủa vây: Nỗi khổ kép của người dân TPHCM",
-   "u": "https://vietnamnet.vn/chuoi-ngay-mua-ngap-ket-xe-bua-vay-noi-kho-kep-cua-nguoi-dan-tphcm-2563359.html",
-   "s": "VietnamNet",
-   "d": "2026-10-12",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/12/chuoi-ngay-mua-ngap-ket-xe-bua-vay-noi-kho-kep-cua-nguoi-dan-tphcm-361.gif?width=0&s=TskC7T35CkFshg5a051rig",
    "c": "hcmc",
    "fp": [],
    "z": [],
