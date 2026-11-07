@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-07T02:38:49.481Z",
+ "capNhat": "2026-11-07T16:47:09.797Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -22,6 +22,61 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-11-07",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/dudbexqdre/2026_11_07/img-3363-8538-7964.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Podcast tin thời sự ngày 7-11: Chủ động điều tiết hồ chứa, tránh triều cường, mưa lớn, kết hợp xả lũ",
+   "u": "https://www.sggp.org.vn/podcast-tin-thoi-su-ngay-7-11-chu-dong-dieu-tiet-ho-chua-tranh-trieu-cuong-mua-lon-ket-hop-xa-lu-post880582.html",
+   "s": "SGGP",
+   "d": "2026-11-07",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/cjvwpdhnw/2026_11_07/a-thulm-ytb-8-3891-8037.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Ngày 8-11, Nam bộ tăng mưa, miền Trung mưa lớn",
+   "u": "https://www.sggp.org.vn/ngay-8-11-nam-bo-tang-mua-mien-trung-mua-lon-post880563.html",
+   "s": "SGGP",
+   "d": "2026-11-07",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/sengtm/2026_11_07/z7940005866041-ce877dc7a05a437f48318c78070e56de-1228-6749jpg-9530-5540.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường ở TPHCM dâng cao, đề phòng ngập úng",
+   "u": "https://www.sggp.org.vn/trieu-cuong-o-tphcm-dang-cao-de-phong-ngap-ung-post880557.html",
+   "s": "SGGP",
+   "d": "2026-11-07",
+   "img": "https://image.sggp.org.vn/Uploaded/2026/cjvwpdhnw/2026_11_07/trieu-cuong-a-1601-3053.gif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Ngày mai 8-11, dự báo TP.HCM mưa lớn, nước sông Sài Gòn cao theo triều cường",
+   "u": "https://tuoitre.vn/ngay-mai-8-11-du-bao-tphcm-mua-lon-nuoc-song-sai-gon-cao-theo-trieu-cuong-10026110717122062.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-11-07",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/7/trieu-cuong-19-10-4-172934018588566392697-0-0-1123-1797-crop-17940462776752002521350.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nam Bộ, TP.HCM ngày mai mưa nhiều, gió đẩy nước làm triều cường dâng cao",
+   "u": "https://tuoitre.vn/nam-bo-tphcm-ngay-mai-mua-nhieu-gio-day-nuoc-lam-trieu-cuong-dang-cao-100261107102740312.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-11-07",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/7/trieu-cuong-08-179163539242572050027-144-342-868-1500-crop-17940219554211721410005.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1023,63 +1078,6 @@ window.TIN_NGAP = {
     "Nha Be District",
     "BD Thủ Dầu Một"
    ],
-   "canh": 1
-  },
-  {
-   "t": "Miền Trung mưa lớn, TPHCM nguy cơ ngập do triều cường",
-   "u": "https://dantri.com.vn/dt360/mien-trung-mua-lon-tphcm-nguy-co-ngap-do-trieu-cuong-20261013223619578.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-13",
-   "img": "https://icdn.dantri.com.vn/2026/10/13/thumb-1-1791905574497.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM chiều tối có nơi mưa to, ven biển đề phòng ngập",
-   "u": "https://lifestyle.zingnews.vn/tphcm-chieu-toi-co-noi-mua-to-ven-bien-de-phong-ngap-post1689476.html",
-   "s": "Znews",
-   "d": "2026-10-13",
-   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_09_27/Mua_to_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "VT Vũng Tàu"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Cảnh tượng 'lạ' ở TPHCM: Người dân tự đào rãnh trong nhà để chống chọi mùa triều cường",
-   "u": "https://vietnamnet.vn/canh-tuong-la-ben-trong-nha-nguoi-dan-tphcm-mua-trieu-cuong-2564125.html",
-   "s": "VietnamNet",
-   "d": "2026-10-13",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/10/12/canh-tuong-la-ben-trong-nha-nguoi-dan-tphcm-mua-trieu-cuong-2658.jpg?width=0&s=9cU9tZWE0KM5HxwK_ufudw",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Độc lạ quán cà phê ngập nước ở TPHCM",
-   "u": "https://tienphong.vn/doc-la-quan-ca-phe-ngap-nuoc-o-tphcm-post1884337.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-12",
-   "img": "https://cdn.tienphong.vn/images/SdKzdntpvrqScxyEFJopoxSVjVKNSm_atxkSekXMz7Y12ov5RIvTlxxv_N33t4uG/hxn01723.jpg.avif",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Đầu tuần, Nam bộ tiếp tục mưa dông, triều cường tại TPHCM vượt báo động 3",
-   "u": "https://www.sggp.org.vn/dau-tuan-nam-bo-tiep-tuc-mua-dong-trieu-cuong-tai-tphcm-vuot-bao-dong-3-post876117.html",
-   "s": "SGGP",
-   "d": "2026-10-12",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_12/img-2585-3376-8074.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   },
   {
