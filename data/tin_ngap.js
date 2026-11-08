@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-07T16:47:09.797Z",
+ "capNhat": "2026-11-08T02:14:09.309Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Nước sông Vàm Cỏ tiếp tục dâng, hàng loạt địa phương ở Tây Ninh có nguy cơ ngập",
+   "u": "https://tienphong.vn/nuoc-song-vam-co-tiep-tuc-dang-hang-loat-dia-phuong-o-tay-ninh-co-nguy-co-ngap-post1892442.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-11-08",
+   "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshpt8m7olYjNNZO2WQK1aeaSzuN3JZ6yD1-WsnbV2WEGQBeds6osWbm1dk0ipr30opzttJeMuV5riio2A0shDFR5C9jhgDFqnBlHnyrzVDIYM-4PIi4p_m5IW3B1MRd5jptLLemm0N70e1FLDi3dvHuY/tp-c_1789449245268-5018715155570216850-5018715155570216850-d86a95d8d0d9afbb629d7ba7528892aa.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Mưa lớn gây ngập nhà dân, chia cắt giao thông ở xã vùng cao Lào Cai",
    "u": "https://tienphong.vn/mua-lon-gay-ngap-nha-dan-chia-cat-giao-thong-o-xa-vung-cao-lao-cai-post1892187.tpo",
@@ -77,6 +88,17 @@ window.TIN_NGAP = {
    "s": "Tuổi Trẻ",
    "d": "2026-11-07",
    "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/7/trieu-cuong-08-179163539242572050027-144-342-868-1500-crop-17940219554211721410005.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM tăng mưa dông, cảnh báo ngập sâu do triều cường",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-tang-mua-dong-canh-bao-ngap-sau-do-trieu-cuong-20261107190927392.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-07",
+   "img": "https://icdn.dantri.com.vn/2026/09/30/67-1790733147341.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1053,31 +1075,6 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Bản tin thời sự ngày 13-10: Dự báo mưa tăng trở lại tại Nam bộ, kéo dài đến 21-10",
-   "u": "https://www.sggp.org.vn/ban-tin-thoi-su-ngay-13-10-du-bao-mua-tang-tro-lai-tai-nam-bo-keo-dai-den-21-10-post876426.html",
-   "s": "SGGP",
-   "d": "2026-10-13",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/agesfjbfjpy/2026_10_13/tit-yt-sggp00-00-10-16still6280-3325-5312.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nhiều nơi trũng thấp tại TPHCM tiếp tục ngập do triều cường",
-   "u": "https://www.sggp.org.vn/nhieu-noi-trung-thap-tai-tphcm-tiep-tuc-ngap-do-trieu-cuong-post876410.html",
-   "s": "SGGP",
-   "d": "2026-10-13",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/xdlqvplc/2026_10_13/4c26365f6a54ea0ab345-7680-7776.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "Nha Be District",
-    "BD Thủ Dầu Một"
-   ],
    "canh": 1
   },
   {
