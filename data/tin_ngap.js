@@ -2,15 +2,37 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-08T16:58:43.354Z",
+ "capNhat": "2026-11-09T02:31:33.067Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Đường phố Hà Nội ùn tắc kéo dài sáng đầu tuần mưa lạnh",
+   "u": "https://tienphong.vn/duong-pho-ha-noi-un-tac-keo-dai-sang-dau-tuan-mua-lanh-post1892642.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-11-09",
+   "img": "https://cdn.tienphong.vn/images/EfQGVTCKI40X1VMmSyXaXaIR4JtX877pmB60euphCgTRCNfsdiavHs7zJmSIkRgf/ty2.jpg.avif",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Nước sông Vàm Cỏ tiếp tục dâng, hàng loạt địa phương ở Tây Ninh có nguy cơ ngập",
    "u": "https://tienphong.vn/nuoc-song-vam-co-tiep-tuc-dang-hang-loat-dia-phuong-o-tay-ninh-co-nguy-co-ngap-post1892442.tpo",
    "s": "Tiền Phong",
    "d": "2026-11-08",
    "img": "https://cdn.tienphong.vn/images/vuPmvkJtQCmhN6SmwhHshpt8m7olYjNNZO2WQK1aeaSzuN3JZ6yD1-WsnbV2WEGQBeds6osWbm1dk0ipr30opzttJeMuV5riio2A0shDFR5C9jhgDFqnBlHnyrzVDIYM-4PIi4p_m5IW3B1MRd5jptLLemm0N70e1FLDi3dvHuY/tp-c_1789449245268-5018715155570216850-5018715155570216850-d86a95d8d0d9afbb629d7ba7528892aa.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Miền Bắc mưa rét đầu mùa, TPHCM báo động triều cường cao",
+   "u": "https://dantri.com.vn/dt360/mien-bac-mua-ret-dau-mua-tphcm-bao-dong-trieu-cuong-cao-20261108234508318.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-08",
+   "img": "https://icdn.dantri.com.vn/2026/11/08/2-1678678152054-1794090068894.webp",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1067,17 +1089,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "Nam bộ mưa tăng trở lại, nguy cơ ngập do kết hợp triều cường",
-   "u": "https://www.sggp.org.vn/nam-bo-mua-tang-tro-lai-nguy-co-ngap-do-ket-hop-trieu-cuong-post876277.html",
-   "s": "SGGP",
-   "d": "2026-10-13",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/nphovhp/2026_10_13/1-8659-7658.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Mưa lớn gây lũ quét ở Chile, cuốn trôi hàng trăm ô tô",
    "u": "https://tienphong.vn/mua-lon-gay-lu-quet-o-chile-cuon-troi-hang-tram-o-to-post1883747.tpo",
    "s": "Tiền Phong",
@@ -2071,17 +2082,6 @@ window.TIN_NGAP = {
    "z": [
     "Tây Mỗ"
    ],
-   "canh": 1
-  },
-  {
-   "t": "1h sáng ở Hà Nội: Nhiều người vẫn loay hoay tìm đường về nhà vì ngập",
-   "u": "https://dantri.com.vn/dt360/1h-sang-o-ha-noi-nhieu-nguoi-van-loay-hoay-tim-duong-ve-nha-vi-ngap-20260917025335692.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-16",
-   "img": "https://icdn.dantri.com.vn/2026/09/17/ezgif-7e7e0a05a0e59169-1789588233617.gif",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
    "canh": 1
   }
  ]
