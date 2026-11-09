@@ -2,9 +2,44 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-09T02:31:33.067Z",
+ "capNhat": "2026-11-09T21:22:41.733Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Triều cường dâng cao 2m, \"xé toạc\" hơn 100m bờ biển ở Huế",
+   "u": "https://dantri.com.vn/thoi-su/trieu-cuong-dang-cao-2m-xe-toac-hon-100m-bo-bien-o-hue-20261109212824677.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-09",
+   "img": "https://icdn.dantri.com.vn/2026/11/09/thoi-su-sat-lo-bo-bien-thuan-an-edited-1794233448337.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "BD Thuận An"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường dâng cao, \"bẫy\" ổ gà rình rập người dân TPHCM",
+   "u": "https://dantri.com.vn/thoi-su/trieu-cuong-dang-cao-bay-o-ga-rinh-rap-nguoi-dan-tphcm-20261109185026993.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-09",
+   "img": "https://icdn.dantri.com.vn/2026/11/09/n8-1794224544618.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Clip mưa lớn, nước cuồn cuộn như thác tràn qua đường",
+   "u": "https://vietnamnet.vn/clip-mua-lon-duong-ho-chi-minh-nuoc-cuon-cuon-nhu-thac-do-2573210.html",
+   "s": "VietnamNet",
+   "d": "2026-11-09",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/11/9/clip-mua-lon-nuoc-cuon-cuon-nhu-thac-tran-qua-duong-3421.gif?width=0&s=guureDMkxzpX85aiBs8K0A",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Đường phố Hà Nội ùn tắc kéo dài sáng đầu tuần mưa lạnh",
    "u": "https://tienphong.vn/duong-pho-ha-noi-un-tac-keo-dai-sang-dau-tuan-mua-lanh-post1892642.tpo",
@@ -1050,39 +1085,6 @@ window.TIN_NGAP = {
    "s": "Dân Trí",
    "d": "2026-10-14",
    "img": "https://icdn.dantri.com.vn/2026/09/19/mmuuu-1789821216857.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Bé trai bán vé số nằm tử vong trong hẻm ngập nước ở TPHCM",
-   "u": "https://dantri.com.vn/thoi-su/be-trai-ban-ve-so-nam-tu-vong-trong-hem-ngap-nuoc-o-tphcm-20261014220856775.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-14",
-   "img": "https://icdn.dantri.com.vn/2026/10/14/ae20a2b5-7b6e-403f-bbbc-416a1b27c396-1791989981678.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Thời tiết TP.HCM ngày 15/10: Sáng tạnh ráo, chiều mưa to",
-   "u": "https://lifestyle.zingnews.vn/thoi-tiet-tphcm-ngay-1510-sang-tanh-rao-chieu-mua-to-post1689668.html",
-   "s": "Znews",
-   "d": "2026-10-14",
-   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2019_11_24/Trieu_SG_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường tại TPHCM đang xuống nhưng vẫn ở mức trên dưới báo động 3",
-   "u": "https://www.sggp.org.vn/trieu-cuong-tai-tphcm-dang-xuong-nhung-van-o-muc-tren-duoi-bao-dong-3-post876294.html",
-   "s": "SGGP",
-   "d": "2026-10-13",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/agesfjbfjpy/2026_10_13/s-mua00-00-03-09still001-6790-3686.jpg.webp",
    "c": "hcmc",
    "fp": [],
    "z": [],
