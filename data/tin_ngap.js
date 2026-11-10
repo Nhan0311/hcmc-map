@@ -2,9 +2,36 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-09T21:22:41.733Z",
+ "capNhat": "2026-11-10T04:33:30.249Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Mưa lớn, gió giật ở Huế: Cây đổ vào nhà dân, nhiều tuyến đường ngập nước",
+   "u": "https://tienphong.vn/mua-lon-gio-giat-o-hue-cay-do-vao-nha-dan-nhieu-tuyen-duong-ngap-nuoc-post1892994.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-11-10",
+   "img": "https://cdn.tienphong.vn/images/7nnhKt8M2ubXx8G9gp4PtHnJIJW2DPxeQDuY8Q6aetyGAXY0WuPAoGs00xVV3SHN9s-sTTCpowI4NkTUsx9KRg/cay-do-vinh-loc-760.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "BD Thuận An"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường đầu tháng 10 âm lịch ở TPHCM vượt báo động 3",
+   "u": "https://tienphong.vn/trieu-cuong-dau-thang-10-am-lich-o-tphcm-vuot-bao-dong-3-post1892989.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-11-10",
+   "img": "https://cdn.tienphong.vn/images/AHsu0WetIg3QIF4V2I7ZaItweqX-3HqhRhF3m-LUSAVaRLpY7DkTZmBg7rmKqS3r/trieu-cuong.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "Nha Be District",
+    "BD Thủ Dầu Một"
+   ],
+   "canh": 1
+  },
   {
    "t": "Triều cường dâng cao 2m, \"xé toạc\" hơn 100m bờ biển ở Huế",
    "u": "https://dantri.com.vn/thoi-su/trieu-cuong-dang-cao-2m-xe-toac-hon-100m-bo-bien-o-hue-20261109212824677.htm",
@@ -35,6 +62,17 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-11-09",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/11/9/clip-mua-lon-nuoc-cuon-cuon-nhu-thac-tran-qua-duong-3421.gif?width=0&s=guureDMkxzpX85aiBs8K0A",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ đề phòng triều cường vượt báo động 3",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-de-phong-trieu-cuong-vuot-bao-dong-3-20261109212047111.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-09",
+   "img": "https://icdn.dantri.com.vn/2026/11/09/n5-1794224542148.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1053,39 +1091,6 @@ window.TIN_NGAP = {
    "d": "2026-10-15",
    "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/10/15/cdb0f29bd98d59d3009c-179205546419896875121-0-0-1600-2560-crop-17920555032351990768772.jpg",
    "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Nam bộ vẫn mưa những ngày tới, tập trung vào chiều tối",
-   "u": "https://www.sggp.org.vn/nam-bo-van-mua-nhung-ngay-toi-tap-trung-vao-chieu-toi-post876550.html",
-   "s": "SGGP",
-   "d": "2026-10-14",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_14/img-2749-9106-153.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Vừa khai trương, nhà hàng ở TPHCM ngập sâu phải dùng thuyền đón khách",
-   "u": "https://dantri.com.vn/du-lich/vua-khai-truong-nha-hang-o-tphcm-ngap-sau-phai-dung-thuyen-don-khach-20261013211033429.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-14",
-   "img": "https://icdn.dantri.com.vn/2026/10/13/nha-hang-bi-ngap23-1791897317978.jpg?watermark=v1",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM và Nam Bộ mưa gia tăng vào cuối tuần",
-   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-mua-gia-tang-vao-cuoi-tuan-20261014195947170.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-14",
-   "img": "https://icdn.dantri.com.vn/2026/09/19/mmuuu-1789821216857.jpg",
-   "c": "hcmc",
    "fp": [],
    "z": [],
    "canh": 1
