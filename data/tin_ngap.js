@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-10T04:33:30.249Z",
+ "capNhat": "2026-11-10T18:33:42.039Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -29,6 +29,30 @@ window.TIN_NGAP = {
    "z": [
     "Nha Be District",
     "BD Thủ Dầu Một"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Mưa trút xuống trung tâm TP.HCM sau buổi sáng oi nồng, chiều nay có 'combo' mưa lẫn triều cường",
+   "u": "https://tuoitre.vn/mua-trut-xuong-trung-tam-tphcm-sau-buoi-sang-oi-nong-chieu-nay-co-combo-mua-lan-trieu-cuong-100261110140625052.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-11-10",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/10/1794293592612870277830368849742887027783036884974287f56c7ece0ca12641fa61c029781f2c2-17942940758521720855709-0-0-1600-2560-crop-17942943452132130060574.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Bản tin thời sự ngày 10-11: Dự báo Quảng Ngãi có mưa đến mưa rất lớn kèm dông",
+   "u": "https://www.sggp.org.vn/ban-tin-thoi-su-ngay-10-11-du-bao-quang-ngai-co-mua-den-mua-rat-lon-kem-dong-post881089.html",
+   "s": "SGGP",
+   "d": "2026-11-10",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/agesfjbfjpy/2026_11_10/tit-yt-sggp00-00-55-21still6336-9565-9978.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "Can Gio District"
    ],
    "canh": 1
   },
@@ -1057,28 +1081,6 @@ window.TIN_NGAP = {
    "s": "Znews",
    "d": "2026-10-15",
    "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_10_08/tp_mua_lon_3173_1.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM và Nam Bộ có mưa dông diện rộng vào cuối tuần",
-   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-co-mua-dong-dien-rong-vao-cuoi-tuan-20261015181408024.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-15",
-   "img": "https://icdn.dantri.com.vn/2026/08/07/0004c574-b7c8-43d5-9cf6-4e06109c4cba1201a-1786110765878.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Miền Bắc nắng ráo, Nam Bộ tiếp tục mưa lớn",
-   "u": "https://tienphong.vn/mien-bac-nang-rao-nam-bo-tiep-tuc-mua-lon-post1885674.tpo",
-   "s": "Tiền Phong",
-   "d": "2026-10-15",
-   "img": "https://cdn.tienphong.vn/images/Cnj4WjvRBHYQoCoEhCPn8q-Jxkp-tDwmmjWsVa987OJIjgbFpz3bCRBx5k0vAASgYTZ2A2SDTPc4FV1cVd5TrA/mua-tphcm-1371.jpg.avif",
    "c": "hcmc",
    "fp": [],
    "z": [],
