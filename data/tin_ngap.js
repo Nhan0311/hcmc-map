@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-11T18:31:11.143Z",
+ "capNhat": "2026-11-12T03:43:11.167Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM và Nam Bộ tiếp tục mưa dông, triều cường giảm dần",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-dong-trieu-cuong-giam-dan-20261111212834513.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-11",
+   "img": "https://icdn.dantri.com.vn/2026/08/09/27dc218a-c59a-43be-ae65-c139d811f9db1201a-1786273136326.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Mưa lớn, gió giật ở Huế: Cây đổ vào nhà dân, nhiều tuyến đường ngập nước",
    "u": "https://tienphong.vn/mua-lon-gio-giat-o-hue-cay-do-vao-nha-dan-nhieu-tuyen-duong-ngap-nuoc-post1892994.tpo",
@@ -1070,17 +1081,6 @@ window.TIN_NGAP = {
    "s": "Thanh Niên",
    "d": "2026-10-15",
    "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/13/0d0e5f7b-f14a-4d0b-9a9d-766943360d61-17918608301901664844300.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Mưa dông ập xuống, nhiều tuyến đường TP.HCM lại biến thành sông",
-   "u": "https://lifestyle.zingnews.vn/mua-dong-ap-xuong-nhieu-tuyen-duong-tphcm-lai-bien-thanh-song-post1689309.html",
-   "s": "Znews",
-   "d": "2026-10-15",
-   "img": "https://photo.znews.vn/w660/Uploaded/ecfzyryrzly/2026_10_08/tp_mua_lon_3173_1.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
