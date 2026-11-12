@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-12T03:43:11.167Z",
+ "capNhat": "2026-11-12T18:46:31.531Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Tân Chủ tịch TP HCM: Ưu tiên giải quyết kẹt xe, ngập nước",
+   "u": "https://vnexpress.net/tan-chu-tich-tp-hcm-uu-tien-giai-quyet-ket-xe-ngap-nuoc-5143787.html",
+   "s": "VnExpress",
+   "d": "2026-11-12",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/11/12/1794455615339-a4d7dc343167ad21-6354-2880-1794459520.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=huXNLNoJZW9pU_6CcyI3XA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TPHCM và Nam Bộ tiếp tục mưa dông, triều cường giảm dần",
    "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-mua-dong-trieu-cuong-giam-dan-20261111212834513.htm",
@@ -1070,17 +1081,6 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-10-16",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/vocgmvbg/2026_10_07/hoi-dap-1535-5990.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM ngập ở đ&acirc;u v&agrave; lộ tr&igrave;nh khắc phục ra sao?",
-   "u": "https://thanhnien.vn/tphcm-ngap-o-dau-va-lo-trinh-khac-phuc-ra-sao-185261013100305337.htm",
-   "s": "Thanh Niên",
-   "d": "2026-10-15",
-   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/13/0d0e5f7b-f14a-4d0b-9a9d-766943360d61-17918608301901664844300.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
