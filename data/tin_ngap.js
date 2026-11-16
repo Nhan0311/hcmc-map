@@ -2,9 +2,33 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-16T02:39:36.498Z",
+ "capNhat": "2026-11-16T20:53:37.662Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Cử tri các phường 'cửa ngõ' TP.HCM kiến nghị chuyện chống ngập, tái định cư",
+   "u": "https://tuoitre.vn/cu-tri-cac-phuong-cua-ngo-tphcm-kien-nghi-chuyen-chong-ngap-tai-dinh-cu-100261116170748743.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-11-16",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/16/tai-dinh-cu-17948349929021913483594-788-688-1536-1885-crop-17948350577811706484475.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "Thu Duc Old"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Nhiều phường ở TP.HCM rốt ráo nâng cấp hạ tầng, chống ngập",
+   "u": "https://baoxaydung.vn/nhieu-phuong-o-tphcm-rot-rao-nang-cap-ha-tang-chong-ngap-192261116113936061.htm",
+   "s": "Báo Giao thông",
+   "d": "2026-11-16",
+   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/11/16/photo-1794803223503-1794803227189309275560-16-0-1266-2000-crop-1794803895366121774478.jpeg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Tân Chủ tịch TP HCM: Ưu tiên giải quyết kẹt xe, ngập nước",
    "u": "https://vnexpress.net/tan-chu-tich-tp-hcm-uu-tien-giai-quyet-ket-xe-ngap-nuoc-5143787.html",
@@ -1059,28 +1083,6 @@ window.TIN_NGAP = {
    "s": "Báo Giao thông",
    "d": "2026-10-16",
    "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/10/16/photo-1792136823843-1792136824958330920473-40-0-832-1267-crop-1792136953702697346825.jpeg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM và Nam Bộ có nơi mưa trên 100mm, đề phòng ngập",
-   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-co-noi-mua-tren-100mm-de-phong-ngap-20261016194116747.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-16",
-   "img": "https://icdn.dantri.com.vn/2026/10/16/mo1-1792154386092.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Xe gửi trong chung cư bị ngập nước, hỏng: Chủ xe có được bồi thường?",
-   "u": "https://www.sggp.org.vn/xe-gui-trong-chung-cu-bi-ngap-nuoc-hong-chu-xe-co-duoc-boi-thuong-post876976.html",
-   "s": "SGGP",
-   "d": "2026-10-16",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/vocgmvbg/2026_10_07/hoi-dap-1535-5990.jpg.webp",
    "c": "hcmc",
    "fp": [],
    "z": [],
