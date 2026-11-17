@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-16T20:53:37.662Z",
+ "capNhat": "2026-11-17T05:00:10.676Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -24,6 +24,17 @@ window.TIN_NGAP = {
    "s": "Báo Giao thông",
    "d": "2026-11-16",
    "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/11/16/photo-1794803223503-1794803227189309275560-16-0-1266-2000-crop-1794803895366121774478.jpeg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và Nam Bộ ngày nắng, cảnh báo triều cường và biển động mạnh",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-ngay-nang-canh-bao-trieu-cuong-va-bien-dong-manh-20261116212700996.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-16",
+   "img": "https://cdnphoto.dantri.com.vn/ewZE1PAZZIxEDKDro8tgMbkbrjM=/2026/05/23/mua333-1779538377182.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1072,17 +1083,6 @@ window.TIN_NGAP = {
    "s": "Thanh Niên",
    "d": "2026-10-16",
    "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/16/tnw-dsc06745-17921256714852146505854-45-0-1645-2560-crop-1792125979521701552095.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Chống ngập TP.HCM: Cần đồng bộ hạ tầng và dành không gian cho nước",
-   "u": "https://baoxaydung.vn/chong-ngap-tphcm-can-dong-bo-ha-tang-va-danh-khong-gian-cho-nuoc-192261016150235143.htm",
-   "s": "Báo Giao thông",
-   "d": "2026-10-16",
-   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/10/16/photo-1792136823843-1792136824958330920473-40-0-832-1267-crop-1792136953702697346825.jpeg",
    "c": "hcmc",
    "fp": [],
    "z": [],
