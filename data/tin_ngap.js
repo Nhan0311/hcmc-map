@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-18T04:06:12.209Z",
+ "capNhat": "2026-11-18T19:19:35.642Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM và các tỉnh Nam Bộ ngày nắng, chiều tối một số nơi có mưa dông",
+   "u": "https://dantri.com.vn/thoi-su/tphcm-va-cac-tinh-nam-bo-ngay-nang-chieu-toi-mot-so-noi-co-mua-dong-20261118204901733.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-18",
+   "img": "https://cdnphoto.dantri.com.vn/0UdyV491J_FC9hZwD9ABNdF8GsA=/2026/11/18/1000118660-1795009644003.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Cử tri các phường 'cửa ngõ' TP.HCM kiến nghị chuyện chống ngập, tái định cư",
    "u": "https://tuoitre.vn/cu-tri-cac-phuong-cua-ngo-tphcm-kien-nghi-chuyen-chong-ngap-tai-dinh-cu-100261116170748743.htm",
@@ -1072,17 +1083,6 @@ window.TIN_NGAP = {
    "s": "Znews",
    "d": "2026-10-17",
    "img": "https://photo.znews.vn/w660/Uploaded/uohusah/2022_10_10/trieu_cuong.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "D&ugrave;ng cảm biến mưa v&agrave; AI c&oacute; thể cảnh b&aacute;o sớm ngập nước ở TP.HCM",
-   "u": "https://thanhnien.vn/dung-cam-bien-mua-va-ai-co-the-canh-bao-som-ngap-nuoc-o-tphcm-185261016115143871.htm",
-   "s": "Thanh Niên",
-   "d": "2026-10-16",
-   "img": "https://images2.thanhnien.vn/zoom/600_315/528068263637045248/2026/10/16/tnw-dsc06745-17921256714852146505854-45-0-1645-2560-crop-1792125979521701552095.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
