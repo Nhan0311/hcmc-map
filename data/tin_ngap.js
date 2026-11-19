@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-19T04:03:12.336Z",
+ "capNhat": "2026-11-19T19:26:45.912Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
