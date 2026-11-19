@@ -2,12 +2,23 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-18T19:19:35.642Z",
+ "capNhat": "2026-11-19T04:03:12.336Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
    "t": "TPHCM và các tỉnh Nam Bộ ngày nắng, chiều tối một số nơi có mưa dông",
    "u": "https://dantri.com.vn/thoi-su/tphcm-va-cac-tinh-nam-bo-ngay-nang-chieu-toi-mot-so-noi-co-mua-dong-20261118204901733.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-18",
+   "img": "https://cdnphoto.dantri.com.vn/0UdyV491J_FC9hZwD9ABNdF8GsA=/2026/11/18/1000118660-1795009644003.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM và các tỉnh, thành Nam Bộ ngày nắng, chiều tối một số nơi có mưa dông",
+   "u": "https://dantri.com.vn/thoi-su/tphcm-va-cac-tinh-thanh-nam-bo-ngay-nang-chieu-toi-mot-so-noi-co-mua-dong-20261118204901733.htm",
    "s": "Dân Trí",
    "d": "2026-11-18",
    "img": "https://cdnphoto.dantri.com.vn/0UdyV491J_FC9hZwD9ABNdF8GsA=/2026/11/18/1000118660-1795009644003.jpg",
@@ -1072,17 +1083,6 @@ window.TIN_NGAP = {
    "s": "Znews",
    "d": "2026-10-17",
    "img": "https://photo.znews.vn/w660/Uploaded/kbfoplb/2026_10_07/nguyenvankhoi_ngap_znews_15.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hôm nay TP.HCM tiếp tục có mưa, người dân lưu ý hai khung giờ",
-   "u": "https://lifestyle.zingnews.vn/hom-nay-tphcm-tiep-tuc-co-mua-nguoi-dan-luu-y-hai-khung-gio-post1690359.html",
-   "s": "Znews",
-   "d": "2026-10-17",
-   "img": "https://photo.znews.vn/w660/Uploaded/uohusah/2022_10_10/trieu_cuong.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
