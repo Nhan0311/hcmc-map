@@ -2,9 +2,31 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-20T19:01:45.616Z",
+ "capNhat": "2026-11-21T03:52:33.823Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Nam bộ mưa gia tăng trong 2 ngày cuối tuần",
+   "u": "https://www.sggp.org.vn/nam-bo-mua-gia-tang-trong-2-ngay-cuoi-tuan-post882891.html",
+   "s": "SGGP",
+   "d": "2026-11-21",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_11_21/img-3710-7757-419.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "TPHCM sắp đón đợt triều cường vượt báo động 3, vùng biển động mạnh",
+   "u": "https://dantri.com.vn/thoi-tiet/tphcm-sap-don-dot-trieu-cuong-vuot-bao-dong-3-vung-bien-dong-manh-20261120182104207.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-20",
+   "img": "https://cdnphoto.dantri.com.vn/z7lsSpvQQRlxzVgDLt7TFL0b-oM=/2026/11/20/da2fa416-8e4c-4806-ac0b-dbba07b6636f1105c-1795173570283.jpeg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TPHCM và các tỉnh Nam Bộ ngày nắng, chiều tối một số nơi có mưa dông",
    "u": "https://dantri.com.vn/thoi-su/tphcm-va-cac-tinh-nam-bo-ngay-nang-chieu-toi-mot-so-noi-co-mua-dong-20261118204901733.htm",
@@ -1064,28 +1086,6 @@ window.TIN_NGAP = {
     "BD Thuận An",
     "Thu Duc Old"
    ],
-   "canh": 1
-  },
-  {
-   "t": "Nam bộ có thể mưa diện rộng cuối tuần, có nơi mưa to",
-   "u": "https://www.sggp.org.vn/nam-bo-co-the-mua-dien-rong-cuoi-tuan-co-noi-mua-to-post876973.html",
-   "s": "SGGP",
-   "d": "2026-10-17",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/dudbexqdre/2026_10_17/mua-1490-4282.jpg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM sắp ra mắt bản đồ số cảnh báo điểm ngập",
-   "u": "https://lifestyle.zingnews.vn/tphcm-sap-ra-mat-ban-do-so-canh-bao-diem-ngap-post1690219.html",
-   "s": "Znews",
-   "d": "2026-10-17",
-   "img": "https://photo.znews.vn/w660/Uploaded/kbfoplb/2026_10_07/nguyenvankhoi_ngap_znews_15.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   },
   {
