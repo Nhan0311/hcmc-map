@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-22T02:56:24.072Z",
+ "capNhat": "2026-11-22T18:22:50.174Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -11,6 +11,17 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-11-22",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/11/22/tphcm-va-nam-bo-don-2-dot-mua-giong-khi-khong-khi-lanh-khuech-tan-546.jpg?width=0&s=BPBtHorIyaa6KYdhgnk5zw",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Nam bộ sắp có đợt triều cường vượt báo động 3, Bắc bộ và Bắc Trung bộ chuyển rét",
+   "u": "https://www.sggp.org.vn/nam-bo-sap-co-dot-trieu-cuong-vuot-bao-dong-3-bac-bo-va-bac-trung-bo-chuyen-ret-post883127.html",
+   "s": "SGGP",
+   "d": "2026-11-22",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_11_22/img-3743-275-2962.jpeg.webp",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1065,17 +1076,6 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-10-19",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/30/mua-lon-gay-ngap-ket-xe-khap-tphcm-dong-nguoi-nhich-tung-chut-1781.jpg?width=0&s=vm91BhXrPEWQZ5XUQ0yviA",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM và Nam Bộ giảm mưa từ giữa tuần này",
-   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-giam-mua-tu-giua-tuan-nay-20261018171224975.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-18",
-   "img": "https://icdn.dantri.com.vn/2026/10/18/mua1-1792318237944.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
