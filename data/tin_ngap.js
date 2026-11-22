@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-21T17:55:22.517Z",
+ "capNhat": "2026-11-22T02:56:24.072Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "TPHCM và Nam Bộ đón 2 đợt mưa giông khi không khí lạnh khuếch tán",
+   "u": "https://vietnamnet.vn/tphcm-va-nam-bo-don-2-dot-mua-giong-khi-khong-khi-lanh-khuech-tan-2572297.html",
+   "s": "VietnamNet",
+   "d": "2026-11-22",
+   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/11/22/tphcm-va-nam-bo-don-2-dot-mua-giong-khi-khong-khi-lanh-khuech-tan-546.jpg?width=0&s=BPBtHorIyaa6KYdhgnk5zw",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Nam bộ mưa gia tăng trong 2 ngày cuối tuần",
    "u": "https://www.sggp.org.vn/nam-bo-mua-gia-tang-trong-2-ngay-cuoi-tuan-post882891.html",
@@ -1068,24 +1079,6 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM có thể mưa đến 22/10, Thủ Đức, Bình Dương tới 130 mm",
-   "u": "https://lifestyle.zingnews.vn/tphcm-co-the-mua-den-2210-thu-duc-binh-duong-toi-130-mm-post1690532.html",
-   "s": "Znews",
-   "d": "2026-10-18",
-   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2026_09_09/Mua_TP.HCM.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Bàu Bàng",
-    "BD Bắc Tân Uyên",
-    "Cu Chi District",
-    "Hoc Mon District",
-    "BD Thuận An",
-    "Thu Duc Old"
-   ],
    "canh": 1
   },
   {
