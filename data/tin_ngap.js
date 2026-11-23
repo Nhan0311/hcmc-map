@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-22T18:22:50.174Z",
+ "capNhat": "2026-11-23T03:38:27.918Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -22,6 +22,17 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-11-22",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_11_22/img-3743-275-2962.jpeg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường tại TPHCM đạt đỉnh từ 24/11, một số trạm có thể vượt báo động 3",
+   "u": "https://dantri.com.vn/thoi-tiet/trieu-cuong-tai-tphcm-dat-dinh-tu-2411-mot-so-tram-co-the-vuot-bao-dong-3-20261122180236443.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-22",
+   "img": "https://cdnphoto.dantri.com.vn/kfn-q7K5jszf8VoNhudb8g6R3-g=/2026/10/26/ng3-1793009900354.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1068,17 +1079,6 @@ window.TIN_NGAP = {
    "z": [
     "BD Thủ Dầu Một"
    ],
-   "canh": 1
-  },
-  {
-   "t": "Mưa lớn gây ngập, kẹt xe khắp TPHCM, dòng người nhích từng chút",
-   "u": "https://vietnamnet.vn/mua-lon-gay-ngap-ket-xe-khap-tphcm-dong-nguoi-nhich-tung-chut-2560206.html",
-   "s": "VietnamNet",
-   "d": "2026-10-19",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/30/mua-lon-gay-ngap-ket-xe-khap-tphcm-dong-nguoi-nhich-tung-chut-1781.jpg?width=0&s=vm91BhXrPEWQZ5XUQ0yviA",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
    "canh": 1
   },
   {
