@@ -2,9 +2,20 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-23T22:30:26.979Z",
+ "capNhat": "2026-11-24T06:53:08.242Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Triều cường tại TPHCM có thể đạt đỉnh vào các ngày 25, 26-11",
+   "u": "https://www.sggp.org.vn/trieu-cuong-tai-tphcm-co-the-dat-dinh-vao-cac-ngay-25-26-11-post883373.html",
+   "s": "SGGP",
+   "d": "2026-11-24",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/tpuoohp/2026_11_07/1792024872327-272297730924611620-7409268883316963632-n-1236-4170.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "TPHCM và Nam Bộ đón 2 đợt mưa giông khi không khí lạnh khuếch tán",
    "u": "https://vietnamnet.vn/tphcm-va-nam-bo-don-2-dot-mua-giong-khi-khong-khi-lanh-khuech-tan-2572297.html",
@@ -1066,19 +1077,6 @@ window.TIN_NGAP = {
    "c": "hcmc",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM tiếp tục mưa to đến 22/10, triều cường sắp lên lại",
-   "u": "https://lifestyle.zingnews.vn/tphcm-tiep-tuc-mua-to-den-2210-trieu-cuong-sap-len-lai-post1690767.html",
-   "s": "Znews",
-   "d": "2026-10-19",
-   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_09_10/Mua_SG_07_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Thủ Dầu Một"
-   ],
    "canh": 1
   },
   {
