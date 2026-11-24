@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-24T06:53:08.242Z",
+ "capNhat": "2026-11-24T21:03:42.781Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -12,6 +12,17 @@ window.TIN_NGAP = {
    "d": "2026-11-24",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/tpuoohp/2026_11_07/1792024872327-272297730924611620-7409268883316963632-n-1236-4170.jpg.webp",
    "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Hà Nội ráo riết xử lý ùn tắc, úng ngập và ô nhiễm",
+   "u": "https://baoxaydung.vn/ha-noi-rao-riet-xu-ly-un-tac-ung-ngap-va-o-nhiem-192261124151502637.htm",
+   "s": "Báo Giao thông",
+   "d": "2026-11-24",
+   "img": "https://baoxaydung.mediacdn.vn/zoom/600_315/603483875699699712/2026/11/24/1c0b83601a9b9ac5c38a-17955079785201141790859-134-0-1734-2560-crop-1795508052105846413309.jpg",
+   "c": "hanoi",
    "fp": [],
    "z": [],
    "canh": 1
@@ -2071,19 +2082,6 @@ window.TIN_NGAP = {
    "c": "hanoi",
    "fp": [],
    "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Trường ở Hà Nội cho học sinh nghỉ học vì đường đến trường ngập sâu",
-   "u": "https://dantri.com.vn/giao-duc/truong-o-ha-noi-cho-hoc-sinh-nghi-hoc-vi-duong-den-truong-ngap-sau-20260917063844795.htm",
-   "s": "Dân Trí",
-   "d": "2026-09-16",
-   "img": "https://icdn.dantri.com.vn/2026/09/17/ngap-1-cropped-1789601683599.jpg",
-   "c": "hanoi",
-   "fp": [],
-   "z": [
-    "Tây Mỗ"
-   ],
    "canh": 1
   }
  ]
