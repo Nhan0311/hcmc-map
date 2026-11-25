@@ -2,15 +2,37 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-24T21:03:42.781Z",
+ "capNhat": "2026-11-25T05:19:59.850Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Hà Nội còn 16-17 độ C, Trung bộ tiếp tục mưa lớn",
+   "u": "https://www.sggp.org.vn/ha-noi-con-16-17-do-c-trung-bo-tiep-tuc-mua-lon-post883476.html",
+   "s": "SGGP",
+   "d": "2026-11-25",
+   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/evesfnbfjpy/2026_11_25/1k87v8sh9-8s14a0-4053-1320.jpeg.webp",
+   "c": "hanoi",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Triều cường tại TPHCM có thể đạt đỉnh vào các ngày 25, 26-11",
    "u": "https://www.sggp.org.vn/trieu-cuong-tai-tphcm-co-the-dat-dinh-vao-cac-ngay-25-26-11-post883373.html",
    "s": "SGGP",
    "d": "2026-11-24",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/tpuoohp/2026_11_07/1792024872327-272297730924611620-7409268883316963632-n-1236-4170.jpg.webp",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Triều cường ở TPHCM có thể đạt báo động 3",
+   "u": "https://dantri.com.vn/thoi-tiet/trieu-cuong-o-tphcm-co-the-dat-bao-dong-3-20261124213556690.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-24",
+   "img": "https://cdnphoto.dantri.com.vn/6KrqnlUqosRmAGQVbdK77jjdDbE=/2026/11/24/18-1795530786303.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1080,17 +1102,6 @@ window.TIN_NGAP = {
    "canh": 1
   },
   {
-   "t": "TPHCM: Cảnh đường 'ngập như sông', nghìn xe nhích từng mét qua 'nút thắt cổ chai'",
-   "u": "https://vietnamnet.vn/tphcm-duong-ngap-nhu-song-nghin-xe-nhich-tung-met-qua-nut-that-co-chai-2558079.html",
-   "s": "VietnamNet",
-   "d": "2026-10-19",
-   "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/23/tphcm-canh-duong-ngap-nhu-song-nghin-xe-nhich-tung-met-qua-nut-that-co-chai-2437.gif?width=0&s=RmktEmSg8U15_xSXrUPXOA",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
    "t": "Hà Nội tập trung gỡ hai điểm nghẽn lớn: Ùn tắc giao thông và úng ngập",
    "u": "https://baoxaydung.vn/ha-noi-tap-trung-go-hai-diem-nghen-lon-un-tac-giao-thong-va-ung-ngap-192261015161258849.htm",
    "s": "Báo Giao thông",
@@ -2068,17 +2079,6 @@ window.TIN_NGAP = {
    "s": "VietnamNet",
    "d": "2026-09-17",
    "img": "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2026/9/17/ha-noi-diem-ngap-tung-mat-4-10-gio-rut-nuoc-nay-nhanh-den-bat-ngo-3978.jpg?width=0&s=wseZVs3ZeKod4b265NrtCQ",
-   "c": "hanoi",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hà Nội và nhiều tỉnh tiếp tục mưa lớn",
-   "u": "https://vnexpress.net/ha-noi-va-nhieu-tinh-tiep-tuc-mua-lon-5120734.html",
-   "s": "VnExpress",
-   "d": "2026-09-16",
-   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/09/16/screenshot-1789516174-6138-1789516182.png?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=nnXhFtlbChWkuwbXVSUbnA",
    "c": "hanoi",
    "fp": [],
    "z": [],
