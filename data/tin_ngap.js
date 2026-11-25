@@ -2,9 +2,42 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-25T05:19:59.850Z",
+ "capNhat": "2026-11-25T20:25:23.104Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Cống ngăn triều đóng van, đường ở TPHCM khô ráo dù triều cường vượt báo động 3",
+   "u": "https://dantri.com.vn/thoi-su/cong-ngan-trieu-dong-van-duong-o-tphcm-kho-rao-du-trieu-cuong-vuot-bao-dong-3-20261125184929234.htm",
+   "s": "Dân Trí",
+   "d": "2026-11-25",
+   "img": "https://cdnphoto.dantri.com.vn/LD6Qtf-C0zGK1_Q_QnbT_kOBEBk=/2026/11/25/anh-1-1795606963785.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Loạt điểm ngập ở TP HCM khô ráo ngày vận hành 8 cống ngăn triều",
+   "u": "https://vnexpress.net/loat-diem-ngap-o-tp-hcm-kho-rao-ngay-van-hanh-8-cong-ngan-trieu-5148870.html",
+   "s": "VnExpress",
+   "d": "2026-11-25",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/11/25/collage-maker-1795614402.png?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=cJX_wM_tzug3OagrPkpyUg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "8 cống ngăn triều lớn nhất TP HCM cùng vận hành, thử sức chống ngập",
+   "u": "https://vnexpress.net/8-cong-ngan-trieu-lon-nhat-tp-hcm-cung-van-hanh-thu-suc-chong-ngap-5148832.html",
+   "s": "VnExpress",
+   "d": "2026-11-25",
+   "img": "https://vcdn1-vnexpress.vnecdn.net/2026/11/25/wm1-wm1-1795598749968-a0e813615c25-4132-4715-1795599788.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=RcLA2qWk2y7LrLxxR-lcBA",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Hà Nội còn 16-17 độ C, Trung bộ tiếp tục mưa lớn",
    "u": "https://www.sggp.org.vn/ha-noi-con-16-17-do-c-trung-bo-tiep-tuc-mua-lon-post883476.html",
@@ -1060,42 +1093,6 @@ window.TIN_NGAP = {
    "s": "Dân Trí",
    "d": "2026-10-21",
    "img": "https://icdn.dantri.com.vn/2026/09/15/m21-1789481474616.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM còn mưa, triều cường trạm Thủ Dầu Một có thể vượt báo động 3",
-   "u": "https://lifestyle.zingnews.vn/tphcm-con-mua-trieu-cuong-tram-thu-dau-mot-co-the-vuot-bao-dong-3-post1691134.html",
-   "s": "Znews",
-   "d": "2026-10-21",
-   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2024_02_22/Trieu_cuong_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [
-    "BD Thủ Dầu Một",
-    "Nha Be District"
-   ],
-   "canh": 1
-  },
-  {
-   "t": "Rãnh áp thấp đi qua, Nam bộ tiếp tục có mưa vào chiều tối",
-   "u": "https://www.sggp.org.vn/ranh-ap-thap-di-qua-nam-bo-tiep-tuc-co-mua-vao-chieu-toi-post877413.html",
-   "s": "SGGP",
-   "d": "2026-10-20",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_14/img-2744-7235-8004.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM và Nam Bộ tiếp tục có mưa dông diện rộng",
-   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-tiep-tuc-co-mua-dong-dien-rong-20261020205550204.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-20",
-   "img": "https://icdn.dantri.com.vn/2026/07/29/e2bac658-3c43-4ea5-a5d4-0b3979708f061201a-1785335178890.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
