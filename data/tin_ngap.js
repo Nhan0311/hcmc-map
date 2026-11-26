@@ -2,9 +2,33 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-25T20:25:23.104Z",
+ "capNhat": "2026-11-26T04:51:09.344Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Nước dâng nhanh, Quảng Ngãi khẩn cấp sơ tán người dân",
+   "u": "https://tienphong.vn/nuoc-dang-nhanh-quang-ngai-khan-cap-so-tan-nguoi-dan-post1897660.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-11-26",
+   "img": "https://cdn.tienphong.vn/images/dgyOfen0qKg3N0znLLgOquy0qunz2w_JeP7vTli22lmvKyIcBus37M7twbHBA3AipMPQ7t-OPxq-A34V9mMWUadOsQDmVXYbsOY5v3heozo/2aoborfg9a1ztelkshqkmu5sqomeezrzdsp2kfbi.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "BD Thuận An"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "Sau khi ngừng vận hành thử cống ngăn triều, các 'rốn ngập' ở TP.HCM ra sao?",
+   "u": "https://vtcnews.vn/sau-khi-ngung-van-hanh-thu-cong-ngan-trieu-cac-ron-ngap-o-tp-hcm-ra-sao-ar1053700.html",
+   "s": "VTC News",
+   "d": "2026-11-26",
+   "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/11/26/sau-1-ngay-van-hanh-thu-cong-ngan-trieu-nguoi-dan-tp-hcm-lai-bi-bom-trong-nuoc15-06424761.JPG",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Cống ngăn triều đóng van, đường ở TPHCM khô ráo dù triều cường vượt báo động 3",
    "u": "https://dantri.com.vn/thoi-su/cong-ngan-trieu-dong-van-duong-o-tphcm-kho-rao-du-trieu-cuong-vuot-bao-dong-3-20261125184929234.htm",
@@ -1071,28 +1095,6 @@ window.TIN_NGAP = {
    "s": "Dân Trí",
    "d": "2026-10-22",
    "img": "https://icdn.dantri.com.vn/2026/09/28/trieucuong-thang9namanh0d7a0911-1790595727348.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường ở TPHCM có thể vượt báo động 3 vào cuối tháng",
-   "u": "https://dantri.com.vn/thoi-su/trieu-cuong-o-tphcm-co-the-vuot-bao-dong-3-vao-cuoi-thang-20261022185328166.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-22",
-   "img": "https://icdn.dantri.com.vn/2026/10/12/tc11-1791819684309.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM và Nam Bộ đề phòng mưa lớn kết hợp triều cường",
-   "u": "https://dantri.com.vn/thoi-tiet/tphcm-va-nam-bo-de-phong-mua-lon-ket-hop-trieu-cuong-20261021211616312.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-21",
-   "img": "https://icdn.dantri.com.vn/2026/09/15/m21-1789481474616.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
