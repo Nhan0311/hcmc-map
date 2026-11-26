@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-26T04:51:09.344Z",
+ "capNhat": "2026-11-26T20:03:32.314Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -24,6 +24,28 @@ window.TIN_NGAP = {
    "s": "VTC News",
    "d": "2026-11-26",
    "img": "https://cdn-i.vtcnews.vn/resize/gn/upload/2026/11/26/sau-1-ngay-van-hanh-thu-cong-ngan-trieu-nguoi-dan-tp-hcm-lai-bi-bom-trong-nuoc15-06424761.JPG",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Chủ tịch TP.HCM Lê Quốc Phong trực tiếp chỉ đạo 4 tổ công tác xử lý ùn tắc, ngập, ô nhiễm, ma túy",
+   "u": "https://tuoitre.vn/chu-tich-tphcm-le-quoc-phong-truc-tiep-chi-dao-4-to-cong-tac-xu-ly-un-tac-ngap-o-nhiem-ma-tuy-100261126115125567.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-11-26",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/26/base64-1794704457193494799046-17956685251772077177518-50-66-421-659-crop-17956732680481951125276.jpeg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Chủ tịch TP.HCM lập 4 tổ xử lý ùn tắc, ngập nước, ô nhiễm và ma túy",
+   "u": "https://znews.vn/chu-tich-tphcm-lap-4-to-xu-ly-un-tac-ngap-nuoc-o-nhiem-va-ma-tuy-post1699162.html",
+   "s": "Znews",
+   "d": "2026-11-26",
+   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_10_19/Truong_Chinh_14_Znews.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1073,28 +1095,6 @@ window.TIN_NGAP = {
    "s": "SGGP",
    "d": "2026-10-22",
    "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_22/img-2356-3647-7226.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM sẽ giảm mưa, tăng nắng",
-   "u": "https://www.sggp.org.vn/tphcm-se-giam-mua-tang-nang-post877920.html",
-   "s": "SGGP",
-   "d": "2026-10-22",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/uiqpcwvo/2026_10_22/img-2649-4826-5956.jpeg.webp",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Thời tiết cả nước nắng nhiều, TPHCM sắp đón triều cường cao",
-   "u": "https://dantri.com.vn/dt360/thoi-tiet-ca-nuoc-nang-nhieu-tphcm-sap-don-trieu-cuong-cao-20261022232909370.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-22",
-   "img": "https://icdn.dantri.com.vn/2026/09/28/trieucuong-thang9namanh0d7a0911-1790595727348.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
