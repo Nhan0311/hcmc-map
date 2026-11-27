@@ -2,7 +2,7 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-26T20:03:32.314Z",
+ "capNhat": "2026-11-27T04:53:42.621Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
   {
@@ -46,6 +46,17 @@ window.TIN_NGAP = {
    "s": "Znews",
    "d": "2026-11-26",
    "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_10_19/Truong_Chinh_14_Znews.jpg",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Khu Nam TP.HCM trước và sau khi vận hành cống chống ngập 10.000 tỷ",
+   "u": "https://znews.vn/khu-nam-tphcm-truoc-va-sau-khi-van-hanh-cong-chong-ngap-10000-ty-post1699292.html",
+   "s": "Znews",
+   "d": "2026-11-26",
+   "img": "https://photo.znews.vn/w660/Uploaded/ovhpihv/2026_11_26/thumb_trieu_cuong_3.jpg",
    "c": "hcmc",
    "fp": [],
    "z": [],
@@ -1084,17 +1095,6 @@ window.TIN_NGAP = {
    "s": "Znews",
    "d": "2026-10-23",
    "img": "https://photo.znews.vn/w660/Uploaded/oplukaa/2025_12_13/TP.HCM.JPG",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Hôm nay, TPHCM tiếp tục có mưa, triều cường sắp lên lại",
-   "u": "https://www.sggp.org.vn/hom-nay-tphcm-tiep-tuc-co-mua-trieu-cuong-sap-len-lai-post877770.html",
-   "s": "SGGP",
-   "d": "2026-10-22",
-   "img": "https://image.sggp.org.vn/w800/Uploaded/2026/chuwobj/2026_10_22/img-2356-3647-7226.jpeg.webp",
    "c": "hcmc",
    "fp": [],
    "z": [],
