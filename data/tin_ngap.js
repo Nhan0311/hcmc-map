@@ -2,9 +2,57 @@
    Sinh bởi tools/thu_thap_tin.mjs, chạy theo lịch trong
    .github/workflows/tin-ngap.yml. Ảnh và bản quyền thuộc các toà soạn. */
 window.TIN_NGAP = {
- "capNhat": "2026-11-27T04:53:42.621Z",
+ "capNhat": "2026-11-27T19:51:59.396Z",
  "nguon": "RSS công khai của các toà soạn Việt Nam + Google News. Ảnh và bản quyền thuộc toà soạn; chỉ hiện ảnh do chính họ đặt trong feed của mình, luôn kèm tên báo và liên kết về bài gốc.",
  "items": [
+  {
+   "t": "Mưa lớn bất ngờ ở TP.HCM, nhiều đường ngập, đường Trần Xuân Soạn không bị ảnh hưởng",
+   "u": "https://tuoitre.vn/mua-lon-bat-ngo-o-tphcm-nhieu-duong-ngap-duong-tran-xuan-soan-khong-bi-anh-huong-100261127203725456.htm",
+   "s": "Tuổi Trẻ",
+   "d": "2026-11-27",
+   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/11/27/thoi-tiet-mua-tphcm-edit-17957910204691705032934-167-0-1767-2560-crop-1795791070058759780178.jpg",
+   "c": "hcmc",
+   "fp": [
+    "Trần Xuân Soạn"
+   ],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Giao thông rối loạn sau mưa lớn kết hợp triều cường ở TP HCM",
+   "u": "https://vnexpress.net/giao-thong-roi-loan-sau-mua-lon-ket-hop-trieu-cuong-o-tp-hcm-5149811.html",
+   "s": "VnExpress",
+   "d": "2026-11-27",
+   "img": "https://i1-vnexpress.vnecdn.net/2026/11/27/2aoborfam0xazhncdjquhpwtn00youdtpydkejg0-1795793337.jpg?w=1200&amp;h=0&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=HnjI0ZU20f9njtcbP4uT1w",
+   "c": "hcmc",
+   "fp": [],
+   "z": [
+    "Thu Duc Old"
+   ],
+   "canh": 1
+  },
+  {
+   "t": "[Clip] Mưa trái mùa xối xả, người dân TPHCM bì bõm lội nước",
+   "u": "https://tienphong.vn/clip-mua-trai-mua-xoi-xa-nguoi-dan-tphcm-bi-bom-loi-nuoc-post1898148.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-11-27",
+   "img": "https://cdn.tienphong.vn/images/Hl1rT105KrN-pMsWOiAZMRNPpBsFiOrfcU4sTwYgiMU/1127-31.gif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
+  {
+   "t": "Trận ngập chưa từng thấy trên đảo Lý Sơn",
+   "u": "https://tienphong.vn/tran-ngap-chua-tung-thay-tren-dao-ly-son-post1898113.tpo",
+   "s": "Tiền Phong",
+   "d": "2026-11-27",
+   "img": "https://cdn.tienphong.vn/images/dgyOfen0qKg3N0znLLgOquy0qunz2w_JeP7vTli22lmxt482k6Ate0PXqk21rTp_FjcgFjJmOUXPyhSP6UwXDZboM0wN7vVbdIW12kI8QtQ/2aoborfjenli7vr8a9eogm1qudebwod9hxorfj44.jpg.avif",
+   "c": "hcmc",
+   "fp": [],
+   "z": [],
+   "canh": 1
+  },
   {
    "t": "Nước dâng nhanh, Quảng Ngãi khẩn cấp sơ tán người dân",
    "u": "https://tienphong.vn/nuoc-dang-nhanh-quang-ngai-khan-cap-so-tan-nguoi-dan-post1897660.tpo",
@@ -1051,50 +1099,6 @@ window.TIN_NGAP = {
    "s": "Dân Trí",
    "d": "2026-10-25",
    "img": "https://icdn.dantri.com.vn/2025/02/09/ha-noi-troi-lanhthanh-dong-12-1739065515835.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Triều cường TP.HCM vượt báo động 3, đề phòng ngập giờ tan tầm",
-   "u": "https://lifestyle.zingnews.vn/trieu-cuong-tphcm-vuot-bao-dong-3-de-phong-ngap-gio-tan-tam-post1692052.html",
-   "s": "Znews",
-   "d": "2026-10-25",
-   "img": "https://photo.znews.vn/w660/Uploaded/wohuhuo/2019_11_24/Trieu_SG_Znews.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TP.HCM nghiên cứu làm ga metro có khả năng ứng phó ngập nước",
-   "u": "https://tuoitre.vn/tphcm-nghien-cuu-lam-ga-metro-ung-pho-ngap-nuoc-100261024111800723.htm",
-   "s": "Tuổi Trẻ",
-   "d": "2026-10-24",
-   "img": "https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/10/24/ga-metro-ben-thanh-17565557556522048235255-346-90-1570-2048-crop-17928153324341199413757.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "TPHCM sắp đón triều cường vượt báo động 3",
-   "u": "https://dantri.com.vn/thoi-su/tphcm-sap-don-trieu-cuong-vuot-bao-dong-3-20261024182516269.htm",
-   "s": "Dân Trí",
-   "d": "2026-10-24",
-   "img": "https://icdn.dantri.com.vn/2026/08/11/642598ba-00d4-4cbd-bd63-83f6fecf3f221105c-1786453584510.jpg",
-   "c": "hcmc",
-   "fp": [],
-   "z": [],
-   "canh": 1
-  },
-  {
-   "t": "Thời tiết TP.HCM ngày 24/10: Hết mưa, triều cường sắp đạt đỉnh",
-   "u": "https://lifestyle.zingnews.vn/thoi-tiet-tphcm-ngay-2410-het-mua-trieu-cuong-sap-dat-dinh-post1691630.html",
-   "s": "Znews",
-   "d": "2026-10-23",
-   "img": "https://photo.znews.vn/w660/Uploaded/oplukaa/2025_12_13/TP.HCM.JPG",
    "c": "hcmc",
    "fp": [],
    "z": [],
